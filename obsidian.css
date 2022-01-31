@@ -1750,7 +1750,6 @@ body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
 }
 
 .titlebar-text {
-  color: var(--text-normal);
   font-family: var(--not-editor);
 }
 
