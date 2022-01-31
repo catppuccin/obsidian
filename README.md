@@ -13,12 +13,13 @@ This theme covers my use case for the app. That said! Part of what makes Obsidia
 The theme is not yet approved in the Obsidian theme store. In the mean time, brave users can download [Obsidian.css](https://github.com/mbeckrich/obsidian/blob/main/obsidian.css), rename the file `catppuccin.css` to prevent overwriting any preexisting themes, and place it in their Vault's configuration folder: `<Vault>/.obsidian/themes`. After that, it's as simple as opening your preferences in Obsidian, clicking the 'Appearance' tab, and pressing 'Manage' to select the theme.
 
 # The shape of things to come
-PRs and constructive feedback more than welcome.
 
 * Style Settings plugin compatibility
 * Tweaks to improve theme consistency throughout UI
 * Behind the scenes cleanup of scss/css
 * Mobile version
+
+PRs and constructive feedback more than welcome.
 
 # Known issues
 
