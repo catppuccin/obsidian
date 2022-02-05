@@ -17,13 +17,14 @@
 
 ## About
 
-This theme covers my use case for the app. That said! Part of what makes Obsidian so fantastic is its many features and extended universe of user-created plugins. As time goes on, I would like to add more compatibility between the theme and some of the more popular plugins. Additionally, Obsidian now has a legacy editor. There be dragons, but none too bad: Most of the css was written before the new editor's beta. Currently the theme uses CSS from [Kepano's Hider](https://github.com/kepano/obsidian-hider) plugin. That will change soon, but you may need to do some cmd/ctrl+p-ing in the meantime if you are used to buttons. (:
+This theme covers my use case for the app. That said! Part of what makes Obsidian so fantastic is its many features and extended universe of user-created plugins. As time goes on, I would like to add more compatibility between the theme and some of the more popular plugins. Additionally, Obsidian now has a legacy editor. There be dragons, but none too bad: Most of the css was written before the new editor's beta. Currently the theme uses css from [Kepano's Hider](https://github.com/kepano/obsidian-hider) plugin. That will change soon, but you may need to do some cmd/ctrl+p-ing in the meantime if you are used to buttons. (:
 
 ## Usage
 
 ### Obsidian theme store
 
-> Under dev 👷🛑
+To install from the Obsidian theme store:
+Open Obisidian and go to `Preferences` >> `Appearance`, click `Manage` and scroll down to 'Community Themes.' Type 'Catppuccin' in the filter bar and then click 'Use' under the theme name.
 
 ### Manual
 
