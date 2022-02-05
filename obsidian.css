@@ -1,17 +1,4 @@
 @charset "UTF-8";
-/* make any changes to colors in base.scss. instead */
-/* cursor, urls */
-/* active tab in foreground */
-/* sidebar text highlight */
-/* active border */
-/* base, sign columns */
-/* surface, x */
-/* top, background, cursor text, inactive tab background */
-/* overlay, floating-elements, cursor line */
-/* searches, inactive border, active tab background */
-/* subtle, comments */
-/* inactive, x */
-/* foreground, inactive tab in foreground */
 /* cyrillic-ext */
 @font-face {
   font-family: "Vollkorn";
@@ -1638,6 +1625,7 @@ Can do
 }
 
 /* Hider end */
+/* @use "abstracts/colors"; */
 /* stylelint-disable property-no-vendor-prefix */
 :root {
   --default-font: "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
