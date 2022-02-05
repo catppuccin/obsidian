@@ -1,0 +1,169 @@
+/* makes editor font thicker, closer to preview
+.cm-line used for new editor */
+
+.cm-s-obsidian .CodeMirror-line *,
+.cm-s-obsidian .cm-line * {
+    -webkit-font-smoothing: auto;
+}
+
+/* editor area font size */
+
+.ͼ1 .cm-scroller,
+.markdown-source-view,
+.markdown-preview-view {
+    font-size: 1.1rem;
+    line-height: 1.45;
+}
+
+/**  == HEADERS! == */
+
+.cm-s-obsidian .HyperMD-header {
+    padding: 0.2rem 0.2rem 0.5rem;
+}
+
+body.is-mobile .HyperMD-header-1,
+.cm-header-1,
+.markdown-preview-section h1 {
+    line-height: 1.2;
+    font-weight: 800;
+    font-size: var(--h1-font-size);
+    color: var(--text-normal);
+    letter-spacing: 1px;
+}
+
+body.is-mobile .HyperMD-header-2,
+.cm-header-2,
+.markdown-preview-section h2 {
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+    color: var(--text-normal);
+    letter-spacing: 1px;
+}
+
+body.is-mobile .HyperMD-header-3,
+.cm-header-3,
+.markdown-preview-section h3 {
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: var(--h3-font-size);
+    color: var(--text-normal);
+}
+
+body.is-mobile .HyperMD-header-4,
+.cm-header-4,
+.markdown-preview-section h4 {
+    font-weight: 600;
+    font-size: var(--large-font-size);
+    color: var(--text-normal);
+}
+
+body.is-mobile .HyperMD-header-5,
+.cm-header-5,
+.markdown-preview-section h5 {
+    font-weight: 600;
+    font-size: var(--large-font-size);
+    color: var(--text-normal);
+}
+
+body.is-mobile .HyperMD-header-6,
+.cm-header-6,
+.markdown-preview-section h6 {
+    font-weight: 600;
+    font-size: var(--large-font-size);
+    color: var(--text-normal);
+}
+
+.CodeMirror-cursor,
+.cm-s-obsidian .cm-cursor,
+.cm-s-obsidian .cm-dropCursor {
+    border-left: var(--rosewater) 1px solid;
+    margin-left: 1px;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.search-result-file-matched-text,
+.cm-s-obsidian span.obsidian-search-match-highlight,
+.cm-s-obsidian span.cm-highlight.obsidian-search-match-highlight, {
+    height: 1.15em;
+    padding: 6px 0;
+
+    * {
+        color: var(--text-on-accent);
+    }
+}
+
+.markdown-preview-view mark {
+    color: black;
+}
+
+.search-result-file-matched-text {
+    color: var(--text-on-accent);
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+    color: var(--text-on-accent);
+    font-style: normal;
+    padding-left: 0.2px;
+    padding-right: 0.2px;
+}
+
+span.list-bullet {
+    padding-right: 0;
+    font-size: 22px;
+    color: var(--text-normal-transparent);
+}
+
+.markdown-preview-view .collapse-indicator,
+.collapse-icon {
+    color: var(--text-normal-transparent);
+}
+
+.markdown-source-view.mod-cm6 .cm-hmd-list-indent {
+    padding-left: 0;
+}
+
+ul li {
+    padding-bottom: 4px;
+}
+
+.markdown-source-view.mod-cm6 .cm-blockquote-border {
+    border: 0 solid var(--lavender);
+    display: inline-block;
+    border-left-width: 5px;
+    text-indent: -5px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+    border: 0 solid var(--rosewater);
+    border-left-width: 5px;
+    background-color: var(--black-1);
+    padding: 4px 16px 4px 0;
+    border-radius: 8px;
+    width: 95%;
+}
+
+.markdown-preview-view blockquote {
+    border-radius: 8px;
+    border: 1px solid var(--rosewater);
+    border-left-width: 5px;
+    padding: 10px 20px;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    background-color: var(--black-0);
+}
+
+.cm-s-obsidian span.cm-hashtag {
+    text-decoration: 0.15rem underline var(--interactive-accent);
+}
+
+.tooltip {
+    font-family: var(--not-editor);
+    background-color: var(--background-primary-alt);
+    box-shadow:
+        0 2px 4px  hsl(254deg 25% 10%),
+        0 4px 8px  hsl(254deg 25% 10%),
+        0 8px 16px hsl(254deg 25% 10%);
+}

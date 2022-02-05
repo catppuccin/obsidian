@@ -1,0 +1,83 @@
+@use "../abstracts/mixins";
+
+body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
+  color: var(--text-muted);
+  font-weight: 400;
+  text-decoration: underline 0.15rem var(--active-interaction);
+  font-size: var(--large-font-size);
+  font-family: var(--not-editor);
+  letter-spacing: 1px;
+  padding-left: 1rem;
+}
+
+.view-header-title-container::after {
+  display: none;
+}
+
+.titlebar-text {
+  font-family: var(--not-editor);
+}
+
+/* box shadow adjusted from yin yang */
+
+.view-header {
+  height: fit-content;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+}
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+
+  > .workspace-leaf:first-of-type:last-of-type .view-header {
+    border: 0;
+    border-radius: 8px;
+    padding: 0;
+    background-color: var(--black-1);
+  }
+}
+
+/* no idea what is supposed to go here right now  */
+.workspace-drop-overlay.mod-drag {
+  opacity: 0;
+}
+
+body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile) .view-actions .view-action {
+  color: var(--text-faint);
+  display: flex;
+  line-height: 1;
+  padding: 6px;
+  position: static;
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+  @extend %link-transition;
+
+  &:hover {
+    color: var(--internal-buttons);
+    background-color: var(--black-0);
+    box-shadow: 0 0 0 2px inset var(--border);
+    stroke-width: 4px;
+  }
+}
+
+.workspace-leaf.mod-active .view-header {
+  border-bottom: 0 solid transparent;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+}
+
+.view-header-title {
+  font-size: var(--large-font-size);
+  font-family: var(--not-editor);
+  font-weight: 400;
+  padding: 0 20px 0 16px;
+}
+
+// .view-actions a.view-action svg {
+//   height: 18px;
+//   width: 20px;
+// }

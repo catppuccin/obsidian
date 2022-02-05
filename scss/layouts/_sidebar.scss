@@ -1,0 +1,172 @@
+@use "../abstracts/mixins";
+
+.nav-files-container {
+    padding: 18px 4px;
+    overflow-x: hidden;
+
+    @extend %link-transition;
+}
+
+.nav-folder.mod-root {
+    padding: 15px 0;
+}
+
+.nav-file-title-content {
+    width: fit-content;
+    white-space: normal;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-folder-title-content,
+.nav-file-title-content {
+    width: fit-content;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    text-transform: lowercase;
+    font-family: var(--not-editor);
+    font-size: var(--small-font-size);
+    padding: 3px 10px;
+    border: none;
+}
+
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content,
+.pane-list-item-ending-flair:not(.tag-pane-tag-count) {
+    display: none;
+}
+
+.nav-folder-collapse-indicator {
+    display: none;
+}
+
+.nav-file-title,
+.nav-folder-title {
+    margin: 0;
+    padding: 0 15px 0 0;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: var(--medium-font-size);
+    min-width: 0;
+    width: fit-content;
+}
+
+.nav-folder-children {
+    padding: 0 20px;
+}
+
+/* min-width to override app.css and prevent background stretching */
+body:not(.is-grabbing) .nav-file-title.is-active,
+body:not(.is-grabbing) .nav-folder-title.is-active {
+    border-left: solid 6px var(--active-interaction);
+    border-radius: 4px;
+    min-width: 0%;
+    width: fit-content;
+    background-color: var(--black-4);
+    padding: 0;
+
+    & .nav-file-tag {
+        background-color: var(--black-3);
+    }
+
+    &:hover {
+        border-left: solid 6px var(--black-4);
+    }
+}
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover,
+.nav-file-title.is-being-dragged,
+.nav-folder-title.is-being-dragged {
+    background-color: var(--text-selection-opaque);
+    color: var(--text-on-accent);
+    border-radius: 4px;
+
+    @extend %link-transition;
+
+    & .nav-file-tag {
+        background-color: var(--text-on-accent);
+    }
+}
+
+.nav-file-title-content.is-being-renamed,
+.nav-folder-title-content.is-being-renamed {
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--active-interaction);
+    color: var(--text-on-accent);
+    width: 100%;
+    padding: 3px 10px;
+}
+
+/* absolute nightmare to wrangle! use nested ::selector to change highlight */
+.nav-file-folder-content.is-being-renamed[contenteditable="true"],
+.nav-file-title-content.is-being-renamed[contenteditable="true"] {
+    background-color: var(--active-interaction) !important;
+    color: var(--text-on-accent);
+}
+
+.nav-folder-title.is-being-dragged-over,
+.nav-folder.mod-root > .nav-file-title.is-being-dragged-over,
+.nav-folder.mod-root > .nav-folder-title.is-being-dragged-over {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.tree-item-flair {
+    color: var(--text-normal);
+    background-color: transparent;
+    text-underline-offset: 2px;
+    font-family: var(--default-font);
+}
+
+.tree-item-self:hover .tree-item-flair {
+    background-color: var(--text-on-accent);
+    color: var(--text-normal);
+}
+
+.backlink-pane,
+.outgoing-link-pane {
+    font-family: var(--not-editor);
+    font-size: var(--small-font-size);
+}
+
+.tree-item-self.is-clickable:hover,
+.tree-item-self.is-clickable:hover * {
+    background-color: var(--text-selection-opaque);
+    color: var(--text-on-accent);
+}
+
+.search-result-file-matches .search-result-file-match {
+    background-color: var(--background-primary-alt);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px inset hsl(254deg 25% 10%);
+    padding-right: 15px;
+
+    &:hover {
+        box-shadow:
+            0 2px 4px inset hsl(254deg 25% 10%),
+            0 4px 8px inset hsl(254deg 25% 10%);
+    }
+}
+
+.search-result-file-match:hover .search-result-file-match-destination-file,
+.search-result-file-match .search-result-file-match-destination-file {
+    background-color: hsl(253deg 18% 20%);
+    color: var(--text-normal);
+    border: hsl(254deg 12% 36%) 1px solid;
+    text-decoration: 0.15rem underline var(--interactive-accent);
+
+    &:hover {
+        background-color: hsl(253deg 18% 20%);
+        color: var(--interactive-accent);
+    }
+}
+
+.workspace-ribbon {
+    background-color: var(--background-primary);
+}

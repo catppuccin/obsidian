@@ -1,0 +1,178 @@
+@use "../abstracts/mixins";
+
+.modal.mod-settings {
+    font-family: "Public Sans";
+}
+
+.checkbox-container.is-enabled {
+    background-color: var(--active-interaction);
+}
+
+.checkbox-container.is-enabled::after {
+    background-color: var(--background-primary);
+}
+
+.checkbox-container::after {
+    background-color: var(--text-normal);
+}
+
+/* from yin yang theme */
+.checkbox-container {
+    background-color: var(--text-on-accent);
+}
+
+input[type="range"] {
+    background-color: var(--text-on-accent);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: var(--internal-buttons);
+}
+
+.vertical-tab-header-group-title,
+.vertical-tab-nav-item {
+    font-size: var(--small-font-size);
+    background-color: var(--background-primary);
+}
+
+.vertical-tab-nav-item:hover:not(.vertical-tab-nav-item.is-active) {
+    background-color: var(--text-selection-opaque);
+    color: var(--text-on-accent);
+
+    @extend %link-transition;
+}
+
+.vertical-tab-header,
+.horizontal-tab-content,
+.vertical-tab-content {
+    background-color: var(--background-primary);
+}
+
+.vertical-tab-header {
+    border-right: 2px solid var(--background-modifier-border);
+}
+
+.modal.mod-settings .vertical-tab-content-container {
+    background-color: var(--background-primary);
+}
+
+.setting-item {
+    border-top: 2px solid var(--background-modifier-border);
+}
+
+.horizontal-tab-nav-item.is-active,
+.vertical-tab-nav-item.is-active {
+    background-color: var(--background-modifier-border);
+    border-left-color: var(--active-interaction);
+}
+
+.suggestion-container .suggestion-item.is-selected {
+    background-color: var(--text-selection-opaque);
+    color: var(--text-on-accent);
+}
+
+.modal-close-button:hover {
+    color: var(--internal-buttons);
+}
+
+.community-plugin-details {
+    background-color: var(--black-0);
+}
+
+.community-plugin-info hr {
+    border-color: var(--border-inset);
+}
+
+.community-plugin-item:hover, {
+    background-color: var(--text-selection-opaque);
+
+    *:not(.flair.mod-pop) {
+        color: var(--text-on-accent);
+    }
+}
+
+.community-theme.is-selected {
+    background-color: var(--active-interaction);
+}
+
+.clickable-icon {
+    padding: 6px;
+    border-radius: 8px;
+    margin: -1px;
+
+    &:hover {
+        color: var(--internal-buttons);
+        background-color: var(--black-0);
+        stroke-width: 4px;
+    }
+}
+
+/* translatex, y from Só Erick Mesmo  */
+.checkbox-container {
+    cursor: pointer;
+    background-color: var(--black-0);
+    border: 1px solid hsl(235deg 17% 29% / 60%);
+    box-shadow:
+        0 2px 2px inset hsl(254deg 25% 10%),
+        0 4px 4px inset hsl(254deg 25% 10%),
+        0 8px 8px inset hsl(254deg 25% 10%);
+    border-radius: 3px;
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    user-select: none;
+    width: 42px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.checkbox-container.is-enabled {
+    background-color: var(--black-0);
+    box-shadow:
+        0 2px 4px inset hsl(254deg 25% 10%),
+        0 4px 8px inset hsl(254deg 25% 10%),
+        0 8px 16px inset hsl(254deg 25% 10%);
+    border-radius: 4px;
+}
+
+.checkbox-container.is-enabled::after {
+    transform: translate3d(19px, 0, 0);
+    transform: translateX(155%) translateY(17%);
+    background-color: var(--interactive-accent);
+}
+
+.checkbox-container.is-enabled:active::after {
+    left: -4px;
+}
+
+.checkbox-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.checkbox-container::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--maroon);
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out, width 0.2s ease-in-out, left 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    left: 0;
+    transform: translate3d(3px, 0, 0);
+    transform: translateX(35%) translateY(17%);
+}
+
+.checkbox-container:active::after {
+    width: 20px;
+}

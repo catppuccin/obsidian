@@ -1,0 +1,63 @@
+.app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split {
+    min-width: 15em;
+    margin: 0 8px;
+}
+
+.app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split {
+    margin: 0 8px;
+    min-width: 20rem;
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    height: 100%;
+    top: 0%;
+    width: 2px;
+    background-color: var(--text-on-accent);
+
+    &:hover {
+        background-color: var(--pink);
+    }
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+    height: 2px;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    margin-bottom: 5px;
+    background-color: var(--text-on-accent);
+
+    &:hover {
+        background-color: var(--pink);
+    }
+}
+
+.workspace-leaf-resize-handle {
+    background-color: var(--text-on-accent);
+
+    &:hover {
+        background-color: var(--pink);
+    }
+}
+
+/* readable lines */
+
+.markdown-source-view.cm-s-obsidian.mod-cm6.is-readable-line-width.is-live-preview {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* nav-header over embedded backlinks */
+
+.embedded-backlinks .nav-header {
+    border-top: 2px inset hsl(235deg 17% 29% / 30%);
+}

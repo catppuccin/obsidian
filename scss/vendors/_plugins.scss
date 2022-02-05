@@ -1,0 +1,249 @@
+@use "../abstracts/mixins";
+
+/* ==63 CALENDAR!== */
+
+#calendar-container * > * {
+  @extend %link-transition;
+}
+
+#calendar-container .active,
+#calendar-container .active.today {
+  background-color: var(--background-primary);
+  box-shadow:
+    0 2px 2px hsl(254deg 25% 10%),
+    0 4px 4px hsl(254deg 25% 10%);
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  margin: auto;
+}
+
+#calendar-container .active.day:hover {
+  background-color: var(--background-primary);
+  box-shadow:
+    0 2px 2px hsl(254deg 25% 10%),
+    0 4px 4px hsl(254deg 25% 10%);
+  color: var(--text-normal);
+  border-radius: 8px;
+}
+
+#calendar-container .today {
+  color: var(--active-interaction);
+}
+
+#calendar-container {
+  border: var(--border) 1px solid;
+  font-size: var(--normal-font-size);
+  font-family: var(--not-editor);
+  background-color: var(--background-primary-alt);
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin: 0 8px;
+  overflow: hidden;
+  box-shadow:
+    0 0 4px inset hsl(254deg 25% 10%),
+    0 0 8px inset hsl(254deg 25% 10%),
+    0 0 16px inset hsl(254deg 25% 10%);
+}
+
+#calendar-container th {
+  padding: 2px;
+}
+
+#calendar-container .day,
+#calendar-container .week-num {
+  padding: 2px;
+  margin: auto;
+  height: 32px;
+  width: 32px;
+}
+
+#calendar-container .week-num:hover,
+#calendar-container .day:hover {
+  background-color: var(--background-primary);
+  box-shadow:
+    0 2px 2px hsl(254deg 25% 10%),
+    0 4px 4px hsl(254deg 25% 10%);
+  color: var(--internal-buttons);
+  border-radius: 8px;
+}
+
+.workspace-leaf-content[data-type="calendar"] .view-content {
+  padding: 5px 0 0;
+}
+
+#calendar-container thead {
+  border-top: 2px solid var(--background-primary);
+}
+
+#calendar-container tr th {
+  font-weight: 500;
+  font-size: var(--large-font-size);
+  font-variant: all-small-caps;
+}
+
+#calendar-container tr td {
+  cursor: pointer;
+  border: none;
+  width: calc(100% / 7);
+  padding: 4px 0;
+}
+
+#calendar-container .table {
+  border-collapse: separate;
+  table-layout: fixed;
+}
+
+#calendar-container h3 {
+  font-weight: 400;
+  font-size: var(--large-font-size);
+}
+
+#calendar-container .week-num.active,
+#calendar-container .day.active {
+  color: var(--active-interaction);
+  background-color: var(--background-primary);
+}
+
+#calendar-container .active svg.dot,
+#calendar-container svg.dot {
+  fill: var(--interactive-accent);
+}
+
+#calendar-container .dot-container {
+  margin: -2px auto;
+}
+
+/* For task list on calendar. Don't love it, might display:none.
+Think I solved it by removing the exterior of the circle and making it just a solid colar
+It feels just the tiniest bit off next to the svg.dot.
+Have tried to solve THIS by using a small stroke width of the same color as fill,
+but now the edges feel rough?
+
+Can do
+#calendar-container svg.hollow {
+  fill: $underline;
+  stroke: $underline;
+  stroke-width: 0.2px;
+  or
+  #calendar-container svg.hollow {
+  fill: $underline;
+  stroke-width: 0px;
+}
+} */
+
+#calendar-container svg.hollow {
+  fill: var(--active-interaction);
+  stroke-width: 0.3px;
+  stroke: var(--active-interaction);
+}
+
+.mod-root #calendar-container {
+  width: var(--line-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0;
+}
+
+#calendar-container .arrow > svg {
+  color: var(--text-faint);
+}
+
+#calendar-container .reset-button {
+  color: var(--text-faint);
+}
+
+#calendar-container .year {
+  color: var(--text-normal);
+}
+
+#calendar-container .arrow:hover > svg {
+  color: var(--internal-buttons);
+}
+
+#calendar-container .button:hover {
+  color: var(--internal-buttons);
+}
+
+#calendar-container .reset-button:hover {
+  color: var(--internal-buttons);
+}
+
+/* ==KEPANO'S HIDER */
+
+/* Hide ribbon */
+
+.workspace-ribbon.mod-left {
+  display: none;
+}
+
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action {
+  margin: 2px;
+  padding: 6px;
+  border-radius: 8px;
+
+  &:hover {
+    color: var(--internal-buttons);
+    background-color: var(--black-0);
+    box-shadow: 0 0 0 2px inset var(--border);
+    stroke-width: 4px;
+  }
+}
+
+.workspace-ribbon.mod-right {
+  visibility: hidden;
+  position: absolute;
+  background-color: var(--background-primary);
+}
+
+/* Frameless */
+.titlebar-button-container {
+  display: none;
+  background-color: var(--background-primary);
+}
+
+.titlebar,
+.titlebar-inner {
+  position: fixed;
+  top: 0;
+  height: 12px;
+  background: transparent;
+  color: transparent;
+}
+
+.workspace-split.mod-right-split > .workspace-tabs {
+  padding: 18px 0 8px 8px;
+}
+
+.workspace-split.mod-left-split > .workspace-tabs {
+  padding: 18px 8px 8px 0;
+}
+
+/* Hide meta */
+.frontmatter-container {
+  display: none;
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide status */
+.status-bar {
+  display: none;
+  font-family: var(--not-editor);
+}
+
+/* Hide tooltips */
+.tooltip {
+  display: none;
+}
+
+/* Hide instructions */
+.prompt-instructions {
+  display: none;
+}
+
+/* Hider end */
