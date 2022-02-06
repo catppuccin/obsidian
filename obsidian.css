@@ -1263,17 +1263,54 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .community-theme.is-selected {
-  background-color: var(--active-interaction);
+  background-color: var(--black-2);
+  border: 1px solid var(--active-interaction);
+  color: var(--text-muted);
+}
+.community-theme.is-selected .community-theme-info,
+.community-theme.is-selected .community-theme-downloads {
+  color: var(--text-muted);
+}
+.community-theme.is-selected button {
+  color: var(--text-muted);
+  background-color: var(--black-0);
+}
+.community-theme.is-selected button:hover {
+  background-color: var(--internal-buttons);
+  color: var(--text-on-accent);
+}
+
+.community-theme {
+  background-color: var(--black-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.community-theme .community-theme-info .clickable-icon {
+  padding: 0;
+  margin-right: 2px;
+  height: min-content;
+}
+
+/* from app.css */
+.community-theme-remove-button {
+  vertical-align: middle;
+  color: var(--text-faint);
+  position: absolute;
+  background: inherit;
+  padding: 3px 5px 1px 5px;
+  border-radius: 8px;
 }
 
 .clickable-icon {
-  padding: 6px;
   border-radius: 8px;
-  margin: -1px;
+  line-height: 0;
+  margin: 2px;
+  padding: 6px;
 }
 .clickable-icon:hover {
   color: var(--internal-buttons);
   background-color: var(--black-0);
+  box-shadow: 0 0 0 2px inset var(--border);
   stroke-width: 4px;
 }
 
