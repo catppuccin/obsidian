@@ -582,6 +582,13 @@ ul li {
   box-shadow: 0 2px 4px #161320, 0 4px 8px #161320, 0 8px 16px #161320;
 }
 
+.theme-dark .notice {
+  background-color: var(--black-0);
+  font-family: var(--not-editor);
+  color: var(--text-normal);
+  border: 1px solid var(--border);
+}
+
 /* css from sanctum theme, icons from heroicons https://heroicons.com/ */
 /* stylelint-disable property-no-vendor-prefix */
 /* folders */

@@ -167,3 +167,10 @@ ul li {
         0 4px 8px  hsl(254deg 25% 10%),
         0 8px 16px hsl(254deg 25% 10%);
 }
+
+.theme-dark .notice {
+    background-color: var(--black-0);
+    font-family: var(--not-editor);
+    color: var(--text-normal);
+    border: 1px solid var(--border);
+}
