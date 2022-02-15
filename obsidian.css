@@ -1182,7 +1182,7 @@ input.prompt-input {
 }
 
 .modal.mod-settings {
-  font-family: "Public Sans";
+  font-family: var(--not-editor);
 }
 
 .checkbox-container.is-enabled {
