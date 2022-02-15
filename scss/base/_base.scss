@@ -16,7 +16,7 @@
 :root {
     --default-font: "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
     --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
-    --not-editor: "Public Sans", "Gill Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+    --not-editor: "Public Sans", "Gill Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --preview-font: var(--default-font);
     --editor-font: var(--default-font);
     --header-font-pre: var(--preview-font);
