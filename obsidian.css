@@ -2018,12 +2018,366 @@ Can do
 }
 
 /* Hider end */
+/* for mgmeyers Style Settings plugin
+https://github.com/mgmeyers/obsidian-style-settings
+*/
+/* @settings
+
+name: Catppuccin Theme
+id: catppuccin
+settings:
+  -
+    id: heading-fonts
+    title: Fonts
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: default-font
+    title: Base Font
+    type: variable-text
+    default: '"Vollkorn", "Gentium Book Basic", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif'
+  -
+    id: not-editor
+    title: Sans Font
+    type: variable-text
+    description: Everything not in the editor/preview window (sidebars, settings, etc.)
+    default: '"Public Sans", "Gill Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;'
+  -
+    id: mermaid-font
+    title: Mermaid Font
+    type: variable-text
+    default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif'
+  -
+    id: font-monospace
+    title: Monospace Font
+    description: Used for codeblocks, tables, etc.
+    type: variable-text
+    default: '"Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace'
+
+  -
+    id: heading-translucency
+    title: Translucency
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: opacity-translucency-light
+    title: Light Theme Translucency
+    type: variable-number-slider
+    default: 0.6
+    min: 0
+    max: 1
+    step: 0.01
+  -
+    id: opacity-translucency-dark
+    title: Dark Theme Translucency
+    type: variable-number-slider
+    default: 0.75
+    min: 0
+    max: 1
+    step: 0.01
+
+  -
+    id: heading-colors-background
+    title: Background Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: background-primary
+    title: Background Primary
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#ffffff'
+    default-dark: 'hsl(240deg 21% 15%)'
+  -
+    id: background-primary-alt
+    title: Background Primary (alt)
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f5f6f8'
+    default-dark: 'hsl(249deg 23% 12%);'
+  -
+    id: background-secondary
+    title: Background Secondary
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f2f3f5'
+    default-dark: 'hsl(240deg 21% 15%);'
+  -
+    id: background-secondary-alt
+    title: Background Secondary (alt)
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#e3e5e8'
+    default-dark: 'hsl(249deg 23% 12%)'
+  -
+    id: background-modifier-border
+    title: 'Background Modifier: Border'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#dddddd'
+    default-dark: 'hsl(249deg 23% 12%)'
+  -
+    id: background-modifier-form-field
+    title: 'Background Modifier: Form Field'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ffffffff'
+    default-dark: 'hsla(235, 17%, 29%, 0.3)'
+  -
+    id: background-modifier-form-field-highlighted
+    title: 'Background Modifier: Form Field (highlighted)'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ffffffff'
+    default-dark: 'hsla(235, 17%, 29%, 0.3)'
+  -
+    id: background-modifier-box-shadow
+    title: 'Background Modifier: Box Shadow'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#0000001a'
+    default-dark: 'hsla(235, 17%, 29%, 0.3)'
+  -
+    id: background-modifier-success
+    title: 'Background Modifier: Success'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#A4E7C3'
+    default-dark: 'hsla(128, 58%, 79%, 1)'
+  -
+    id: background-modifier-error
+    title: 'Background Modifier: Error'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    alt-format:
+      -
+        id: background-modifier-error-rgb
+        format: hsl-values
+    default-light: '#990000'
+    default-dark: 'hsl(342deg 79% 75%)'
+  -
+    id: background-modifier-error-hover
+    title: 'Background Modifier: Error (hover)'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#bb0000'
+    default-dark: 'hsla(342deg 79% 60%, 1)'
+  -
+    id: background-modifier-cover
+    title: 'Background Modifier: Cover'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#000000cc'
+    default-dark: 'hsla(0, 0, 0, .8)'
+
+  -
+    id: heading-colors-text
+    title: Text Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: text-accent
+    title: 'Text: Accent'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#705dcf'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: text-accent-hover
+    title: 'Text: Accent (hover)'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#7a6ae6'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: text-normal
+    title: 'Text: Normal'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#2e3338'
+    default-dark: 'hsl(220deg 38% 89%)'
+  -
+    id: text-muted
+    title: 'Text: Muted'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#888888'
+    default-dark: 'hsl(285deg 10% 75%)'
+  -
+    id: text-faint
+    title: 'Text: Faint'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#999999'
+    default-dark: 'hsl(274deg 11% 59%)'
+  -
+    id: text-error
+    title: 'Text: Error'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#800000'
+    default-dark: 'hsl(342deg 79% 75%)'
+  -
+    id: text-error-hover
+    title: 'Text: Error (hover)'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#990000'
+    default-dark: 'hsl(342deg 79% 60%)'
+  -
+    id: text-highlight-bg
+    title: 'Text: Highlight Background'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ffff0066'
+    default-dark: 'hsla(41, 88%, 84%, 1)'
+  -
+    id: text-highlight-bg-active
+    title: 'Text: Highlight Background (active)'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ff800066'
+    default-dark: 'hsla(223.2, 70.1%, 79%, 1)'
+  -
+    id: text-selection
+    title: 'Text: Selection Background'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#cce6fffc'
+    default-dark: 'hsla(254deg, 12%, 36%, 1)'
+  -
+    id: text-selection
+    title: 'Text: On Accent'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f2f2f2'
+    default-dark: 'hsl(254deg 25% 10%)'
+
+  -
+    id: heading-colors-interactive
+    title: Interactive Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: interactive-normal
+    title: 'Interactive: Normal'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f2f3f5'
+    default-dark: 'hsl(171deg 53% 81%)'
+  -
+    id: interactive-hover
+    title: 'Interactive: Hover'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#e9e9e9'
+    default-dark: 'hsl(171deg 53% 81%)'
+  -
+    id: interactive-accent
+    title: 'Interactive: Accent'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    alt-format:
+      -
+        id: interactive-accent-rgb
+        format: rgb-values
+    default-light: '#7b6cd9'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: interactive-accent-hover
+    title: 'Interactive: Accent (hover)'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#8273e6'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: interactive-success
+    title: 'Interactive: Success'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#197300'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: internal-buttons
+    title: 'Button Hover'
+    description: 'The color of buttons when hovered over.'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: 'hsl(24deg 88% 78%)'
+    default-dark: 'hsl(24deg 88% 78%)'
+
+  -
+    id: heading-colors-scrollbar
+    title: Scrollbar Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: scrollbar-bg
+    title: 'Scrollbar: Background'
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: '#0000000d'
+    default-dark: 'rgba(255, 255, 255, 0.05)'
+  -
+    id: scrollbar-thumb-bg
+    title: 'Scrollbar: Thumb Background'
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: '#0000001a'
+    default-dark: 'rgba(255, 255, 255, 0.1)'
+  -
+    id: scrollbar-active-thumb-bg
+    title: 'Scrollbar: Active Thumb Background'
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: '#00000033'
+    default-dark: 'rgba(255, 255, 255, 0.2)'
+
+*/
 /* @use "abstracts/colors"; */
 /* stylelint-disable property-no-vendor-prefix */
 :root {
-  --default-font: "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+  --default-font: "Vollkorn", "Gentium Book Basic", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
   --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
-  --not-editor: "Public Sans", "Gill Sans", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+  --not-editor: "Public Sans", "Gill Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --preview-font: var(--default-font);
   --editor-font: var(--default-font);
   --header-font-pre: var(--preview-font);
@@ -2099,52 +2453,57 @@ Can do
 }
 
 .theme-light {
-  --background-primary: hsl(240deg 14% 14%);
+  --background-primary: hsl(240deg 21% 15%);
   --background-primary-alt: hsl(249deg 23% 12%);
-  --background-secondary: hsl(240deg 14% 14%);
+  --background-secondary: hsl(240deg 21% 15%);
   --background-secondary-alt: hsl(249deg 23% 12%);
   --background-modifier-border: hsl(249deg 23% 12%);
   --background-modifier-form-field: hsl(235deg 17% 29% 30%);
   --background-modifier-form-field-highlighted: hsl(235deg 17% 29% 30%);
   --background-modifier-box-shadow: hsl(235deg 17% 29% 30%);
   --background-modifier-success: hsl(128deg 58% 79%);
-  --background-modifier-error: hsl(0deg 59.7% 71.8%);
+  --background-modifier-error: hsl(342deg 79% 75%);
   --background-modifier-error-rgb: 226 140 140;
-  --background-modifier-error-hover: hsl(0deg 59.7% 60%);
+  --background-modifier-error-hover: hsl(342deg 79% 60%);
   --background-modifier-cover: rgb(0 0 0 80%);
   --text-accent: hsl(128deg 58% 79%);
   --text-accent-hover: hsl(128deg 58% 79%);
-  --text-normal: hsl(220deg 13% 86%);
-  --text-normal-transparent: hsl(220deg 13% 86% / 60%);
-  --text-muted: hsl(220deg 13% 78%);
-  --text-muted-rgb: 101, 123, 131;
-  --text-faint: hsl(220deg 13% 70%);
-  --text-error: hsl(0deg 59.7% 71.8%);
-  --text-error-hover: hsl(0deg 59.7% 60%);
-  --text-highlight-bg: hsl(49.5deg 63.8% 77.3%);
+  --text-normal: hsl(220deg 38% 89%);
+  --text-normal-transparent: hsl(220deg 38% 89% / 60%);
+  --text-muted: hsl(285deg 10% 75%);
+  --text-muted-rgb: 195, 186, 198;
+  --text-faint: hsl(274deg 11% 59%);
+  --text-error: hsl(342deg 79% 75%);
+  --text-error-hover: hsl(342deg 79% 60%);
+  --text-highlight-bg: hsl(41deg 88% 84%);
   --text-highlight-bg-active: hsl(223.2deg 70.1% 79%);
-  --text-selection: hsl(248deg 7% 45%);
+  --text-selection: hsl(254deg 12% 36%);
   --text-on-accent: hsl(254deg 25% 10%);
   --interactive-normal: hsl(171deg 53% 81%);
   --interactive-hover: hsl(171deg 53% 81%);
   --interactive-accent: hsl(128deg 58% 79%);
-  --interactive-accent-rgb: 179, 225, 163;
+  --interactive-accent-rgb: 171, 233, 179;
   --interactive-accent-hover: hsl(128deg 58% 79%);
   --interactive-success: hsl(128deg 58% 79%);
   --scrollbar-active-thumb-bg: rgb(255 255 255 / 20%);
   --scrollbar-bg: rgb(255 255 255 / 5%);
   --scrollbar-thumb-bg: rgb(255 255 255 / 10%);
-  --code-blocks: hsl(2.6deg 55.3% 83.3%);
-  --border: hsl(240deg 14% 14%);
-  --border-inset: hsl(253deg 18% 20%);
-  --active-interaction: hsl(26.6deg 85.8% 77.8%);
+  --code-blocks: hsl(10deg 56% 91%);
+  --border: hsl(249deg 18% 22%);
+  --border-inset: hsl(254deg 12% 36%);
+  --active-interaction: hsl(316deg 72% 86%);
   --highlight-mix-blend-mode: lighten;
-  --internal-buttons: hsl(279deg 70% 83%);
-  --text-selection-opaque: hsl(223.2deg 70.1% 79%);
-  --black-0: hsl(254deg 25% 10%);
-  --lavender: hsl(238deg 100% 89%);
+  --internal-buttons: hsl(24deg 88% 78%);
+  --text-selection-opaque: hsl(238deg 100% 89%);
   --rosewater: hsl(10deg 56% 91%);
-  --maroon: hsl(341deg 57% 75%);
+  --maroon: hsl(349deg 60% 77%);
+  --pink: hsl(316deg 72% 86%);
+  --lavender: hsl(220deg 38% 89%);
+  --black-0: hsl(254deg 25% 10%);
+  --black-1: hsl(249deg 23% 12%);
+  --black-2: hsl(240deg 21% 15%);
+  --black-3: hsl(249deg 18% 22%);
+  --black-4: hsl(254deg 12% 36%);
 }
 
 /*# sourceMappingURL=obsidian.css.map */
