@@ -1,0 +1,355 @@
+/* for mgmeyers Style Settings plugin
+https://github.com/mgmeyers/obsidian-style-settings
+*/
+
+/* @settings
+
+name: Catppuccin Theme
+id: catppuccin
+settings:
+  -
+    id: heading-fonts
+    title: Fonts
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: default-font
+    title: Base Font
+    type: variable-text
+    default: '"Vollkorn", "Gentium Book Basic", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif'
+  -
+    id: not-editor
+    title: Sans Font
+    type: variable-text
+    description: Everything not in the editor/preview window (sidebars, settings, etc.)
+    default: '"Public Sans", "Gill Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;'
+  -
+    id: mermaid-font
+    title: Mermaid Font
+    type: variable-text
+    default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif'
+  -
+    id: font-monospace
+    title: Monospace Font
+    description: Used for codeblocks, tables, etc.
+    type: variable-text
+    default: '"Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace'
+
+  -
+    id: heading-translucency
+    title: Translucency
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: opacity-translucency-light
+    title: Light Theme Translucency
+    type: variable-number-slider
+    default: 0.6
+    min: 0
+    max: 1
+    step: 0.01
+  -
+    id: opacity-translucency-dark
+    title: Dark Theme Translucency
+    type: variable-number-slider
+    default: 0.75
+    min: 0
+    max: 1
+    step: 0.01
+
+  -
+    id: heading-colors-background
+    title: Background Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: background-primary
+    title: Background Primary
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#ffffff'
+    default-dark: 'hsl(240deg 21% 15%)'
+  -
+    id: background-primary-alt
+    title: Background Primary (alt)
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f5f6f8'
+    default-dark: 'hsl(249deg 23% 12%);'
+  -
+    id: background-secondary
+    title: Background Secondary
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f2f3f5'
+    default-dark: 'hsl(240deg 21% 15%);'
+  -
+    id: background-secondary-alt
+    title: Background Secondary (alt)
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#e3e5e8'
+    default-dark: 'hsl(249deg 23% 12%)'
+  -
+    id: background-modifier-border
+    title: 'Background Modifier: Border'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#dddddd'
+    default-dark: 'hsl(249deg 23% 12%)'
+  -
+    id: background-modifier-form-field
+    title: 'Background Modifier: Form Field'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ffffffff'
+    default-dark: 'hsla(235, 17%, 29%, 0.3)'
+  -
+    id: background-modifier-form-field-highlighted
+    title: 'Background Modifier: Form Field (highlighted)'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ffffffff'
+    default-dark: 'hsla(235, 17%, 29%, 0.3)'
+  -
+    id: background-modifier-box-shadow
+    title: 'Background Modifier: Box Shadow'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#0000001a'
+    default-dark: 'hsla(235, 17%, 29%, 0.3)'
+  -
+    id: background-modifier-success
+    title: 'Background Modifier: Success'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#A4E7C3'
+    default-dark: 'hsla(128, 58%, 79%, 1)'
+  -
+    id: background-modifier-error
+    title: 'Background Modifier: Error'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    alt-format:
+      -
+        id: background-modifier-error-rgb
+        format: hsl-values
+    default-light: '#990000'
+    default-dark: 'hsl(342deg 79% 75%)'
+  -
+    id: background-modifier-error-hover
+    title: 'Background Modifier: Error (hover)'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#bb0000'
+    default-dark: 'hsla(342deg 79% 60%, 1)'
+  -
+    id: background-modifier-cover
+    title: 'Background Modifier: Cover'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#000000cc'
+    default-dark: 'hsla(0, 0, 0, .8)'
+
+  -
+    id: heading-colors-text
+    title: Text Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: text-accent
+    title: 'Text: Accent'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#705dcf'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: text-accent-hover
+    title: 'Text: Accent (hover)'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#7a6ae6'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: text-normal
+    title: 'Text: Normal'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#2e3338'
+    default-dark: 'hsl(220deg 38% 89%)'
+  -
+    id: text-muted
+    title: 'Text: Muted'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#888888'
+    default-dark: 'hsl(285deg 10% 75%)'
+  -
+    id: text-faint
+    title: 'Text: Faint'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#999999'
+    default-dark: 'hsl(274deg 11% 59%)'
+  -
+    id: text-error
+    title: 'Text: Error'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#800000'
+    default-dark: 'hsl(342deg 79% 75%)'
+  -
+    id: text-error-hover
+    title: 'Text: Error (hover)'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#990000'
+    default-dark: 'hsl(342deg 79% 60%)'
+  -
+    id: text-highlight-bg
+    title: 'Text: Highlight Background'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ffff0066'
+    default-dark: 'hsla(41, 88%, 84%, 1)'
+  -
+    id: text-highlight-bg-active
+    title: 'Text: Highlight Background (active)'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#ff800066'
+    default-dark: 'hsla(223.2, 70.1%, 79%, 1)'
+  -
+    id: text-selection
+    title: 'Text: Selection Background'
+    type: variable-themed-color
+    opacity: true
+    format: hsl
+    default-light: '#cce6fffc'
+    default-dark: 'hsla(254deg, 12%, 36%, 1)'
+  -
+    id: text-selection
+    title: 'Text: On Accent'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f2f2f2'
+    default-dark: 'hsl(254deg 25% 10%)'
+
+  -
+    id: heading-colors-interactive
+    title: Interactive Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: interactive-normal
+    title: 'Interactive: Normal'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#f2f3f5'
+    default-dark: 'hsl(171deg 53% 81%)'
+  -
+    id: interactive-hover
+    title: 'Interactive: Hover'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#e9e9e9'
+    default-dark: 'hsl(171deg 53% 81%)'
+  -
+    id: interactive-accent
+    title: 'Interactive: Accent'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    alt-format:
+      -
+        id: interactive-accent-rgb
+        format: rgb-values
+    default-light: '#7b6cd9'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: interactive-accent-hover
+    title: 'Interactive: Accent (hover)'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#8273e6'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: interactive-success
+    title: 'Interactive: Success'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: '#197300'
+    default-dark: 'hsl(128deg 58% 79%)'
+  -
+    id: internal-buttons
+    title: 'Button Hover'
+    description: 'The color of buttons when hovered over.'
+    type: variable-themed-color
+    opacity: false
+    format: hsl
+    default-light: 'hsl(24deg 88% 78%)'
+    default-dark: 'hsl(24deg 88% 78%)'
+
+  -
+    id: heading-colors-scrollbar
+    title: Scrollbar Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: scrollbar-bg
+    title: 'Scrollbar: Background'
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: '#0000000d'
+    default-dark: 'rgba(255, 255, 255, 0.05)'
+  -
+    id: scrollbar-thumb-bg
+    title: 'Scrollbar: Thumb Background'
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: '#0000001a'
+    default-dark: 'rgba(255, 255, 255, 0.1)'
+  -
+    id: scrollbar-active-thumb-bg
+    title: 'Scrollbar: Active Thumb Background'
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: '#00000033'
+    default-dark: 'rgba(255, 255, 255, 0.2)'
+
+*/
