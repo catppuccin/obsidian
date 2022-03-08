@@ -1030,6 +1030,17 @@ input[type=number]:hover {
   background-color: var(--background-primary-alt);
 }
 
+.search-input-container {
+  margin: 0;
+  padding: 4px 14px 4px 8px;
+  max-width: fit-content;
+}
+
+.search-input-clear-button {
+  right: 24px;
+  top: 8px;
+}
+
 input.document-search-input,
 input.document-replace-input,
 input.document-search-input.mod-no-match,
