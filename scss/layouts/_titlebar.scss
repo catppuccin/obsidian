@@ -16,6 +16,7 @@ body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
 
 .titlebar-text {
   font-family: var(--not-editor);
+  visibility: hidden;
 }
 
 /* box shadow adjusted from yin yang */
@@ -75,6 +76,22 @@ body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile) .view-actions .vie
   font-family: var(--not-editor);
   font-weight: 400;
   padding: 0 20px 0 16px;
+}
+
+/* Fix for Windows 10 missing close, minimize, maximize */
+.titlebar-inner {
+  color: var(--text-faint);
+}
+
+.titlebar-button-container.mod-left {
+  visibility: hidden;
+}
+
+.titlebar-button.mod-minimize:hover,
+.titlebar-button.mod-maximize:hover,
+.titlebar-button.mod-close:hover {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 // .view-actions a.view-action svg {

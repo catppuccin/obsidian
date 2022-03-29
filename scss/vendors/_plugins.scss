@@ -169,7 +169,7 @@ Can do
   color: var(--internal-buttons);
 }
 
-/* ==KEPANO'S HIDER */
+// /* ==KEPANO'S HIDER */
 
 /* Hide ribbon */
 
@@ -197,20 +197,21 @@ Can do
   background-color: var(--background-primary);
 }
 
-/* Frameless */
-.titlebar-button-container {
-  display: none;
-  background-color: var(--background-primary);
-}
+/* Hides titlebar close, minimize, etc. on Windows */
+// /* Frameless */
+// .titlebar-button-container {
+//   display: none;
+//   background-color: var(--background-primary);
+// }
 
-.titlebar,
-.titlebar-inner {
-  position: fixed;
-  top: 0;
-  height: 12px;
-  background: transparent;
-  color: transparent;
-}
+// .titlebar,
+// .titlebar-inner {
+//   position: fixed;
+//   top: 0;
+//   height: 12px;
+//   background: transparent;
+//   color: transparent;
+// }
 
 .workspace-split.mod-right-split > .workspace-tabs {
   padding: 18px 0 8px 8px;
