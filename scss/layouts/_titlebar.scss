@@ -1,9 +1,7 @@
-@use "../abstracts/mixins";
-
 body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
   color: var(--text-muted);
   font-weight: 400;
-  text-decoration: underline 0.15rem var(--active-interaction);
+  text-decoration: var(--text-decoration-titlebar);
   font-size: var(--large-font-size);
   font-family: var(--not-editor);
   letter-spacing: 1px;
@@ -19,12 +17,10 @@ body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
   visibility: hidden;
 }
 
-/* box shadow adjusted from yin yang */
-
 .view-header {
   height: fit-content;
   align-items: center;
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
   border: none;
 }
 
@@ -33,7 +29,7 @@ body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
 
   > .workspace-leaf:first-of-type:last-of-type .view-header {
     border: 0;
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
     padding: 0;
     background-color: var(--black-1);
   }
@@ -48,19 +44,18 @@ body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile) .view-actions .vie
   color: var(--text-faint);
   display: flex;
   line-height: 1;
-  padding: 6px;
+  padding: var(--padding-medium);
   position: static;
-  margin: 2px;
+  margin: var(--margin-small);
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-
-  @extend %link-transition;
+  border-radius: var(--border-radius-medium);
+  transition: var(--link-transition);
 
   &:hover {
     color: var(--internal-buttons);
     background-color: var(--black-0);
-    box-shadow: 0 0 0 2px inset var(--border);
+    box-shadow: var(--box-shadow-inset-small);
     stroke-width: 4px;
   }
 }
@@ -68,7 +63,7 @@ body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile) .view-actions .vie
 .workspace-leaf.mod-active .view-header {
   border-bottom: 0 solid transparent;
   background-color: var(--background-primary);
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
 }
 
 .view-header-title {

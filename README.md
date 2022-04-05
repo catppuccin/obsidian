@@ -17,7 +17,7 @@
 
 ## About
 
-This theme covers my use case for the app. That said! Part of what makes Obsidian so fantastic is its many features and extended universe of user-created plugins. As time goes on, I would like to add more compatibility between the theme and some of the more popular plugins. Additionally, Obsidian now has a legacy editor. There be dragons, but none too bad: Most of the css was written before the new editor's beta. Currently the theme uses css from [Kepano's Hider](https://github.com/kepano/obsidian-hider) plugin. That will change soon, but you may need to do some cmd/ctrl+p-ing in the meantime if you are used to buttons. (:
+This theme covers my use case for the app. That said! Part of what makes Obsidian so fantastic is its many features and extended universe of user-created plugins. As time goes on, I would like to add more compatibility between the theme and some of the more popular plugins. Additionally, Obsidian now has a legacy editor. There be dragons, but none too bad: Most of the css was written before the new editor's beta. Currently the theme uses some css from [Kepano's Hider](https://github.com/kepano/obsidian-hider) plugin. That will change soon, but you may need to do some cmd/ctrl+p-ing in the meantime if you are used to buttons. (:
 
 ## Usage
 
@@ -35,20 +35,16 @@ Open Obisidian and go to `Preferences` >> `Appearance`, click `Manage` and scrol
 
 ## Development
 
+See the [Releases](https://github.com/catppuccin/obsidian/releases) page for the latest news.
+
 ### The shape of things to come
 
-+ [ ] Style Settings plugin compatibility
++ [x] Style Settings plugin compatibility
++ [x] Behind the scenes cleanup of scss/css
 + [ ] Tweaks to improve theme consistency throughout UI
-+ [ ] Behind the scenes cleanup of scss/css
 + [ ] Mobile version
 
 PRs and constructive feedback more than welcome.
-
-### Known issues
-
-* Bullet indentations under checkboxes are not deep enough
-* Some infrequently seen icons still need to be styled/replaced
-* Legacy editor blockquote is not consistent with the new editor's
 
 ## 💝 Thanks to
 

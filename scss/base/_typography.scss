@@ -77,7 +77,7 @@ body.is-mobile .HyperMD-header-6,
 .CodeMirror-cursor,
 .cm-s-obsidian .cm-cursor,
 .cm-s-obsidian .cm-dropCursor {
-    border-left: var(--rosewater) 1px solid;
+    border-left: var(--border-left-small);
     margin-left: 1px;
 }
 
@@ -141,13 +141,13 @@ ul li {
     border-left-width: 5px;
     background-color: var(--black-1);
     padding: 4px 16px 4px 0;
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
     width: 95%;
 }
 
 .markdown-preview-view blockquote {
-    border-radius: 8px;
-    border: 1px solid var(--rosewater);
+    border-radius: var(--border-radius-medium);
+    border: var(--border-left-small);
     border-left-width: 5px;
     padding: 10px 20px;
     margin-inline-start: 30px;
@@ -162,15 +162,17 @@ ul li {
 .tooltip {
     font-family: var(--not-editor);
     background-color: var(--background-primary-alt);
-    box-shadow:
-        0 2px 4px  hsl(254deg 25% 10%),
-        0 4px 8px  hsl(254deg 25% 10%),
-        0 8px 16px hsl(254deg 25% 10%);
+    box-shadow: var(--box-shadow-large);
 }
 
 .theme-dark .notice {
     background-color: var(--black-0);
     font-family: var(--not-editor);
     color: var(--text-normal);
-    border: 1px solid var(--border);
+    border: var(--default-border);
+}
+
+/* Indentation guide */
+.markdown-source-view.mod-cm6 .cm-indent::before {
+    border-width: 3px;
 }

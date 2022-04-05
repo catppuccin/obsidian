@@ -3,22 +3,17 @@
 /* @use "abstracts/colors"; */
 
 @use "abstracts/fonts";
-
-@use "abstracts/mixins";
-
-@use "base/codeblocks";
+@use "abstracts/variables";
+@use "base/admonitions-and-codeblocks";
 @use "base/links";
 @use "base/typography";
-
 @use "components/icons";
 @use "components/lines";
-
 @use "layouts/input-and-buttons";
 @use "layouts/settings";
 @use "layouts/sidebar";
 @use "layouts/tabs";
 @use "layouts/titlebar";
-
 @use "vendors/plugins";
 @use "vendors/style-settings";
 
@@ -26,7 +21,7 @@
 :root {
     --default-font: "Vollkorn", "Gentium Book Basic", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
     --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
-    --not-editor: "Public Sans", "Gill Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --not-editor: "Public Sans", "Gill Sans", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
     --preview-font: var(--default-font);
     --editor-font: var(--default-font);
     --header-font-pre: var(--preview-font);

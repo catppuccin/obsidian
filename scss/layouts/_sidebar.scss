@@ -1,10 +1,6 @@
-@use "../abstracts/mixins";
-
 .nav-files-container {
     padding: 18px 4px;
     overflow-x: hidden;
-
-    @extend %link-transition;
 }
 
 .nav-folder.mod-root {
@@ -46,13 +42,14 @@
 .nav-folder-title {
     margin: 0;
     padding: 0 15px 0 0;
-    border-radius: 4px;
+    border-radius: var(--border-radius-small);
     border: none;
     display: flex;
     align-items: center;
     font-size: var(--medium-font-size);
     min-width: 0;
     width: fit-content;
+    transition: var(--link-transition);
 }
 
 .nav-folder-children {
@@ -62,8 +59,8 @@
 /* min-width to override app.css and prevent background stretching */
 body:not(.is-grabbing) .nav-file-title.is-active,
 body:not(.is-grabbing) .nav-folder-title.is-active {
-    border-left: solid 6px var(--active-interaction);
-    border-radius: 4px;
+    border-left: var(--border-left);
+    border-radius: var(--border-radius-small);
     min-width: 0%;
     width: fit-content;
     background-color: var(--black-4);
@@ -74,7 +71,7 @@ body:not(.is-grabbing) .nav-folder-title.is-active {
     }
 
     &:hover {
-        border-left: solid 6px var(--black-4);
+        border-left: var(--border-left-hover);
     }
 }
 
@@ -84,9 +81,8 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 .nav-folder-title.is-being-dragged {
     background-color: var(--text-selection-opaque);
     color: var(--text-on-accent);
-    border-radius: 4px;
-
-    @extend %link-transition;
+    border-radius: var(--border-radius-small);
+    transition: var(--link-transition);
 
     & .nav-file-tag {
         background-color: var(--text-on-accent);
@@ -96,14 +92,15 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 .nav-file-title-content.is-being-renamed,
 .nav-folder-title-content.is-being-renamed {
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--border-radius-small);
     background-color: var(--active-interaction);
     color: var(--text-on-accent);
     width: 100%;
     padding: 3px 10px;
 }
 
-/* absolute nightmare to wrangle! use nested ::selector to change highlight */
+/* absolute nightmare to wrangle! use nested ::selector to change
+highlight. #TODO: Fix file type */
 .nav-file-folder-content.is-being-renamed[contenteditable="true"],
 .nav-file-title-content.is-being-renamed[contenteditable="true"] {
     background-color: var(--active-interaction) !important;
@@ -120,13 +117,8 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 .tree-item-flair {
     color: var(--text-normal);
     background-color: transparent;
-    text-underline-offset: 2px;
+    text-underline-offset: var(--text-underline);
     font-family: var(--default-font);
-}
-
-.tree-item-self:hover .tree-item-flair {
-    background-color: var(--text-on-accent);
-    color: var(--text-normal);
 }
 
 .backlink-pane,
@@ -135,22 +127,26 @@ body:not(.is-grabbing) .nav-folder-title:hover,
     font-size: var(--small-font-size);
 }
 
+.tree-item-self:hover .tree-item-flair,
 .tree-item-self.is-clickable:hover,
-.tree-item-self.is-clickable:hover * {
+.tag-pane-tag-count.tree-item.flair:hover .tree-item-flair-outer:hover, {
     background-color: var(--text-selection-opaque);
     color: var(--text-on-accent);
+    transition: var(--link-transition);
+}
+
+/* Otherwise number after tag moves too fast */
+.tree-item-self:hover .tree-item-flair {
+    transition: background-color 4s ease-in;
 }
 
 .search-result-file-matches .search-result-file-match {
     background-color: var(--background-primary-alt);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px inset hsl(254deg 25% 10%);
+    box-shadow: var(--box-shadow-inset-small);
     padding-right: 15px;
 
     &:hover {
-        box-shadow:
-            0 2px 4px inset hsl(254deg 25% 10%),
-            0 4px 8px inset hsl(254deg 25% 10%);
+        box-shadow: var(--box-shadow-inset-small-hover);
     }
 }
 
@@ -158,8 +154,8 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 .search-result-file-match .search-result-file-match-destination-file {
     background-color: hsl(253deg 18% 20%);
     color: var(--text-normal);
-    border: hsl(254deg 12% 36%) 1px solid;
-    text-decoration: 0.15rem underline var(--interactive-accent);
+    border: var(--text-selection) 1px solid;
+    text-decoration: var(--text-decoration-standard);
 
     &:hover {
         background-color: hsl(253deg 18% 20%);

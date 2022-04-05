@@ -1,5 +1,3 @@
-@use "../abstracts/mixins";
-
 /* removes sneaky cm6 underline */
 
 .markdown-source-view.mod-cm6 .cm-underline, {
@@ -11,13 +9,12 @@
 .markdown-preview-view .internal-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
     color: var(--text-normal);
-    text-decoration: 0.15rem underline var(--interactive-accent);
-
-    @extend %link-transition;
+    text-decoration: var(--text-decoration-standard);
+    transition: var(--link-transition);
 
     &:hover {
         color: var(--interactive-accent);
-        text-decoration: 0.15rem underline var(--interactive-accent);
+        text-decoration: var(--text-decoration-standard);
     }
 }
 
@@ -26,10 +23,9 @@
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-url {
     color: var(--text-normal);
-    text-decoration: 0.15rem underline var(--interactive-normal);
+    text-decoration: var(--text-decoration-standard);
     font-weight: 400;
-
-    @extend %link-transition;
+    transition: var(--link-transition);
 
     &:hover {
         color: var(--interactive-hover);
@@ -37,9 +33,8 @@
 }
 
 .cm-list-1.cm-string.cm-url {
-    text-decoration: 0.15rem underline var(--interactive-normal);
-
-    @extend %link-transition;
+    text-decoration: var(--text-decoration-standard);
+    transition: var(--link-transition);
 
     &:hover {
         color: var(--interactive-normal);
@@ -56,7 +51,7 @@
 .markdown-source-view.mod-cm6 .is-unresolved,
 .markdown-preview-view .internal-link.is-unresolved {
     opacity: 1;
-    text-decoration: 0.15rem underline var(--maroon);
+    text-decoration: var(--text-decoration-broken-link);
 
     &:hover {
         color: var(--maroon);
@@ -65,9 +60,8 @@
 
 a.external-link {
     color: var(--text-normal);
-    text-decoration: 0.15em var(--interactive-normal) underline;
-
-    @extend %link-transition;
+    text-decoration: var(--text-decoration-external-link);
+    transition: var(--link-transition);
 
     &:hover {
         color: var(--interactive-hover);
@@ -77,8 +71,7 @@ a.external-link {
 a {
     color: var(--text-normal);
     text-decoration-color: var(--interactive-normal);
-
-    @extend %link-transition;
+    transition: var(--link-transition);
 
     &:hover {
         color: var(--interactive-hover);
@@ -89,12 +82,9 @@ a {
 
 .popover {
     background-color: var(--background-primary);
-    border: 1px solid var(--background-primary-alt);
-    box-shadow:
-        0 0 4px hsl(254deg 25% 10%),
-        0 0 8px hsl(254deg 25% 10%),
-        0 0 16px hsl(254deg 25% 10%);
-    border-radius: 6px;
+    border: var(--border-default);
+    box-shadow: var(--box-shadow-large);
+    border-radius: var(--border-radius-medium);
     padding: 15px 20px 10px;
     position: relative;
 }
@@ -104,19 +94,17 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    padding: 6px;
-    margin: 2px;
+    border-radius: var(--border-radius-medium);
+    padding: var(--padding-medium);
+    margin: var(--margin-small);
     color: var(--text-faint);
-
-    @extend %link-transition;
-
+    transition: var(--link-transition);
     background-color: var(--background-primary);
 
     &:hover {
         color: var(--internal-buttons);
         background-color: var(--black-0);
-        border-radius: 8px;
-        box-shadow: 0 0 0 2px var(--border);
+        border-radius: var(--border-radius-medium);
+        box-shadow: var(--box-shadow-small);
     }
 }

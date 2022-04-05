@@ -1,9 +1,7 @@
-@use "../abstracts/mixins";
-
 /* ==63 CALENDAR!== */
 
 #calendar-container * > * {
-  @extend %link-transition;
+  transition: var(--link-transition);
 }
 
 #calendar-container .active,
@@ -20,9 +18,7 @@
 
 #calendar-container .active.day:hover {
   background-color: var(--background-primary);
-  box-shadow:
-    0 2px 2px hsl(254deg 25% 10%),
-    0 4px 4px hsl(254deg 25% 10%);
+  box-shadow: var(--box-shadow-small);
   color: var(--text-normal);
   border-radius: 8px;
 }
@@ -36,14 +32,11 @@
   font-size: var(--normal-font-size);
   font-family: var(--not-editor);
   background-color: var(--background-primary-alt);
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
   padding: 4px 8px;
   margin: 0 8px;
   overflow: hidden;
-  box-shadow:
-    0 0 4px inset hsl(254deg 25% 10%),
-    0 0 8px inset hsl(254deg 25% 10%),
-    0 0 16px inset hsl(254deg 25% 10%);
+  box-shadow: var(--box-shadow-inset-large);
 }
 
 #calendar-container th {
@@ -61,9 +54,7 @@
 #calendar-container .week-num:hover,
 #calendar-container .day:hover {
   background-color: var(--background-primary);
-  box-shadow:
-    0 2px 2px hsl(254deg 25% 10%),
-    0 4px 4px hsl(254deg 25% 10%);
+  box-shadow: var(--box-shadow-small);
   color: var(--internal-buttons);
   border-radius: 8px;
 }
@@ -181,7 +172,7 @@ Can do
 .side-dock-ribbon-action {
   margin: 2px;
   padding: 6px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
 
   &:hover {
     color: var(--internal-buttons);

@@ -1,0 +1,69 @@
+/* Admonitions */
+
+/* TODO: Remove border-radius from admonitions
+being edited */
+
+.markdown-source-view.mod-cm6 .cm-embed-block {
+    padding: var(--padding-medium);
+    border-radius: var(--border-radius-medium);
+}
+
+.callout-title {
+    color: var(--rosewater);
+}
+
+.callout {
+    /* uses rgb of catppuccin red */
+    --callout-color: 242, 141, 171;
+
+    .callout-title {
+        border-top-right-radius: var(--border-radius-medium);
+        border-bottom-right-radius: var(--border-radius-medium);
+    }
+
+    border-radius: var(--border-radius-medium);
+    border-bottom: var(--border-default);
+}
+
+.markdown-source-view.mod-cm6 .cm-embed-block:hover {
+    /* TODO: remove or adjust border/move effect on hover */
+}
+
+.markdown-source-view.mod-cm6 .edit-block-button {
+    background-color: var(--internal-buttons);
+    box-shadow: var(--box-shadow-small);
+    color: var(--text-on-accent);
+    border-radius: var(--border-radius-medium);
+}
+
+/* Codeblocks */
+
+/* div. from app.css */
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+    border-left: var(--border-side-misc);
+    border-right: var(--border-side-misc);
+    padding-left: 2rem;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+    border-top: var(--border-side-misc);
+    border-top-left-radius: var(--border-radius-medium);
+    border-top-right-radius: var(--border-radius-medium);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    border-bottom: var(--border-side-misc);
+    border-bottom-left-radius: var(--border-radius-medium);
+    border-bottom-right-radius: var(--border-radius-medium);
+}
+
+.cm-s-obsidian .HyperMD-codeblock-begin,
+.cm-s-obsidian .HyperMD-codeblock-end {
+    color: var(--text-accent);
+}
+
+.markdown-preview-view pre {
+    border-radius: var(--border-radius-medium);
+    padding-left: 25px;
+}

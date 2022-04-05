@@ -1,5 +1,3 @@
-@use "../abstracts/mixins";
-
 .modal.mod-settings {
     font-family: var(--not-editor);
 }
@@ -38,8 +36,7 @@ input[type="range"]::-webkit-slider-thumb {
 .vertical-tab-nav-item:hover:not(.vertical-tab-nav-item.is-active) {
     background-color: var(--text-selection-opaque);
     color: var(--text-on-accent);
-
-    @extend %link-transition;
+    transition: var(--link-transition);
 }
 
 .vertical-tab-header,
@@ -99,68 +96,62 @@ input[type="range"]::-webkit-slider-thumb {
     .community-theme-info,
     .community-theme-downloads {
         color: var(--text-muted);
-
     }
 
     button {
-    color: var(--text-muted);
-    background-color: var(--black-0);
-      &:hover {
-        background-color: var(--internal-buttons);
-        color: var(--text-on-accent);
+        color: var(--text-muted);
+        background-color: var(--black-0);
+
+        &:hover {
+            background-color: var(--internal-buttons);
+            color: var(--text-on-accent);
         }
     }
 }
 
 .community-theme {
     background-color: var(--black-2);
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    border: var(--border-default);
+    border-radius: var(--border-radius-medium);
 
     .community-theme-info .clickable-icon {
-    padding: 0;
-    margin-right: 2px;
-    height: min-content;
+        padding: 0;
+        margin-right: 2px;
+        height: min-content;
     }
 }
 
 /* from app.css */
 .community-theme-remove-button {
-  vertical-align: middle;
-  color: var(--text-faint);
-  position: absolute;
-  background: inherit;
-  padding: 3px 5px 1px 5px;
-  border-radius: 8px;
+    vertical-align: middle;
+    color: var(--text-faint);
+    position: absolute;
+    background: inherit;
+    padding: 3px 5px 1px;
+    border-radius: var(--border-radius-medium);
 }
-
 
 .clickable-icon {
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
     line-height: 0;
-    margin: 2px;
-    padding: 6px;
+    margin: var(--margin-small);
+    padding: var(--padding-medium);
 
-  &:hover {
-    color: var(--internal-buttons);
-    background-color: var(--black-0);
-    box-shadow: 0 0 0 2px inset var(--border);
-    stroke-width: 4px;
-  }
+    &:hover {
+        color: var(--internal-buttons);
+        background-color: var(--black-0);
+        box-shadow: 0 0 0 2px inset var(--border);
+        stroke-width: 4px;
+    }
 }
-
-
 
 /* translatex, y from Só Erick Mesmo  */
 .checkbox-container {
     cursor: pointer;
     background-color: var(--black-0);
     border: 1px solid hsl(235deg 17% 29% / 60%);
-    box-shadow:
-        0 2px 2px inset hsl(254deg 25% 10%),
-        0 4px 4px inset hsl(254deg 25% 10%),
-        0 8px 8px inset hsl(254deg 25% 10%);
-    border-radius: 3px;
+    box-shadow: var(--box-shadow-inset-large);
+    border-radius: var(--border-radius-small);
     display: inline-block;
     height: 22px;
     position: relative;
@@ -171,11 +162,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 .checkbox-container.is-enabled {
     background-color: var(--black-0);
-    box-shadow:
-        0 2px 4px inset hsl(254deg 25% 10%),
-        0 4px 8px inset hsl(254deg 25% 10%),
-        0 8px 16px inset hsl(254deg 25% 10%);
-    border-radius: 4px;
+    box-shadow: var(--box-shadow-inset-large);
+    border-radius: var(--border-radius-small);
 }
 
 .checkbox-container.is-enabled::after {
@@ -210,7 +198,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0;
     padding: 0;
     vertical-align: middle;
-    border-radius: 3px;
+    border-radius: var(--border-radius-small);
     transition: transform 0.3s ease-in-out, width 0.2s ease-in-out, left 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
     left: 0;
     transform: translate3d(3px, 0, 0);

@@ -1,0 +1,115 @@
+:root {/* Dark theme colors, adjust in _base.scss for now. */
+    --background-primary: hsl(240deg 21% 15%);
+    --background-primary-alt: hsl(249deg 23% 12%);
+    --background-secondary: hsl(240deg 21% 15%);
+    --background-secondary-alt: hsl(249deg 23% 12%);
+    --background-modifier-border: hsl(249deg 23% 12%);
+    --background-modifier-form-field: hsl(235deg 17% 29% 30%);
+    --background-modifier-form-field-highlighted: hsl(235deg 17% 29% 30%);
+    --background-modifier-box-shadow: hsl(235deg 17% 29% 30%);
+    --background-modifier-success: hsl(128deg 58% 79%);
+    --background-modifier-error: hsl(342deg 79% 75%);
+    --background-modifier-error-rgb: 226 140 140;
+    --background-modifier-error-hover: hsl(342deg 79% 60%);
+    --background-modifier-cover: rgb(0 0 0 80%);
+    --text-accent: hsl(128deg 58% 79%);
+    --text-accent-hover: hsl(128deg 58% 79%);
+    --text-normal: hsl(220deg 38% 89%);
+    --text-normal-transparent: hsl(220deg 38% 89% / 60%);
+    --text-muted: hsl(285deg 10% 75%);
+    --text-muted-rgb: 195, 186, 198;
+    --text-faint: hsl(274deg 11% 59%);
+    --text-error: hsl(342deg 79% 75%);
+    --text-error-hover: hsl(342deg 79% 60%);
+    --text-highlight-bg: hsl(41deg 88% 84%);
+    --text-highlight-bg-active: hsl(223.2deg 70.1% 79%);
+    --text-selection: hsl(254deg 12% 36%);
+    --text-on-accent: hsl(254deg 25% 10%);
+    --interactive-normal: hsl(171deg 53% 81%);
+    --interactive-hover: hsl(171deg 53% 81%);
+    --interactive-accent: hsl(128deg 58% 79%);
+    --interactive-accent-rgb: 171, 233, 179;
+    --interactive-accent-hover: hsl(128deg 58% 79%);
+    --interactive-success: hsl(128deg 58% 79%);
+    --scrollbar-active-thumb-bg: rgb(255 255 255 / 20%);
+    --scrollbar-bg: rgb(255 255 255 / 5%);
+    --scrollbar-thumb-bg: rgb(255 255 255 / 10%);
+    --code-blocks: hsl(10deg 56% 91%);
+    --border: hsl(249deg 18% 22%);
+    --border-inset: hsl(254deg 12% 36%);
+    --active-interaction: hsl(316deg 72% 86%);
+    --highlight-mix-blend-mode: lighten;
+    --internal-buttons: hsl(24deg 88% 78%);
+    --text-selection-opaque: hsl(238deg 100% 89%);
+    --rosewater: hsl(9deg 57% 91%);
+    --maroon: hsl(349deg 61% 77%);
+    --pink: hsl(316deg 72% 86%);
+    --lavender: hsl(220deg 38% 89%);
+    --black-0: hsl(254deg 25% 10%);
+    --black-1: hsl(249deg 23% 12%);
+    --black-2: hsl(240deg 21% 15%);
+    --black-3: hsl(249deg 18% 22%);
+    --black-4: hsl(254deg 12% 36%);
+
+    /* Link effects */
+    --link-transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+
+    /* Box shadows */
+    --box-shadow-inset-small: 0 2px 4px inset hsl(254deg 25% 10%);
+    --box-shadow-inset-small-hover:
+        0 2px 4px inset hsl(254deg 25% 10%),
+        0 4px 8px inset hsl(254deg 25% 10%);
+    --box-shadow-inset-large:
+        0 2px 4px inset hsl(254deg 25% 10%),
+        0 4px 8px inset hsl(254deg 25% 10%),
+        0 8px 16px inset hsl(254deg 25% 10%);
+    --box-shadow-large:
+        0 0 4px hsl(254deg 25% 10%),
+        0 0 8px hsl(254deg 25% 10%),
+        0 0 16px hsl(254deg 25% 10%);
+    --box-shadow-small:
+        0 2px 2px hsl(254deg 25% 10%),
+        0 4px 4px hsl(254deg 25% 10%);
+    --box-shadow-small-hover:
+        0 2px 2px hsl(254deg 25% 10%),
+        0 4px 4px hsl(254deg 25% 10%);
+
+    /* Text */
+    --text-underline: 2px;
+    --text-decoration-standard: 0.15rem underline var(--interactive-accent);
+    --text-decoration-external-link: 0.15em underline var(--interactive-normal);
+    --text-decoration-broken-link: 0.15rem underline var(--maroon);
+    --text-decoration-titlebar: 0.15rem underline var(--active-interaction);
+
+    /* Padding */
+    --padding-small: 3px;
+    --padding-medium: 6px;
+    --padding-large: 10px;
+
+    /* Margin */
+    --margin-small: 2px;
+
+    /* Borders */
+    --border-default: hsl(249deg 18% 22%) 1px solid;
+    --border-left-small: 1px solid var(--rosewater);
+    --border-left: solid 6px var(--active-interaction);
+    --border-left-hover: solid 6px var(--black-4);
+    --border-side-misc: 0.15rem solid var(--border);
+
+    /* Border radius */
+    --border-radius-small: 4px;
+    --border-radius-medium: 8px;
+
+    /* Indentation guide */
+    .markdown-source-view.mod-cm6 .cm-indent::before {
+        --indentation-guide: var(--black-3);
+    }
+
+    /* Icons */
+    --icon-height-small: 16px;
+    --icon-width-small: 16px;
+    --icon-height-medium: 20px;
+    --icon-width-medium: 20px;
+    --icon-background-size: 16px 16px;
+    --icon-margin-right: 8px;
+}

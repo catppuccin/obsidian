@@ -1,11 +1,10 @@
-@use "../abstracts/mixins";
-
-/* There is a lot of weird stuff here that might seem unnecessary but most of it is to cover up small areas around the buttons in side panels. */
+/* There is a lot of weird stuff here that might seem
+unnecessary but most of it is to cover up small areas around
+the buttons in side panels. */
 
 .workspace-tabs {
   background-color: var(--background-primary);
-
-  @extend %link-transition;
+  transition: var(--link-transition);
 }
 
 .workspace-tab-container-before,
@@ -19,17 +18,13 @@
   line-height: 0;
   padding: 0 20px 4px 8px;
   margin-bottom: 0;
-
-  @extend %link-transition;
+  transition: var(--link-transition);
 }
 
 .workspace-tab-container-inner {
-  border-radius: 8px;
-  border: var(--border) 1px solid;
-  box-shadow:
-    0 2px 4px inset hsl(254deg 25% 10%),
-    0 4px 8px inset hsl(254deg 25% 10%),
-    0 8px 16px inset hsl(254deg 25% 10%);
+  border-radius: var(--border-radius-medium);
+  border: var(--border-default);
+  box-shadow: var(--box-shadow-inset-large);
   background-color: var(--background-primary-alt);
 }
 
@@ -39,11 +34,9 @@
 
   .workspace-tab-header-inner {
     background-color: var(--background-primary);
-    box-shadow:
-      0 2px 2px hsl(254deg 25% 10%),
-      0 4px 4px hsl(254deg 25% 10%);
+    box-shadow: var(--box-shadow-small);
     color: var(--active-interaction);
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
 
     &:hover {
       color: var(--text-normal);
@@ -69,26 +62,21 @@
   &:hover {
     background-color: var(--background-primary);
     color: var(--internal-buttons);
-    box-shadow:
-      0 2px 2px hsl(254deg 25% 10%),
-      0 4px 4px hsl(254deg 25% 10%);
+    box-shadow: var(--box-shadow-small);
   }
 }
 
 .workspace-tab-header-inner {
-  border-radius: 8px;
-  padding: 6px;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-medium);
   margin: 5px;
   height: fit-content;
-
-  @extend %link-transition;
+  transition: var(--link-transition);
 
   &:hover {
     background-color: var(--background-primary);
     color: var(--internal-buttons);
-    box-shadow:
-      0 2px 2px hsl(254deg 25% 10%),
-      0 4px 4px hsl(254deg 25% 10%);
+    box-shadow: var(--box-shadow-small) -hover;
   }
 }
 
@@ -107,27 +95,22 @@
 
   & .nav-buttons-container > .nav-action-button {
     color: var(--text-muted);
-    padding: 6px;
-    margin: 2px;
-
-    @extend %link-transition;
+    padding: var(--padding-medium);
+    margin: var(--margin-small);
+    transition: var(--link-transition);
 
     &:hover {
       background-color: var(--background-primary);
       color: var(--internal-buttons);
-      box-shadow:
-        0 2px 2px hsl(254deg 25% 10%),
-        0 4px 4px hsl(254deg 25% 10%);
+      box-shadow: var(--box-shadow-small) -hover;
     }
   }
 
   & .nav-buttons-container > .nav-action-button.is-active {
     background-color: var(--background-primary);
-    box-shadow:
-      0 2px 2px hsl(254deg 25% 10%),
-      0 4px 4px hsl(254deg 25% 10%);
+    box-shadow: var(--box-shadow-small);
     color: var(--active-interaction);
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
 
     &:hover {
       color: var(--text-normal);
@@ -136,13 +119,10 @@
 }
 
 .workspace-tabs .nav-buttons-container {
-  border-radius: 8px;
-  padding: 3px;
-  border: var(--border) 1px solid;
-  box-shadow:
-    0 2px 4px inset hsl(254deg 25% 10%),
-    0 4px 8px inset hsl(254deg 25% 10%),
-    0 8px 16px inset hsl(254deg 25% 10%);
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-small);
+  border: var(--border-default);
+  box-shadow: var(--box-shadow-inset-large);
   background-color: var(--background-primary-alt);
 }
 
@@ -150,42 +130,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  padding: 6px;
-  margin: 2px;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-medium);
+  margin: var(--margin-small);
   color: var(--text-faint);
-
-  @extend %link-transition;
-
+  transition: var(--link-transition);
   background-color: var(--background-primary);
 
   &:hover {
     color: var(--internal-buttons);
     background-color: var(--black-0);
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
     box-shadow: 0 0 0 2px var(--border);
   }
 }
 
 .embedded-backlinks .nav-header .nav-buttons-container {
-  border-radius: 8px;
-  border: var(--border) 1px solid;
-  box-shadow:
-    0 2px 4px inset hsl(254deg 25% 10%),
-    0 4px 8px inset hsl(254deg 25% 10%),
-    0 8px 16px inset hsl(254deg 25% 10%);
+  border-radius: var(--border-radius-medium);
+  border: var(--border-default);
+  box-shadow: var(--box-shadow-inset-large);
   background-color: var(--background-primary-alt);
   margin: auto;
   width: fit-content;
-  padding: 3px;
+  padding: var(--padding-small);
 
   .nav-action-button.is-active {
     background-color: var(--background-primary);
-    box-shadow:
-      0 2px 2px hsl(254deg 25% 10%),
-      0 4px 4px hsl(254deg 25% 10%);
+    box-shadow: var(--box-shadow-small);
     color: var(--active-interaction);
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
 
     &:hover {
       color: var(--text-normal);
@@ -194,16 +167,14 @@
 
   .nav-action-button {
     color: var(--text-muted);
-    padding: 6px;
-    margin: 2px;
+    padding: var(--padding-medium);
+    margin: var(--margin-small);
     line-height: 0;
 
     &:hover {
       background-color: var(--background-primary);
       color: var(--internal-buttons);
-      box-shadow:
-        0 2px 2px hsl(254deg 25% 10%),
-        0 4px 4px hsl(254deg 25% 10%);
+      box-shadow: var(--box-shadow-small) -hover;
     }
   }
 }
