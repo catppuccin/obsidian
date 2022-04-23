@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     vertical-align: -3px;
     height: var(--icon-height-small);
-    height: var(--icon-width-small);
+    width: var(--icon-width-small);
 
     &:hover {
         color: var(--text-on-accent);
@@ -30,7 +30,7 @@
     content: "";
     font-size: 1rem;
     height: var(--icon-height-small);
-    height: var(--icon-width-small);
+    width: var(--icon-width-small);
     background-size: var(--icon-background-size);
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z' /%3E%3C/svg%3E");
 }
@@ -42,7 +42,7 @@
     font-size: 1rem;
     vertical-align: -3px;
     height: var(--icon-height-small);
-    height: var(--icon-width-small);
+    width: var(--icon-width-small);
     background-size: var(--icon-background-size);
 
     &:hover {
