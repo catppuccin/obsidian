@@ -42,6 +42,12 @@
     --bold-weight: 600;
 }
 
+body {
+    --font-text-theme: "Vollkorn", "Gentium Book Basic", Inter, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+    --font-interface-theme: "Public Sans", "Gill Sans", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+    --font-monospace-theme: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
+}
+
 .theme-dark {
     --background-primary: hsl(240deg 21% 15%);
     --background-primary-alt: hsl(249deg 23% 12%);
