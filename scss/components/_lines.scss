@@ -22,7 +22,7 @@
     background-color: var(--text-on-accent);
 
     &:hover {
-        background-color: var(--pink);
+        border: 2px solid hsl(217deg 92% 76%);
     }
 }
 
@@ -36,7 +36,7 @@
     background-color: var(--text-on-accent);
 
     &:hover {
-        background-color: var(--pink);
+        border: hsl(217deg 92% 76%);
     }
 }
 
@@ -44,7 +44,7 @@
     background-color: var(--text-on-accent);
 
     &:hover {
-        background-color: var(--pink);
+        border: 2px solid hsl(217deg 92% 76%);
     }
 }
 
