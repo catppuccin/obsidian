@@ -57,6 +57,10 @@ input[type="range"]::-webkit-slider-thumb {
     border-top: 2px solid var(--background-modifier-border);
 }
 
+.setting-item.setting-item-heading {
+    padding: var(--padding-x-large) 0 var(--padding-large) 0;
+}
+
 .horizontal-tab-nav-item.is-active,
 .vertical-tab-nav-item.is-active {
     background-color: var(--background-modifier-border);

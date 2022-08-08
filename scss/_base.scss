@@ -98,5 +98,17 @@ body {
     --black-2: hsl(240deg 21% 15%);
     --black-3: hsl(249deg 18% 22%);
     --black-4: hsl(254deg 12% 36%);
+
+    /* from _mocha.scss, for reference */
+    --subtext1: hsl(227deg 35% 80%);
+    --subtext0: hsl(228deg 24% 72%);
+    --overlay2: hsl(228deg 17% 64%);
+    --overlay1: hsl(230deg 13% 55%);
     --overlay0: hsl(231deg 11% 47%);
+    --surface2: hsl(233deg 12% 39%);
+    --surface1: hsl(234deg 13% 31%);
+    --surface0: hsl(237deg 16% 23%);
+    --base: hsl(240deg 21% 15%);
+    --mantle: hsl(240deg 21% 12%);
+    --crust: hsl(240deg 23% 9%);
 }
