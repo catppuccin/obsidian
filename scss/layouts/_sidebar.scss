@@ -118,6 +118,11 @@ highlight. #TODO: Fix file type */
     color: var(--text-on-accent);
 }
 
+.workspace-leaf.mod-active .nav-file.has-focus {
+    border: 0;
+    background-color: hsl(233deg 12% 39%);
+}
+
 .tree-item-flair {
     color: var(--text-normal);
     background-color: transparent;
