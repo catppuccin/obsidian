@@ -1,3 +1,9 @@
+/* Tables */
+.markdown-rendered th,
+.markdown-rendered td {
+    border: 1px solid hsl(233deg 12% 39%);
+}
+
 .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split {
     min-width: 15em;
     margin: 0 8px;
