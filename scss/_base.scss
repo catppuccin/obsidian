@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@use "abstracts/variables";
 @use "abstracts/fonts";
+@use "abstracts/variables";
 @use "base/admonitions-and-codeblocks";
 @use "base/links";
 @use "base/typography";
@@ -44,8 +44,6 @@ body {
     --font-interface-theme: "Public Sans", "Gill Sans", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
     --font-monospace-theme: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
 }
-
-
 
 .theme-dark,
 .theme-light {
