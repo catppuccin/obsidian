@@ -1,78 +1,26 @@
 @charset "UTF-8";
-:root { /* Dark theme colors, adjust in _base.scss for now. */
-  --background-primary: hsl(240deg 21% 15%);
-  --background-primary-alt: hsl(240deg 23% 9%);
-  --background-secondary: hsl(240deg 21% 15%);
-  --background-secondary-alt: hsl(240deg 23% 9%);
-  --background-modifier-border: hsl(240deg 23% 9%);
-  --background-modifier-form-field: hsl(235deg 17% 29% 30%);
-  --background-modifier-form-field-highlighted: hsl(235deg 17% 29% 30%);
-  --background-modifier-box-shadow: hsl(235deg 17% 29% 30%);
-  --background-modifier-success: hsl(115deg 54% 76%);
-  --background-modifier-error: hsl(343deg 81% 75%);
-  --background-modifier-error-rgb: 226 140 140;
-  --background-modifier-error-hover: hsl(343deg 81% 60%);
-  --background-modifier-cover: rgb(0 0 0 80%);
-  --text-accent: hsl(115deg 54% 76%);
-  --text-accent-hover: hsl(115deg 54% 76%);
-  --text-normal: hsl(226deg 64% 88%);
-  --text-normal-transparent: hsl(220deg 38% 89% / 60%);
-  --text-muted: hsl(227deg 35% 80%);
-  --text-muted-rgb: 166, 173, 201;
-  --text-faint: hsl(228deg 24% 72%);
-  --text-error: hsl(342deg 79% 75%);
-  --text-error-hover: hsl(342deg 79% 60%);
-  --text-highlight-bg: hsl(41deg 86% 83%);
-  --text-highlight-bg-active: hsl(232deg 97% 85%);
-  --text-selection: hsl(233deg 12% 39%);
-  --text-on-accent: hsl(240deg 21% 12%);
-  --interactive-normal: hsl(170deg 57% 73%);
-  --interactive-hover: hsl(170deg 57% 73%);
-  --interactive-accent: hsl(115deg 54% 76%);
-  --interactive-accent-rgb: 166, 227, 161;
-  --interactive-accent-hover: hsl(115deg 54% 76%);
-  --interactive-success: hsl(115deg 54% 76%);
-  --scrollbar-active-thumb-bg: rgb(255 255 255 / 20%);
-  --scrollbar-bg: rgb(255 255 255 / 5%);
-  --scrollbar-thumb-bg: rgb(255 255 255 / 10%);
-  --code-blocks: hsl(10deg 56% 91%);
-  --border: hsl(249deg 18% 22%);
-  --border-inset: hsl(254deg 12% 36%);
-  --active-interaction: hsl(316deg 72% 86%);
-  --highlight-mix-blend-mode: lighten;
-  --internal-buttons: hsl(23deg 92% 75%);
-  --text-selection-opaque: hsl(232deg 97% 85%);
-  --rosewater: hsl(10deg 56% 91%);
-  --maroon: hsl(350deg 65% 77%);
-  --pink: hsl(316deg 72% 86%);
-  --lavender: hsl(232deg 97% 85%);
-  --black-0: hsl(254deg 25% 10%);
-  --black-1: hsl(249deg 23% 12%);
-  --black-2: hsl(240deg 21% 15%);
-  --black-3: hsl(249deg 18% 22%);
-  --black-4: hsl(254deg 12% 36%);
-  --overlay0: hsl(231deg 11% 47%);
+:root {
   /* Link effects */
   --link-transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
   /* Box shadows */
   --box-shadow-inset-small: 0 2px 4px inset hsl(254deg 25% 10%);
   --box-shadow-inset-small-hover:
-      0 2px 4px inset hsl(254deg 25% 10%),
-      0 4px 8px inset hsl(254deg 25% 10%);
+      0 2px 4px inset hsl(240deg 23% 9%),
+      0 4px 8px inset hsl(240deg 23% 9%);
   --box-shadow-inset-large:
-      0 2px 4px inset hsl(254deg 25% 10%),
-      0 4px 8px inset hsl(254deg 25% 10%),
-      0 8px 16px inset hsl(254deg 25% 10%);
+      0 2px 4px inset hsl(240deg 23% 9%),
+      0 4px 8px inset hsl(240deg 23% 9%),
+      0 8px 16px inset hsl(240deg 23% 9%);
   --box-shadow-large:
-      0 0 4px hsl(254deg 25% 10%),
-      0 0 8px hsl(254deg 25% 10%),
-      0 0 16px hsl(254deg 25% 10%);
+      0 0 4px hsl(240deg 23% 9%),
+      0 0 8px hsl(240deg 23% 9%),
+      0 0 16px hsl(240deg 23% 9%);
   --box-shadow-small:
-      0 2px 2px hsl(254deg 25% 10%),
-      0 4px 4px hsl(254deg 25% 10%);
+      0 2px 2px hsl(240deg 23% 9%),
+      0 4px 4px hsl(240deg 23% 9%);
   --box-shadow-small-hover:
-      0 2px 2px hsl(254deg 25% 10%),
-      0 4px 4px hsl(254deg 25% 10%);
+      0 2px 2px hsl(240deg 23% 9%),
+      0 4px 4px hsl(240deg 23% 9%);
   /* Text */
   --text-underline: 2px;
   --text-decoration-standard: 0.15rem underline var(--interactive-accent);
@@ -1148,7 +1096,7 @@ input[type=search],
 input[type=email],
 input[type=password],
 input[type=number] {
-  background-color: var(--background-primary-alt);
+  background-color: var(--black-1);
   border: 1px solid var(--border);
   border-radius: var(--border-radius-medium);
   font-family: var(--not-editor);
@@ -1172,7 +1120,7 @@ input[type=email]:hover,
 input[type=password]:hover,
 input[type=number]:hover {
   border: 1px solid var(--text-selection-opaque);
-  background-color: var(--background-primary-alt);
+  background-color: var(--black-1);
 }
 
 .search-input-container {
@@ -1194,10 +1142,15 @@ input.document-replace-input.mod-no-match {
 }
 
 .document-search-container {
-  border-radius: var(--border-radius-medium);
   height: fit-content;
+  border-radius: var(--border-radius-medium);
   background-color: var(--background-primary-alt);
   box-shadow: 0 -2px 2px hsl(254deg, 25%, 10%);
+}
+
+input.document-search-input.mod-no-match,
+input.document-replace-input.mod-no-match {
+  background-color: var(--black-1);
 }
 
 .document-search-buttons {
@@ -1553,9 +1506,25 @@ input[type=range]::-webkit-slider-thumb {
   border: none;
 }
 
+.workspace-tabs .workspace-leaf {
+  border: none;
+}
+
 .nav-files-container {
   padding: 18px 4px;
   overflow-x: hidden;
+}
+
+.tree-item-self.is-clickable {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  text-transform: lowercase;
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
+  padding: 3px 10px;
+  border: none;
 }
 
 .nav-folder.mod-root {
@@ -1751,6 +1720,8 @@ the buttons in side panels. */
 }
 
 .workspace-tab-container-inner {
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: var(--border-radius-medium);
   border: var(--border-default);
   box-shadow: var(--box-shadow-inset-large);
@@ -1931,9 +1902,9 @@ body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
 }
 .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
   border: 0;
-  border-radius: var(--border-radius-medium);
+  border-radius: 0;
   padding: 0;
-  background-color: var(--black-1);
+  background-color: var(--crust);
 }
 
 /* no idea what is supposed to go here right now  */
@@ -1967,10 +1938,13 @@ body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile) .view-actions .vie
 }
 
 .view-header-title {
+  color: var(--text-muted);
+  font-weight: 400;
+  text-decoration: var(--text-decoration-titlebar);
   font-size: var(--large-font-size);
   font-family: var(--not-editor);
-  font-weight: 400;
-  padding: 0 20px 0 16px;
+  letter-spacing: 1px;
+  padding-left: 1rem;
 }
 
 /* Fix for Windows 10 missing close, minimize, maximize */
