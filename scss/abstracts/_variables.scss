@@ -37,6 +37,7 @@
 
     /* Margin */
     --margin-small: 2px;
+    --margin-medium: 6px;
 
     /* Borders */
     --border-default: hsl(249deg 18% 22%) 1px solid;
@@ -48,11 +49,6 @@
     /* Border radius */
     --border-radius-small: 4px;
     --border-radius-medium: 8px;
-
-    /* Indentation guide */
-    .markdown-source-view.mod-cm6 .cm-indent::before {
-        --indentation-guide: var(--black-3);
-    }
 
     /* Icons */
     --icon-height-small: 16px;

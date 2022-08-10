@@ -110,6 +110,11 @@ body.is-mobile .HyperMD-header-6,
     padding-right: 0.2px;
 }
 
+.markdown-source-view.mod-cm6 .list-bullet {
+    margin-right: var(--margin-small);
+    color: var(--lavender);
+}
+
 span.list-bullet {
     padding-right: 0;
     font-size: 22px;
@@ -121,8 +126,13 @@ span.list-bullet {
     color: var(--text-normal-transparent);
 }
 
-.markdown-source-view.mod-cm6 .cm-hmd-list-indent {
-    padding-left: 0;
+.cm-hmd-list-indent .cm-indent {
+    tab-size: 8;
+}
+
+.mod-cm6 .HyperMD-list-line .list-bullet::after,
+.mod-cm6 span.list-bullet::after {
+    left: -2px;
 }
 
 ul li {
@@ -174,5 +184,7 @@ ul li {
 
 /* Indentation guide */
 .markdown-source-view.mod-cm6 .cm-indent::before {
-    border-width: 3px;
+    border-color: var(--lavender);
+    opacity: 0.6;
+    border-right-width: 2px;
 }
