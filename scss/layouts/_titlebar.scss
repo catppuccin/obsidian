@@ -29,9 +29,9 @@ body:not(.is-mobile) .workspace-leaf.mod-active .view-header-title {
 
   > .workspace-leaf:first-of-type:last-of-type .view-header {
     border: 0;
-    border-radius: var(--border-radius-medium);
+    border-radius: 0;
     padding: 0;
-    background-color: var(--black-1);
+    background-color: var(--crust);
   }
 }
 
@@ -67,10 +67,13 @@ body:not(.plugin-sliding-panes-rotate-header):not(.is-mobile) .view-actions .vie
 }
 
 .view-header-title {
+  color: var(--text-muted);
+  font-weight: 400;
+  text-decoration: var(--text-decoration-titlebar);
   font-size: var(--large-font-size);
   font-family: var(--not-editor);
-  font-weight: 400;
-  padding: 0 20px 0 16px;
+  letter-spacing: 1px;
+  padding-left: 1rem;
 }
 
 /* Fix for Windows 10 missing close, minimize, maximize */

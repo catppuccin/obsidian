@@ -2,9 +2,25 @@
     border: none;
 }
 
+.workspace-tabs .workspace-leaf {
+    border: none;
+}
+
 .nav-files-container {
     padding: 18px 4px;
     overflow-x: hidden;
+}
+
+.tree-item-self.is-clickable {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    text-transform: lowercase;
+    font-family: var(--not-editor);
+    font-size: var(--small-font-size);
+    padding: 3px 10px;
+    border: none;
 }
 
 .nav-folder.mod-root {

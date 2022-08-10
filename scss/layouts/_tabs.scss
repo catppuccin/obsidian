@@ -22,6 +22,8 @@ the buttons in side panels. */
 }
 
 .workspace-tab-container-inner {
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: var(--border-radius-medium);
   border: var(--border-default);
   box-shadow: var(--box-shadow-inset-large);

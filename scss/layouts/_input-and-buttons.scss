@@ -3,7 +3,7 @@ input[type="search"],
 input[type="email"],
 input[type="password"],
 input[type="number"] {
-    background-color: var(--background-primary-alt);
+    background-color: var(--black-1);
     border: 1px solid var(--border);
     border-radius: var(--border-radius-medium);
     font-family: var(--not-editor);
@@ -27,7 +27,7 @@ input[type="email"]:hover,
 input[type="password"]:hover,
 input[type="number"]:hover {
     border: 1px solid var(--text-selection-opaque);
-    background-color: var(--background-primary-alt);
+    background-color: var(--black-1);
 }
 
 .search-input-container {
@@ -49,10 +49,15 @@ input.document-replace-input.mod-no-match {
 }
 
 .document-search-container {
-    border-radius: var(--border-radius-medium);
     height: fit-content;
+    border-radius: var(--border-radius-medium);
     background-color: var(--background-primary-alt);
     box-shadow: 0 -2px 2px hsl(254deg 25% 10%);
+}
+
+input.document-search-input.mod-no-match,
+input.document-replace-input.mod-no-match {
+    background-color: var(--black-1);
 }
 
 .document-search-buttons {
