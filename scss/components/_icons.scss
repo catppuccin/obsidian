@@ -325,9 +325,9 @@ with small adjustments */
 input[type="checkbox"] {
     filter: unset; /* removes hue filter */
     cursor: pointer;
-    padding: 1px;
-    margin: 2px 10px 3px 0 !important;
-    border: 2px solid var(--text-faint);
+    padding: 0;
+    margin: 0 10px 3px -5px !important;
+    border: 2px solid var(--text-highlight-bg);
     border-radius: 1px;
     -webkit-appearance: none;
     appearance: none;
@@ -343,18 +343,18 @@ input[type="checkbox"]:checked {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='hsl(254deg 25% 10%)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M5 13l4 4L19 7' /%3E%3C/svg%3E");
     border-width: 0;
     background-position: center;
-    background-size: 85%;
+    background-size: 80%;
     background-repeat: no-repeat;
     transition: var(--link-transition);
 }
 
 .angular-shapes [type="checkbox"]:checked {
-    background-size: 85%;
+    background-size: 80%;
 }
 
 input[type="checkbox"]:checked:hover,
 li[data-task="x"] > .task-list-item-checkbox:hover {
-    background-color: var(--text-selection-opaque);
+    background-color: var(--text-error);
 }
 
 /* fix for legacy-editor, discussed here
@@ -370,6 +370,7 @@ input[type="checkbox"]:not(:checked) {
     transition: var(--link-transition);
 
     &:hover {
-        background-color: var(--text-selection-opaque);
+        border-color: var(--text-highlight-bg);
+        background-color: hsl(41deg 86% 83% / 95%);
     }
 }

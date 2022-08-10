@@ -184,7 +184,6 @@ ul li {
 
 /* Indentation guide */
 .markdown-source-view.mod-cm6 .cm-indent::before {
-    border-color: var(--lavender);
-    opacity: 0.6;
+    border-color: var(--overlay0);
     border-right-width: 2px;
 }
