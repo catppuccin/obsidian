@@ -119,6 +119,11 @@ input.prompt-input, {
     color: var(--text-normal);
 }
 
+.suggestion-item.mod-complex.is-selected .suggestion-note {
+    color: var(--text-on-accent);
+    font-size: var(--small-font-size);
+}
+
 .menu {
     box-shadow: var(--box-shadow-large);
     background-color: var(--background-primary-alt);
