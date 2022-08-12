@@ -1,110 +1,109 @@
 /* removes sneaky cm6 underline */
 
 .markdown-source-view.mod-cm6 .cm-underline, {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* internal links */
 
 .markdown-preview-view .internal-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
-    color: var(--text-normal);
-    text-decoration: var(--text-decoration-standard);
-    transition: var(--link-transition);
+  color: var(--text-normal);
+  text-decoration: var(--text-decoration-standard);
+  transition: var(--link-transition);
 
-    &:hover {
-        color: var(--interactive-accent);
-        text-decoration: var(--text-decoration-standard);
-    }
+  &:hover {
+    color: var(--interactive-accent);
+    text-decoration: var(--text-decoration-standard);
+  }
 }
 
 /* urls */
 
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-url {
-    color: var(--text-normal);
-    text-decoration: var(--text-decoration-standard);
-    font-weight: 400;
-    transition: var(--link-transition);
+  color: var(--text-normal);
+  text-decoration: var(--text-decoration-external-link);
+  transition: var(--link-transition);
 
-    &:hover {
-        color: var(--interactive-hover);
-    }
+  &:hover {
+    color: var(--interactive-hover);
+  }
 }
 
 .cm-list-1.cm-string.cm-url {
-    text-decoration: var(--text-decoration-standard);
-    transition: var(--link-transition);
+  text-decoration: var(--text-decoration-standard);
+  transition: var(--link-transition);
 
-    &:hover {
-        color: var(--interactive-normal);
-    }
+  &:hover {
+    color: var(--interactive-normal);
+  }
 }
 
 /* Brackets around markdown link names (e.g. [Google](url)) */
 .cm-formatting.cm-formatting-link-string.cm-list-1.cm-string.cm-url {
-    color: var(--text-normal-transparent);
+  color: var(--text-normal-transparent);
 }
 
 .markdown-source-view.mod-cm6 .is-unresolved .cm-hmd-internal-link,
 .markdown-preview-view .internal-link.is-unresolved .cm-hmd-internal-link,
 .markdown-source-view.mod-cm6 .is-unresolved,
 .markdown-preview-view .internal-link.is-unresolved {
-    opacity: 1;
-    text-decoration: var(--text-decoration-broken-link);
+  opacity: 1;
+  text-decoration: var(--text-decoration-broken-link);
 
-    &:hover {
-        color: var(--maroon);
-    }
+  &:hover {
+    color: var(--maroon);
+  }
 }
 
 a.external-link {
-    color: var(--text-normal);
-    text-decoration: var(--text-decoration-external-link);
-    transition: var(--link-transition);
+  color: var(--text-normal);
+  text-decoration: var(--text-decoration-external-link);
+  transition: var(--link-transition);
 
-    &:hover {
-        color: var(--interactive-hover);
-    }
+  &:hover {
+    color: var(--interactive-hover);
+  }
 }
 
 a {
-    color: var(--text-normal);
-    text-decoration-color: var(--interactive-normal);
-    transition: var(--link-transition);
+  color: var(--text-normal);
+  text-decoration-color: var(--interactive-normal);
+  transition: var(--link-transition);
 
-    &:hover {
-        color: var(--interactive-hover);
-    }
+  &:hover {
+    color: var(--interactive-hover);
+  }
 }
 
 /* popover for backlink hover */
 
 .popover {
-    background-color: var(--background-primary);
-    border: var(--border-default);
-    box-shadow: var(--box-shadow-large);
-    border-radius: var(--border-radius-medium);
-    padding: 15px 20px 10px;
-    position: relative;
+  background-color: var(--background-primary);
+  border: var(--border-default);
+  box-shadow: var(--box-shadow-large);
+  border-radius: var(--border-radius-medium);
+  padding: 15px 20px 10px;
+  position: relative;
 }
 
 .markdown-embed-link,
 .file-embed-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--border-radius-medium);
-    padding: var(--padding-medium);
-    margin: var(--margin-small);
-    color: var(--text-faint);
-    transition: var(--link-transition);
-    background-color: var(--background-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-medium);
+  margin: var(--margin-small);
+  color: var(--text-faint);
+  transition: var(--link-transition);
+  background-color: var(--background-primary);
 
-    &:hover {
-        color: var(--internal-buttons);
-        background-color: var(--black-0);
-        border-radius: var(--border-radius-medium);
-        box-shadow: var(--box-shadow-small);
-    }
+  &:hover {
+    color: var(--internal-buttons);
+    background-color: var(--black-0);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow-small);
+  }
 }

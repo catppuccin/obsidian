@@ -1,193 +1,193 @@
 .workspace-tabs .workspace-leaf.mod-active {
-    border: none;
+  border: none;
 }
 
 .workspace-tabs .workspace-leaf {
-    border: none;
+  border: none;
 }
 
 .nav-files-container {
-    padding: 18px 4px;
-    overflow-x: hidden;
+  padding: 18px 4px;
+  overflow-x: hidden;
 }
 
 .tree-item-self.is-clickable {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-    text-transform: lowercase;
-    font-family: var(--not-editor);
-    font-size: var(--small-font-size);
-    padding: 3px 10px;
-    border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  text-transform: lowercase;
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
+  padding: 3px 10px;
+  border: none;
 }
 
 .nav-folder.mod-root {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .nav-file-title-content {
-    width: fit-content;
-    white-space: normal;
-    display: flex;
-    align-items: flex-start;
+  width: fit-content;
+  white-space: normal;
+  display: flex;
+  align-items: flex-start;
 }
 
 .nav-folder-title-content,
 .nav-file-title-content {
-    width: fit-content;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-    text-transform: lowercase;
-    font-family: var(--not-editor);
-    font-size: var(--small-font-size);
-    padding: 3px 10px;
-    border: none;
+  width: fit-content;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  text-transform: lowercase;
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
+  padding: 3px 10px;
+  border: none;
 }
 
 .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content,
 .pane-list-item-ending-flair:not(.tag-pane-tag-count) {
-    display: none;
+  display: none;
 }
 
 .nav-folder-collapse-indicator {
-    display: none;
+  display: none;
 }
 
 .nav-file-title,
 .nav-folder-title {
-    margin: 0;
-    padding: 0 15px 0 0;
-    border-radius: var(--border-radius-small);
-    border: none;
-    display: flex;
-    align-items: center;
-    font-size: var(--medium-font-size);
-    min-width: 0;
-    width: fit-content;
-    transition: var(--link-transition);
+  margin: 0;
+  padding: 0 15px 0 0;
+  border-radius: var(--border-radius-small);
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: var(--medium-font-size);
+  min-width: 0;
+  width: fit-content;
+  transition: var(--link-transition);
 }
 
 .nav-folder-children {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 /* min-width to override app.css and prevent background stretching */
 body:not(.is-grabbing) .nav-file-title.is-active,
 body:not(.is-grabbing) .nav-folder-title.is-active {
-    border-left: var(--border-left);
-    border-radius: var(--border-radius-small);
-    min-width: 0%;
-    width: fit-content;
-    background-color: var(--black-4);
-    padding: 0;
+  border-left: var(--border-left);
+  border-radius: var(--border-radius-small);
+  min-width: 0%;
+  width: fit-content;
+  background-color: var(--black-4);
+  padding: 0;
 
-    & .nav-file-tag {
-        background-color: var(--black-3);
-    }
+  & .nav-file-tag {
+    background-color: var(--black-3);
+  }
 
-    &:hover {
-        border-left: var(--border-left-hover);
-    }
+  &:hover {
+    border-left: var(--border-left-hover);
+  }
 }
 
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover,
 .nav-file-title.is-being-dragged,
 .nav-folder-title.is-being-dragged {
-    background-color: var(--text-selection-opaque);
-    color: var(--text-on-accent);
-    border-radius: var(--border-radius-small);
-    transition: var(--link-transition);
+  background-color: var(--text-selection-opaque);
+  color: var(--text-on-accent);
+  border-radius: var(--border-radius-small);
+  transition: var(--link-transition);
 
-    & .nav-file-tag {
-        background-color: var(--text-on-accent);
-    }
+  & .nav-file-tag {
+    background-color: var(--text-on-accent);
+  }
 }
 
 .nav-file-title-content.is-being-renamed,
 .nav-folder-title-content.is-being-renamed {
-    border: 0;
-    border-radius: var(--border-radius-small);
-    background-color: var(--active-interaction);
-    color: var(--text-on-accent);
-    width: 100%;
-    padding: 3px 10px;
+  border: 0;
+  border-radius: var(--border-radius-small);
+  background-color: var(--active-interaction);
+  color: var(--text-on-accent);
+  width: 100%;
+  padding: 3px 10px;
 }
 
 /* absolute nightmare to wrangle! use nested ::selector to change
 highlight. #TODO: Fix file type */
 .nav-file-folder-content.is-being-renamed[contenteditable="true"],
 .nav-file-title-content.is-being-renamed[contenteditable="true"] {
-    background-color: var(--active-interaction) !important;
-    color: var(--text-on-accent);
+  background-color: var(--active-interaction) !important;
+  color: var(--text-on-accent);
 }
 
 .nav-folder-title.is-being-dragged-over,
 .nav-folder.mod-root > .nav-file-title.is-being-dragged-over,
 .nav-folder.mod-root > .nav-folder-title.is-being-dragged-over {
-    background-color: var(--interactive-accent);
-    color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
 }
 
 .workspace-leaf.mod-active .nav-file.has-focus {
-    border: 0;
-    background-color: hsl(233deg 12% 39%);
+  border: 0;
+  background-color: hsl(233deg 12% 39%);
 }
 
 .tree-item-flair {
-    color: var(--text-normal);
-    background-color: transparent;
-    text-underline-offset: var(--text-underline);
-    font-family: var(--default-font);
+  color: var(--text-normal);
+  background-color: transparent;
+  text-underline-offset: var(--text-underline);
+  font-family: var(--default-font);
 }
 
 .backlink-pane,
 .outgoing-link-pane {
-    font-family: var(--not-editor);
-    font-size: var(--small-font-size);
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
 }
 
 .tree-item-self:hover .tree-item-flair,
 .tree-item-self.is-clickable:hover,
 .tag-pane-tag-count.tree-item.flair:hover .tree-item-flair-outer:hover, {
-    background-color: var(--text-selection-opaque);
-    color: var(--text-on-accent);
-    transition: var(--link-transition);
+  background-color: var(--text-selection-opaque);
+  color: var(--text-on-accent);
+  transition: var(--link-transition);
 }
 
 /* Otherwise number after tag moves too fast */
 .tree-item-self:hover .tree-item-flair {
-    transition: background-color 4s ease-in;
+  transition: background-color 4s ease-in;
 }
 
 .search-result-file-matches .search-result-file-match {
-    background-color: var(--background-primary-alt);
-    box-shadow: var(--box-shadow-inset-small);
-    padding-right: 15px;
+  background-color: var(--background-primary-alt);
+  box-shadow: var(--box-shadow-inset-small);
+  padding-right: 15px;
 
-    &:hover {
-        box-shadow: var(--box-shadow-inset-small-hover);
-    }
+  &:hover {
+    box-shadow: var(--box-shadow-inset-small-hover);
+  }
 }
 
 .search-result-file-match:hover .search-result-file-match-destination-file,
 .search-result-file-match .search-result-file-match-destination-file {
-    background-color: hsl(253deg 18% 20%);
-    color: var(--text-normal);
-    border: var(--text-selection) 1px solid;
-    text-decoration: var(--text-decoration-standard);
+  background-color: hsl(253deg 18% 20%);
+  color: var(--text-normal);
+  border: var(--text-selection) 1px solid;
+  text-decoration: var(--text-decoration-standard);
 
-    &:hover {
-        background-color: hsl(253deg 18% 20%);
-        color: var(--interactive-accent);
-    }
+  &:hover {
+    background-color: hsl(253deg 18% 20%);
+    color: var(--interactive-accent);
+  }
 }
 
 .workspace-ribbon {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
