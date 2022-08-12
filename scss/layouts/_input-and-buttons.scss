@@ -3,12 +3,12 @@ input[type="search"],
 input[type="email"],
 input[type="password"],
 input[type="number"] {
-    background-color: var(--black-1);
-    border: 1px solid var(--border);
-    border-radius: var(--border-radius-medium);
-    font-family: var(--not-editor);
-    height: fit-content;
-    box-shadow: var(--box-shadow-inset-large);
+  background-color: var(--black-1);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-medium);
+  font-family: var(--not-editor);
+  height: fit-content;
+  box-shadow: var(--box-shadow-inset-large);
 }
 
 input[type="text"]:active,
@@ -26,42 +26,42 @@ input[type="search"]:hover,
 input[type="email"]:hover,
 input[type="password"]:hover,
 input[type="number"]:hover {
-    border: 1px solid var(--text-selection-opaque);
-    background-color: var(--black-1);
+  border: 1px solid var(--text-selection-opaque);
+  background-color: var(--black-1);
 }
 
 .search-input-container {
-    margin: 0;
-    padding: 4px 14px 4px 8px;
-    max-width: fit-content;
+  margin: 0;
+  padding: 4px 14px 4px 8px;
+  max-width: fit-content;
 }
 
 .search-input-clear-button {
-    right: 24px;
-    top: 8px;
+  right: 24px;
+  top: 8px;
 }
 
 input.document-search-input,
 input.document-replace-input,
 input.document-search-input.mod-no-match,
 input.document-replace-input.mod-no-match {
-    margin: auto;
+  margin: auto;
 }
 
 .document-search-container {
-    height: fit-content;
-    border-radius: var(--border-radius-medium);
-    background-color: var(--background-primary-alt);
-    box-shadow: 0 -2px 2px hsl(254deg 25% 10%);
+  height: fit-content;
+  border-radius: var(--border-radius-medium);
+  background-color: var(--background-primary-alt);
+  box-shadow: 0 -2px 2px hsl(254deg 25% 10%);
 }
 
 input.document-search-input.mod-no-match,
 input.document-replace-input.mod-no-match {
-    background-color: var(--black-1);
+  background-color: var(--black-1);
 }
 
 .document-search-buttons {
-    margin: auto;
+  margin: auto;
 }
 
 button,
@@ -70,84 +70,89 @@ button.mod-cta,
 button.document-search-button,
 .modal button:not(.mod-cta):not(.mod-warning),
 .flair.mod-pop {
-    background-color: var(--black-0);
-    border: 1px solid hsl(238deg 100% 89% / 20%);
-    box-shadow: var(--box-shadow-small);
-    font-family: var(--not-editor);
-    color: var(--text-muted);
-    transition: var(--link-transition);
+  background-color: var(--black-0);
+  border: 1px solid var(--surface1);
+  font-family: var(--not-editor);
+  color: var(--text-muted);
+  box-shadow: var(--box-shadow-small);
+  transition: background-color 0.2s ease, color 0.1s ease;
 
-    &:hover {
-        color: var(--text-on-accent);
-        background-color: var(--internal-buttons);
-    }
+  &:hover {
+    background-color: hsl(23deg 92% 75%);
+    border: 2px solid var(--black-0);
+    border-radius: 5px;
+    color: var(--text-on-accent);
+    box-shadow:
+      1px 1px 8px inset hsl(23deg 40% 45%),
+      -1px -1px 8px inset hsl(23deg 40% 45%);
+  }
 }
 
 /* technically not a button, so needs to be styled separately */
 
 .document-search-close-button:hover {
-    color: var(--internal-buttons);
+  color: var(--internal-buttons);
 }
 
 input.prompt-input, {
-    border: 1px solid var(--border);
-    padding-left: var(--padding-large);
-    font-size: var(--medium-font-size);
-    font-family: var(--not-editor);
-    height: fit-content;
+  border: 1px solid var(--border);
+  padding-left: var(--padding-large);
+  font-size: var(--medium-font-size);
+  font-family: var(--not-editor);
+  height: fit-content;
 }
 
 .modal-container .suggestion-item.is-selected {
-    border-radius: var(--border-radius-medium);
-    background-color: var(--text-selection-opaque);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--text-selection-opaque);
+  color: var(--text-on-accent);
+
+  &:hover {
     color: var(--text-on-accent);
+  }
 
-    &:hover {
-        color: var(--text-on-accent);
-    }
-
-    .suggestion-flair {
-        color: var(--text-on-accent);
-    }
+  .suggestion-flair {
+    color: var(--text-on-accent);
+  }
 }
 
 .suggestion-item:hover * + * {
-    color: var(--text-on-accent);
+  color: var(--text-on-accent);
 }
 
 .suggestion-highlight * + * {
-    color: var(--text-normal);
+  color: var(--text-normal);
 }
 
 .suggestion-item.mod-complex.is-selected .suggestion-note {
-    color: var(--text-on-accent);
-    font-size: var(--small-font-size);
+  color: var(--text-on-accent);
+  font-size: var(--small-font-size);
 }
 
 .menu {
-    box-shadow: var(--box-shadow-large);
-    background-color: var(--background-primary-alt);
-    font-family: var(--not-editor);
+  box-shadow: var(--box-shadow-large);
+  background-color: var(--background-primary-alt);
+  font-family: var(--not-editor);
 }
 
 .menu-item.selected:not(.is-disabled):not(.is-label),
 .menu-item:hover {
-    background: var(--text-highlight-bg-active);
-    transition: var(--link-transition);
-    color: var(--text-on-accent);
+  background: var(--text-highlight-bg-active);
+  transition: var(--link-transition);
+  color: var(--text-on-accent);
 }
 
 .suggestion-item.is-selected > .suggestion-note {
-    color: var(--text-on-accent);
+  color: var(--text-on-accent);
 }
 
 .menu-item.selected .menu-item-icon > svg {
-    color: var(--text-on-accent);
+  color: var(--text-on-accent);
 }
 
 .suggestion-item.is-selected .suggestion-hotkey {
-    background-color: var(--text-on-accent);
-    color: var(--text-normal);
+  background-color: var(--text-on-accent);
+  color: var(--text-normal);
 }
 
 /* redundant? */
@@ -166,44 +171,44 @@ input.prompt-input, {
 .modal,
 .prompt,
 .suggestion-container {
-    box-shadow: var(--box-shadow-large);
-    background-color: var(--background-primary-alt);
-    border-radius: var(--border-radius-medium);
-    font-family: var(--not-editor);
+  box-shadow: var(--box-shadow-large);
+  background-color: var(--background-primary-alt);
+  border-radius: var(--border-radius-medium);
+  font-family: var(--not-editor);
 }
 
 .prompt-instructions {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
 
 .prompt-instruction-command {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .suggestion-hotkey {
-    background-color: var(--black-3);
-    color: var(--text-normal);
+  background-color: var(--black-3);
+  color: var(--text-normal);
 }
 
 /* search bar description text */
 
 .search-suggest-item.is-selected * + * {
-    color: var(--text-on-accent);
+  color: var(--text-on-accent);
 }
 
 .search-suggest-item.mod-group {
-    padding: 0 5px;
-    border-radius: var(--border-radius-small);
+  padding: 0 5px;
+  border-radius: var(--border-radius-small);
 }
 
 .suggestion:hover *:hover + *:hover {
-    color: var(--text-on-accent);
+  color: var(--text-on-accent);
 }
 
 /* dragging */
 
 .drag-ghost.mod-leaf {
-    color: var(--text-on-accent);
-    background-color: var(--text-selection-opaque);
-    font-family: var(--not-editor);
+  color: var(--text-on-accent);
+  background-color: var(--text-selection-opaque);
+  font-family: var(--not-editor);
 }
