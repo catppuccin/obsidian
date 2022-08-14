@@ -11,18 +11,6 @@
   overflow-x: hidden;
 }
 
-.tree-item-self.is-clickable {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: middle;
-  text-transform: lowercase;
-  font-family: var(--not-editor);
-  font-size: var(--small-font-size);
-  padding: 3px 10px;
-  border: none;
-}
-
 .nav-folder-title-content,
 .nav-file-title-content {
   // min-width: fit-content;
@@ -52,8 +40,8 @@
 .nav-folder-title,
 .nav-file,
 .nav-folder-children {
-  background-color: var(--black-2) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--black-2);
+  color: var(--text-muted);
   border: none !important;
   max-width: 100% !important;
   min-width: 100% !important;
@@ -61,26 +49,51 @@
   margin: 0 !important;
 }
 
-// Active files
+// Files and folders being hovered in nav bar
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover, {
+  background-color: var(--text-selection-opaque);
+  color: var(--text-on-accent);
+}
+
+/* file or folder is being dragged or selected */
 .nav-folder.mod-root .is-active,
-// Open right-click menu
-.nav-folder.mod-root .has-active-menu,
-// Folders things are bring dropped into
-.nav-folder.mod-root > .nav-file-title.is-being-dragged-over,
-.nav-folder.mod-root > .nav-folder-title.is-being-dragged-over,
 body:not(.is-grabbing) .nav-file-title.is-being-dragged,
 body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 .nav-file-title.is-being-dragged,
 .nav-folder-title.is-being-dragged,
-// Focused files and folders
-.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
-.workspace-leaf.mod-active .nav-file.has-focus {
-  background-color: green !important;
+.nav-file.has-focus {
+  background-color: var(--pink);
+  color: var(--text-on-accent) !important;
   border: none !important;
   max-width: 100% !important;
   min-width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+/* file or folder has active menu */
+.workspace-leaf.mod-active .nav-folder.has-focus .nav-folder-title.has-active-menu,
+body:not(.is-grabbing) .nav-file-title.has-active-menu,
+.nav-folder-title.has-active-menu,
+.nav-folder.mod-root .has-active-menu, {
+  background-color: var(--internal-buttons);
+  color: var(--text-on-accent);
+}
+
+/* folders that are having things dragged over them */
+.nav-file-title.is-being-dragged-over,
+.nav-folder-title.is-being-dragged-over {
+  background-color: var(--internal-buttons);
+  color: var(--text-on-accent);
+}
+
+/* prevents folder that has been active from remaining highlighted when user
+goes somewhere else */
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title {
+  background-color: var(--black-2);
 }
 
 /* Fix for what seems to be uncommon problem where an invisible
@@ -107,11 +120,29 @@ highlight. #TODO: Fix file type */
   color: var(--text-on-accent);
 }
 
-.nav-folder-title.is-being-dragged-over,
-.nav-folder.mod-root > .nav-file-title.is-being-dragged-over,
-.nav-folder.mod-root > .nav-folder-title.is-being-dragged-over, {
-  background-color: var(--interactive-accent);
-  color: var(--text-on-accent);
+// .nav-folder-title.is-being-dragged-over,
+// .nav-folder.mod-root > .nav-file-title.is-being-dragged-over,
+// .nav-folder.mod-root > .nav-folder-title.is-being-dragged-over, {
+//   background-color: var(--interactive-accent);
+//   color: var(--text-on-accent);
+// }
+
+.backlink-pane,
+.outgoing-link-pane {
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
+}
+
+.tree-item-self.is-clickable {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  text-transform: lowercase;
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
+  padding: 3px 10px;
+  border: none;
 }
 
 .tree-item-flair {
@@ -119,12 +150,6 @@ highlight. #TODO: Fix file type */
   background-color: transparent;
   text-underline-offset: var(--text-underline);
   font-family: var(--default-font);
-}
-
-.backlink-pane,
-.outgoing-link-pane {
-  font-family: var(--not-editor);
-  font-size: var(--small-font-size);
 }
 
 .tree-item-self:hover .tree-item-flair,
