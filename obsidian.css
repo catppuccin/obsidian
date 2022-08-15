@@ -270,90 +270,27 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 :root {
-  --background-primary: hsl(240deg 21% 15%);
-  --background-primary-alt: hsl(240deg 23% 9%);
-  --background-secondary: hsl(240deg 21% 15%);
-  --background-secondary-alt: hsl(240deg 23% 9%);
-  --background-modifier-border: hsl(240deg 23% 9%);
-  --background-modifier-form-field: hsl(235deg 17% 29% 30%);
-  --background-modifier-form-field-highlighted: hsl(235deg 17% 29% 30%);
-  --background-modifier-box-shadow: hsl(235deg 17% 29% 30%);
-  --background-modifier-success: hsl(115deg 54% 76%);
-  --background-modifier-error: hsl(343deg 81% 75%);
-  --background-modifier-error-rgb: 226 140 140;
-  --background-modifier-error-hover: hsl(343deg 81% 60%);
-  --background-modifier-cover: rgb(0 0 0 80%);
-  --text-accent: hsl(115deg 54% 76%);
-  --text-accent-hover: hsl(115deg 54% 76%);
-  --text-normal: hsl(226deg 64% 88%);
-  --text-normal-transparent: hsl(220deg 38% 89% / 60%);
-  --text-muted: hsl(227deg 35% 80%);
-  --text-muted-rgb: 166, 173, 201;
-  --text-faint: hsl(228deg 24% 72%);
-  --text-error: hsl(342deg 79% 75%);
-  --text-error-hover: hsl(342deg 79% 60%);
-  --text-highlight-bg: hsl(41deg 86% 83%);
-  --text-highlight-bg-active: hsl(232deg 97% 85%);
-  --text-selection: hsl(233deg 12% 39%);
-  --text-on-accent: hsl(240deg 21% 12%);
-  --interactive-normal: hsl(170deg 57% 73%);
-  --interactive-hover: hsl(170deg 57% 73%);
-  --interactive-accent: hsl(115deg 54% 76%);
-  --interactive-accent-rgb: 166, 227, 161;
-  --interactive-accent-hover: hsl(115deg 54% 76%);
-  --interactive-success: hsl(115deg 54% 76%);
-  --scrollbar-active-thumb-bg: rgb(255 255 255 / 20%);
-  --scrollbar-bg: rgb(255 255 255 / 5%);
-  --scrollbar-thumb-bg: rgb(255 255 255 / 10%);
-  --code-blocks: hsl(10deg 56% 91%);
-  --border: hsl(249deg 18% 22%);
-  --border-inset: hsl(254deg 12% 36%);
-  --active-interaction: hsl(316deg 72% 86%);
-  --highlight-mix-blend-mode: lighten;
-  --internal-buttons: hsl(23deg 92% 75%);
-  --text-selection-opaque: hsl(232deg 97% 85%);
-  --rosewater: hsl(10deg 56% 91%);
-  --maroon: hsl(350deg 65% 77%);
-  --pink: hsl(316deg 72% 86%);
-  --lavender: hsl(232deg 97% 85%);
-  --black-0: hsl(240deg 23% 9%);
-  --black-1: hsl(240deg 21% 12%);
-  --black-2: hsl(240deg 21% 15%);
-  --black-3: hsl(237deg 16% 23%);
-  --black-4: hsl(233deg 12% 39%);
-  /* from _mocha.scss, for reference */
-  --subtext1: hsl(227deg 35% 80%);
-  --subtext0: hsl(228deg 24% 72%);
-  --overlay2: hsl(228deg 17% 64%);
-  --overlay1: hsl(230deg 13% 55%);
-  --overlay0: hsl(231deg 11% 47%);
-  --surface2: hsl(233deg 12% 39%);
-  --surface1: hsl(234deg 13% 31%);
-  --surface0: hsl(237deg 16% 23%);
-  --base: hsl(240deg 21% 15%);
-  --mantle: hsl(240deg 21% 12%);
-  --crust: hsl(240deg 23% 9%);
   /* Link effects */
-  --link-transition: background-color 0.3s ease, color 0.3s ease;
+  --link-transition: background-color 0.3s ease, color 0.4s ease;
   /* Box shadows */
   --box-shadow-inset-small: 0 2px 4px inset hsl(254deg 25% 10%);
   --box-shadow-inset-small-hover:
-      0 2px 4px inset hsl(240deg 23% 9%),
-      0 4px 8px inset hsl(240deg 23% 9%);
+    0 2px 4px inset hsl(240deg 23% 9%),
+    0 4px 8px inset hsl(240deg 23% 9%);
   --box-shadow-inset-large:
-      0 2px 4px inset hsl(240deg 23% 9%),
-      0 4px 8px inset hsl(240deg 23% 9%),
-      0 8px 16px inset hsl(240deg 23% 9%);
+    0 2px 4px inset hsl(240deg 23% 9%),
+    0 4px 8px inset hsl(240deg 23% 9%),
+    0 8px 16px inset hsl(240deg 23% 9%);
   --box-shadow-large:
-      0 0 4px hsl(240deg 23% 9%),
-      0 0 8px hsl(240deg 23% 9%),
-      0 0 16px hsl(240deg 23% 9%);
+    0 0 4px hsl(240deg 23% 9%),
+    0 0 8px hsl(240deg 23% 9%),
+    0 0 16px hsl(240deg 23% 9%);
   --box-shadow-small:
-      0 2px 2px hsl(240deg 23% 9%),
-      0 4px 4px hsl(240deg 23% 9%);
+    0 2px 2px hsl(240deg 23% 9%),
+    0 4px 4px hsl(240deg 23% 9%);
   --box-shadow-small-hover:
-      0 2px 2px hsl(240deg 23% 9%),
-      0 4px 4px hsl(240deg 23% 9%);
+    0 2px 2px hsl(240deg 23% 9%),
+    0 4px 4px hsl(240deg 23% 9%);
   /* Text */
   --text-underline: 2px;
   --text-decoration-standard: 0.15rem underline var(--interactive-accent);
@@ -471,8 +408,7 @@ being edited */
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-url {
   color: var(--text-normal);
-  text-decoration: var(--text-decoration-standard);
-  font-weight: 400;
+  text-decoration: var(--text-decoration-external-link);
   transition: var(--link-transition);
 }
 .cm-s-obsidian span.cm-link:hover,
@@ -1235,11 +1171,11 @@ button.document-search-button,
 .modal button:not(.mod-cta):not(.mod-warning),
 .flair.mod-pop {
   background-color: var(--black-0);
-  border: 1px solid hsla(238deg, 100%, 89%, 0.2);
-  box-shadow: var(--box-shadow-small);
+  border: 1px solid var(--surface1);
   font-family: var(--not-editor);
   color: var(--text-muted);
-  transition: var(--link-transition);
+  box-shadow: var(--box-shadow-small);
+  transition: background-color 0.2s ease, color 0.1s ease;
 }
 button:hover,
 .modal.mod-settings button:not(.mod-cta):not(.mod-warning):hover,
@@ -1247,8 +1183,11 @@ button.mod-cta:hover,
 button.document-search-button:hover,
 .modal button:not(.mod-cta):not(.mod-warning):hover,
 .flair.mod-pop:hover {
+  background-color: hsl(23deg, 92%, 75%);
+  border: 2px solid var(--black-0);
+  border-radius: 5px;
   color: var(--text-on-accent);
-  background-color: var(--internal-buttons);
+  box-shadow: 1px 1px 8px inset hsl(23deg, 40%, 50%), -1px -1px 8px inset hsl(23deg, 40%, 50%);
 }
 
 /* technically not a button, so needs to be styled separately */
@@ -1588,7 +1527,118 @@ input[type=range]::-webkit-slider-thumb {
 
 .nav-files-container {
   padding: 18px 4px;
-  overflow-x: hidden;
+}
+
+.nav-folder-title-content,
+.nav-file-title-content {
+  text-transform: lowercase;
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
+  border: none;
+  margin: 1px 0 0;
+  padding-right: 10px;
+}
+
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content,
+.pane-list-item-ending-flair:not(.tag-pane-tag-count) {
+  display: none;
+}
+
+.nav-folder-collapse-indicator {
+  display: none;
+}
+
+.nav-file-title {
+  margin: 2px 0;
+}
+
+.nav-file-title,
+.nav-folder-title,
+.nav-file,
+.nav-folder-children {
+  background-color: var(--black-2);
+  color: var(--text-muted);
+  border: none;
+  border-radius: 4px;
+  transition: var(--link-transition);
+  max-width: fit-content;
+  min-width: 0;
+}
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: var(--text-selection-opaque);
+  color: var(--text-on-accent);
+}
+
+/* file or folder is being dragged or selected */
+.nav-folder.mod-root .is-active,
+body:not(.is-grabbing) .nav-file-title.is-being-dragged,
+body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
+.nav-file-title.is-being-dragged,
+.nav-folder-title.is-being-dragged,
+.workspace-leaf.mod-active .nav-file.has-focus {
+  background-color: var(--pink);
+  color: var(--text-on-accent);
+  border: none;
+}
+.nav-folder.mod-root .is-active:hover,
+body:not(.is-grabbing) .nav-file-title.is-being-dragged:hover,
+body:not(.is-grabbing) .nav-folder-title.is-being-dragged:hover,
+.nav-file-title.is-being-dragged:hover,
+.nav-folder-title.is-being-dragged:hover,
+.workspace-leaf.mod-active .nav-file.has-focus:hover {
+  background-color: var(--text-selection-opaque);
+}
+
+/* file or folder has active menu */
+.workspace-leaf.mod-active .nav-folder.has-focus .nav-folder-title.has-active-menu,
+body:not(.is-grabbing) .nav-file-title.has-active-menu,
+.nav-folder-title.has-active-menu,
+.nav-folder.mod-root .has-active-menu {
+  background-color: var(--internal-buttons);
+  color: var(--text-on-accent);
+}
+
+/* folders that are having things dragged over them */
+.nav-file-title.is-being-dragged-over,
+.nav-folder-title.is-being-dragged-over {
+  background-color: var(--internal-buttons);
+  color: var(--text-on-accent);
+}
+
+/* prevents folder that has been active from remaining highlighted when user
+goes somewhere else */
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title {
+  background-color: var(--black-2);
+  border: 0;
+}
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title:hover {
+  background-color: var(--text-selection-opaque);
+}
+
+/* Fix for what seems to be uncommon problem where an invisible
+div will cause unrelated folder to move slightly on open/close */
+.nav-file-title-content.is-being-renamed,
+.nav-folder-title-content.is-being-renamed {
+  border: 0;
+  border-radius: var(--border-radius-small);
+  background-color: var(--active-interaction);
+  color: var(--text-on-accent);
+}
+
+/* absolute nightmare to wrangle! use nested ::selector to change
+highlight. #TODO: Fix file type */
+.nav-file-folder-content.is-being-renamed[contenteditable=true],
+.nav-file-title-content.is-being-renamed[contenteditable=true] {
+  background-color: var(--active-interaction);
+  color: var(--text-on-accent);
+}
+
+.backlink-pane,
+.outgoing-link-pane {
+  font-family: var(--not-editor);
+  font-size: var(--small-font-size);
 }
 
 .tree-item-self.is-clickable {
@@ -1603,135 +1653,11 @@ input[type=range]::-webkit-slider-thumb {
   border: none;
 }
 
-.nav-folder.mod-root {
-  padding: 15px 0;
-}
-
-.nav-file-title-content {
-  width: fit-content;
-  white-space: normal;
-  display: flex;
-  align-items: flex-start;
-}
-
-.nav-folder-title-content,
-.nav-file-title-content {
-  width: fit-content;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: middle;
-  text-transform: lowercase;
-  font-family: var(--not-editor);
-  font-size: var(--small-font-size);
-  padding: 3px 10px;
-  border: none;
-}
-
-.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content,
-.pane-list-item-ending-flair:not(.tag-pane-tag-count) {
-  display: none;
-}
-
-.nav-folder-collapse-indicator {
-  display: none;
-}
-
-.nav-file-title,
-.nav-folder-title {
-  margin: 0;
-  padding: 0 15px 0 0;
-  border-radius: var(--border-radius-small);
-  border: none;
-  display: flex;
-  align-items: center;
-  font-size: var(--medium-font-size);
-  min-width: 0;
-  width: fit-content;
-  transition: var(--link-transition);
-}
-
-.nav-folder-children {
-  padding: 0 20px;
-}
-
-/* min-width to override app.css and prevent background stretching */
-body:not(.is-grabbing) .nav-file-title.is-active,
-body:not(.is-grabbing) .nav-folder-title.is-active {
-  border-left: var(--border-left);
-  border-radius: var(--border-radius-small);
-  min-width: 0%;
-  width: fit-content;
-  background-color: var(--black-4);
-  padding: 0;
-}
-body:not(.is-grabbing) .nav-file-title.is-active .nav-file-tag,
-body:not(.is-grabbing) .nav-folder-title.is-active .nav-file-tag {
-  background-color: var(--black-3);
-}
-body:not(.is-grabbing) .nav-file-title.is-active:hover,
-body:not(.is-grabbing) .nav-folder-title.is-active:hover {
-  border-left: var(--border-left-hover);
-}
-
-body:not(.is-grabbing) .nav-file-title:hover,
-body:not(.is-grabbing) .nav-folder-title:hover,
-.nav-file-title.is-being-dragged,
-.nav-folder-title.is-being-dragged {
-  background-color: var(--text-selection-opaque);
-  color: var(--text-on-accent);
-  border-radius: var(--border-radius-small);
-  transition: var(--link-transition);
-}
-body:not(.is-grabbing) .nav-file-title:hover .nav-file-tag,
-body:not(.is-grabbing) .nav-folder-title:hover .nav-file-tag,
-.nav-file-title.is-being-dragged .nav-file-tag,
-.nav-folder-title.is-being-dragged .nav-file-tag {
-  background-color: var(--text-on-accent);
-}
-
-.nav-file-title-content.is-being-renamed,
-.nav-folder-title-content.is-being-renamed {
-  border: 0;
-  border-radius: var(--border-radius-small);
-  background-color: var(--active-interaction);
-  color: var(--text-on-accent);
-  width: 100%;
-  padding: 3px 10px;
-}
-
-/* absolute nightmare to wrangle! use nested ::selector to change
-highlight. #TODO: Fix file type */
-.nav-file-folder-content.is-being-renamed[contenteditable=true],
-.nav-file-title-content.is-being-renamed[contenteditable=true] {
-  background-color: var(--active-interaction) !important;
-  color: var(--text-on-accent);
-}
-
-.nav-folder-title.is-being-dragged-over,
-.nav-folder.mod-root > .nav-file-title.is-being-dragged-over,
-.nav-folder.mod-root > .nav-folder-title.is-being-dragged-over {
-  background-color: var(--interactive-accent);
-  color: var(--text-on-accent);
-}
-
-.workspace-leaf.mod-active .nav-file.has-focus {
-  border: 0;
-  background-color: hsl(233deg, 12%, 39%);
-}
-
 .tree-item-flair {
   color: var(--text-normal);
   background-color: transparent;
   text-underline-offset: var(--text-underline);
   font-family: var(--default-font);
-}
-
-.backlink-pane,
-.outgoing-link-pane {
-  font-family: var(--not-editor);
-  font-size: var(--small-font-size);
 }
 
 .tree-item-self:hover .tree-item-flair,
@@ -2643,8 +2569,10 @@ body {
   --font-monospace-theme: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
 }
 
+:root,
 .theme-dark,
 .theme-light {
+  /* Catppuccin Mocha */
   --background-primary: hsl(240deg 21% 15%);
   --background-primary-alt: hsl(240deg 23% 9%);
   --background-secondary: hsl(240deg 21% 15%);
