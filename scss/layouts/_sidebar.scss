@@ -55,7 +55,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 
 /* file or folder is being dragged or selected */
-.nav-folder.mod-root .is-active,
+
 body:not(.is-grabbing) .nav-file-title.is-being-dragged,
 body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 .nav-file-title.is-being-dragged,
@@ -72,11 +72,12 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 
 /* file or folder has active menu */
 
+.nav-file-title.is-active,
 .workspace-leaf.mod-active .nav-folder.has-focus .nav-folder-title.has-active-menu,
 body:not(.is-grabbing) .nav-file-title.has-active-menu,
 .nav-folder-title.has-active-menu,
 .nav-folder.mod-root .has-active-menu, {
-  background-color: var(--internal-buttons);
+  background-color: var(--pink);
   color: var(--text-on-accent);
 }
 
@@ -89,13 +90,11 @@ body:not(.is-grabbing) .nav-file-title.has-active-menu,
 
 /* prevents folder that has been active from remaining highlighted when user
 goes somewhere else */
-.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title {
-  background-color: var(--black-2);
-  border: 0;
-
-  &:hover {
-    background-color: var(--text-selection-opaque);
-  }
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
+.workspace-leaf.mod-active .nav-file.has-focus > .nav-file-title {
+  background-color: var(--pink);
+  color: var(--text-on-accent);
+  border: none;
 }
 
 /* Fix for what seems to be uncommon problem where an invisible
@@ -108,16 +107,29 @@ div will cause unrelated folder to move slightly on open/close */
 .nav-folder-title-content.is-being-renamed {
   border: 0;
   border-radius: var(--border-radius-small);
-  background-color: var(--active-interaction);
+  background-color: var(--pink);
   color: var(--text-on-accent);
+
+  &:hover {
+    background-color: var(--pink);
+  }
 }
 
 /* absolute nightmare to wrangle! use nested ::selector to change
 highlight. #TODO: Fix file type */
 .nav-file-folder-content.is-being-renamed[contenteditable="true"],
 .nav-file-title-content.is-being-renamed[contenteditable="true"] {
-  background-color: var(--active-interaction);
+  background-color: var(--pink);
   color: var(--text-on-accent);
+
+  &::selection {
+    background-color: var(--text-normal);
+  }
+}
+
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title:focus-within,
+.workspace-leaf.mod-active .nav-file.has-focus:focus-within {
+  border: none;
 }
 
 .backlink-pane,
