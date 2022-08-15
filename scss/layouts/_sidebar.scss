@@ -8,19 +8,16 @@
 
 .nav-files-container {
   padding: 18px 4px;
-  overflow-x: hidden;
 }
 
 .nav-folder-title-content,
 .nav-file-title-content {
-  // min-width: fit-content;
-  // display: inline-block;
-  // white-space: nowrap;
-  // vertical-align: middle;
   text-transform: lowercase;
   font-family: var(--not-editor);
   font-size: var(--small-font-size);
   border: none;
+  margin: 1px 0 0;
+  padding-right: 10px;
 }
 
 .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content,
@@ -32,9 +29,9 @@
   display: none;
 }
 
-// .nav-folder-children {
-//   padding: 0 20px;
-// }
+.nav-file-title {
+  margin: 2px 0;
+}
 
 .nav-file-title,
 .nav-folder-title,
@@ -42,18 +39,17 @@
 .nav-folder-children {
   background-color: var(--black-2);
   color: var(--text-muted);
-  border: none !important;
-  max-width: 100% !important;
-  min-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  border: none;
+  border-radius: 4px;
+  transition: var(--link-transition);
+  max-width: fit-content;
+  min-width: 0;
 }
 
 // Files and folders being hovered in nav bar
-.nav-file-title.is-active,
-.nav-folder-title.is-active,
+
 body:not(.is-grabbing) .nav-file-title:hover,
-body:not(.is-grabbing) .nav-folder-title:hover, {
+body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--text-selection-opaque);
   color: var(--text-on-accent);
 }
@@ -64,17 +60,18 @@ body:not(.is-grabbing) .nav-file-title.is-being-dragged,
 body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 .nav-file-title.is-being-dragged,
 .nav-folder-title.is-being-dragged,
-.nav-file.has-focus {
+.workspace-leaf.mod-active .nav-file.has-focus {
   background-color: var(--pink);
-  color: var(--text-on-accent) !important;
-  border: none !important;
-  max-width: 100% !important;
-  min-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  color: var(--text-on-accent);
+  border: none;
+
+  &:hover {
+    background-color: var(--text-selection-opaque);
+  }
 }
 
 /* file or folder has active menu */
+
 .workspace-leaf.mod-active .nav-folder.has-focus .nav-folder-title.has-active-menu,
 body:not(.is-grabbing) .nav-file-title.has-active-menu,
 .nav-folder-title.has-active-menu,
@@ -94,6 +91,11 @@ body:not(.is-grabbing) .nav-file-title.has-active-menu,
 goes somewhere else */
 .workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title {
   background-color: var(--black-2);
+  border: 0;
+
+  &:hover {
+    background-color: var(--text-selection-opaque);
+  }
 }
 
 /* Fix for what seems to be uncommon problem where an invisible
@@ -108,24 +110,15 @@ div will cause unrelated folder to move slightly on open/close */
   border-radius: var(--border-radius-small);
   background-color: var(--active-interaction);
   color: var(--text-on-accent);
-  width: 100%;
-  padding: 3px 10px;
 }
 
 /* absolute nightmare to wrangle! use nested ::selector to change
 highlight. #TODO: Fix file type */
 .nav-file-folder-content.is-being-renamed[contenteditable="true"],
 .nav-file-title-content.is-being-renamed[contenteditable="true"] {
-  background-color: var(--active-interaction) !important;
+  background-color: var(--active-interaction);
   color: var(--text-on-accent);
 }
-
-// .nav-folder-title.is-being-dragged-over,
-// .nav-folder.mod-root > .nav-file-title.is-being-dragged-over,
-// .nav-folder.mod-root > .nav-folder-title.is-being-dragged-over, {
-//   background-color: var(--interactive-accent);
-//   color: var(--text-on-accent);
-// }
 
 .backlink-pane,
 .outgoing-link-pane {
