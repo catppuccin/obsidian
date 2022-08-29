@@ -15,6 +15,10 @@
   <img src="https://github.com/catppuccin/obsidian/blob/main/assets/screenshot.png"/>
 </p>
 
+## Temporary note: Obsidian 0.16.0 and Catppuccin
+
+Please see https://github.com/catppuccin/obsidian/issues/16#issue-1354963436 for information about how the current insider build and upcoming public release of Obsidian 0.16.0 will affect the Catppuccin theme. tl;dr, the theme will be considered deprecated in 0.16.0 until it is updated to work with the app's new default theme. In the meantime, if you are an insider and want to keep using Catppuccin, turn off insider builds to stay on 0.15.9. (But I think the new default theme is worth the update for insiders!) I will be working on getting Catppuccin 0.16.0 compliant and hopefully finished by the time of public release.
+
 ## About
 
 This theme covers my use case for the app. That said! Part of what makes Obsidian so fantastic is its many features and extended universe of user-created plugins. As time goes on, I would like to add more compatibility between the theme and some of the more popular plugins. Additionally, Obsidian now has a legacy editor. There be dragons, but none too bad: Most of the css was written before the new editor's beta. Currently the theme uses some css from [Kepano's Hider](https://github.com/kepano/obsidian-hider) plugin. That will change soon, but you may need to do some cmd/ctrl+p-ing in the meantime if you are used to buttons. (:
