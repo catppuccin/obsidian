@@ -1,0 +1,65 @@
+.theme-dark {
+  color-scheme: dark;
+
+  --highlight-mix-blend-mode: lighten;
+  --opacity-translucency: 0.75;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 243, 140, 169;
+  --color-red: hsl(343deg 81% 75%);
+  --color-green-rgb: 68, 207, 110;
+  --color-green: hsl(115deg 54% 76%);
+  --color-orange: hsl(23deg 92% 75%);
+  --color-yellow: hsl(41deg 86% 83%);
+  --color-cyan: hsl(189deg 71% 73%);
+  --color-blue: hsl(199deg 76% 69%);
+  --color-purple: hsl(267deg 84% 81%);
+  --color-pink: hsl(316deg 72% 86%);
+  --color-base-00: hsl(240deg 21% 15%); // base
+  --color-base-10: hsl(240deg 23% 9%); // crust
+  --color-base-20: hsl(240deg 21% 12%); // mantle
+  --color-base-25: hsl(240deg 23% 9%); // crust
+  --color-base-30: hsl(237deg 16% 23%); // surface0
+  --color-base-35: hsl(234deg 13% 31%); // surface1
+  --color-base-40: hsl(233deg 12% 39%); // surface2
+  --color-base-50: hsl(228deg 24% 72%); // subtext0
+  --color-base-60: #999;
+  --color-base-70: hsl(227deg 35% 80%); // subtext1
+  --color-base-100: hsl(226deg 64% 88%); // text
+  --color-accent-hsl:
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l);
+  --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%));
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --background-modifier-box-shadow: rgb(0 0 0 / 30%);
+  --background-modifier-cover: rgb(10 10 10 / 40%);
+  --text-highlight-bg: rgb(255 208 0 / 40%);
+  --text-highlight-bg-active: rgb(255 128 0 / 40%);
+  --text-selection: hsl(var(--interactive-accent-hsl) 0.25);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgb(255 255 255 / 9%),
+    0 2px 4px 0 rgb(0 0 0 / 15%),
+    0 1px 1.5px 0 rgb(0 0 0 / 10%),
+    0 1px 2px 0 rgb(0 0 0 / 20%),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgb(255 255 255 / 16%),
+    0 2px 3px 0 rgb(0 0 0 / 30%),
+    0 1px 1.5px 0 rgb(0 0 0 / 20%),
+    0 1px 2px 0 rgb(0 0 0 / 40%),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0 1px 2px rgb(0 0 0 / 12.1%),
+    0 3.4px 6.7px rgb(0 0 0 / 17.9%),
+    0 15px 30px rgb(0 0 0 / 30%);
+  --shadow-l:
+    0 1.8px 7.3px rgb(0 0 0 / 7.1%),
+    0 6.3px 24.7px rgb(0 0 0 / 11.2%),
+    0 30px 90px rgb(0 0 0 / 20%);
+}
