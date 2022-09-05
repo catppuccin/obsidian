@@ -1,5 +1,3 @@
-/* below is from Obsidian's app.css file, unchanged */
-
 body {
   /*
 	List of variables is placed in body rather than :root so
@@ -68,6 +66,10 @@ body {
   --code-keyword: var(--color-pink);
   --code-important: var(--color-orange);
 
+  /* Collapse icons */
+  --collapse-icon-color: var(--text-faint);
+  --collapse-icon-color-collapsed: var(--text-accent);
+
   /* Cursor */
   --cursor: default;
   --cursor-link: pointer;
@@ -80,7 +82,7 @@ body {
   /* Dividers â€” between panes */
   --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
-  --divider-width: 1px;
+  --divider-width: 2px;
   --divider-width-hover: 3px;
   --divider-vertical-height: calc(100% - var(--header-height));
 
@@ -217,8 +219,9 @@ body {
   --clickable-icon-radius: var(--radius-s);
 
   /* Indentation guide */
-  --indentation-guide: rgb(var(--mono-rgb-100) 0.12);
-  --indentation-guide-active: rgb(var(--mono-rgb-100) 0.3);
+  --indentation-guide-width: 1px;
+  --indentation-guide-color: rgb(var(--mono-rgb-100) 0.12);
+  --indentation-guide-color-active: rgb(var(--mono-rgb-100) 0.3);
 
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -284,13 +287,19 @@ body {
   --nav-item-color: var(--text-muted);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
+  --nav-item-background-selected: hsl(var(--color-accent-hsl) 0.2);
   --nav-item-weight: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-weight-active: inherit;
   --nav-item-white-space: nowrap;
+  --nav-indentation-guide-width: var(--indentation-guide-width);
+  --nav-indentation-guide-color: var(--indentation-guide-color);
+  --nav-collapse-icon-color: var(--collapse-icon-color);
+  --nav-collapse-icon-color-collapsed: var(--text-faint);
 
   /* Modals - e.g. settings, community themes, community plugins */
   --modal-width: 90vw;
@@ -350,7 +359,7 @@ body {
   --size-4-18: 72px;
 
   /* Sidebar */
-  --sidebar-markdown-font-size: var(--font-small);
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
 
   /* Sliders */
@@ -384,6 +393,18 @@ body {
   --tab-curve: 6px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
+  --tab-width: 200px;
+  --tab-max-width: 320px;
+
+  /* Stacked tabs */
+  --tab-stacked-pane-width: 700px;
+  --tab-stacked-header-width: var(--header-height);
+  --tab-stacked-font-size: var(--font-ui-small);
+  --tab-stacked-font-weight: 400;
+  --tab-stacked-text-align: left;
+  --tab-stacked-text-transform: rotate(0deg);
+  --tab-stacked-text-writing-mode: vertical-lr;
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0 0 0 / 5%);
 
   /* Tables */
   --table-background: transparent;
@@ -451,12 +472,15 @@ body {
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--text-normal);
 
+  /* Workspace */
+  --workspace-background-translucent: rgb(var(--mono-rgb-0) 0.6);
+
   /* Color mappings ------------------------ */
 
   /* Accent HSL values */
-  --accent-h: 254;
-  --accent-s: 80%;
-  --accent-l: 68%;
+  --accent-h: 232;
+  --accent-s: 97%;
+  --accent-l: 85%;
 
   /* Backgrounds */
   --background-primary: var(--color-base-00);
@@ -481,7 +505,7 @@ body {
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
-  --text-on-accent: white;
+  --text-on-accent: var(--color-base-10);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
   --text-selection: hsl(var(--color-accent-hsl) 0.2);
@@ -492,137 +516,4 @@ body {
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
-}
-
-.theme-light {
-  color-scheme: light;
-
-  --highlight-mix-blend-mode: darken;
-  --opacity-translucency: 0.6;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
-  --color-red-rgb: 228, 55, 75;
-  --color-red: #e4374b;
-  --color-green-rgb: 12, 181, 79;
-  --color-green: #0cb54f;
-  --color-orange: #d96c00;
-  --color-yellow: #bd8e37;
-  --color-cyan: #2db7b5;
-  --color-blue: #086ddd;
-  --color-purple: #876be0;
-  --color-pink: #c32b74;
-  --color-base-00: #fff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5a5a5a;
-  --color-base-100: #222;
-  --color-accent-hsl:
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l);
-  --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%));
-  --background-secondary-alt: var(--color-base-05);
-  --background-modifier-box-shadow: rgb(0 0 0 / 10%);
-  --background-modifier-cover: rgb(220 220 220 / 40%);
-  --text-highlight-bg: rgb(255 208 0 / 40%);
-  --text-highlight-bg-active: rgb(255 128 0 / 40%);
-  --input-shadow:
-    inset 0 0 0 1px rgb(0 0 0 / 12%),
-    0 2px 3px 0 rgb(0 0 0 / 5%),
-    0 1px 1.5px 0 rgb(0 0 0 / 3%),
-    0 1px 2px 0 rgb(0 0 0 / 4%),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgb(0 0 0 / 17%),
-    0 2px 3px 0 rgb(0 0 0 / 10%),
-    0 1px 1.5px 0 rgb(0 0 0 / 3%),
-    0 1px 2px 0 rgb(0 0 0 / 4%),
-    0 0 0 0 transparent;
-  --shadow-s:
-    0 1px 2px rgb(0 0 0 / 2.8%),
-    0 3.4px 6.7px rgb(0 0 0 / 4.2%),
-    0 15px 30px rgb(0 0 0 / 7%);
-  --shadow-l:
-    0 1.8px 7.3px rgb(0 0 0 / 7.1%),
-    0 6.3px 24.7px rgb(0 0 0 / 11.2%),
-    0 30px 90px rgb(0 0 0 / 20%);
-}
-
-.theme-dark {
-  color-scheme: dark;
-
-  --highlight-mix-blend-mode: lighten;
-  --opacity-translucency: 0.75;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
-  --color-red-rgb: 251, 70, 76;
-  --color-red: #fb464c;
-  --color-green-rgb: 68, 207, 110;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-yellow: #e0de71;
-  --color-cyan: #53dfdd;
-  --color-blue: #027aff;
-  --color-purple: #a882ff;
-  --color-pink: #fa99cd;
-  --color-base-00: #1e1e1e;
-  --color-base-10: #242424;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555;
-  --color-base-50: #666;
-  --color-base-60: #999;
-  --color-base-70: #bababa;
-  --color-base-100: #dadada;
-  --color-accent-hsl:
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l);
-  --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%));
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
-  --interactive-normal: var(--color-base-30);
-  --interactive-hover: var(--color-base-35);
-  --background-modifier-box-shadow: rgb(0 0 0 / 30%);
-  --background-modifier-cover: rgb(10 10 10 / 40%);
-  --text-highlight-bg: rgb(255 208 0 / 40%);
-  --text-highlight-bg-active: rgb(255 128 0 / 40%);
-  --text-selection: hsl(var(--interactive-accent-hsl) 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgb(255 255 255 / 9%),
-    0 2px 4px 0 rgb(0 0 0 / 15%),
-    0 1px 1.5px 0 rgb(0 0 0 / 10%),
-    0 1px 2px 0 rgb(0 0 0 / 20%),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgb(255 255 255 / 16%),
-    0 2px 3px 0 rgb(0 0 0 / 30%),
-    0 1px 1.5px 0 rgb(0 0 0 / 20%),
-    0 1px 2px 0 rgb(0 0 0 / 40%),
-    0 0 0 0 transparent;
-  --shadow-s:
-    0 1px 2px rgb(0 0 0 / 12.1%),
-    0 3.4px 6.7px rgb(0 0 0 / 17.9%),
-    0 15px 30px rgb(0 0 0 / 30%);
-  --shadow-l:
-    0 1.8px 7.3px rgb(0 0 0 / 7.1%),
-    0 6.3px 24.7px rgb(0 0 0 / 11.2%),
-    0 30px 90px rgb(0 0 0 / 20%);
-}
-
-iframe {
-  color-scheme: normal;
 }

@@ -1,3 +1,36 @@
+/* stylelint-disable -- Reformat breaks theme but not sure where yet.*/
+
+/* mocha palette from https://github.com/catppuccin/palette/tree/main/scss */
+
+$rosewater: #f5e0dc;
+$flamingo: #f2cdcd;
+$pink: #f5c2e7;
+$mauve: #cba6f7;
+$red: #f38ba8;
+$maroon: #eba0ac;
+$peach: #fab387;
+$yellow: #f9e2af;
+$green: #a6e3a1;
+$teal: #94e2d5;
+$sky: #89dceb;
+$sapphire: #74c7ec;
+$blue: #89b4fa;
+$lavender: #b4befe;
+$text: #cdd6f4;
+$subtext1: #bac2de;
+$subtext0: #a6adc8;
+$overlay2: #9399b2;
+$overlay1: #7f849c;
+$overlay0: #6c7086;
+$surface2: #585b70;
+$surface1: #45475a;
+$surface0: #313244;
+$base: #1e1e2e;
+$mantle: #181825;
+$crust: #11111b;
+
+/* end mocha palette */
+
 .theme-dark {
   color-scheme: dark;
 
@@ -6,60 +39,55 @@
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 243, 140, 169;
-  --color-red: hsl(343deg 81% 75%);
+  --color-red: #{$red};
   --color-green-rgb: 68, 207, 110;
-  --color-green: hsl(115deg 54% 76%);
-  --color-orange: hsl(23deg 92% 75%);
-  --color-yellow: hsl(41deg 86% 83%);
-  --color-cyan: hsl(189deg 71% 73%);
-  --color-blue: hsl(199deg 76% 69%);
-  --color-purple: hsl(267deg 84% 81%);
-  --color-pink: hsl(316deg 72% 86%);
-  --color-base-00: hsl(240deg 21% 15%); // base
-  --color-base-10: hsl(240deg 23% 9%); // crust
-  --color-base-20: hsl(240deg 21% 12%); // mantle
-  --color-base-25: hsl(240deg 23% 9%); // crust
-  --color-base-30: hsl(237deg 16% 23%); // surface0
-  --color-base-35: hsl(234deg 13% 31%); // surface1
-  --color-base-40: hsl(233deg 12% 39%); // surface2
-  --color-base-50: hsl(228deg 24% 72%); // subtext0
+  --color-green: #{$green};
+  --color-orange: #{$peach};
+  --color-yellow: #{$yellow};
+  --color-cyan: #{$sky};
+  --color-blue: #{$blue}; // consider $sapphire
+  --color-purple: #{$mauve};
+  --color-pink: #{$pink};
+  --color-base-00: #{$base};
+  --color-base-10: #{$crust};
+  --color-base-20: #{$base};
+  --color-base-25: #{$crust};
+  --color-base-30: #{$crust};
+  --color-base-35: #{$surface1};
+  --color-base-40: #{$surface2};
+  --color-base-50: #{$subtext0};
   --color-base-60: #999;
-  --color-base-70: hsl(227deg 35% 80%); // subtext1
-  --color-base-100: hsl(226deg 64% 88%); // text
-  --color-accent-hsl:
-    var(--accent-h),
+  --color-base-70: #{$subtext1};
+  --color-base-100: #{$text}; // text
+  --color-accent-hsl: var(--accent-h),
     var(--accent-s),
     var(--accent-l);
-  --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-  --color-accent-1: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 3.8%));
-  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 3.8%));
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --interactive-normal: var(--color-base-30);
   --interactive-hover: var(--color-base-35);
-  --background-modifier-box-shadow: rgb(0 0 0 / 30%);
-  --background-modifier-cover: rgb(10 10 10 / 40%);
-  --text-highlight-bg: rgb(255 208 0 / 40%);
-  --text-highlight-bg-active: rgb(255 128 0 / 40%);
-  --text-selection: hsl(var(--interactive-accent-hsl) 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgb(255 255 255 / 9%),
-    0 2px 4px 0 rgb(0 0 0 / 15%),
-    0 1px 1.5px 0 rgb(0 0 0 / 10%),
-    0 1px 2px 0 rgb(0 0 0 / 20%),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgb(255 255 255 / 16%),
-    0 2px 3px 0 rgb(0 0 0 / 30%),
-    0 1px 1.5px 0 rgb(0 0 0 / 20%),
-    0 1px 2px 0 rgb(0 0 0 / 40%),
-    0 0 0 0 transparent;
-  --shadow-s:
-    0 1px 2px rgb(0 0 0 / 12.1%),
-    0 3.4px 6.7px rgb(0 0 0 / 17.9%),
-    0 15px 30px rgb(0 0 0 / 30%);
-  --shadow-l:
-    0 1.8px 7.3px rgb(0 0 0 / 7.1%),
-    0 6.3px 24.7px rgb(0 0 0 / 11.2%),
-    0 30px 90px rgb(0 0 0 / 20%);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+		0 2px 4px 0 rgba(0,0,0,.15),
+		0 1px 1.5px 0 rgba(0,0,0,.1),
+		0 1px 2px 0 rgba(0,0,0,.2),
+		0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+		0 2px 3px 0 rgba(0,0,0,.3),
+		0 1px 1.5px 0 rgba(0,0,0,.2),
+		0 1px 2px 0 rgba(0,0,0,.4),
+		0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+		0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+		0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+		0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+		0px 30px 90px rgba(0, 0, 0, 0.2);
 }
