@@ -73,7 +73,7 @@ body {
   --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
   --divider-width: 1px;
-  --divider-width-hover: 3px;
+  --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
   /* Dragging */
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
@@ -100,9 +100,9 @@ body {
   --font-smaller: 0.875em;
   --font-small: 0.933em;
   /* UI font sizes */
-  --font-ui-smaller: 12px;
-  --font-ui-small: 13px;
-  --font-ui-medium: 15px;
+  --font-ui-smaller: 13px;
+  --font-ui-small: 14px;
+  --font-ui-medium: 16px;
   --font-ui-large: 20px;
   /* Font weights */
   --font-thin: 100;
@@ -179,24 +179,24 @@ body {
   --icon-stroke: var(--icon-m-stroke-width);
   --icon-xs: 14px;
   --icon-s: 16px;
-  --icon-m: 18px;
-  --icon-l: 18px;
+  --icon-m: 20px;
+  --icon-l: 20px;
   --icon-xs-stroke-width: 2px;
   --icon-s-stroke-width: 2px;
   --icon-m-stroke-width: 1.75px;
   --icon-l-stroke-width: 1.75px;
   --icon-color: var(--text-muted);
   --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-accent);
-  --icon-color-focused: var(--text-normal);
+  --icon-color-active: var(--text-muted);
+  --icon-color-focused: var(--text-muted);
   --icon-opacity: 0.85;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
   /* Indentation guide */
-  --indentation-guide-width: 1px;
-  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
-  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --indentation-guide-width: 2px;
+  --indentation-guide-color:hsla(var(--color-accent-hsl), .7);
+  --indentation-guide-color-active: hsla(var(--color-accent-hsl), .9);
   /* Inline title */
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -259,9 +259,9 @@ body {
   --nav-item-background-hover: var(--color-blue);
   --nav-item-background-active: var(--color-blue);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
-  --nav-item-weight: inherit;
-  --nav-item-weight-hover: inherit;
-  --nav-item-weight-active: inherit;
+  --nav-item-weight: var(--font-black);
+  --nav-item-weight-hover: var(--font-black);
+  --nav-item-weight-active: var(--font-black);
   --nav-item-white-space: nowrap;
   --nav-indentation-guide-width: var(--indentation-guide-width);
   --nav-indentation-guide-color: var(--indentation-guide-color);
@@ -341,7 +341,7 @@ body {
   --tab-text-color-focused: var(--text-muted);
   --tab-text-color-focused-active: var(--text-normal);
   --tab-font-size: var(--font-ui-small);
-  --tab-font-weight: inherit;
+  --tab-font-weight: var(--font-black);
   --tab-container-background: var(--background-secondary);
   --tab-divider-color: var(--background-modifier-border-hover);
   --tab-outline-color: var(--divider-color);
@@ -402,9 +402,9 @@ body {
   --titlebar-border-width: 0px;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
-  --titlebar-text-color-focused: var(--text-normal);
+  --titlebar-text-color-focused: var(--color-blue);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
-  --titlebar-text-weight: var(--font-bold);
+  --titlebar-text-weight: var(--font-black);
   /* Toggles */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
@@ -418,8 +418,8 @@ body {
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
   /* Vault name */
-  --vault-name-font-size: var(--font-ui-small);
-  --vault-name-font-weight: var(--font-medium);
+  --vault-name-font-size: var(--font-ui-medium);
+  --vault-name-font-weight: var(--font-black);
   --vault-name-color: var(--text-normal);
   /* Workspace */
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);

@@ -1,9 +1,12 @@
 body {
   /* Link effects */
-  --link-transition: background-color 0.3s ease, color 0.4s ease;
+  --quick-bg-transition: background-color 0.3s ease, color 0.3s ease;
+  --pressed-item: box-shadow 0.5s ease;
 
   /* Box shadows */
-  --box-shadow-inset-small: 0 2px 4px inset hsl(254deg 25% 10%);
+  --box-shadow-inset-small:
+    inset 2px 2px 4px #181825,
+    inset 2px 2px 4px #313244;
   --box-shadow-inset-small-hover:
     0 2px 4px inset hsl(240deg 23% 9%),
     0 4px 8px inset hsl(240deg 23% 9%);
@@ -39,11 +42,7 @@ body {
   --margin-small: 2px;
 
   /* Borders */
-  --border-default: hsl(249deg 18% 22%) 1px solid;
-  --border-left-small: 1px solid var(--rosewater);
-  --border-left: solid 6px var(--active-interaction);
-  --border-left-hover: solid 6px var(--black-4);
-  --border-side-misc: 0.15rem solid var(--border);
+  --box-shadow-border: 0 0 0 2px var(--color-base-35);
 
   /* Border radius */
   --border-radius-small: 4px;

@@ -1,13 +1,34 @@
+/* Vault name :hover */
+.nav-folder.mod-root > .nav-folder-title:hover {
+  color: var(--color-blue);
+}
+
+/* Active / hover nav file/folder title title changes */
+
+body:not(.is-grabbing) .nav-file-title,
+body:not(.is-grabbing) .nav-folder-title {
+  transition: var(--quick-bg-transition);
+}
+
 body:not(.is-grabbing) .nav-folder-title:hover {
   --nav-collapse-icon-color: var(--text-on-accent);
   --nav-collapse-icon-color-collapsed: var(--text-on-accent);
+}
+
+.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
+.workspace-leaf.mod-active .nav-file.has-focus > .nav-file-title {
+  box-shadow: none;
 }
 
 /* file type pill behavior */
 
 .nav-file-tag {
   color: var(--text-normal);
-  outline: 1px solid var(--color-base-35);
 
   --background-modifier-hover: var(--color-base-30);
+}
+
+.is-active .nav-file-tag {
+  box-shadow: var(--box-shadow-inset-small);
+  transform: var(--pressed-item);
 }
