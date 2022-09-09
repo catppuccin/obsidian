@@ -1,0 +1,13 @@
+body:not(.is-grabbing) .nav-folder-title:hover {
+  --nav-collapse-icon-color: var(--text-on-accent);
+  --nav-collapse-icon-color-collapsed: var(--text-on-accent);
+}
+
+/* file type pill behavior */
+
+.nav-file-tag {
+  color: var(--text-normal);
+  outline: 1px solid var(--color-base-35);
+
+  --background-modifier-hover: var(--color-base-30);
+}

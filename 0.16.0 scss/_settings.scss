@@ -1,0 +1,9 @@
+/* sidebar hovers */
+.horizontal-tab-nav-item,
+.vertical-tab-nav-item {
+  &:hover,
+  &.is-active:hover {
+    background-color: var(--color-blue);
+    color: var(--text-on-accent);
+  }
+}
