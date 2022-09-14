@@ -1,0 +1,6 @@
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
+  box-shadow:
+    inset 4px 4px 8px #181825,
+    inset -4px -4px 8px #1e1e2e;
+  outline: 1px solid var(--divider-color);
+}

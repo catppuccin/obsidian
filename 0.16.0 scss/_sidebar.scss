@@ -10,6 +10,10 @@ body:not(.is-grabbing) .nav-folder-title {
   transition: var(--quick-bg-transition);
 }
 
+body:not(.is-grabbing) .nav-file-title.is-active:hover,
+body:not(.is-grabbing) .nav-folder-title.is-active:hover {
+}
+
 body:not(.is-grabbing) .nav-folder-title:hover {
   --nav-collapse-icon-color: var(--text-on-accent);
   --nav-collapse-icon-color-collapsed: var(--text-on-accent);

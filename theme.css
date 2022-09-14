@@ -5,8 +5,8 @@ body {
   --pressed-item: box-shadow 0.5s ease;
   /* Box shadows */
   --box-shadow-inset-small:
-    inset 2px 2px 4px #181825,
-    inset 2px 2px 4px #313244;
+    inset 2px 2px 4px #11111b,
+    inset -2px -2px 4px #1e1e2e;
   --box-shadow-inset-small-hover:
     0 2px 4px inset hsl(240deg 23% 9%),
     0 4px 8px inset hsl(240deg 23% 9%);
@@ -345,7 +345,7 @@ body {
   --icon-color: var(--text-muted);
   --icon-color-hover: var(--text-muted);
   --icon-color-active: var(--text-muted);
-  --icon-color-focused: var(--text-muted);
+  --icon-color-focused: var(--color-green);
   --icon-opacity: 0.85;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
@@ -413,12 +413,12 @@ body {
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
   --nav-item-color-highlighted: var(--text-accent-hover);
-  --nav-item-background-hover: var(--color-blue);
+  --nav-item-background-hover: var(--color-yellow);
   --nav-item-background-active: var(--color-blue);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
-  --nav-item-weight: var(--font-black);
-  --nav-item-weight-hover: var(--font-black);
-  --nav-item-weight-active: var(--font-black);
+  --nav-item-weight: var(--font-medium);
+  --nav-item-weight-hover: var(--font-medium);
+  --nav-item-weight-active: var(--font-medium);
   --nav-item-white-space: nowrap;
   --nav-indentation-guide-width: var(--indentation-guide-width);
   --nav-indentation-guide-color: var(--indentation-guide-color);
@@ -498,7 +498,7 @@ body {
   --tab-text-color-focused: var(--text-muted);
   --tab-text-color-focused-active: var(--text-normal);
   --tab-font-size: var(--font-ui-small);
-  --tab-font-weight: var(--font-black);
+  --tab-font-weight: var(--font-medium);
   --tab-container-background: var(--background-secondary);
   --tab-divider-color: var(--background-modifier-border-hover);
   --tab-outline-color: var(--divider-color);
@@ -561,7 +561,7 @@ body {
   --titlebar-text-color: var(--text-muted);
   --titlebar-text-color-focused: var(--color-blue);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
-  --titlebar-text-weight: var(--font-black);
+  --titlebar-text-weight: var(--font-semibold);
   /* Toggles */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
@@ -576,7 +576,7 @@ body {
   --toggle-s-thumb-width: 15px;
   /* Vault name */
   --vault-name-font-size: var(--font-ui-medium);
-  --vault-name-font-weight: var(--font-black);
+  --vault-name-font-weight: var(--font-semibold);
   --vault-name-color: var(--text-normal);
   /* Workspace */
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
@@ -617,6 +617,11 @@ body {
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-2);
+}
+
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
+  box-shadow: inset 4px 4px 8px #181825, inset -4px -4px 8px #1e1e2e;
+  outline: 1px solid var(--divider-color);
 }
 
 /*# sourceMappingURL=theme.css.map */

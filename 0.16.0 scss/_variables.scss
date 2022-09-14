@@ -5,8 +5,8 @@ body {
 
   /* Box shadows */
   --box-shadow-inset-small:
-    inset 2px 2px 4px #181825,
-    inset 2px 2px 4px #313244;
+    inset 2px 2px 4px #11111b,
+    inset -2px -2px 4px #1e1e2e;
   --box-shadow-inset-small-hover:
     0 2px 4px inset hsl(240deg 23% 9%),
     0 4px 8px inset hsl(240deg 23% 9%);
