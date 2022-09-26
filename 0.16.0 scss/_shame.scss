@@ -187,8 +187,8 @@ body {
   --icon-l-stroke-width: 1.75px;
   --icon-color: var(--text-muted);
   --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-muted);
-  --icon-color-focused: var(--color-green);
+  --icon-color-active: var(--text-normal);
+  --icon-color-focused: var(--text-muted);
   --icon-opacity: 0.85;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
@@ -257,7 +257,7 @@ body {
   --nav-item-color-selected: var(--text-on-accent);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--color-yellow);
-  --nav-item-background-active: var(--color-blue);
+  --nav-item-background-active: var(--color-accent);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
   --nav-item-weight: var(--font-medium);
   --nav-item-weight-hover: var(--font-medium);
@@ -441,7 +441,7 @@ body {
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover:var(--color-red-error-hover);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-modifier-success: var(--color-green);
+  --background-modifier-success: var(--color-red);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);

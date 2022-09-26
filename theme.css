@@ -31,8 +31,8 @@ body {
   --text-decoration-broken-link: 0.15rem underline var(--maroon);
   --text-decoration-titlebar: 0.15rem underline var(--active-interaction);
   /* Padding */
-  --padding-small: 3px;
-  --padding-medium: 6px;
+  --padding-small: 2px;
+  --padding-medium: 4px;
   --padding-large: 10px;
   --padding-x-large: 24px;
   /* Margin */
@@ -121,6 +121,19 @@ body {
 .vertical-tab-nav-item.is-active:hover {
   background-color: var(--color-blue);
   color: var(--text-on-accent);
+}
+
+.setting-item-control .checkbox-container {
+  background-color: var(--background-secondary);
+  outline: 1px solid var(--background-modifier-border);
+}
+
+.setting-item-control .checkbox-container::after {
+  background-color: var(--text-error);
+}
+
+.setting-item-control .checkbox-container.is-enabled::after {
+  background-color: var(--text-success);
 }
 
 /* Vault name :hover */
@@ -344,8 +357,8 @@ body {
   --icon-l-stroke-width: 1.75px;
   --icon-color: var(--text-muted);
   --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-muted);
-  --icon-color-focused: var(--color-green);
+  --icon-color-active: var(--text-normal);
+  --icon-color-focused: var(--text-muted);
   --icon-opacity: 0.85;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
@@ -414,7 +427,7 @@ body {
   --nav-item-color-selected: var(--text-on-accent);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--color-yellow);
-  --nav-item-background-active: var(--color-blue);
+  --nav-item-background-active: var(--color-accent);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
   --nav-item-weight: var(--font-medium);
   --nav-item-weight-hover: var(--font-medium);
@@ -598,7 +611,7 @@ body {
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover:var(--color-red-error-hover);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-modifier-success: var(--color-green);
+  --background-modifier-success: var(--color-red);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);
@@ -619,9 +632,49 @@ body {
   --interactive-accent-hover: var(--color-accent-2);
 }
 
+svg {
+  --quick-bg-transition: color 0.3s ease;
+  transition: var(--quick-bg-transition);
+}
+
+.workspace-tab-header-inner {
+  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.1s ease;
+  transition: var(--quick-bg-transition);
+}
+
+.clickable-icon.clickable-icon {
+  --quick-bg-transition: background-color 0.3s ease;
+  transition: var(--quick-bg-transition);
+}
+
 .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
-  box-shadow: inset 4px 4px 8px #181825, inset -4px -4px 8px #1e1e2e;
-  outline: 1px solid var(--divider-color);
+  box-shadow: var(--box-shadow-inset-small);
+  border: 1px solid var(--color-accent);
+}
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover {
+  background-color: var(--color-accent);
+  box-shadow: none;
+}
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover svg {
+  color: var(--text-on-accent);
+}
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--color-accent);
+}
+
+.workspace-tab-header:not(.is-active) > .workspace-tab-header-inner {
+  border-color: transparent;
+}
+
+.mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner,
+.clickable-icon:hover {
+  background-color: var(--color-accent);
+}
+.mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner svg,
+.clickable-icon:hover svg {
+  color: var(--text-on-accent);
 }
 
 /*# sourceMappingURL=theme.css.map */

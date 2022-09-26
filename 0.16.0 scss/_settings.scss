@@ -7,3 +7,18 @@
     color: var(--text-on-accent);
   }
 }
+
+.setting-item-control .checkbox-container {
+  background-color: var(--background-secondary);
+  outline: 1px solid var(--background-modifier-border);
+}
+
+.setting-item-control .checkbox-container::after {
+  background-color: var(--text-error);
+}
+
+.setting-item-control .checkbox-container.is-enabled {
+  &::after {
+    background-color: var(--text-success);
+  }
+}
