@@ -5,8 +5,8 @@ body {
   --pressed-item: box-shadow 0.5s ease;
   /* Box shadows */
   --box-shadow-inset-small:
-    inset 2px 2px 4px #11111b,
-    inset -2px -2px 4px #1e1e2e;
+    inset 2px 2px 8px #11111b,
+    inset -2px -2px 8px #1e1e2e;
   --box-shadow-inset-small-hover:
     0 2px 4px inset hsl(240deg 23% 9%),
     0 4px 8px inset hsl(240deg 23% 9%);
@@ -53,6 +53,10 @@ body {
 
 /* stylelint-disable -- Reformat breaks theme but not sure where yet.*/
 /* mocha palette from https://github.com/catppuccin/palette/tree/main/scss */
+/* Active icon, titlebar, tab, etc. */
+/* Hover over close */
+/* Text & sidebar hover highlight */
+/* Default accent */
 /* end mocha palette */
 .theme-dark {
   color-scheme: dark;
@@ -64,6 +68,7 @@ body {
   --color-red: #f38ba8;
   --color-red-error-hover:hsl(343deg, 81%, calc(75% + 3.8%));
   --color-green-rgb: 68, 207, 110;
+  --color-maroon: #eba0ac;
   --color-green: #a6e3a1;
   --color-orange: #fab387;
   --color-yellow: #f9e2af;
@@ -247,7 +252,7 @@ body {
   --divider-vertical-height: calc(100% - var(--header-height));
   /* Dragging */
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
-  --drag-ghost-text-color: #fff;
+  --drag-ghost-text-color: var(--text-muted);
   /* Embeds */
   --embed-background: inherit;
   --embed-border-left: 2px solid var(--interactive-accent);
@@ -365,7 +370,7 @@ body {
   --clickable-icon-radius: var(--radius-s);
   /* Indentation guide */
   --indentation-guide-width: 2px;
-  --indentation-guide-color:hsla(var(--color-accent-hsl), .7);
+  --indentation-guide-color: var(--color-base-40);
   --indentation-guide-color-active: hsla(var(--color-accent-hsl), .9);
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -572,14 +577,14 @@ body {
   --titlebar-border-width: 0px;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
-  --titlebar-text-color-focused: var(--color-blue);
+  --titlebar-text-color-focused: var(--color-purple);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
   --titlebar-text-weight: var(--font-semibold);
   /* Toggles */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
   --toggle-radius: 18px;
-  --toggle-thumb-color: #cdd6f4;
+  --toggle-thumb-color: var(--text-normal);
   --toggle-thumb-radius: 18px;
   --toggle-thumb-height: 18px;
   --toggle-thumb-width: 18px;
@@ -602,8 +607,8 @@ body {
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --background-modifier-hover: var(--color-base-30);
+  --background-modifier-active-hover: var(--color-30);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
@@ -612,7 +617,7 @@ body {
   --background-modifier-error-hover:var(--color-red-error-hover);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-red);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-message: var(--color-base-10);
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);
   /* Text */
@@ -638,30 +643,47 @@ svg {
 }
 
 .workspace-tab-header-inner {
-  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.1s ease;
+  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.3s ease;
   transition: var(--quick-bg-transition);
 }
 
-.clickable-icon.clickable-icon {
-  --quick-bg-transition: background-color 0.3s ease;
-  transition: var(--quick-bg-transition);
-}
-
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
-  box-shadow: var(--box-shadow-inset-small);
-  border: 1px solid var(--color-accent);
-}
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover {
-  background-color: var(--color-accent);
-  box-shadow: none;
-}
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover svg {
+.workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
   color: var(--text-on-accent);
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: var(--color-accent);
+.clickable-icon.clickable-icon {
+  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: var(--quick-bg-transition);
+}
+.clickable-icon.clickable-icon:hover {
+  background-color: var(--color-purple);
+}
+.clickable-icon.clickable-icon:hover svg {
+  color: var(--text-on-accent);
+}
+
+.clickable-icon.is-active {
+  background-color: var(--background-modifier-hover);
+  box-shadow: var(--box-shadow-inset-small);
+  border: 1px solid var(--color-purple);
+}
+.clickable-icon.is-active:hover {
+  box-shadow: none;
+}
+
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner {
+  box-shadow: var(--box-shadow-inset-small);
+  border: 1px solid var(--color-purple);
+}
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover {
+  background-color: var(--color-purple);
+  box-shadow: none;
+}
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover svg,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner:hover svg {
+  color: var(--text-on-accent);
 }
 
 .workspace-tab-header:not(.is-active) > .workspace-tab-header-inner {
@@ -669,12 +691,33 @@ svg {
 }
 
 .mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner,
-.clickable-icon:hover {
-  background-color: var(--color-accent);
+.mod-right-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner {
+  background-color: var(--color-purple);
 }
-.mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner svg,
-.clickable-icon:hover svg {
+
+.suggestion-item.is-selected {
+  background-color: var(--color-accent);
   color: var(--text-on-accent);
+}
+
+.prompt-input[type=text] {
+  text-decoration: underline 2px var(--color-accent) solid;
+  text-underline-offset: 1px;
+}
+
+input.prompt-input:hover,
+input.prompt-input:focus,
+input.prompt-input:focus-visible {
+  background-color: var(--background-primary);
+}
+
+body .prompt-results {
+  background-color: var(--background-secondary);
+}
+
+.suggestion-item.mod-complex .suggestion-hotkey {
+  background-color: var(--color-base-30);
+  color: var(--color-accent);
 }
 
 /*# sourceMappingURL=theme.css.map */

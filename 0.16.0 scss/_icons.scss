@@ -5,23 +5,46 @@ svg {
 }
 
 .workspace-tab-header-inner {
-  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.1s ease;
+  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   transition: var(--quick-bg-transition);
+}
+
+.workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
+  color: var(--text-on-accent);
 }
 
 .clickable-icon.clickable-icon {
-  --quick-bg-transition: background-color 0.3s ease;
+  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   transition: var(--quick-bg-transition);
-}
-
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
-  box-shadow: var(--box-shadow-inset-small);
-  border: 1px solid var(--color-accent);
 
   &:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-purple);
+
+    & svg {
+      color: var(--text-on-accent);
+    }
+  }
+}
+
+.clickable-icon.is-active {
+  background-color: var(--background-modifier-hover);
+  box-shadow: var(--box-shadow-inset-small);
+  border: 1px solid var(--color-purple);
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner {
+  box-shadow: var(--box-shadow-inset-small);
+  border: 1px solid var(--color-purple);
+
+  &:hover {
+    background-color: var(--color-purple);
     box-shadow: none;
 
     & svg {
@@ -30,20 +53,11 @@ svg {
   }
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: var(--color-accent);
-}
-
 .workspace-tab-header:not(.is-active) > .workspace-tab-header-inner {
   border-color: transparent;
 }
 
 .mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner,
-.clickable-icon:hover {
-  background-color: var(--color-accent);
-
-  & svg {
-    color: var(--text-on-accent);
-  }
+.mod-right-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner {
+  background-color: var(--color-purple);
 }

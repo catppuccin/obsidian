@@ -77,7 +77,7 @@ body {
   --divider-vertical-height: calc(100% - var(--header-height));
   /* Dragging */
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
-  --drag-ghost-text-color: #fff;
+  --drag-ghost-text-color: var(--text-muted);
   /* Embeds */
   --embed-background: inherit;
   --embed-border-left: 2px solid var(--interactive-accent);
@@ -195,7 +195,7 @@ body {
   --clickable-icon-radius: var(--radius-s);
   /* Indentation guide */
   --indentation-guide-width: 2px;
-  --indentation-guide-color:hsla(var(--color-accent-hsl), .7);
+  --indentation-guide-color: var(--color-base-40);
   --indentation-guide-color-active: hsla(var(--color-accent-hsl), .9);
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -402,14 +402,14 @@ body {
   --titlebar-border-width: 0px;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
-  --titlebar-text-color-focused: var(--color-blue);
+  --titlebar-text-color-focused: var(--color-purple);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
   --titlebar-text-weight: var(--font-semibold);
   /* Toggles */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
   --toggle-radius: 18px;
-  --toggle-thumb-color: #cdd6f4;
+  --toggle-thumb-color: var(--text-normal);
   --toggle-thumb-radius: 18px;
   --toggle-thumb-height: 18px;
   --toggle-thumb-width: 18px;
@@ -432,8 +432,8 @@ body {
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --background-modifier-hover: var(--color-base-30);
+  --background-modifier-active-hover: var(--color-30);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
@@ -442,7 +442,7 @@ body {
   --background-modifier-error-hover:var(--color-red-error-hover);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-red);
-  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  --background-modifier-message: var(--color-base-10);
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);
   /* Text */

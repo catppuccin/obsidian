@@ -5,16 +5,20 @@
 $rosewater: #f5e0dc;
 $flamingo: #f2cdcd;
 $pink: #f5c2e7;
+/* Active icon, titlebar, tab, etc. */
 $mauve: #cba6f7;
 $red: #f38ba8;
+/* Hover over close */
 $maroon: #eba0ac;
 $peach: #fab387;
+/* Text & sidebar hover highlight */
 $yellow: #f9e2af;
 $green: #a6e3a1;
 $teal: #94e2d5;
 $sky: #89dceb;
 $sapphire: #74c7ec;
 $blue: #89b4fa;
+/* Default accent */
 $lavender: #b4befe;
 $text: #cdd6f4;
 $subtext1: #bac2de;
@@ -42,11 +46,12 @@ $crust: #11111b;
   --color-red: #{$red};
   --color-red-error-hover:hsl(343deg, 81%, calc(75% + 3.8%));
   --color-green-rgb: 68, 207, 110;
+  --color-maroon: #{$maroon};
   --color-green: #{$green};
   --color-orange: #{$peach};
   --color-yellow: #{$yellow};
   --color-cyan: #{$sky};
-  --color-blue: #{$blue}; // consider $sapphire
+  --color-blue: #{$blue};
   --color-purple: #{$mauve};
   --color-pink: #{$pink};
   --color-base-00: #{$base};
