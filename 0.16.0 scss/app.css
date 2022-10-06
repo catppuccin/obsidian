@@ -1191,7 +1191,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
     background-color: transparent;
 }
 
-.CodeMirrorwrapper ::-moz-selection {
+.CodeMirrorwrapper ::selection {
     background-color: transparent;
 }
 

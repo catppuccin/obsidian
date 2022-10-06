@@ -11,8 +11,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 body:not(.is-grabbing) .nav-file-title.is-active:hover,
-body:not(.is-grabbing) .nav-folder-title.is-active:hover {
-}
+body:not(.is-grabbing) .nav-folder-title.is-active:hover {}
 
 body:not(.is-grabbing) .nav-folder-title:hover {
   --nav-collapse-icon-color: var(--text-on-accent);
@@ -35,4 +34,15 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .is-active .nav-file-tag {
   box-shadow: var(--box-shadow-inset-small);
   transform: var(--pressed-item);
+}
+
+/* Right sidebar collapse icon and count number hovers */
+.tree-item-self:hover .tree-item-icon svg,
+.tree-item-self:hover .tree-item-flair-outer .tag-pane-tag-count {
+  color: var(--text-on-accent);
+}
+
+.item-tree-children * {
+  width: 0 !important;
+  height: 0 !important;
 }

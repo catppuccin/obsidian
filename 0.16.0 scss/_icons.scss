@@ -53,11 +53,11 @@ svg {
   }
 }
 
-.workspace-tab-header:not(.is-active) > .workspace-tab-header-inner {
+.workspace-tab-header:not(.is-active)>.workspace-tab-header-inner {
   border-color: transparent;
 }
 
-.mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner,
-.mod-right-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner {
+.mod-left-split .workspace-tab-header:not(.is-active):hover>.workspace-tab-header-inner,
+.mod-right-split .workspace-tab-header:not(.is-active):hover>.workspace-tab-header-inner {
   background-color: var(--color-purple);
 }

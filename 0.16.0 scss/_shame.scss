@@ -1,4 +1,3 @@
-/* stylelint-disable -- Reformat breaks theme but not sure where yet.*/
 body {
   /*
 	List of variables is placed in body rather than :root so
@@ -22,7 +21,7 @@ body {
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
   /* Bold */
-  --bold-weight: var(--font-semibold);
+  --bold-weight: var(--font-bold);
   --bold-color: inherit;
   /* Borders */
   --border-width: 1px;
@@ -88,7 +87,7 @@ body {
   --embed-font-style: inherit;
   /* Blocks */
   --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
-		inset 0 0 0 1px var(--background-modifier-border);
+    inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
   --file-folding-offset: 24px;
@@ -439,7 +438,7 @@ body {
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-error: var(--color-red);
-  --background-modifier-error-hover:var(--color-red-error-hover);
+  --background-modifier-error-hover: var(--color-red-error-hover);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-red);
   --background-modifier-message: var(--color-base-10);
@@ -461,6 +460,3 @@ body {
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-2);
 }
-
-
-
