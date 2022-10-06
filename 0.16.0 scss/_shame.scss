@@ -5,6 +5,7 @@ body {
 	and sort alphabetically to maximize readability in
 	the compiled app.css file.
 	----------------------------------------------------- */
+
   /* Animations */
   --anim-duration-none: 0;
   --anim-duration-superfast: 70ms;
@@ -14,19 +15,23 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
+
   /* Bold */
   --bold-weight: var(--font-bold);
   --bold-color: inherit;
+
   /* Borders */
   --border-width: 1px;
+
   /* Callouts */
-  --callout-border-width: 0px;
+  --callout-border-width: 0;
   --callout-border-opacity: 0.25;
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-radius: var(--radius-s);
@@ -35,6 +40,7 @@ body {
   --callout-title-background: transparent;
   --callout-title-size: inherit;
   --callout-content-padding: 0;
+
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: 15px;
@@ -45,6 +51,7 @@ body {
   --checkbox-border-color-hover: var(--text-muted);
   --checklist-done-decoration: line-through;
   --checklist-done-color: var(--text-muted);
+
   /* Code */
   --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
@@ -58,25 +65,31 @@ body {
   --code-function: var(--color-yellow);
   --code-keyword: var(--color-pink);
   --code-important: var(--color-orange);
+
   /* Collapse icons */
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+
   /* Cursor */
   --cursor: default;
   --cursor-link: pointer;
+
   /* Dialogs - e.g. small modals, confirmations */
   --dialog-width: 560px;
   --dialog-max-width: 80vw;
   --dialog-max-height: 85vh;
+
   /* Dividers â€” between panes */
   --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
   --divider-width: 1px;
   --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
+
   /* Dragging */
-  --drag-ghost-background: rgba(0, 0, 0, 0.85);
+  --drag-ghost-background: rgb(0 0 0 / 85%);
   --drag-ghost-text-color: var(--text-muted);
+
   /* Embeds */
   --embed-background: inherit;
   --embed-border-left: 2px solid var(--interactive-accent);
@@ -85,24 +98,30 @@ body {
   --embed-border-bottom: none;
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
+
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
+
   /* File layout */
   --file-line-width: 700px;
   --file-folding-offset: 24px;
   --file-margins: var(--size-4-8);
   --file-header-font-size: var(--font-text-size);
   --file-header-font-weight: var(--font-medium);
+
   /* Relative font sizes */
   --font-smallest: 0.8em;
   --font-smaller: 0.875em;
   --font-small: 0.933em;
+
   /* UI font sizes */
   --font-ui-smaller: 13px;
   --font-ui-small: 14px;
   --font-ui-medium: 16px;
   --font-ui-large: 20px;
+
   /* Font weights */
   --font-thin: 100;
   --font-extralight: 200;
@@ -113,8 +132,10 @@ body {
   --font-bold: 700;
   --font-extrabold: 800;
   --font-black: 900;
+
   /* Footnotes */
   --footnote-size: var(--font-smaller);
+
   /* Graphs */
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
@@ -124,6 +145,7 @@ body {
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: var(--color-green);
   --graph-node-attachment: var(--color-yellow);
+
   /* Headings */
   --heading-formatting: var(--text-faint);
   --h1-color: inherit;
@@ -168,11 +190,14 @@ body {
   --h4-weight: 600;
   --h5-weight: 600;
   --h6-weight: 600;
+
   /* View header */
   --header-height: 40px;
+
   /* Horizontal rules */
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
+
   /* Icons */
   --icon-size: var(--icon-m);
   --icon-stroke: var(--icon-m-stroke-width);
@@ -192,10 +217,12 @@ body {
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
+
   /* Indentation guide */
   --indentation-guide-width: 2px;
   --indentation-guide-color: var(--color-base-40);
-  --indentation-guide-color-active: hsla(var(--color-accent-hsl), .9);
+  --indentation-guide-color-active: hsl(var(--color-accent-hsl) 0.9);
+
   /* Inline title */
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -204,11 +231,14 @@ body {
   --inline-title-style: var(--h1-style);
   --inline-title-variant: var(--h1-variant);
   --inline-title-weight: var(--h1-weight);
+
   /* Inputs */
   --input-height: 30px;
   --input-radius: 5px;
+
   /* Italic */
   --italic-color: inherit;
+
   /* Z-index */
   --layer-cover: 5;
   --layer-sidedock: 10;
@@ -220,9 +250,11 @@ body {
   --layer-menu: 65;
   --layer-tooltip: 70;
   --layer-dragged-item: 80;
+
   /* Line heights */
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
+
   /* Links */
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
@@ -237,7 +269,8 @@ body {
   --link-unresolved-opacity: 0.8;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.5);
+  --link-unresolved-decoration-color: hsl(var(--interactive-accent-hsl) 0.5);
+
   /* Lists */
   --list-indent: 2em;
   --list-spacing: 0.075em;
@@ -248,6 +281,7 @@ body {
   --list-bullet-radius: 50%;
   --list-bullet-size: 5px;
   --list-bullet-transform: none;
+
   /* File navigator */
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
@@ -257,7 +291,7 @@ body {
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--color-yellow);
   --nav-item-background-active: var(--color-accent);
-  --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
+  --nav-item-background-selected: hsl(var(--color-accent-hsl) 0.2);
   --nav-item-weight: var(--font-medium);
   --nav-item-weight-hover: var(--font-medium);
   --nav-item-weight-active: var(--font-medium);
@@ -266,6 +300,7 @@ body {
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-collapse-icon-color: var(--text-muted);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
+
   /* Modals - e.g. settings, community themes, community plugins */
   --modal-width: 90vw;
   --modal-height: 85vh;
@@ -276,6 +311,7 @@ body {
   --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
+
   /* Popovers - file previews */
   --popover-width: 450px;
   --popover-height: 400px;
@@ -283,25 +319,30 @@ body {
   --popover-pdf-width: 600px;
   --popover-pdf-height: 800px;
   --popover-font-size: var(--font-text-size);
+
   /* Prompts - e.g. quick switcher, command palette */
   --prompt-width: 700px;
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
+
   /* Ribbon */
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-width: 44px;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
+
   /* Scrollbars */
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100) 0.2);
+  --scrollbar-bg: rgb(var(--mono-rgb-100) 0.05);
+  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100) 0.1);
+
   /* Layout sizing - for padding and margins */
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -316,9 +357,11 @@ body {
   --size-4-12: 48px;
   --size-4-16: 64px;
   --size-4-18: 72px;
+
   /* Sidebar */
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
+
   /* Sliders */
   --slider-thumb-height: 18px;
   --slider-thumb-width: 18px;
@@ -326,6 +369,7 @@ body {
   --slider-thumb-radius: 50%;
   --slider-s-thumb-size-: 15px;
   --slider-s-thumb-position: -5px;
+
   /* Status bar */
   --status-bar-background: var(--background-secondary);
   --status-bar-border-color: var(--divider-color);
@@ -334,6 +378,7 @@ body {
   --status-bar-text-color: var(--text-muted);
   --status-bar-position: fixed;
   --status-bar-radius: var(--radius-m) 0 0 0;
+
   /* Tabs */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
@@ -350,6 +395,7 @@ body {
   --tab-radius-active: 6px 6px 0 0;
   --tab-width: 200px;
   --tab-max-width: 320px;
+
   /* Stacked tabs */
   --tab-stacked-pane-width: 700px;
   --tab-stacked-header-width: var(--header-height);
@@ -358,7 +404,8 @@ body {
   --tab-stacked-text-align: left;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0 0 0 / 5%);
+
   /* Tables */
   --table-background: transparent;
   --table-border-width: 1px;
@@ -381,29 +428,32 @@ body {
   --table-row-background-hover: var(--table-background);
   --table-row-alt-background: var(--table-background);
   --table-row-last-border-width: var(--table-border-width);
+
   /* Tags */
   --tag-size: var(--font-smaller);
   --tag-color: var(--text-accent);
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
-  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --tag-border-width: 0px;
+  --tag-background: hsl(var(--interactive-accent-hsl) 0.1);
+  --tag-background-hover: hsl(var(--interactive-accent-hsl) 0.2);
+  --tag-border-color: hsl(var(--interactive-accent-hsl) 0.15);
+  --tag-border-color-hover: hsl(var(--interactive-accent-hsl) 0.15);
+  --tag-border-width: 0;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
+
   /* Window frame */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
-  --titlebar-border-width: 0px;
+  --titlebar-border-width: 0;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
   --titlebar-text-color-focused: var(--color-purple);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
   --titlebar-text-weight: var(--font-semibold);
+
   /* Toggles */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
@@ -416,17 +466,22 @@ body {
   --toggle-s-width: 34px;
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
+
   /* Vault name */
   --vault-name-font-size: var(--font-ui-medium);
   --vault-name-font-weight: var(--font-semibold);
   --vault-name-color: var(--text-normal);
+
   /* Workspace */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --workspace-background-translucent: rgb(var(--mono-rgb-0) 0.6);
+
   /* Color mappings ------------------------ */
+
   /* Accent HSL values */
   --accent-h: 232;
   --accent-s: 97%;
   --accent-l: 85%;
+
   /* Backgrounds */
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
@@ -442,8 +497,10 @@ body {
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-red);
   --background-modifier-message: var(--color-base-10);
+
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);
+
   /* Text */
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -451,7 +508,7 @@ body {
   --text-on-accent: var(--color-base-10);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-selection: hsl(var(--color-accent-hsl) 0.2);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);
