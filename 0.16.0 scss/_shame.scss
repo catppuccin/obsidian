@@ -211,8 +211,8 @@ body {
   --icon-l-stroke-width: 1.75px;
   --icon-color: var(--text-muted);
   --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-normal);
-  --icon-color-focused: var(--text-muted);
+  --icon-color-active: var(--color-rosewater);
+  --icon-color-focused: var(--color-rosewater);
   --icon-opacity: 0.85;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
@@ -325,7 +325,7 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(--color-base-30, var(--background-modifier-border-focus));
 
   /* Radiuses */
   --radius-s: 4px;
@@ -367,7 +367,7 @@ body {
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
   --slider-thumb-radius: 50%;
-  --slider-s-thumb-size-: 15px;
+  --slider-s-thumb-size: 15px;
   --slider-s-thumb-position: -5px;
 
   /* Status bar */
@@ -450,7 +450,7 @@ body {
   --titlebar-border-width: 0;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
-  --titlebar-text-color-focused: var(--color-purple);
+  --titlebar-text-color-focused: var(--color-rosewater);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
   --titlebar-text-weight: var(--font-semibold);
 

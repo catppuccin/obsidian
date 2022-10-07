@@ -2,18 +2,22 @@
   background-color: var(--color-accent);
   color: var(--text-on-accent);
 }
+
 .prompt-input[type="text"] {
   text-decoration: underline 2px var(--color-accent) solid;
   text-underline-offset: 1px;
 }
+
 input.prompt-input:hover,
 input.prompt-input:focus,
 input.prompt-input:focus-visible {
   background-color: var(--background-primary);
 }
+
 body .prompt-results {
   background-color: var(--background-secondary);
 }
+
 .suggestion-item.mod-complex .suggestion-hotkey {
   background-color: var(--color-base-30);
   color: var(--color-accent);

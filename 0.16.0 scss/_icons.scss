@@ -1,26 +1,12 @@
-svg {
-  --quick-bg-transition: color 0.3s ease;
-
-  transition: var(--quick-bg-transition);
-}
-
-.workspace-tab-header-inner {
-  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-  transition: var(--quick-bg-transition);
-}
-
 .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
   color: var(--text-on-accent);
 }
 
 .clickable-icon.clickable-icon {
-  --quick-bg-transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-  transition: var(--quick-bg-transition);
+  border: 1px solid transparent;
 
   &:hover {
-    background-color: var(--color-purple);
+    background-color: var(--color-orange);
 
     & svg {
       color: var(--text-on-accent);
@@ -29,22 +15,27 @@ svg {
 }
 
 .clickable-icon.is-active {
+  border: 1px solid var(--color-orange);
   background-color: var(--background-modifier-hover);
   box-shadow: var(--box-shadow-inset-small);
-  border: 1px solid var(--color-purple);
 
   &:hover {
     box-shadow: none;
   }
 }
 
+.mod-left-split .workspace-tab-header .workspace-tab-header-inner,
+.mod-right-split .workspace-tab-header.workspace-tab-header-inner {
+  border: 1px solid transparent;
+}
+
 .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner,
 .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner {
+  border: 1px solid var(--color-orange);
   box-shadow: var(--box-shadow-inset-small);
-  border: 1px solid var(--color-purple);
 
   &:hover {
-    background-color: var(--color-purple);
+    background-color: var(--color-orange);
     box-shadow: none;
 
     & svg {
@@ -53,11 +44,7 @@ svg {
   }
 }
 
-.workspace-tab-header:not(.is-active) > .workspace-tab-header-inner {
-  border-color: transparent;
-}
-
 .mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner,
 .mod-right-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner {
-  background-color: var(--color-purple);
+  background-color: var(--color-orange);
 }

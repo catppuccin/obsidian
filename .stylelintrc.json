@@ -1,5 +1,9 @@
 {
     "extends": [
-        "stylelint-config-standard-scss"
+        "stylelint-config-standard-scss",
+        "stylelint-config-idiomatic-order"
+    ],
+    "plugins": [
+        "stylelint-order"
     ]
 }

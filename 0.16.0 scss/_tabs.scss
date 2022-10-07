@@ -1,0 +1,11 @@
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  background-color: var(--color-accent);
+
+  & .workspace-tab-header-inner-title {
+    color: var(--text-on-accent);
+  }
+
+  & svg {
+    color: var(--text-on-accent);
+  }
+}
