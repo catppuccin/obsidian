@@ -9,3 +9,15 @@
     color: var(--text-on-accent);
   }
 }
+
+.workspace-tab-header.is-active:hover .workspace-tab-header-inner {
+  background-color: var(--background-primary);
+
+  & .workspace-tab-header-inner-title {
+    color: var(--color-rosewater);
+  }
+
+  & svg {
+    color: var(--text-normal);
+  }
+}

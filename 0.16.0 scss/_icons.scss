@@ -2,11 +2,11 @@
   color: var(--text-on-accent);
 }
 
-.clickable-icon.clickable-icon {
+.clickable-icon {
   border: 1px solid transparent;
 
   &:hover {
-    background-color: var(--color-orange);
+    background-color: var(--color-pink);
 
     & svg {
       color: var(--text-on-accent);
@@ -15,7 +15,7 @@
 }
 
 .clickable-icon.is-active {
-  border: 1px solid var(--color-orange);
+  border: 1px solid var(--color-pink);
   background-color: var(--background-modifier-hover);
   box-shadow: var(--box-shadow-inset-small);
 
@@ -24,27 +24,27 @@
   }
 }
 
-.mod-left-split .workspace-tab-header .workspace-tab-header-inner,
-.mod-right-split .workspace-tab-header.workspace-tab-header-inner {
+.workspace-tab-header.clickable-icon {
   border: 1px solid transparent;
 }
 
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner,
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner {
-  border: 1px solid var(--color-orange);
-  box-shadow: var(--box-shadow-inset-small);
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  .mod-split-right &,
+  .mod-split-left & {
+    border: 1px solid var(--color-pink);
+    box-shadow: var(--box-shadow-inset-small);
 
-  &:hover {
-    background-color: var(--color-orange);
-    box-shadow: none;
+    &:hover {
+      background-color: var(--color-pink);
+      box-shadow: none;
 
-    & svg {
-      color: var(--text-on-accent);
+      & svg {
+        color: var(--text-on-accent);
+      }
     }
   }
 }
 
-.mod-left-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner,
-.mod-right-split .workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner {
-  background-color: var(--color-orange);
+.workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner {
+  background-color: var(--color-pink);
 }
