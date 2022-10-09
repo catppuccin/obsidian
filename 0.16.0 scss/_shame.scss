@@ -203,17 +203,17 @@ body {
   --icon-stroke: var(--icon-m-stroke-width);
   --icon-xs: 14px;
   --icon-s: 16px;
-  --icon-m: 20px;
+  --icon-m: 18px;
   --icon-l: 20px;
   --icon-xs-stroke-width: 2px;
   --icon-s-stroke-width: 2px;
   --icon-m-stroke-width: 1.75px;
   --icon-l-stroke-width: 1.75px;
   --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--color-rosewater);
-  --icon-color-focused: var(--color-rosewater);
-  --icon-opacity: 0.85;
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--text-normal);
+  --icon-color-focused: var(--text-normal);
+  --icon-opacity: 1;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
@@ -383,17 +383,17 @@ body {
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
   --tab-text-color-focused: var(--text-muted);
-  --tab-text-color-focused-active: var(--text-normal);
+  --tab-text-color-focused-active: var(--color-rosewater);
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: var(--font-medium);
   --tab-container-background: var(--background-secondary);
   --tab-divider-color: var(--background-modifier-border-hover);
   --tab-outline-color: var(--divider-color);
-  --tab-outline-width: 1px;
+  --tab-outline-width: 2px;
   --tab-curve: 6px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
-  --tab-width: 200px;
+  --tab-width: 175px;
   --tab-max-width: 320px;
 
   /* Stacked tabs */

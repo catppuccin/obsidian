@@ -1,41 +1,33 @@
-.workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
-  color: var(--text-on-accent);
-}
-
 .clickable-icon {
   border: 1px solid transparent;
 
   &:hover {
-    background-color: var(--color-pink);
+    --background-modifier-hover: var(--color-pink);
+    --background-modifier-active-hover: var(--color-pink);
 
     & svg {
       color: var(--text-on-accent);
     }
   }
-}
 
-.clickable-icon.is-active {
-  border: 1px solid var(--color-pink);
-  background-color: var(--background-modifier-hover);
-  box-shadow: var(--box-shadow-inset-small);
-
-  &:hover {
-    box-shadow: none;
-  }
-}
-
-.workspace-tab-header.clickable-icon {
-  border: 1px solid transparent;
-}
-
-.workspace-tab-header.is-active .workspace-tab-header-inner {
-  .mod-split-right &,
-  .mod-split-left & {
+  &.is-active {
     border: 1px solid var(--color-pink);
     box-shadow: var(--box-shadow-inset-small);
 
     &:hover {
-      background-color: var(--color-pink);
+      box-shadow: none;
+    }
+  }
+}
+
+.workspace-tab-header {
+  .mod-right-split &,
+  .mod-left-split & {
+
+    &:hover {
+      --background-modifier-hover: var(--color-pink);
+      --background-modifier-active-hover: var(--color-pink);
+
       box-shadow: none;
 
       & svg {
@@ -45,6 +37,21 @@
   }
 }
 
-.workspace-tab-header:not(.is-active):hover > .workspace-tab-header-inner {
-  background-color: var(--color-pink);
+.workspace-tab-header.is-active {
+  .mod-right-split &,
+  .mod-left-split & {
+    border: 1px solid var(--color-pink);
+    box-shadow: var(--box-shadow-inset-small);
+
+    &:hover {
+      --background-modifier-hover: var(--color-pink);
+      --background-modifier-active-hover: var(--color-pink);
+
+      box-shadow: none;
+
+      & svg {
+        color: var(--text-on-accent);
+      }
+    }
+  }
 }
