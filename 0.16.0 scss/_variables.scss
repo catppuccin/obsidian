@@ -8,22 +8,22 @@ body {
     inset 4px 4px 10px #11111b,
     inset -4px -4px 10px #1e1e2e;
   --box-shadow-inset-small-hover:
-    0 2px 4px inset hsl(240deg 23% 9%),
-    0 4px 8px inset hsl(240deg 23% 9%);
+    0 2px 4px inset hsl(240 23% 9%),
+    0 4px 8px inset hsl(240 23% 9%);
   --box-shadow-inset-large:
-    0 2px 4px inset hsl(240deg 23% 9%),
-    0 4px 8px inset hsl(240deg 23% 9%),
-    0 8px 16px inset hsl(240deg 23% 9%);
+    0 2px 4px inset hsl(240 23% 9%),
+    0 4px 8px inset hsl(240 23% 9%),
+    0 8px 16px inset hsl(240 23% 9%);
   --box-shadow-large:
-    0 0 4px hsl(240deg 23% 9%),
-    0 0 8px hsl(240deg 23% 9%),
-    0 0 16px hsl(240deg 23% 9%);
+    0 0 4px hsl(240 23% 9%),
+    0 0 8px hsl(240 23% 9%),
+    0 0 16px hsl(240 23% 9%);
   --box-shadow-small:
-    0 2px 2px hsl(240deg 23% 9%),
-    0 4px 4px hsl(240deg 23% 9%);
+    0 2px 2px hsl(240 23% 9%),
+    0 4px 4px hsl(240 23% 9%);
   --box-shadow-small-hover:
-    0 2px 2px hsl(240deg 23% 9%),
-    0 4px 4px hsl(240deg 23% 9%);
+    0 2px 2px hsl(240 23% 9%),
+    0 4px 4px hsl(240 23% 9%);
 
   /* Text */
   --text-underline: 2px;

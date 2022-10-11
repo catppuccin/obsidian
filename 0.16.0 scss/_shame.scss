@@ -31,8 +31,8 @@ body {
   --border-width: 1px;
 
   /* Callouts */
-  --callout-border-width: 0;
-  --callout-border-opacity: 0.25;
+  --callout-border-width: 2px;
+  --callout-border-opacity: 0.5;
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -339,9 +339,9 @@ body {
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
 
   /* Scrollbars */
-  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100) 0.2);
-  --scrollbar-bg: rgb(var(--mono-rgb-100) 0.05);
-  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100) 0.1);
+  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100) 20%);
+  --scrollbar-bg: rgb(var(--mono-rgb-100) 5%);
+  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100) 100%);
 
   /* Layout sizing - for padding and margins */
   --size-2-1: 2px;
@@ -435,10 +435,10 @@ body {
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsl(var(--interactive-accent-hsl) 0.1);
-  --tag-background-hover: hsl(var(--interactive-accent-hsl) 0.2);
-  --tag-border-color: hsl(var(--interactive-accent-hsl) 0.15);
-  --tag-border-color-hover: hsl(var(--interactive-accent-hsl) 0.15);
+  --tag-background: hsl(var(--interactive-accent-hsl) / 10%);
+  --tag-background-hover: hsl(var(--interactive-accent-hsl) / 20%);
+  --tag-border-color: hsl(var(--interactive-accent-hsl) / 15%);
+  --tag-border-color-hover: hsl(var(--interactive-accent-hsl) / 15%);
   --tag-border-width: 0;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;

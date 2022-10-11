@@ -2,11 +2,11 @@
   --background-modifier-hover: var(--color-accent);
   --background-modifier-active-hover: var(--color-accent);
 
-  & .workspace-tab-header-inner-title {
+  .workspace-tab-header-inner-title {
     color: var(--text-on-accent);
   }
 
-  & svg {
+  svg {
     color: var(--text-on-accent);
   }
 }

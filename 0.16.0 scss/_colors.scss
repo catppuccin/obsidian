@@ -1,37 +1,37 @@
 /* mocha palette from https://github.com/catppuccin/palette/tree/main/scss */
 
-$rosewater: #f5e0dc;
-$flamingo: #f2cdcd;
-$pink: #f5c2e7;
-$mauve: #cba6f7;
-$red: #f38ba8;
+$rosewater: hsl(10 56% 91%);
+$flamingo: hsl(0 59% 88%);
+$pink: hsl(316 72% 86%);
+$mauve: hsl(267 84% 81%);
+$red: hsl(343 81% 75%);
 
 /* Hover over close */
-$maroon: #eba0ac;
-$peach: #fab387;
+$maroon: hsl(350 65% 77%);
+$peach: hsl(23 92% 75%);
 
 /* Text & sidebar hover highlight */
-$yellow: #f9e2af;
-$green: #a6e3a1;
-$teal: #94e2d5;
-$sky: #89dceb;
-$sapphire: #74c7ec;
-$blue: #89b4fa;
+$yellow: hsl(41 86% 83%);
+$green: hsl(115 54% 76%);
+$teal: hsl(170 57% 73%);
+$sky: hsl(189 71% 73%);
+$sapphire: hsl(199 76% 69%);
+$blue: hsl(217 92% 76%);
 
 /* Default accent */
-$lavender: #b4befe;
-$text: #cdd6f4;
-$subtext1: #bac2de;
-$subtext0: #a6adc8;
-$overlay2: #9399b2;
-$overlay1: #7f849c;
-$overlay0: #6c7086;
-$surface2: #585b70;
-$surface1: #45475a;
-$surface0: #313244;
-$base: #1e1e2e;
-$mantle: #181825;
-$crust: #11111b;
+$lavender: hsl(232 97% 85%);
+$text: hsl(226 64% 88%);
+$subtext1: hsl(227 35% 80%);
+$subtext0: hsl(228 24% 72%);
+$overlay2: hsl(228 17% 64%);
+$overlay1: hsl(230 13% 55%);
+$overlay0: hsl(231 11% 47%);
+$surface2: hsl(233 12% 39%);
+$surface1: hsl(234 13% 31%);
+$surface0: hsl(237 16% 23%);
+$base: hsl(240 21% 15%);
+$mantle: hsl(240 21% 12%);
+$crust: hsl(240 23% 9%);
 
 /* end mocha palette */
 
@@ -44,7 +44,7 @@ $crust: #11111b;
   --mono-rgb-100: 255, 255, 255;
   --color-red-rgb: 243, 140, 169;
   --color-red: #{$red};
-  --color-red-error-hover: hsl(343deg 81% calc(75% + 3.8%));
+  --color-red-error-hover: hsl(343 81% calc(75% + 3.8%));
   --color-green-rgb: 68, 207, 110;
   --color-rosewater: #{$rosewater};
   --color-maroon: #{$maroon};
@@ -63,7 +63,7 @@ $crust: #11111b;
   --color-base-35: #{$surface1};
   --color-base-40: #{$surface2};
   --color-base-50: #{$subtext0};
-  --color-base-60: #999;
+  --color-base-60: hsl(0 0% 60%);
   --color-base-70: #{$subtext1};
   --color-base-100: #{$text}; // text
   --color-accent-hsl:
@@ -77,29 +77,29 @@ $crust: #11111b;
   --background-secondary-alt: var(--color-base-20);
   --interactive-normal: var(--color-base-30);
   --interactive-hover: var(--color-base-35);
-  --background-modifier-box-shadow: rgb(0 0 0 / 30%);
-  --background-modifier-cover: rgb(10 10 10 / 40%);
-  --text-highlight-bg: rgb(255 208 0 / 40%);
-  --text-highlight-bg-active: rgb(255 128 0 / 40%);
-  --text-selection: hsl(var(--interactive-accent-hsl) 0.25);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 30%);
+  --background-modifier-cover: rgba(10, 10, 10, 40%);
+  --text-highlight-bg: rgba(255, 208, 0, 40%);
+  --text-highlight-bg-active: rgba(255, 128, 0, 40%);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgb(255 255 255 / 9%),
-    0 2px 4px 0 rgb(0 0 0 / 15%),
-    0 1px 1.5px 0 rgb(0 0 0 / 10%),
-    0 1px 2px 0 rgb(0 0 0 / 20%),
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 9%),
+    0 2px 4px 0 rgba(0, 0, 0, 15%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 10%),
+    0 1px 2px 0 rgba(0, 0, 0, 20%),
     0 0 0 0 transparent;
   --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgb(255 255 255 / 16%),
-    0 2px 3px 0 rgb(0 0 0 / 30%),
-    0 1px 1.5px 0 rgb(0 0 0 / 20%),
-    0 1px 2px 0 rgb(0 0 0 / 40%),
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 16%),
+    0 2px 3px 0 rgba(0, 0, 0, 30%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 20%),
+    0 1px 2px 0 rgba(0, 0, 0, 40%),
     0 0 0 0 transparent;
   --shadow-s:
-    0 1px 2px rgb(0 0 0 / 12.1%),
-    0 3.4px 6.7px rgb(0 0 0 / 17.9%),
-    0 15px 30px rgb(0 0 0 / 30%);
+    0 1px 2px rgba(0, 0, 0, 12.1%),
+    0 3.4px 6.7px rgba(0, 0, 0, 17.9%),
+    0 15px 30px rgba(0, 0, 0, 30%);
   --shadow-l:
-    0 1.8px 7.3px rgb(0 0 0 / 7.1%),
-    0 6.3px 24.7px rgb(0 0 0 / 11.2%),
-    0 30px 90px rgb(0 0 0 / 20%);
+    0 1.8px 7.3px rgba(0, 0, 0, 7.1%),
+    0 6.3px 24.7px rgba(0, 0, 0, 11.2%),
+    0 30px 90px rgba(0, 0, 0, 20%);
 }

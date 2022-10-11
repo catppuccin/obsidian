@@ -1,0 +1,11 @@
+.callout {
+  &[data-callout="warning"],
+  &[data-callout="caution"],
+  &[data-callout="attention"] {
+    --callout-color: 250, 179, 135;
+  }
+
+  &[data-callout="note"] {
+    --callout-color: 116, 199, 236;
+  }
+}
