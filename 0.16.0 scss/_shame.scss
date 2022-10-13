@@ -221,7 +221,7 @@ body {
   /* Indentation guide */
   --indentation-guide-width: 2px;
   --indentation-guide-color: var(--color-base-40);
-  --indentation-guide-color-active: hsl(var(--color-accent-hsl) 0.9);
+  --indentation-guide-color-active: hsl(var(--color-accent-hsl), 0.9);
 
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -269,7 +269,7 @@ body {
   --link-unresolved-opacity: 0.8;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsl(var(--interactive-accent-hsl) 0.5);
+  --link-unresolved-decoration-color: hsl(var(--interactive-accent-hsl), 0.5);
 
   /* Lists */
   --list-indent: 2em;
@@ -291,7 +291,7 @@ body {
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--color-yellow);
   --nav-item-background-active: var(--color-accent);
-  --nav-item-background-selected: hsl(var(--color-accent-hsl) 0.2);
+  --nav-item-background-selected: hsl(var(--color-accent-hsl), 0.2);
   --nav-item-weight: var(--font-medium);
   --nav-item-weight-hover: var(--font-medium);
   --nav-item-weight-active: var(--font-medium);
@@ -435,10 +435,10 @@ body {
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsl(var(--interactive-accent-hsl) / 10%);
-  --tag-background-hover: hsl(var(--interactive-accent-hsl) / 20%);
-  --tag-border-color: hsl(var(--interactive-accent-hsl) / 15%);
-  --tag-border-color-hover: hsl(var(--interactive-accent-hsl) / 15%);
+  --tag-background: hsl(var(--interactive-accent-hsl), .1);
+  --tag-background-hover: hsl(var(--interactive-accent-hsl), .2);
+  --tag-border-color: hsl(var(--interactive-accent-hsl), .15);
+  --tag-border-color-hover: hsl(var(--interactive-accent-hsl), .15);
   --tag-border-width: 0;
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
@@ -508,7 +508,7 @@ body {
   --text-on-accent: var(--color-base-10);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: hsl(var(--color-accent-hsl) 0.2);
+  --text-selection: hsl(var(--color-accent-hsl), 0.2);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);

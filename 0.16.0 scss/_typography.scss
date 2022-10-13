@@ -1,0 +1,9 @@
+.tooltip {
+  color: var(--color-rosewater);
+}
+
+.mod-active, .is-focused{
+  .view-header-title {
+    color: var(--color-rosewater);
+  }
+}
