@@ -233,20 +233,61 @@ settings:
 }
 
 /* ------------------Selecting Accents------------------- */
-.ctp-accent-rosewater { --ctp-accent: var(--ctp-rosewater); }
-.ctp-accent-flamingo { --ctp-accent: var(--ctp-flamingo); }
-.ctp-accent-pink { --ctp-accent: var(--ctp-pink); }
-.ctp-accent-mauve { --ctp-accent: var(--ctp-mauve); }
-.ctp-accent-red { --ctp-accent: var(--ctp-red); }
-.ctp-accent-maroon { --ctp-accent: var(--ctp-maroon); }
-.ctp-accent-peach { --ctp-accent: var(--ctp-peach); }
-.ctp-accent-yellow { --ctp-accent: var(--ctp-yellow); }
-.ctp-accent-green { --ctp-accent: var(--ctp-green); }
-.ctp-accent-teal { --ctp-accent: var(--ctp-teal); }
-.ctp-accent-sky { --ctp-accent: var(--ctp-sky); }
-.ctp-accent-sapphire { --ctp-accent: var(--ctp-sapphire); }
-.ctp-accent-blue { --ctp-accent: var(--ctp-blue); }
-.ctp-accent-lavender { --ctp-accent: var(--ctp-lavender); }
+.ctp-accent-rosewater {
+  --ctp-accent: var(--ctp-rosewater);
+}
+
+.ctp-accent-flamingo {
+  --ctp-accent: var(--ctp-flamingo);
+}
+
+.ctp-accent-pink {
+  --ctp-accent: var(--ctp-pink);
+}
+
+.ctp-accent-mauve {
+  --ctp-accent: var(--ctp-mauve);
+}
+
+.ctp-accent-red {
+  --ctp-accent: var(--ctp-red);
+}
+
+.ctp-accent-maroon {
+  --ctp-accent: var(--ctp-maroon);
+}
+
+.ctp-accent-peach {
+  --ctp-accent: var(--ctp-peach);
+}
+
+.ctp-accent-yellow {
+  --ctp-accent: var(--ctp-yellow);
+}
+
+.ctp-accent-green {
+  --ctp-accent: var(--ctp-green);
+}
+
+.ctp-accent-teal {
+  --ctp-accent: var(--ctp-teal);
+}
+
+.ctp-accent-sky {
+  --ctp-accent: var(--ctp-sky);
+}
+
+.ctp-accent-sapphire {
+  --ctp-accent: var(--ctp-sapphire);
+}
+
+.ctp-accent-blue {
+  --ctp-accent: var(--ctp-blue);
+}
+
+.ctp-accent-lavender {
+  --ctp-accent: var(--ctp-lavender);
+}
 
 /* ------------------Actual Configs-------------------- */
 .theme-dark,
@@ -288,5 +329,169 @@ settings:
   --scrollbar-bg: rgba(var(--ctp-text), 0.05);
   --scrollbar-thumb-bg: rgba(var(--ctp-text), 0.1);
 }
-.theme-dark { color-scheme: dark; --highlight-mix-blend-mode: lighten; }
-.theme-light { color-scheme: light; --highlight-mix-blend-mode: darken; }
+
+.theme-dark {
+  color-scheme: dark;
+
+  --highlight-mix-blend-mode: lighten;
+}
+
+.theme-light {
+  color-scheme: light;
+
+  --highlight-mix-blend-mode: darken;
+}
+
+body {
+  & .checkbox-container {
+    --background-modifier-border-hover: rgb(var(--ctp-red));
+
+    box-shadow: 0 0 2px inset rgb(var(--ctp-base));
+
+    &::after {
+      --toggle-thumb-color: var(--text-on-accent);
+
+      box-shadow: 0 0 4px rgb(var(--ctp-base));
+    }
+  }
+
+  & .mod-settings {
+    & input.slider {
+      --slider-track-background: rgb(var(--ctp-accent));
+    }
+
+    & input[type="color"]::-webkit-color-swatch:hover {
+      box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
+    }
+  }
+
+  & button.mod-cta {
+    border: 0;
+    border-radius: var(--button-radius);
+    -webkit-app-region: no-drag;
+    color: var(--text-normal);
+    cursor: var(--cursor);
+    font-family: inherit;
+    font-size: var(--font-ui-small);
+    font-weight: var(--input-font-weight);
+    outline: none;
+    user-select: none;
+    white-space: nowrap;
+
+    &:not(.clickable-icon) {
+      background-color: var(--interactive-normal);
+    }
+
+    &:hover {
+      background-color: var(--interactive-hover);
+    }
+  }
+
+  & .modal {
+    border-color: rgb(var(--ctp-surface1));
+  }
+
+  & select:focus,
+  & .dropdown:focus {
+    box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 0.7);
+  }
+
+  textarea:active,
+  input[type="text"]:active,
+  input[type="search"]:active,
+  input[type="email"]:active,
+  input[type="password"]:active,
+  input[type="number"]:active,
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="search"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  textarea:focus-visible,
+  input[type="text"]:focus-visible,
+  input[type="search"]:focus-visible,
+  input[type="email"]:focus-visible,
+  input[type="password"]:focus-visible,
+  input[type="number"]:focus-visible {
+    box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 0.7);
+  }
+
+  & .clickable-icon,
+  & .mod-left-split .workspace-tab-header,
+  & .mod-right-split .workspace-tab-header {
+    margin: 0 2px;
+
+    &:hover {
+      background-color: rgb(var(--ctp-accent));
+      color: var(--text-on-accent);
+    }
+
+    &:hover svg {
+      color: var(--text-on-accent);
+    }
+  }
+
+  & .clickable-icon.is-active,
+  & .mod-left-split .workspace-tab-header.has-active-menu,
+  & .mod-right-split .workspace-tab-header.has-active-menu,
+  & .mod-left-split .workspace-tab-header.is-active,
+  & .mod-right-split .workspace-tab-header.is-active {
+    box-shadow:
+      inset 0 0 4px rgb(var(--ctp-crust)),
+      inset 0 0 6px rgb(var(--ctp-base));
+    outline: 1px solid rgb(var(--ctp-surface1));
+
+    svg {
+      color: rgb(var(--ctp-accent));
+    }
+
+    &:hover,
+    &:hover svg {
+      background-color: rgb(var(--ctp-accent));
+      box-shadow: none;
+      color: var(--text-on-accent);
+    }
+  }
+
+  .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
+    background-color: rgb(var(--ctp-red));
+    box-shadow: 0 0 0 1px rgb(var(--ctp-crust));
+    color: rgb(var(--ctp-base));
+  }
+
+  .search-result-file-match:hover .search-result-file-match-destination-file:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  }
+
+  :not(.is-grabbing) .nav-file-title:hover,
+  :not(.is-grabbing) .nav-folder-title:hover,
+  .nav-file-title.is-active,
+  .nav-folder-title.is-active,
+  .tree-item-self.is-clickable:hover {
+    --nav-item-background-active: rgb(var(--ctp-yellow));
+    --nav-item-background-hover: rgb(var(--ctp-yellow));
+    --nav-item-color-hover: var(--text-on-accent);
+    --nav-item-color-active: var(--text-on-accent);
+  }
+
+  .nav-folder.mod-root > .nav-folder-title:hover {
+    color: rgb(var(--text-normal));
+  }
+
+  .tree-item-self:hover .tree-item-flair {
+    color: var(--text-on-accent);
+  }
+
+  & .nav-file-tag {
+    background-color: rgb(var(--ctp-base));
+    color: var(--text-normal);
+  }
+
+  & .is-active .nav-file-tag {
+    box-shadow:
+      inset 0 0 4px rgb(var(--ctp-crust)),
+      inset 0 0 6px rgb(var(--ctp-base));
+  }
+}
