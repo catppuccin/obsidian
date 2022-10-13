@@ -441,7 +441,9 @@ body .tree-item-self.is-clickable:hover {
 body .nav-folder.mod-root > .nav-folder-title:hover {
   color: rgb(var(--text-normal));
 }
-body .tree-item-self:hover .tree-item-flair {
+body .tree-item-self:hover .tree-item-flair,
+body .backlink-pane > .tree-item-self.is-collapsed:hover,
+body .outgoing-link-pane > .tree-item-self.is-collapsed:hover {
   color: var(--text-on-accent);
 }
 body .nav-file-tag {

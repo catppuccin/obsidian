@@ -480,7 +480,9 @@ body {
     color: rgb(var(--text-normal));
   }
 
-  .tree-item-self:hover .tree-item-flair {
+  .tree-item-self:hover .tree-item-flair,
+  .backlink-pane > .tree-item-self.is-collapsed:hover,
+  .outgoing-link-pane > .tree-item-self.is-collapsed:hover {
     color: var(--text-on-accent);
   }
 
