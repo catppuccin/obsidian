@@ -275,6 +275,9 @@ settings:
   --background-modifier-error-rgb: var(--ctp-red);
   --background-modifier-error-hover: rgba(var(--ctp-red), 0.15);
   --background-modifier-cover: rgba(var(--ctp-crust), 0.8);
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent));
+  --color-accent-2: rgba(var(--ctp-accent), 0.9);
   --text-accent: rgb(var(--ctp-accent));
   --text-accent-hover: rgb(var(--ctp-accent));
   --text-normal: rgb(var(--ctp-text));
@@ -438,8 +441,8 @@ body {
   .nav-file-title.is-active,
   .nav-folder-title.is-active,
   .tree-item-self.is-clickable:hover {
-    --nav-item-background-active: rgb(var(--ctp-yellow));
-    --nav-item-background-hover: rgb(var(--ctp-yellow));
+    --nav-item-background-active: rgb(var(--ctp-accent));
+    --nav-item-background-hover: rgb(var(--ctp-accent));
     --nav-item-color-hover: var(--text-on-accent);
     --nav-item-color-active: var(--text-on-accent);
   }
