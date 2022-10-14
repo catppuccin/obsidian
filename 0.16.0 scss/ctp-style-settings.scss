@@ -1,3 +1,4 @@
+
 /* @settings
 name: Catppuccin
 id: catppuccin-theme-settings
@@ -79,8 +80,7 @@ settings:
 */
 
 /* ------------------Defining Colorschemes------------------- */
-.theme-light {
-  /* Yes i know it's latte but it's the default here */
+.theme-light, .theme-light.ctp-latte {
   --ctp-rosewater: 222, 149, 132;
   --ctp-flamingo: 221, 120, 120;
   --ctp-pink: 236, 131, 208;
@@ -107,42 +107,6 @@ settings:
   --ctp-base: 239, 241, 245;
   --ctp-mantle: 230, 233, 239;
   --ctp-crust: 220, 224, 232;
-
-  /* Default accent color will be rosewater */
-  --ctp-accent: 222, 149, 132;
-}
-
-.theme-dark {
-  /* Default dark theme in this case is mocha */
-  --ctp-rosewater: 245, 224, 220;
-  --ctp-flamingo: 242, 205, 205;
-  --ctp-pink: 245, 194, 231;
-  --ctp-mauve: 203, 166, 247;
-  --ctp-red: 243, 139, 168;
-  --ctp-maroon: 235, 160, 172;
-  --ctp-peach: 250, 179, 135;
-  --ctp-yellow: 249, 226, 175;
-  --ctp-green: 166, 227, 161;
-  --ctp-teal: 148, 226, 213;
-  --ctp-sky: 137, 220, 235;
-  --ctp-sapphire: 116, 199, 236;
-  --ctp-blue: 135, 176, 249;
-  --ctp-lavender: 180, 190, 254;
-  --ctp-text: 198, 208, 245;
-  --ctp-subtext1: 179, 188, 223;
-  --ctp-subtext0: 161, 168, 201;
-  --ctp-overlay2: 142, 149, 179;
-  --ctp-overlay1: 123, 129, 157;
-  --ctp-overlay0: 105, 109, 134;
-  --ctp-surface2: 86, 89, 112;
-  --ctp-surface1: 67, 70, 90;
-  --ctp-surface0: 49, 50, 68;
-  --ctp-base: 30, 30, 46;
-  --ctp-mantle: 24, 24, 37;
-  --ctp-crust: 17, 17, 27;
-
-  /* Default accent color will be rosewater */
-  --ctp-accent: 245, 224, 220;
 }
 
 .theme-dark.ctp-frappe {
@@ -203,7 +167,7 @@ settings:
   --ctp-crust: 24, 25, 38;
 }
 
-.theme-dark.ctp-mocha {
+.theme-dark, .theme-dark.ctp-mocha {
   --ctp-rosewater: 245, 224, 220;
   --ctp-flamingo: 242, 205, 205;
   --ctp-pink: 245, 194, 231;
@@ -232,6 +196,10 @@ settings:
   --ctp-crust: 17, 17, 27;
 }
 
+/*-------------------Default Accents----------------------*/
+.theme-dark, .theme-light {
+  --ctp-accent: var(--ctp-rosewater);
+}
 /* ------------------Selecting Accents------------------- */
 .ctp-accent-rosewater {
   --ctp-accent: var(--ctp-rosewater);
@@ -307,6 +275,9 @@ settings:
   --background-modifier-error-rgb: var(--ctp-red);
   --background-modifier-error-hover: rgba(var(--ctp-red), 0.15);
   --background-modifier-cover: rgba(var(--ctp-crust), 0.8);
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent));
+  --color-accent-2: rgba(var(--ctp-accent), 0.9);
   --text-accent: rgb(var(--ctp-accent));
   --text-accent-hover: rgb(var(--ctp-accent));
   --text-normal: rgb(var(--ctp-text));
@@ -393,7 +364,7 @@ body {
 
   & select:focus,
   & .dropdown:focus {
-    box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 0.7);
+    box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
   }
 
   textarea:active,
@@ -414,7 +385,7 @@ body {
   input[type="email"]:focus-visible,
   input[type="password"]:focus-visible,
   input[type="number"]:focus-visible {
-    box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 0.7);
+    box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
   }
 
   & .clickable-icon,
@@ -470,8 +441,8 @@ body {
   .nav-file-title.is-active,
   .nav-folder-title.is-active,
   .tree-item-self.is-clickable:hover {
-    --nav-item-background-active: rgb(var(--ctp-yellow));
-    --nav-item-background-hover: rgb(var(--ctp-yellow));
+    --nav-item-background-active: rgb(var(--ctp-accent));
+    --nav-item-background-hover: rgb(var(--ctp-accent));
     --nav-item-color-hover: var(--text-on-accent);
     --nav-item-color-active: var(--text-on-accent);
   }
