@@ -1,4 +1,3 @@
-
 /* @settings
 name: Catppuccin
 id: catppuccin-theme-settings
@@ -80,7 +79,8 @@ settings:
 */
 
 /* ------------------Defining Colorschemes------------------- */
-.theme-light, .theme-light.ctp-latte {
+.theme-light,
+.theme-light.ctp-latte {
   --ctp-rosewater: 222, 149, 132;
   --ctp-flamingo: 221, 120, 120;
   --ctp-pink: 236, 131, 208;
@@ -167,7 +167,8 @@ settings:
   --ctp-crust: 24, 25, 38;
 }
 
-.theme-dark, .theme-dark.ctp-mocha {
+.theme-dark,
+.theme-dark.ctp-mocha {
   --ctp-rosewater: 245, 224, 220;
   --ctp-flamingo: 242, 205, 205;
   --ctp-pink: 245, 194, 231;
@@ -196,10 +197,12 @@ settings:
   --ctp-crust: 17, 17, 27;
 }
 
-/*-------------------Default Accents----------------------*/
-.theme-dark, .theme-light {
+/* -------------------Default Accents---------------------- */
+.theme-dark,
+.theme-light {
   --ctp-accent: var(--ctp-rosewater);
 }
+
 /* ------------------Selecting Accents------------------- */
 .ctp-accent-rosewater {
   --ctp-accent: var(--ctp-rosewater);
@@ -299,6 +302,97 @@ settings:
   --scrollbar-active-thumb-bg: rgba(var(--ctp-text), 0.2);
   --scrollbar-bg: rgba(var(--ctp-text), 0.05);
   --scrollbar-thumb-bg: rgba(var(--ctp-text), 0.1);
+
+  /* changes to app.css variables */
+
+  /* indentation guides */
+  --indentation-guide-color: rgba(var(--ctp-surface1));
+  --indentation-guide-color-active: rgba(var(--ctp-accent), 0.7);
+  --indentation-guide-width: 2px;
+
+  /* callouts */
+
+  .callout {
+    --callout-color: var(--ctp-accent);
+    --callout-icon: lucide-pencil;
+  }
+
+  .callout[data-callout="abstract"],
+  .callout[data-callout="summary"],
+  .callout[data-callout="tldr"] {
+    --callout-color: var(--ctp-accent);
+    --callout-icon: lucide-clipboard-list;
+  }
+
+  .callout[data-callout="info"],
+  .callout[data-callout="todo"] {
+    --callout-color: var(--ctp-green);
+  }
+
+  .callout[data-callout="info"] {
+    --callout-icon: lucide-info;
+  }
+
+  .callout[data-callout="todo"] {
+    --callout-icon: lucide-check-circle-2;
+  }
+
+  .callout[data-callout="tip"],
+  .callout[data-callout="hint"],
+  .callout[data-callout="important"] {
+    --callout-color: var(--ctp-maroon);
+    --callout-icon: lucide-flame;
+  }
+
+  .callout[data-callout="success"],
+  .callout[data-callout="check"],
+  .callout[data-callout="done"] {
+    --callout-color: var(--ctp-green);
+    --callout-icon: lucide-check;
+  }
+
+  .callout[data-callout="question"],
+  .callout[data-callout="help"],
+  .callout[data-callout="faq"] {
+    --callout-color: var(--ctp-mauve);
+    --callout-icon: help-circle;
+  }
+
+  .callout[data-callout="warning"],
+  .callout[data-callout="caution"],
+  .callout[data-callout="attention"] {
+    --callout-color: var(--ctp-red);
+    --callout-icon: lucide-alert-triangle;
+  }
+
+  .callout[data-callout="failure"],
+  .callout[data-callout="fail"],
+  .callout[data-callout="missing"] {
+    --callout-color: var(--ctp-red);
+    --callout-icon: lucide-x;
+  }
+
+  .callout[data-callout="danger"],
+  .callout[data-callout="error"] {
+    --callout-color: var(--ctp-red);
+    --callout-icon: lucide-zap;
+  }
+
+  .callout[data-callout="bug"] {
+    --callout-color: 245, 0, 87;
+    --callout-icon: lucide-bug;
+  }
+
+  .callout[data-callout="example"] {
+    --callout-color: 124, 77, 255;
+    --callout-icon: lucide-list;
+  }
+
+  .callout[data-callout="quote"],
+  .callout[data-callout="cite"] {
+    --callout-color: 158, 158, 158;
+    --callout-icon: quote-glyph;
+  }
 }
 
 .theme-dark {
@@ -314,6 +408,13 @@ settings:
 }
 
 body {
+  .horizontal-tab-nav-item:hover,
+  .vertical-tab-nav-item:hover {
+    --background-modifier-hover: rgb(var(--ctp-accent));
+
+    color: var(--text-on-accent);
+  }
+
   & .checkbox-container {
     --background-modifier-border-hover: rgb(var(--ctp-red));
 
@@ -458,13 +559,58 @@ body {
   }
 
   & .nav-file-tag {
-    background-color: rgb(var(--ctp-base));
+    background-color: rgb(var(--ctp-surface0));
     color: var(--text-normal);
+    outline: 1px solid rgb(var(--ctp-surface1));
   }
 
   & .is-active .nav-file-tag {
     box-shadow:
-      inset 0 0 4px rgb(var(--ctp-crust)),
-      inset 0 0 6px rgb(var(--ctp-base));
+      inset 0 0 2px rgb(var(--ctp-crust)),
+      inset 0 0 4px rgb(var(--ctp-mantle));
+  }
+
+  & .prompt {
+    --prompt-border-color: rgb(var(--ctp-surface1));
+
+    & .prompt-input[type="text"] {
+      margin-bottom: 2px;
+    }
+
+    & .prompt-results {
+      background-color: var(--background-secondary);
+      box-shadow:
+        inset 0 0 10px rgb(var(--ctp-crust)),
+        inset 0 0 12px rgb(var(--ctp-base));
+    }
+
+    & .suggestion-item:hover,
+    .suggestion-item.is-selected {
+      --background-modifier-hover: rgb(var(--ctp-accent));
+
+      background-color: rgb(var(--ctp-accent));
+      color: var(--text-on-accent);
+
+      & .suggestion-flair {
+        color: var(--text-on-accent);
+      }
+    }
+
+    & .suggestion-item.mod-complex {
+      .suggestion-hotkey {
+        background-color: rgb(var(--ctp-surface0));
+        color: var(--text-normal);
+      }
+
+      &:hover .suggestion-hotkey {
+        box-shadow:
+          inset 0 0 2px rgb(var(--ctp-crust)),
+          inset 0 0 4px rgb(var(--ctp-base));
+      }
+    }
+  }
+
+  .tooltip {
+    color: rgb(var(--ctp-rosewater));
   }
 }

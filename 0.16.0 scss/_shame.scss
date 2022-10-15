@@ -35,8 +35,8 @@ body {
   --button-radius: var(--input-radius);
 
   /* Callouts */
-  --callout-border-width: 0;
-  --callout-border-opacity: 0.25;
+  --callout-border-width: 0.25px;
+  --callout-border-opacity: 0.2;
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -224,9 +224,6 @@ body {
   --clickable-icon-radius: var(--radius-s);
 
   /* Indentation guide */
-  --indentation-guide-width: 1px;
-  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
-  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
 
   /* Inline title */
   --inline-title-color: var(--h1-color);
