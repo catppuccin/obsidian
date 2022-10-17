@@ -86,12 +86,12 @@ body {
   --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
   --divider-width: 1px;
-  --divider-width-hover: 3px;
+  --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
 
   /* Dragging */
   --drag-ghost-background: rgba(0, 0, 0, 85%);
-  --drag-ghost-text-color: #fff;
+  --drag-ghost-text-color: var(--text-normal);
 
   /* Embeds */
   --embed-background: inherit;
@@ -108,7 +108,7 @@ body {
     inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout */
-  --file-line-width: 700px;
+  --file-line-width: 54ch;
   --file-folding-offset: 24px;
   --file-margins: var(--size-4-8);
   --file-header-font-size: var(--font-ui-small);
@@ -218,7 +218,7 @@ body {
   --icon-color-hover: var(--text-muted);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
-  --icon-opacity: 0.85;
+  --icon-opacity: 0.8;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
@@ -256,8 +256,8 @@ body {
   --layer-dragged-item: 80;
 
   /* Line heights */
-  --line-height-normal: 1.5;
-  --line-height-tight: 1.3;
+  --line-height-normal: 1.45;
+  --line-height-tight: 1.25;
 
   /* Links */
   --link-color: var(--text-accent);
@@ -278,13 +278,13 @@ body {
 
   /* Lists */
   --list-indent: 2em;
-  --list-spacing: 0.075em;
-  --list-marker-color: var(--text-faint);
+  --list-spacing: 0.1em;
+  --list-marker-color: rgb(var(--ctp-accent));
   --list-marker-color-hover: var(--text-muted);
   --list-marker-color-collapsed: var(--text-accent);
-  --list-bullet-border: none;
+  --list-bullet-border: 0;
   --list-bullet-radius: 50%;
-  --list-bullet-size: 5px;
+  --list-bullet-size: 6px;
   --list-bullet-transform: none;
 
   /* File navigator */
@@ -461,9 +461,9 @@ body {
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.4);
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0;
   --tag-padding-x: 0.65em;
@@ -484,7 +484,7 @@ body {
   --toggle-border-width: 2px;
   --toggle-width: 40px;
   --toggle-radius: 18px;
-  --toggle-thumb-color: white;
+  --toggle-thumb-color: var(--text-normal);
   --toggle-thumb-radius: 18px;
   --toggle-thumb-height: 18px;
   --toggle-thumb-width: 18px;
@@ -531,10 +531,10 @@ body {
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
-  --text-on-accent: white;
+  --text-on-accent: var(--text-normal);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-selection: hsla(var(--color-accent-hsl) 0.2);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);
