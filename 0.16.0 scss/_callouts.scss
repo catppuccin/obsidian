@@ -1,0 +1,81 @@
+.callout {
+  --callout-color: var(--ctp-accent);
+  --callout-icon: lucide-pencil;
+}
+
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+  --callout-color: var(--ctp-accent);
+  --callout-icon: lucide-clipboard-list;
+}
+
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+  --callout-color: var(--ctp-green);
+}
+
+.callout[data-callout="info"] {
+  --callout-icon: lucide-info;
+}
+
+.callout[data-callout="todo"] {
+  --callout-icon: lucide-check-circle-2;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+  --callout-color: var(--ctp-maroon);
+  --callout-icon: lucide-flame;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  --callout-color: var(--ctp-green);
+  --callout-icon: lucide-check;
+}
+
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  --callout-color: var(--ctp-mauve);
+  --callout-icon: help-circle;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  --callout-color: var(--ctp-red);
+  --callout-icon: lucide-alert-triangle;
+}
+
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+  --callout-color: var(--ctp-red);
+  --callout-icon: lucide-x;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  --callout-color: var(--ctp-red);
+  --callout-icon: lucide-zap;
+}
+
+.callout[data-callout="bug"] {
+  --callout-color: 245, 0, 87;
+  --callout-icon: lucide-bug;
+}
+
+.callout[data-callout="example"] {
+  --callout-color: 124, 77, 255;
+  --callout-icon: lucide-list;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: 158, 158, 158;
+  --callout-icon: quote-glyph;
+}

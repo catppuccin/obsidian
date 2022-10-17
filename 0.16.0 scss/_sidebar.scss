@@ -1,48 +1,43 @@
-/* Active / hover nav file/folder title title changes */
+.horizontal-tab-nav-item:hover,
+.vertical-tab-nav-item:hover {
+  --background-modifier-hover: rgb(var(--ctp-accent));
 
-body:not(.is-grabbing) .nav-file-title,
-body:not(.is-grabbing) .nav-folder-title {
-  transition: var(--quick-bg-transition);
-}
-
-body:not(.is-grabbing) .nav-file-title.is-active:hover,
-body:not(.is-grabbing) .nav-folder-title.is-active:hover {}
-
-body:not(.is-grabbing) .nav-folder-title:hover {
-  --nav-collapse-icon-color: var(--text-on-accent);
-  --nav-collapse-icon-color-collapsed: var(--text-on-accent);
-}
-
-/* Vault name :hover */
-.nav-folder.mod-root > .nav-folder-title:hover {
-  color: var(--text-normal);
-}
-
-.workspace-leaf.mod-active .nav-folder.has-focus > .nav-folder-title,
-.workspace-leaf.mod-active .nav-file.has-focus > .nav-file-title {
-  box-shadow: none;
-}
-
-/* file type pill behavior */
-
-.nav-file-tag {
-  color: var(--text-normal);
-
-  --background-modifier-hover: var(--color-base-30);
-}
-
-.is-active .nav-file-tag {
-  box-shadow: var(--box-shadow-inset-small);
-  transform: var(--pressed-item);
-}
-
-/* Right sidebar collapse icon and count number hovers */
-.tree-item-self:hover .tree-item-icon svg,
-.tree-item-self:hover .tree-item-flair-outer .tag-pane-tag-count {
   color: var(--text-on-accent);
 }
 
-.item-tree-children * {
-  width: 0 !important;
-  height: 0 !important;
+:not(.is-grabbing) .nav-file-title:hover,
+:not(.is-grabbing) .nav-folder-title:hover,
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+.tree-item-self.is-clickable:hover {
+  --nav-item-background-active: rgb(var(--ctp-accent));
+  --nav-item-background-hover: rgb(var(--ctp-accent));
+  --nav-item-color-hover: var(--text-on-accent);
+  --nav-item-color-active: var(--text-on-accent);
+}
+
+.nav-folder.mod-root > .nav-folder-title:hover {
+  color: rgb(var(--text-normal));
+}
+
+.tree-item-flair {
+  color: var(--text-muted);
+}
+
+.tree-item-self:hover .tree-item-flair,
+.backlink-pane > .tree-item-self.is-collapsed:hover,
+.outgoing-link-pane > .tree-item-self.is-collapsed:hover {
+  color: var(--text-on-accent);
+}
+
+.nav-file-tag {
+  background-color: rgb(var(--ctp-surface0));
+  color: var(--text-normal);
+  outline: 1px solid rgb(var(--ctp-surface1));
+}
+
+.is-active .nav-file-tag {
+  box-shadow:
+    inset 0 0 2px rgb(var(--ctp-crust)),
+    inset 0 0 4px rgb(var(--ctp-mantle));
 }

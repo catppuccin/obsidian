@@ -1,24 +1,35 @@
-/* sidebar hovers */
-.horizontal-tab-nav-item,
-.vertical-tab-nav-item {
-  &:hover,
-  &.is-active:hover {
-    background-color: var(--color-yellow);
-    color: var(--text-on-accent);
+.mod-settings {
+  & input.slider {
+    --slider-track-background: rgb(var(--ctp-accent));
+  }
+
+  & input[type="color"]::-webkit-color-swatch:hover {
+    box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
   }
 }
 
-.setting-item-control .checkbox-container {
-  background-color: var(--background-secondary);
-  outline: 1px solid var(--background-modifier-border);
-}
+button.mod-cta {
+  border: 0;
+  border-radius: var(--button-radius);
+  -webkit-app-region: no-drag;
+  color: var(--text-normal);
+  cursor: var(--cursor);
+  font-family: inherit;
+  font-size: var(--font-ui-small);
+  font-weight: var(--input-font-weight);
+  outline: none;
+  user-select: none;
+  white-space: nowrap;
 
-.setting-item-control .checkbox-container::after {
-  background-color: var(--text-error);
-}
-
-.setting-item-control .checkbox-container.is-enabled {
-  &::after {
-    background-color: var(--text-success);
+  &:not(.clickable-icon) {
+    background-color: var(--interactive-normal);
   }
+
+  &:hover {
+    background-color: var(--interactive-hover);
+  }
+}
+
+.modal {
+  border-color: rgb(var(--ctp-surface1));
 }

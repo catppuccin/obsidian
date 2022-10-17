@@ -1,9 +1,18 @@
-.tooltip {
-  color: var(--color-rosewater);
+body {
+  --indentation-guide-color: rgba(var(--ctp-surface1));
+  --indentation-guide-color-active: rgba(var(--ctp-accent), 0.7);
+  --indentation-guide-width: 2px;
 }
 
-.mod-active, .is-focused{
-  .view-header-title {
-    color: var(--color-rosewater);
-  }
+::selection {
+  color: var(--text-on-accent);
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  width: 0;
+}
+
+.markdown-rendered.show-indentation-guide li > ul::before,
+.markdown-rendered.show-indentation-guide li > ol::before {
+  left: -13px;
 }

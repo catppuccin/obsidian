@@ -1,22 +1,39 @@
-.suggestion-item.is-selected {
-  background-color: var(--color-accent);
-  color: var(--text-on-accent);
-}
+.prompt {
+  --prompt-border-color: rgb(var(--ctp-surface1));
 
-.prompt-input[type="text"] {
-  text-decoration: underline 2px var(--color-accent) solid;
-  text-underline-offset: 1px;
-}
+  & .prompt-input[type="text"] {
+    border: 0;
+  }
 
-input.prompt-input:hover,
-input.prompt-input:focus,
-input.prompt-input:focus-visible {
-  background-color: var(--background-primary);
-}
+  & .prompt-results {
+    background-color: var(--background-secondary);
+    box-shadow:
+      inset 0 0 10px rgb(var(--ctp-crust)),
+      inset 0 0 12px rgb(var(--ctp-base));
+  }
 
-body .
+  & .suggestion-item:hover,
+  .suggestion-item.is-selected, {
+    --background-modifier-hover: rgb(var(--ctp-accent));
 
-.suggestion-item.mod-complex .suggestion-hotkey {
-  background-color: var(--color-base-30);
-  color: var(--color-accent);
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+
+    & .suggestion-flair {
+      color: var(--text-on-accent);
+    }
+  }
+
+  & .suggestion-item.mod-complex {
+    .suggestion-hotkey {
+      background-color: rgb(var(--ctp-surface0));
+      color: var(--text-normal);
+    }
+
+    &:hover .suggestion-hotkey {
+      box-shadow:
+        inset 0 0 2px rgb(var(--ctp-crust)),
+        inset 0 0 4px rgb(var(--ctp-base));
+    }
+  }
 }
