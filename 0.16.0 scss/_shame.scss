@@ -53,7 +53,7 @@ body {
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
   --checklist-done-decoration: line-through;
-  --checklist-done-color: var(--text-muted);
+  --checklist-done-color: rgb(var(--ctp-accent));
 
   /* Code */
   --code-size: var(--font-smaller);

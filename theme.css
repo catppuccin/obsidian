@@ -406,7 +406,7 @@ body {
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
   --checklist-done-decoration: line-through;
-  --checklist-done-color: var(--text-muted);
+  --checklist-done-color: rgb(var(--ctp-accent));
   /* Code */
   --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
@@ -937,22 +937,21 @@ body {
   background-color: var(--background-secondary);
   box-shadow: inset 0 0 10px rgb(var(--ctp-crust)), inset 0 0 12px rgb(var(--ctp-base));
 }
-.prompt .suggestion-item:hover,
-.prompt .suggestion-item.is-selected {
-  --background-modifier-hover: rgb(var(--ctp-accent));
+.prompt:hover .suggestion-hotkey {
+  box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-base));
+}
+
+.suggestion-item.is-selected {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
-.prompt .suggestion-item:hover .suggestion-flair,
-.prompt .suggestion-item.is-selected .suggestion-flair {
+.suggestion-item.is-selected .suggestion-flair {
   color: var(--text-on-accent);
 }
-.prompt .suggestion-item.mod-complex .suggestion-hotkey {
+
+.suggestion-item.mod-complex .suggestion-hotkey {
   background-color: rgb(var(--ctp-surface0));
   color: var(--text-normal);
-}
-.prompt .suggestion-item.mod-complex:hover .suggestion-hotkey {
-  box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-base));
 }
 
 /*
@@ -967,6 +966,7 @@ body {
   --indentation-guide-color-active: rgb(var(--ctp-sapphire), 0.7);
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
+  --checklist-done-color: rgb(var(--ctp-green));
   /*
   * Nav bar
   */
@@ -1046,14 +1046,11 @@ body {
 .ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected,
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item:hover {
-  --background-modifier-hover: rgb(var(--ctp-lavender));
+.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected {
   background-color: rgb(var(--ctp-lavender));
   color: var(--text-on-accent);
 }
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected .suggestion-flair,
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item:hover .suggestion-flair {
+.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected .suggestion-flair {
   color: var(--text-on-accent);
 }
 .ctp-full-palette.ctp-full-palette .search-suggest-item.is-selected:not(.mod-group) {
@@ -1117,7 +1114,7 @@ body {
 .ctp-full-palette.ctp-full-palette .vertical-tab-nav-item.is-active:hover {
   background-color: rgb(var(--ctp-yellow));
 }
-.ctp-full-palette.ctp-full-palette .HyperMD-header .cm-formatting-header {
+.ctp-full-palette.ctp-full-palette .hypermd-header .cm-formatting-header {
   color: rgb(var(--ctp-sapphire));
   font-size: 75% !important;
 }

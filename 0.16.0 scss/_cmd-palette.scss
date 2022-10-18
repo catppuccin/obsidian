@@ -12,28 +12,25 @@
       inset 0 0 12px rgb(var(--ctp-base));
   }
 
-  .suggestion-item:hover,
-  .suggestion-item.is-selected {
-    --background-modifier-hover: rgb(var(--ctp-accent));
-
-    background-color: rgb(var(--ctp-accent));
-    color: var(--text-on-accent);
-
-    & .suggestion-flair {
-      color: var(--text-on-accent);
-    }
+  &:hover .suggestion-hotkey {
+    box-shadow:
+      inset 0 0 2px rgb(var(--ctp-crust)),
+      inset 0 0 4px rgb(var(--ctp-base));
   }
+}
 
-  & .suggestion-item.mod-complex {
-    .suggestion-hotkey {
-      background-color: rgb(var(--ctp-surface0));
-      color: var(--text-normal);
-    }
+.suggestion-item.is-selected {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
 
-    &:hover .suggestion-hotkey {
-      box-shadow:
-        inset 0 0 2px rgb(var(--ctp-crust)),
-        inset 0 0 4px rgb(var(--ctp-base));
-    }
+  & .suggestion-flair {
+    color: var(--text-on-accent);
+  }
+}
+
+.suggestion-item.mod-complex {
+  .suggestion-hotkey {
+    background-color: rgb(var(--ctp-surface0));
+    color: var(--text-normal);
   }
 }
