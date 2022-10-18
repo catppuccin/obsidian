@@ -1,0 +1,12 @@
+.mod-vertical .workspace-tab-header:not(.is-active):hover {
+  --background-modifier-hover: var(--color-accent);
+  --background-modifier-active-hover: var(--color-accent);
+
+  .workspace-tab-header-inner-title {
+    color: var(--text-on-accent);
+  }
+
+  svg {
+    color: var(--text-on-accent);
+  }
+}

@@ -1,0 +1,179 @@
+/*
+* Specific to full palette theme
+*/
+
+.ctp-full-palette.ctp-full-palette {
+  --color-accent: var(--ctp-rosewater);
+  --divider-color-hover: rgb(var(--ctp-blue));
+  --hr-color: rgb(var(--ctp-blue));
+  --indentation-guide-color: rgb(var(--ctp-surface1));
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 0.7);
+  --indentation-guide-width: 2px;
+  --list-marker-color: rgb(var(--ctp-sapphire));
+
+  /*
+  * Nav bar
+  */
+
+  :not(.is-grabbing) .nav-file-title:hover,
+  :not(.is-grabbing) .nav-folder-title:hover,
+  .nav-file-title.is-active,
+  .nav-folder-title.is-active,
+  .tree-item-self.is-clickable:hover {
+    background-color: rgb(var(--ctp-yellow));
+  }
+
+  .nav-folder.mod-root > .nav-folder-title:hover {
+    background-color: transparent;
+    color: rgb(var(--text-normal));
+  }
+
+  /*
+  * Icons
+  */
+
+  .clickable-icon.is-active,
+  .mod-left-split .workspace-tab-header.has-active-menu,
+  .mod-right-split .workspace-tab-header.has-active-menu,
+  .mod-left-split .workspace-tab-header.is-active,
+  .mod-right-split .workspace-tab-header.is-active {
+    box-shadow:
+      inset 0 0 4px rgb(var(--ctp-crust)),
+      inset 0 0 6px rgb(var(--ctp-base));
+    outline: 1px solid rgb(var(--ctp-surface1));
+
+    svg {
+      color: rgb(var(--ctp-pink));
+    }
+
+    &:hover,
+    &:hover svg {
+      background-color: rgb(var(--ctp-pink));
+      box-shadow: none;
+      color: var(--text-on-accent);
+    }
+  }
+
+  .clickable-icon,
+  .mod-left-split .workspace-tab-header,
+  .mod-right-split .workspace-tab-header {
+    &:hover {
+      background-color: rgb(var(--ctp-pink));
+      color: var(--text-on-accent);
+    }
+
+    &:hover svg {
+      color: var(--text-on-accent);
+    }
+  }
+
+  /*
+  * Prompts
+  */
+
+  .prompt {
+    .suggestion-item.is-selected,
+    .suggestion-item:hover {
+      --background-modifier-hover: rgb(var(--ctp-lavender));
+
+      background-color: rgb(var(--ctp-lavender));
+      color: var(--text-on-accent);
+
+      & .suggestion-flair {
+        color: var(--text-on-accent);
+      }
+    }
+  }
+
+  /*
+  * Search
+  */
+  .search-suggest-item.is-selected:not(.mod-group) {
+    background-color: rgb(var(--ctp-lavender));
+    color: var(--text-on-accent);
+
+    .search-suggest-info-text {
+      color: var(--text-on-accent);
+    }
+  }
+
+  /*
+  * Dropdowns
+  */
+
+  select:focus,
+  .dropdown:focus {
+    box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
+  }
+
+  textarea:active,
+  input[type="text"]:active,
+  input[type="search"]:active,
+  input[type="email"]:active,
+  input[type="password"]:active,
+  input[type="number"]:active,
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="search"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  textarea:focus-visible,
+  input[type="text"]:focus-visible,
+  input[type="search"]:focus-visible,
+  input[type="email"]:focus-visible,
+  input[type="password"]:focus-visible,
+  input[type="number"]:focus-visible {
+    box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
+  }
+
+  /*
+  * Checkboxes
+  */
+  input[type="checkbox"]:not(:checked) {
+    border-color: rgb(var(--ctp-maroon));
+    background-color: rgb(var(--ctp-red));
+    box-shadow:
+      inset 4px 4px 12px rgb(var(--ctp-mantle)),
+      inset -4px -4px 12px rgb(var(--ctp-mantle));
+
+    &:hover {
+      border-width: 2px;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    border-color: transparent;
+    background-color: rgb(var(--ctp-green));
+    box-shadow: 0 0 0 1px rgb(var(--ctp-green), 0.4);
+
+    &:hover {
+      background-color: rgb(var(--ctp-maroon));
+      box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 0.4);
+    }
+  }
+
+  .horizontal-tab-nav-item:hover,
+  .vertical-tab-nav-item:hover, {
+    background-color: rgb(var(--ctp-yellow));
+    color: var(--text-on-accent);
+  }
+
+  .horizontal-tab-nav-item.is-active,
+  .vertical-tab-nav-item.is-active {
+    background-color: rgb(var(--ctp-lavender));
+
+    &:hover {
+      background-color: rgb(var(--ctp-yellow));
+    }
+  }
+
+  .HyperMD-header .cm-formatting-header {
+    color: rgb(var(--ctp-sapphire));
+    font-size: 75% !important;
+  }
+}
+
+/*
+? I think !important is necessary to overwrite app.css's
+*/
