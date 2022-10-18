@@ -78,14 +78,12 @@
   * Prompts
   */
 
-  .prompt {
-    .suggestion-item.is-selected, {
-      background-color: rgb(var(--ctp-lavender));
-      color: var(--text-on-accent);
+  .suggestion-item.is-selected, {
+    background-color: rgb(var(--ctp-lavender));
+    color: var(--text-on-accent);
 
-      & .suggestion-flair {
-        color: var(--text-on-accent);
-      }
+    & .suggestion-flair {
+      color: var(--text-on-accent);
     }
   }
 

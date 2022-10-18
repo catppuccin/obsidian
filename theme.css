@@ -1054,11 +1054,11 @@ body {
 .ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected {
+.ctp-full-palette.ctp-full-palette .suggestion-item.is-selected {
   background-color: rgb(var(--ctp-lavender));
   color: var(--text-on-accent);
 }
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected .suggestion-flair {
+.ctp-full-palette.ctp-full-palette .suggestion-item.is-selected .suggestion-flair {
   color: var(--text-on-accent);
 }
 .ctp-full-palette.ctp-full-palette .search-suggest-item.is-selected:not(.mod-group) {
