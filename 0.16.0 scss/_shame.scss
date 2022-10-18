@@ -260,18 +260,18 @@ body {
   --line-height-tight: 1.25;
 
   /* Links */
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-decoration: underline;
+  --link-color: rgb(var(--ctp-blue));
+  --link-color-hover: rgb(var(--ctp-blue));
+  --link-decoration: none;
   --link-decoration-hover: underline;
-  --link-decoration-thickness: auto;
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
+  --link-decoration-thickness: 2px;
+  --link-external-color: rgb(var(--ctp-teal));
+  --link-external-color-hover: rgb(var(--ctp-teal));
+  --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: var(--text-accent);
-  --link-unresolved-opacity: 0.7;
+  --link-unresolved-color: rgb(var(--ctp-red));
+  --link-unresolved-opacity: 0.8;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
@@ -457,18 +457,18 @@ body {
 
   /* Tags */
   --tag-size: var(--font-smaller);
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color: rgb(var(--ctp-peach));
+  --tag-color-hover: rgb(var(--ctp-peach));
   --tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.4);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-decoration-hover: underline;
+  --tag-background: rgb(var(--ctp-mauve), 0.4);
+  --tag-background-hover: rgb(var(--ctp-mauve), 0.6);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0;
-  --tag-padding-x: 0.65em;
+  --tag-padding-x: 0.45em;
   --tag-padding-y: 0.25em;
-  --tag-radius: 2em;
+  --tag-radius: .4em;
 
   /* Window frame */
   --titlebar-background: var(--background-secondary);

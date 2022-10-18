@@ -35,7 +35,8 @@
   }
 }
 
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover,
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
+.workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header-inner-close-button:hover {
   background-color: rgb(var(--ctp-red));

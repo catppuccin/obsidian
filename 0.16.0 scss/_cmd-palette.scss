@@ -1,19 +1,19 @@
 .prompt {
   --prompt-border-color: rgb(var(--ctp-surface1));
 
-  & .prompt-input[type="text"] {
+  .prompt-input[type="text"] {
     border: 0;
   }
 
-  & .prompt-results {
+  .prompt-results {
     background-color: var(--background-secondary);
     box-shadow:
       inset 0 0 10px rgb(var(--ctp-crust)),
       inset 0 0 12px rgb(var(--ctp-base));
   }
 
-  & .suggestion-item:hover,
-  .suggestion-item.is-selected, {
+  .suggestion-item:hover,
+  .suggestion-item.is-selected {
     --background-modifier-hover: rgb(var(--ctp-accent));
 
     background-color: rgb(var(--ctp-accent));

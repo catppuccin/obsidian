@@ -355,168 +355,6 @@ input[type=number]:focus-visible {
   color: rgb(var(--ctp-rosewater));
 }
 
-/*
-* Specific to full palette theme
-*/
-.ctp-full-palette.ctp-full-palette {
-  --color-accent: var(--ctp-rosewater);
-  --divider-color-hover: rgb(var(--ctp-blue));
-  --hr-color: rgb(var(--ctp-blue));
-  --indentation-guide-color: rgb(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 0.7);
-  --indentation-guide-width: 2px;
-  --list-marker-color: rgb(var(--ctp-sapphire));
-  /*
-  * Nav bar
-  */
-  /*
-  * Icons
-  */
-  /*
-  * Prompts
-  */
-  /*
-  * Search
-  */
-  /*
-  * Dropdowns
-  */
-  /*
-  * Checkboxes
-  */
-}
-.ctp-full-palette.ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
-.ctp-full-palette.ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover,
-.ctp-full-palette.ctp-full-palette .nav-file-title.is-active,
-.ctp-full-palette.ctp-full-palette .nav-folder-title.is-active,
-.ctp-full-palette.ctp-full-palette .tree-item-self.is-clickable:hover {
-  background-color: rgb(var(--ctp-yellow));
-}
-.ctp-full-palette.ctp-full-palette .nav-folder.mod-root > .nav-folder-title:hover {
-  background-color: transparent;
-  color: rgb(var(--text-normal));
-}
-.ctp-full-palette.ctp-full-palette .clickable-icon.is-active,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active {
-  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
-}
-.ctp-full-palette.ctp-full-palette .clickable-icon.is-active svg,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu svg,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu svg,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active svg,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active svg {
-  color: rgb(var(--ctp-pink));
-}
-.ctp-full-palette.ctp-full-palette .clickable-icon.is-active:hover, .ctp-full-palette.ctp-full-palette .clickable-icon.is-active:hover svg,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover svg,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover svg,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover svg {
-  background-color: rgb(var(--ctp-pink));
-  box-shadow: none;
-  color: var(--text-on-accent);
-}
-.ctp-full-palette.ctp-full-palette .clickable-icon:hover,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header:hover,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header:hover {
-  background-color: rgb(var(--ctp-pink));
-  color: var(--text-on-accent);
-}
-.ctp-full-palette.ctp-full-palette .clickable-icon:hover svg,
-.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header:hover svg,
-.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
-  color: var(--text-on-accent);
-}
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected,
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item:hover {
-  --background-modifier-hover: rgb(var(--ctp-lavender));
-  background-color: rgb(var(--ctp-lavender));
-  color: var(--text-on-accent);
-}
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected .suggestion-flair,
-.ctp-full-palette.ctp-full-palette .prompt .suggestion-item:hover .suggestion-flair {
-  color: var(--text-on-accent);
-}
-.ctp-full-palette.ctp-full-palette .search-suggest-item.is-selected:not(.mod-group) {
-  background-color: rgb(var(--ctp-lavender));
-  color: var(--text-on-accent);
-}
-.ctp-full-palette.ctp-full-palette .search-suggest-item.is-selected:not(.mod-group) .search-suggest-info-text {
-  color: var(--text-on-accent);
-}
-.ctp-full-palette.ctp-full-palette select:focus,
-.ctp-full-palette.ctp-full-palette .dropdown:focus {
-  box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
-}
-.ctp-full-palette.ctp-full-palette textarea:active,
-.ctp-full-palette.ctp-full-palette input[type=text]:active,
-.ctp-full-palette.ctp-full-palette input[type=search]:active,
-.ctp-full-palette.ctp-full-palette input[type=email]:active,
-.ctp-full-palette.ctp-full-palette input[type=password]:active,
-.ctp-full-palette.ctp-full-palette input[type=number]:active,
-.ctp-full-palette.ctp-full-palette textarea:focus,
-.ctp-full-palette.ctp-full-palette input[type=text]:focus,
-.ctp-full-palette.ctp-full-palette input[type=search]:focus,
-.ctp-full-palette.ctp-full-palette input[type=email]:focus,
-.ctp-full-palette.ctp-full-palette input[type=password]:focus,
-.ctp-full-palette.ctp-full-palette input[type=number]:focus,
-.ctp-full-palette.ctp-full-palette textarea:focus-visible,
-.ctp-full-palette.ctp-full-palette input[type=text]:focus-visible,
-.ctp-full-palette.ctp-full-palette input[type=search]:focus-visible,
-.ctp-full-palette.ctp-full-palette input[type=email]:focus-visible,
-.ctp-full-palette.ctp-full-palette input[type=password]:focus-visible,
-.ctp-full-palette.ctp-full-palette input[type=number]:focus-visible {
-  box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
-}
-.ctp-full-palette.ctp-full-palette input[type=checkbox]:not(:checked) {
-  border-color: rgb(var(--ctp-maroon));
-  background-color: rgb(var(--ctp-red));
-  box-shadow: inset 4px 4px 12px rgb(var(--ctp-mantle)), inset -4px -4px 12px rgb(var(--ctp-mantle));
-}
-.ctp-full-palette.ctp-full-palette input[type=checkbox]:not(:checked):hover {
-  border-width: 2px;
-}
-.ctp-full-palette.ctp-full-palette input[type=checkbox]:checked {
-  border-color: transparent;
-  background-color: rgb(var(--ctp-green));
-  box-shadow: 0 0 0 1px rgb(var(--ctp-green), 0.4);
-}
-.ctp-full-palette.ctp-full-palette input[type=checkbox]:checked:hover {
-  background-color: rgb(var(--ctp-maroon));
-  box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 0.4);
-}
-
-.horizontal-tab-nav-item:hover,
-.vertical-tab-nav-item:hover {
-  background-color: rgb(var(--ctp-yellow));
-  color: var(--text-on-accent);
-}
-
-.horizontal-tab-nav-item.is-active,
-.vertical-tab-nav-item.is-active {
-  background-color: rgb(var(--ctp-lavender));
-}
-.horizontal-tab-nav-item.is-active:hover,
-.vertical-tab-nav-item.is-active:hover {
-  background-color: rgb(var(--ctp-yellow));
-}
-
-/*
-? I think !important is necessary to overwrite app.css's
-*/
-.HyperMD-header .cm-formatting-header {
-  color: rgb(var(--ctp-sapphire));
-  font-size: 75% !important;
-}
-
 body {
   /*
   List of variables is placed in body rather than :root so
@@ -747,18 +585,18 @@ body {
   --line-height-normal: 1.45;
   --line-height-tight: 1.25;
   /* Links */
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
-  --link-decoration: underline;
+  --link-color: rgb(var(--ctp-blue));
+  --link-color-hover: rgb(var(--ctp-blue));
+  --link-decoration: none;
   --link-decoration-hover: underline;
-  --link-decoration-thickness: auto;
-  --link-external-color: var(--text-accent);
-  --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
+  --link-decoration-thickness: 2px;
+  --link-external-color: rgb(var(--ctp-teal));
+  --link-external-color-hover: rgb(var(--ctp-teal));
+  --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: var(--text-accent);
-  --link-unresolved-opacity: 0.7;
+  --link-unresolved-color: rgb(var(--ctp-red));
+  --link-unresolved-opacity: 0.8;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
@@ -926,18 +764,18 @@ body {
   --table-row-last-border-width: var(--table-border-width);
   /* Tags */
   --tag-size: var(--font-smaller);
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color: rgb(var(--ctp-peach));
+  --tag-color-hover: rgb(var(--ctp-peach));
   --tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.4);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-decoration-hover: underline;
+  --tag-background: rgb(var(--ctp-mauve), 0.4);
+  --tag-background-hover: rgb(var(--ctp-mauve), 0.6);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0;
-  --tag-padding-x: 0.65em;
+  --tag-padding-x: 0.45em;
   --tag-padding-y: 0.25em;
-  --tag-radius: 2em;
+  --tag-radius: .4em;
   /* Window frame */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
@@ -1114,6 +952,165 @@ body {
   box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-base));
 }
 
+/*
+* Specific to full palette theme
+*/
+.ctp-full-palette.ctp-full-palette {
+  --color-accent: var(--ctp-rosewater);
+  --divider-color-hover: rgb(var(--ctp-blue));
+  --hr-color: rgb(var(--ctp-blue));
+  --indentation-guide-color: rgb(var(--ctp-surface1));
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 0.7);
+  --indentation-guide-width: 2px;
+  --list-marker-color: rgb(var(--ctp-sapphire));
+  /*
+  * Nav bar
+  */
+  /*
+  * Icons
+  */
+  /*
+  * Prompts
+  */
+  /*
+  * Search
+  */
+  /*
+  * Dropdowns
+  */
+  /*
+  * Checkboxes
+  */
+}
+.ctp-full-palette.ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
+.ctp-full-palette.ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover,
+.ctp-full-palette.ctp-full-palette .nav-file-title.is-active,
+.ctp-full-palette.ctp-full-palette .nav-folder-title.is-active,
+.ctp-full-palette.ctp-full-palette .tree-item-self.is-clickable:hover {
+  background-color: rgb(var(--ctp-yellow));
+}
+.ctp-full-palette.ctp-full-palette .nav-folder.mod-root > .nav-folder-title:hover {
+  background-color: transparent;
+  color: rgb(var(--text-normal));
+}
+.ctp-full-palette.ctp-full-palette .clickable-icon.is-active,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active {
+  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+}
+.ctp-full-palette.ctp-full-palette .clickable-icon.is-active svg,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu svg,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu svg,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active svg,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active svg {
+  color: rgb(var(--ctp-pink));
+}
+.ctp-full-palette.ctp-full-palette .clickable-icon.is-active:hover, .ctp-full-palette.ctp-full-palette .clickable-icon.is-active:hover svg,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover svg,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover svg,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover svg {
+  background-color: rgb(var(--ctp-pink));
+  box-shadow: none;
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette .clickable-icon:hover,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header:hover,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header:hover {
+  background-color: rgb(var(--ctp-pink));
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette .clickable-icon:hover svg,
+.ctp-full-palette.ctp-full-palette .mod-left-split .workspace-tab-header:hover svg,
+.ctp-full-palette.ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected,
+.ctp-full-palette.ctp-full-palette .prompt .suggestion-item:hover {
+  --background-modifier-hover: rgb(var(--ctp-lavender));
+  background-color: rgb(var(--ctp-lavender));
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette .prompt .suggestion-item.is-selected .suggestion-flair,
+.ctp-full-palette.ctp-full-palette .prompt .suggestion-item:hover .suggestion-flair {
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette .search-suggest-item.is-selected:not(.mod-group) {
+  background-color: rgb(var(--ctp-lavender));
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette .search-suggest-item.is-selected:not(.mod-group) .search-suggest-info-text {
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette select:focus,
+.ctp-full-palette.ctp-full-palette .dropdown:focus {
+  box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
+}
+.ctp-full-palette.ctp-full-palette textarea:active,
+.ctp-full-palette.ctp-full-palette input[type=text]:active,
+.ctp-full-palette.ctp-full-palette input[type=search]:active,
+.ctp-full-palette.ctp-full-palette input[type=email]:active,
+.ctp-full-palette.ctp-full-palette input[type=password]:active,
+.ctp-full-palette.ctp-full-palette input[type=number]:active,
+.ctp-full-palette.ctp-full-palette textarea:focus,
+.ctp-full-palette.ctp-full-palette input[type=text]:focus,
+.ctp-full-palette.ctp-full-palette input[type=search]:focus,
+.ctp-full-palette.ctp-full-palette input[type=email]:focus,
+.ctp-full-palette.ctp-full-palette input[type=password]:focus,
+.ctp-full-palette.ctp-full-palette input[type=number]:focus,
+.ctp-full-palette.ctp-full-palette textarea:focus-visible,
+.ctp-full-palette.ctp-full-palette input[type=text]:focus-visible,
+.ctp-full-palette.ctp-full-palette input[type=search]:focus-visible,
+.ctp-full-palette.ctp-full-palette input[type=email]:focus-visible,
+.ctp-full-palette.ctp-full-palette input[type=password]:focus-visible,
+.ctp-full-palette.ctp-full-palette input[type=number]:focus-visible {
+  box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
+}
+.ctp-full-palette.ctp-full-palette input[type=checkbox]:not(:checked) {
+  border-color: rgb(var(--ctp-maroon));
+  background-color: rgb(var(--ctp-red));
+  box-shadow: inset 4px 4px 12px rgb(var(--ctp-mantle)), inset -4px -4px 12px rgb(var(--ctp-mantle));
+}
+.ctp-full-palette.ctp-full-palette input[type=checkbox]:not(:checked):hover {
+  border-width: 2px;
+}
+.ctp-full-palette.ctp-full-palette input[type=checkbox]:checked {
+  border-color: transparent;
+  background-color: rgb(var(--ctp-green));
+  box-shadow: 0 0 0 1px rgb(var(--ctp-green), 0.4);
+}
+.ctp-full-palette.ctp-full-palette input[type=checkbox]:checked:hover {
+  background-color: rgb(var(--ctp-maroon));
+  box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 0.4);
+}
+.ctp-full-palette.ctp-full-palette .horizontal-tab-nav-item:hover,
+.ctp-full-palette.ctp-full-palette .vertical-tab-nav-item:hover {
+  background-color: rgb(var(--ctp-yellow));
+  color: var(--text-on-accent);
+}
+.ctp-full-palette.ctp-full-palette .horizontal-tab-nav-item.is-active,
+.ctp-full-palette.ctp-full-palette .vertical-tab-nav-item.is-active {
+  background-color: rgb(var(--ctp-lavender));
+}
+.ctp-full-palette.ctp-full-palette .horizontal-tab-nav-item.is-active:hover,
+.ctp-full-palette.ctp-full-palette .vertical-tab-nav-item.is-active:hover {
+  background-color: rgb(var(--ctp-yellow));
+}
+.ctp-full-palette.ctp-full-palette .HyperMD-header .cm-formatting-header {
+  color: rgb(var(--ctp-sapphire));
+  font-size: 75% !important;
+}
+
+/*
+? I think !important is necessary to overwrite app.css's
+*/
 .clickable-icon,
 .mod-left-split .workspace-tab-header,
 .mod-right-split .workspace-tab-header {
@@ -1160,7 +1157,8 @@ body {
   color: var(--text-on-accent);
 }
 
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover,
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
+.workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header-inner-close-button:hover {
   background-color: rgb(var(--ctp-red));
@@ -1216,10 +1214,29 @@ button.mod-cta:hover {
   border-color: rgb(var(--ctp-surface1));
 }
 
+.horizontal-tab-nav-item,
+.vertical-tab-nav-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .horizontal-tab-nav-item:hover,
 .vertical-tab-nav-item:hover {
-  --background-modifier-hover: rgb(var(--ctp-accent));
+  background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
+}
+
+.horizontal-tab-nav-item.is-active,
+.vertical-tab-nav-item.is-active {
+  background-color: rgb(var(--ctp-accent));
+}
+.horizontal-tab-nav-item.is-active:hover,
+.vertical-tab-nav-item.is-active:hover {
+  background-color: rgb(var(--ctp-accent));
+}
+
+.nav-folder-title,
+.nav-file-title {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 :not(.is-grabbing) .nav-file-title:hover,
@@ -1285,6 +1302,16 @@ body {
 .markdown-rendered.show-indentation-guide li > ul::before,
 .markdown-rendered.show-indentation-guide li > ol::before {
   left: -13px;
+}
+
+:root {
+  --default-font: "Vollkorn", "Gentium Book Basic", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
+}
+
+body {
+  --font-text-theme: "Vollkorn", "Gentium Book Basic", inter, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+  --font-interface-theme: "Public Sans", "Gill Sans", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 }
 
 /*# sourceMappingURL=theme.css.map */

@@ -1,8 +1,26 @@
-.horizontal-tab-nav-item:hover,
-.vertical-tab-nav-item:hover {
-  --background-modifier-hover: rgb(var(--ctp-accent));
+.horizontal-tab-nav-item,
+.vertical-tab-nav-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.horizontal-tab-nav-item:hover,
+.vertical-tab-nav-item:hover, {
+  background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
+}
+
+.horizontal-tab-nav-item.is-active,
+.vertical-tab-nav-item.is-active {
+  background-color: rgb(var(--ctp-accent));
+
+  &:hover {
+    background-color: rgb(var(--ctp-accent));
+  }
+}
+
+.nav-folder-title,
+.nav-file-title {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 :not(.is-grabbing) .nav-file-title:hover,
