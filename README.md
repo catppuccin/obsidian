@@ -15,6 +15,24 @@
   <img src="https://github.com/catppuccin/obsidian/blob/main/assets/screenshot-hq.png"/>
 </p>
 
+
+<details>
+<summary>🌻 Latte</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/mocha.webp"/>
+</details>
+
 ## About
 
 This is the initial version of the Catppuccin theme for version 1.0.0 of Obsidian. The Obsidian update came with big changes to the program's UI, so this theme is still a work in progress, with many tweaks and improvements to come.
