@@ -1,6 +1,6 @@
 .mod-vertical .workspace-tab-header:not(.is-active):hover {
-  --background-modifier-hover: var(--color-accent);
-  --background-modifier-active-hover: var(--color-accent);
+  --background-modifier-hover: rgb(var(--ctp-accent));
+  --background-modifier-active-hover: rgb(var(--ctp-accent));
 
   .workspace-tab-header-inner-title {
     color: var(--text-on-accent);

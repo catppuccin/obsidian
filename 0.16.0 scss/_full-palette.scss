@@ -3,6 +3,7 @@
 */
 
 .ctp-full-palette.ctp-full-palette {
+  --blockquote-border-color: rgb(var(--ctp-lavender));
   --color-accent: var(--ctp-rosewater);
   --divider-color-hover: rgb(var(--ctp-blue));
   --hr-color: rgb(var(--ctp-blue));
@@ -10,6 +11,11 @@
   --indentation-guide-color-active: rgb(var(--ctp-sapphire), 0.7);
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
+
+  .mod-vertical .workspace-tab-header:not(.is-active):hover {
+    --background-modifier-hover: rgb(var(--ctp-flamingo));
+    --background-modifier-active-hover: rgb(var(--ctp-flamingo));
+  }
 
   /*
   * Nav bar
@@ -168,12 +174,24 @@
     }
   }
 
+  /*
+? I think !important is necessary to overwrite app.css's
+*/
   .HyperMD-header .cm-formatting-header {
     color: rgb(var(--ctp-sapphire));
     font-size: 75% !important;
   }
-}
 
-/*
-? I think !important is necessary to overwrite app.css's
-*/
+  /*
+  *  settings slider
+  */
+  .mod-settings {
+    & input.slider {
+      --slider-track-background: rgb(var(--ctp-green));
+    }
+
+    & input[type="color"]::-webkit-color-swatch:hover {
+      box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
+    }
+  }
+}

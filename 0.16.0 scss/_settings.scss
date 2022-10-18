@@ -6,6 +6,32 @@
   & input[type="color"]::-webkit-color-swatch:hover {
     box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
   }
+
+  .checkbox-container {
+    --background-modifier-border-hover: rgb(var(--ctp-red));
+
+    box-shadow: 0 0 2px inset rgb(var(--ctp-base));
+  }
+
+  .checkbox-container::after {
+    --toggle-thumb-color: var(--text-on-accent);
+
+    box-shadow: 0 0 4px rgb(var(--ctp-base));
+  }
+
+  .checkbox-container:hover {
+    box-shadow: none;
+  }
+
+  .checkbox-container.is-enabled {
+    background-color: rgb(var(--ctp-green));
+  }
+
+  .vertical-tab-header-group-title {
+    color: var(--text-muted);
+    font-size: var(--font-ui-medium);
+    font-variant: all-small-caps;
+  }
 }
 
 button.mod-cta {

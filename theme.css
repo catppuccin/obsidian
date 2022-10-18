@@ -377,7 +377,7 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
-  --blockquote-border-color: var(--interactive-accent);
+  --blockquote-border-color: rgb(var(--ctp-accent));
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
@@ -959,6 +959,7 @@ body {
 * Specific to full palette theme
 */
 .ctp-full-palette.ctp-full-palette {
+  --blockquote-border-color: rgb(var(--ctp-lavender));
   --color-accent: var(--ctp-rosewater);
   --divider-color-hover: rgb(var(--ctp-blue));
   --hr-color: rgb(var(--ctp-blue));
@@ -984,6 +985,16 @@ body {
   /*
   * Checkboxes
   */
+  /*
+  ? I think !important is necessary to overwrite app.css's
+  */
+  /*
+  *  settings slider
+  */
+}
+.ctp-full-palette.ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover {
+  --background-modifier-hover: rgb(var(--ctp-flamingo));
+  --background-modifier-active-hover: rgb(var(--ctp-flamingo));
 }
 .ctp-full-palette.ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
 .ctp-full-palette.ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover,
@@ -1110,10 +1121,13 @@ body {
   color: rgb(var(--ctp-sapphire));
   font-size: 75% !important;
 }
+.ctp-full-palette.ctp-full-palette .mod-settings input.slider {
+  --slider-track-background: rgb(var(--ctp-green));
+}
+.ctp-full-palette.ctp-full-palette .mod-settings input[type=color]::-webkit-color-swatch:hover {
+  box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
+}
 
-/*
-? I think !important is necessary to overwrite app.css's
-*/
 .clickable-icon,
 .mod-left-split .workspace-tab-header,
 .mod-right-split .workspace-tab-header {
@@ -1186,11 +1200,38 @@ body {
   color: var(--text-on-accent);
 }
 
+.search-result-file-match:hover {
+  color: var(--text-on-accent);
+}
+
+.is-flashing {
+  color: var(--text-on-accent);
+}
+
 .mod-settings input.slider {
   --slider-track-background: rgb(var(--ctp-accent));
 }
 .mod-settings input[type=color]::-webkit-color-swatch:hover {
   box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
+}
+.mod-settings .checkbox-container {
+  --background-modifier-border-hover: rgb(var(--ctp-red));
+  box-shadow: 0 0 2px inset rgb(var(--ctp-base));
+}
+.mod-settings .checkbox-container::after {
+  --toggle-thumb-color: var(--text-on-accent);
+  box-shadow: 0 0 4px rgb(var(--ctp-base));
+}
+.mod-settings .checkbox-container:hover {
+  box-shadow: none;
+}
+.mod-settings .checkbox-container.is-enabled {
+  background-color: rgb(var(--ctp-green));
+}
+.mod-settings .vertical-tab-header-group-title {
+  color: var(--text-muted);
+  font-size: var(--font-ui-medium);
+  font-variant: all-small-caps;
 }
 
 button.mod-cta {
@@ -1278,8 +1319,8 @@ button.mod-cta:hover {
 }
 
 .mod-vertical .workspace-tab-header:not(.is-active):hover {
-  --background-modifier-hover: var(--color-accent);
-  --background-modifier-active-hover: var(--color-accent);
+  --background-modifier-hover: rgb(var(--ctp-accent));
+  --background-modifier-active-hover: rgb(var(--ctp-accent));
 }
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
   color: var(--text-on-accent);
