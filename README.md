@@ -15,6 +15,7 @@
   <img src="https://github.com/catppuccin/obsidian/blob/main/assets/screenshot-hq.png"/>
 </p>
 
+## Previews
 
 <details>
 <summary>🌻 Latte</summary>
