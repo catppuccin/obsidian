@@ -324,6 +324,9 @@ settings:
   --toggle-thumb-color: var(--text-on-accent);
   box-shadow: 0 0 4px rgb(var(--ctp-base));
 }
+.checkbox-container:hover {
+  box-shadow: none;
+}
 
 select:focus,
 .dropdown:focus {
@@ -775,7 +778,7 @@ body {
   --tag-border-width: 0;
   --tag-padding-x: 0.45em;
   --tag-padding-y: 0.25em;
-  --tag-radius: .4em;
+  --tag-radius: 0.4em;
   /* Window frame */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);

@@ -330,6 +330,9 @@ settings:
 
     box-shadow: 0 0 4px rgb(var(--ctp-base));
   }
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 select:focus,
