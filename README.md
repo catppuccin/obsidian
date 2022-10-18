@@ -15,44 +15,30 @@
   <img src="https://github.com/catppuccin/obsidian/blob/main/assets/screenshot.png"/>
 </p>
 
-## Temporary note: Obsidian 0.16.0 and Catppuccin
-
-Please see https://github.com/catppuccin/obsidian/issues/16#issue-1354963436 for information about how the current insider build and upcoming public release of Obsidian 0.16.0 will affect the Catppuccin theme. tl;dr, the theme will be considered deprecated in 0.16.0 until it is updated to work with the app's new default theme. In the meantime, if you are an insider and want to keep using Catppuccin, turn off insider builds to stay on 0.15.9. (But I think the new default theme is worth the update for insiders!) I will be working on getting Catppuccin 0.16.0 compliant and hopefully finished by the time of public release.
-
 ## About
 
-This theme covers my use case for the app. That said! Part of what makes Obsidian so fantastic is its many features and extended universe of user-created plugins. As time goes on, I would like to add more compatibility between the theme and some of the more popular plugins. Additionally, Obsidian now has a legacy editor. There be dragons, but none too bad: Most of the css was written before the new editor's beta. Currently the theme uses some css from [Kepano's Hider](https://github.com/kepano/obsidian-hider) plugin. That will change soon, but you may need to do some cmd/ctrl+p-ing in the meantime if you are used to buttons. (:
+This is the initial version of the Catppuccin theme for version 1.0.0 of Obsidian. The Obsidian update came with big changes to the program's UI, so this theme is still a work in progress, with many tweaks and improvements to come.
 
 ## Usage
+This theme currently benefits most when used with the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin) plugin. This plugin will allow users to pick from several variations of the Catppuccin theme, including accents for each color in the palette and one that features a broader selection of Catppuccin colors (the default). In time, more options will be exposed through the Style Settings plugin so that users can pick and choose what colors of the palette they prefer. 
 
 ### Obsidian theme store
 
 To install from the Obsidian theme store:
 Open Obisidian and go to `Preferences` >> `Appearance`, click `Manage` and scroll down to 'Community Themes.' Type 'Catppuccin' in the filter bar and then click 'Use' under the theme name.
 
-### Manual
-
-1. Download the [catppuccin.css](https://github.com/mbeckrich/obsidian/blob/main/obsidian.css) file
-2. Put it under your Vault's configuration folder (e.g. `<vault>/.obsidian/themes/`)
-3. Open Obisidian and go to `Preferences` >> `Appearance` >> `Manage`
-4. Select `Catppuccin`
-
 ## Development
 
 See the [Releases](https://github.com/catppuccin/obsidian/releases) page for the latest news.
 
-### The shape of things to come
+Please be aware that, due to the newness of the theme, there may be use cases I've not considered or inconsistencies I haven't yet noticed. If you find a problem, please open an issue.
 
-+ [x] Style Settings plugin compatibility
-+ [x] Behind the scenes cleanup of scss/css
-+ [ ] Tweaks to improve theme consistency throughout UI
-+ [ ] Mobile version
-
-PRs and constructive feedback more than welcome.
+Finally, as of the 0.2.0 release of this theme, the CSS is ugly to look at and disorganized. So, pardon the mess, but it will be cleaned up -- promise!
 
 ## 💝 Thanks to
 
 + [mbeckrich](https://github.com/mbeckrich)
++ [AnubisNekhet](https://github.com/anubisnekhet)
 + The talented and kindhearted people in the Obsidian discord's CSS channel. In particular:
     + [Chetachi](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/)
     + [Kepano](https://github.com/kepano/obsidian-minimal)

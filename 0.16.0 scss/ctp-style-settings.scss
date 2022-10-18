@@ -199,12 +199,11 @@ settings:
   --ctp-crust: 17, 17, 27;
 }
 
-.theme-dark,
-.theme-light {
-  --ctp-accent: var(--ctp-rosewater);
-}
-
 /* ------------------Selecting Accents------------------- */
+
+.ctp-full-palette {
+  --ctp-accent: var(--ctp-lavander);
+}
 
 .ctp-accent-rosewater {
   --ctp-accent: var(--ctp-rosewater);
@@ -304,8 +303,6 @@ settings:
   --scrollbar-active-thumb-bg: rgba(var(--ctp-text), 0.2);
   --scrollbar-bg: rgba(var(--ctp-text), 0.05);
   --scrollbar-thumb-bg: rgba(var(--ctp-text), 0.1);
-
-  /* changes to app.css variables */
 }
 
 .theme-dark {
