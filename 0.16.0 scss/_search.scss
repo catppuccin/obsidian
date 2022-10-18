@@ -3,7 +3,7 @@
   color: var(--text-on-accent);
 }
 
-.search-suggest-item.is-selected:not(.mod-group) {
+.search-suggest-item.is-selected {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 
@@ -12,11 +12,41 @@
   }
 }
 
-.search-result-file-matched-text {
+.suggestion .suggestion-item.mod-group {
+  background-color: inherit;
+  color: var(--text-muted);
+  font-size: var(--font-ui-medium);
+  font-variant: all-small-caps;
+}
+
+.search-suggest-item.is-selected {
+  background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
+
+  .list-item-part.clickable-icon {
+    color: var(--text-muted);
+  }
+
+  .search-suggest-info-text {
+    color: var(--text-on-accent);
+  }
+}
+
+.list-item-part.clickable-icon:hover,
+.list-item-part.clickable-icon:active {
+  background-color: rgb(var(--ctp-accent));
 }
 
 .search-result-file-match:hover {
+  background-color: rgb(var(--ctp-yellow));
+  color: var(--text-on-accent);
+}
+
+.search-result-file-match:hover .search-result-file-matched-text {
+  color: var(--text-on-accent);
+}
+
+.search-result-file-matched-text {
   color: var(--text-on-accent);
 }
 

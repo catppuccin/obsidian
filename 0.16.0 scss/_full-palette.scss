@@ -1,7 +1,7 @@
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow),
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) {
   --blockquote-border-color: rgb(var(--ctp-lavender));
-  --color-accent: var(--ctp-rosewater);
+  --ctp-accent: var(--ctp-lavender);
   --divider-color-hover: rgb(var(--ctp-blue));
   --hr-color: rgb(var(--ctp-blue));
   --indentation-guide-color: rgb(var(--ctp-surface1));
@@ -79,7 +79,7 @@
     background-color: rgb(var(--ctp-lavender));
     color: var(--text-on-accent);
 
-    & .suggestion-flair {
+    &:hover .suggestion-flair {
       color: var(--text-on-accent);
     }
   }
@@ -87,9 +87,20 @@
   /*
   * Search
   */
-  .search-suggest-item.is-selected:not(.mod-group) {
-    background-color: rgb(var(--ctp-lavender));
+  .suggestion .suggestion-item.mod-group {
+    background-color: inherit;
+    color: var(--text-muted);
+    font-size: var(--font-ui-medium);
+    font-variant: all-small-caps;
+  }
+
+  .search-suggest-item.is-selected {
+    background-color: rgb(var(--ctp-accent));
     color: var(--text-on-accent);
+
+    .list-item-part.clickable-icon {
+      color: var(--text-muted);
+    }
 
     .search-suggest-info-text {
       color: var(--text-on-accent);

@@ -38,7 +38,8 @@
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
 .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
-.workspace-tab-header-inner-close-button:hover {
+.workspace-tab-header-inner-close-button:hover,
+.suggestion :hover.list-item-part.clickable-icon[aria-label="Clear search history"] {
   background-color: rgb(var(--ctp-red));
   box-shadow: 0 0 0 1px rgb(var(--ctp-crust));
   color: rgb(var(--ctp-base));

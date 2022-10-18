@@ -71,7 +71,7 @@ body {
 
   /* Collapse icons */
   --collapse-icon-color: var(--text-faint);
-  --collapse-icon-color-collapsed: var(--text-accent);
+  --collapse-icon-color-collapsed: var(--text-muted);
 
   /* Cursor */
   --cursor: default;
@@ -215,7 +215,7 @@ body {
   --icon-m-stroke-width: 1.75px;
   --icon-l-stroke-width: 1.75px;
   --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-muted);
+  --icon-color-hover: var(--text-on-accent);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
   --icon-opacity: 0.8;
