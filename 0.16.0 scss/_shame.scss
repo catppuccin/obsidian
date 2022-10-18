@@ -270,11 +270,11 @@ body {
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: rgb(var(--ctp-red));
-  --link-unresolved-opacity: 0.8;
+  --link-unresolved-color: rgb(var(--ctp-maroon));
+  --link-unresolved-opacity: 1;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+  --link-unresolved-decoration-color: rgb(var(--ctp-red));
 
   /* Lists */
   --list-indent: 2em;

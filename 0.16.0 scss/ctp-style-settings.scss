@@ -365,3 +365,14 @@ input[type="number"]:focus-visible {
 .tooltip {
   color: rgb(var(--ctp-rosewater));
 }
+
+.markdown-source-view.mod-cm6 .is-unresolved {
+  & .cm-underline {
+    text-decoration-line: none;
+  }
+
+  &:hover {
+    color: rgb(var(--ctp-red));
+    text-decoration-line: none;
+  }
+}

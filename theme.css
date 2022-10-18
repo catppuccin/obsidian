@@ -358,6 +358,14 @@ input[type=number]:focus-visible {
   color: rgb(var(--ctp-rosewater));
 }
 
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
+  text-decoration-line: none;
+}
+.markdown-source-view.mod-cm6 .is-unresolved:hover {
+  color: rgb(var(--ctp-red));
+  text-decoration-line: none;
+}
+
 body {
   /*
   List of variables is placed in body rather than :root so
@@ -598,11 +606,11 @@ body {
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: rgb(var(--ctp-red));
-  --link-unresolved-opacity: 0.8;
+  --link-unresolved-color: rgb(var(--ctp-maroon));
+  --link-unresolved-opacity: 1;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+  --link-unresolved-decoration-color: rgb(var(--ctp-red));
   /* Lists */
   --list-indent: 2em;
   --list-spacing: 0.1em;
@@ -1114,7 +1122,7 @@ body {
 .ctp-full-palette.ctp-full-palette .vertical-tab-nav-item.is-active:hover {
   background-color: rgb(var(--ctp-yellow));
 }
-.ctp-full-palette.ctp-full-palette .hypermd-header .cm-formatting-header {
+.ctp-full-palette.ctp-full-palette .HyperMD-header .cm-formatting-header {
   color: rgb(var(--ctp-sapphire));
   font-size: 75% !important;
 }
