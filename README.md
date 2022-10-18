@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/catppuccin/obsidian/blob/main/assets/screenshot.png"/>
+  <img src="https://github.com/catppuccin/obsidian/blob/main/assets/screenshot-hq.png"/>
 </p>
 
 ## About
