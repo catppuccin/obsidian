@@ -688,7 +688,7 @@ settings:
 
 /* ------------------Selecting Accents------------------- */
 .ctp-full-palette {
-  --ctp-accent: var(--ctp-lavander);
+  --ctp-accent: var(--ctp-lavender);
 }
 
 .ctp-accent-rosewater {
