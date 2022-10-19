@@ -1,0 +1,28 @@
+body {
+  --indentation-guide-color: rgba(var(--ctp-surface1));
+  --indentation-guide-color-active: rgba(var(--ctp-accent), 0.7);
+  --indentation-guide-width: 2px;
+}
+
+::selection {
+  color: var(--text-on-accent);
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  width: 0;
+}
+
+.markdown-rendered.show-indentation-guide li > ul::before,
+.markdown-rendered.show-indentation-guide li > ol::before {
+  left: -13px;
+}
+
+:root {
+  --default-font: "Vollkorn", "Gentium Book Basic", -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular, consolas, "Roboto Mono", monospace;
+}
+
+body {
+  --font-text-theme: "Vollkorn", "Gentium Book Basic", inter, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
+  --font-interface-theme: "Public Sans", "Gill Sans", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+}

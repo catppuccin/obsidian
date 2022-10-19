@@ -1,0 +1,46 @@
+.clickable-icon,
+.mod-left-split .workspace-tab-header,
+.mod-right-split .workspace-tab-header {
+  margin: 0 2px;
+
+  &:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  }
+
+  &:hover svg {
+    color: var(--text-on-accent);
+  }
+}
+
+.clickable-icon.is-active,
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+.mod-left-split .workspace-tab-header.is-active,
+.mod-right-split .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 0 4px rgb(var(--ctp-crust)),
+    inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+
+  svg {
+    color: rgb(var(--ctp-accent));
+  }
+
+  &:hover,
+  &:hover svg {
+    background-color: rgb(var(--ctp-accent));
+    box-shadow: none;
+    color: var(--text-on-accent);
+  }
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
+.workspace-tab-header-inner-close-button:hover,
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
+.workspace-tab-header-inner-close-button:hover,
+.suggestion :hover.list-item-part.clickable-icon[aria-label="Clear search history"] {
+  background-color: rgb(var(--ctp-red));
+  box-shadow: 0 0 0 1px rgb(var(--ctp-crust));
+  color: rgb(var(--ctp-base));
+}
