@@ -27,7 +27,7 @@
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/macciato.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
