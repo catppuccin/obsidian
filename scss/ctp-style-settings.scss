@@ -396,5 +396,7 @@ input[type="number"]:focus-visible {
     text-decoration-line: none;
   }
 }
-
-
+//Recolors copy button so it isn't broken on hover
+.markdown-rendered button.copy-code-button {
+  background-color: rgb(var(--ctp-crust));
+}
