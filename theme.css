@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   /*
   List of variables is placed in body rather than :root so
@@ -6,6 +7,7 @@ body {
   and sort alphabetically to maximize readability in
   the compiled app.css file.
   ----------------------------------------------------- */
+
   /* Animations */
   --anim-duration-none: 0;
   --anim-duration-superfast: 70ms;
@@ -16,19 +18,24 @@ body {
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
   --blockquote-border-color: rgb(var(--ctp-accent));
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
+
   /* Bold */
   --bold-weight: var(--font-semibold);
   --bold-color: inherit;
+
   /* Borders */
   --border-width: 1px;
+
   /* Buttons */
   --button-radius: var(--input-radius);
+
   /* Callouts */
   --callout-border-width: 0.25px;
   --callout-border-opacity: 0.2;
@@ -38,6 +45,7 @@ body {
   --callout-title-padding: 0;
   --callout-title-size: inherit;
   --callout-content-padding: 0;
+
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: 15px;
@@ -48,6 +56,7 @@ body {
   --checkbox-border-color-hover: var(--text-muted);
   --checklist-done-decoration: line-through;
   --checklist-done-color: rgb(var(--ctp-accent));
+
   /* Code */
   --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
@@ -61,25 +70,31 @@ body {
   --code-string: var(--color-green);
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
+
   /* Collapse icons */
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-muted);
+
   /* Cursor */
   --cursor: default;
   --cursor-link: pointer;
+
   /* Dialogs - e.g. small modals, confirmations */
   --dialog-width: 560px;
   --dialog-max-width: 80vw;
   --dialog-max-height: 85vh;
+
   /* Dividers â€” between panes */
   --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
   --divider-width: 1px;
   --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
+
   /* Dragging */
   --drag-ghost-background: rgba(0, 0, 0, 85%);
   --drag-ghost-text-color: var(--text-normal);
+
   /* Embeds */
   --embed-background: inherit;
   --embed-border-left: 2px solid var(--interactive-accent);
@@ -88,10 +103,12 @@ body {
   --embed-border-bottom: none;
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
+
   /* Blocks */
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
+
   /* File layout */
   --file-line-width: 54ch;
   --file-folding-offset: 24px;
@@ -100,15 +117,18 @@ body {
   --file-header-font-weight: 400;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-justify: center;
+
   /* Relative font sizes */
   --font-smallest: 0.8em;
   --font-smaller: 0.875em;
   --font-small: 0.933em;
+
   /* UI font sizes */
   --font-ui-smaller: 12px;
   --font-ui-small: 13px;
   --font-ui-medium: 15px;
   --font-ui-large: 20px;
+
   /* Font weights */
   --font-thin: 100;
   --font-extralight: 200;
@@ -119,8 +139,10 @@ body {
   --font-bold: 700;
   --font-extrabold: 800;
   --font-black: 900;
+
   /* Footnotes */
   --footnote-size: var(--font-smaller);
+
   /* Graphs */
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
@@ -130,6 +152,7 @@ body {
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: var(--color-green);
   --graph-node-attachment: var(--color-yellow);
+
   /* Headings */
   --heading-formatting: var(--text-faint);
   --h1-color: inherit;
@@ -174,11 +197,14 @@ body {
   --h4-weight: 600;
   --h5-weight: 600;
   --h6-weight: 600;
+
   /* View header */
   --header-height: 40px;
+
   /* Horizontal rules */
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
+
   /* Icons */
   --icon-size: var(--icon-m);
   --icon-stroke: var(--icon-m-stroke-width);
@@ -198,7 +224,9 @@ body {
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
+
   /* Indentation guide */
+
   /* Inline title */
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -207,13 +235,16 @@ body {
   --inline-title-style: var(--h1-style);
   --inline-title-variant: var(--h1-variant);
   --inline-title-weight: var(--h1-weight);
+
   /* Inputs */
   --input-height: 30px;
   --input-radius: 5px;
   --input-font-weight: var(--font-normal);
   --input-border-width: 1px;
+
   /* Italic */
   --italic-color: inherit;
+
   /* Z-index */
   --layer-cover: 5;
   --layer-sidedock: 10;
@@ -225,9 +256,11 @@ body {
   --layer-menu: 65;
   --layer-tooltip: 70;
   --layer-dragged-item: 80;
+
   /* Line heights */
   --line-height-normal: 1.45;
   --line-height-tight: 1.25;
+
   /* Links */
   --link-color: rgb(var(--ctp-blue));
   --link-color-hover: rgb(var(--ctp-blue));
@@ -244,6 +277,7 @@ body {
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: rgb(var(--ctp-red));
+
   /* Lists */
   --list-indent: 2em;
   --list-spacing: 0.1em;
@@ -254,6 +288,7 @@ body {
   --list-bullet-radius: 50%;
   --list-bullet-size: 6px;
   --list-bullet-transform: none;
+
   /* File navigator */
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
@@ -273,6 +308,7 @@ body {
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-collapse-icon-color: var(--collapse-icon-color);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
+
   /* Modals - e.g. settings, community themes, community plugins */
   --modal-background: var(--background-primary);
   --modal-width: 90vw;
@@ -284,6 +320,7 @@ body {
   --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
+
   /* Popovers - file previews */
   --popover-width: 450px;
   --popover-height: 400px;
@@ -291,32 +328,38 @@ body {
   --popover-pdf-width: 600px;
   --popover-pdf-height: 800px;
   --popover-font-size: var(--font-text-size);
+
   /* Prompts - e.g. quick switcher, command palette */
   --prompt-width: 700px;
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
   --radius-xl: 16px;
+
   /* Ribbon */
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-width: 44px;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
+
   /* Scrollbars */
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+
   /* Search */
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
   --search-icon-size: 18px;
   --search-result-background: var(--background-primary);
+
   /* Layout sizing - for padding and margins */
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -332,9 +375,11 @@ body {
   --size-4-12: 48px;
   --size-4-16: 64px;
   --size-4-18: 72px;
+
   /* Sidebar */
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
+
   /* Sliders */
   --slider-thumb-border-width: 1px;
   --slider-thumb-border-color: var(--background-modifier-border-hover);
@@ -346,6 +391,7 @@ body {
   --slider-s-thumb-position: -5px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
+
   /* Status bar */
   --status-bar-background: var(--background-secondary);
   --status-bar-border-color: var(--divider-color);
@@ -354,11 +400,13 @@ body {
   --status-bar-text-color: var(--text-muted);
   --status-bar-position: fixed;
   --status-bar-radius: var(--radius-m) 0 0 0;
+
   /* Swatch for color inputs */
   --swatch-radius: 14px;
   --swatch-height: 24px;
   --swatch-width: 24px;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
+
   /* Tabs */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
@@ -375,6 +423,7 @@ body {
   --tab-radius-active: 6px 6px 0 0;
   --tab-width: 200px;
   --tab-max-width: 320px;
+
   /* Stacked tabs */
   --tab-stacked-pane-width: 700px;
   --tab-stacked-header-width: var(--header-height);
@@ -384,6 +433,7 @@ body {
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 5%);
+
   /* Tables */
   --table-background: transparent;
   --table-border-width: 1px;
@@ -406,20 +456,22 @@ body {
   --table-row-background-hover: var(--table-background);
   --table-row-alt-background: var(--table-background);
   --table-row-last-border-width: var(--table-border-width);
+
   /* Tags */
   --tag-size: var(--font-smaller);
-  --tag-color: rgb(var(--ctp-peach));
+  --tag-color: var(--text-normal);
   --tag-color-hover: rgb(var(--ctp-peach));
   --tag-decoration: none;
   --tag-decoration-hover: underline;
-  --tag-background: rgb(var(--ctp-mauve), 0.4);
-  --tag-background-hover: rgb(var(--ctp-mauve), 0.6);
+  --tag-background: rgb(var(--ctp-accent), 0.4);
+  --tag-background-hover: rgb(var(--ctp-accent), 0.6);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0;
   --tag-padding-x: 0.45em;
   --tag-padding-y: 0.25em;
   --tag-radius: 0.4em;
+
   /* Window frame */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
@@ -429,6 +481,7 @@ body {
   --titlebar-text-color-focused: var(--text-normal);
   --titlebar-text-color-highlighted: var(--text-accent-hover);
   --titlebar-text-weight: var(--font-bold);
+
   /* Toggles */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
@@ -441,17 +494,22 @@ body {
   --toggle-s-width: 34px;
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
+
   /* Vault name */
   --vault-name-font-size: var(--font-ui-small);
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--text-normal);
+
   /* Workspace */
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+
   /* Color mappings ------------------------ */
+
   /* Accent HSL values */
   --accent-h: 254;
   --accent-s: 80%;
   --accent-l: 68%;
+
   /* Backgrounds */
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
@@ -467,8 +525,10 @@ body {
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-green);
   --background-modifier-message: rgba(0, 0, 0, 90%);
+
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);
+
   /* Text */
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -793,22 +853,28 @@ settings:
 
 .theme-dark {
   color-scheme: dark;
+
   --highlight-mix-blend-mode: lighten;
 }
 
 .theme-light {
   color-scheme: light;
+
   --highlight-mix-blend-mode: darken;
 }
 
 .checkbox-container {
   --background-modifier-border-hover: rgb(var(--ctp-red));
+
   box-shadow: 0 0 2px inset rgb(var(--ctp-base));
 }
+
 .checkbox-container::after {
   --toggle-thumb-color: var(--text-on-accent);
+
   box-shadow: 0 0 4px rgb(var(--ctp-base));
 }
+
 .checkbox-container:hover {
   box-shadow: none;
 }
@@ -819,23 +885,23 @@ select:focus,
 }
 
 textarea:active,
-input[type=text]:active,
-input[type=search]:active,
-input[type=email]:active,
-input[type=password]:active,
-input[type=number]:active,
+input[type="text"]:active,
+input[type="search"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
 textarea:focus,
-input[type=text]:focus,
-input[type=search]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=number]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
 textarea:focus-visible,
-input[type=text]:focus-visible,
-input[type=search]:focus-visible,
-input[type=email]:focus-visible,
-input[type=password]:focus-visible,
-input[type=number]:focus-visible {
+input[type="text"]:focus-visible,
+input[type="search"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="number"]:focus-visible {
   box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
 }
 
@@ -846,6 +912,7 @@ input[type=number]:focus-visible {
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
   text-decoration-line: none;
 }
+
 .markdown-source-view.mod-cm6 .is-unresolved:hover {
   color: rgb(var(--ctp-red));
   text-decoration-line: none;
@@ -862,36 +929,46 @@ input[type=number]:focus-visible {
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
+
   /*
   * Nav bar
   */
+
   /*
   * Icons
   */
+
   /*
   * Prompts
   */
+
   /*
   * Search
   */
+
   /*
   * Dropdowns
   */
+
   /*
   * Checkboxes
   */
+
   /*
   ? I think !important is necessary to overwrite app.css's
   */
+
   /*
   *  settings slider
   */
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-vertical .workspace-tab-header:not(.is-active):hover,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-vertical .workspace-tab-header:not(.is-active):hover {
   --background-modifier-hover: rgb(var(--ctp-flamingo));
   --background-modifier-active-hover: rgb(var(--ctp-flamingo));
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) :not(.is-grabbing) .nav-file-title:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) :not(.is-grabbing) .nav-folder-title:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .nav-file-title.is-active,
@@ -904,11 +981,13 @@ input[type=number]:focus-visible {
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .tree-item-self.is-clickable:hover {
   background-color: rgb(var(--ctp-yellow));
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .nav-folder.mod-root > .nav-folder-title:hover,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .nav-folder.mod-root > .nav-folder-title:hover {
   background-color: transparent;
   color: rgb(var(--text-normal));
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header.has-active-menu,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header.has-active-menu,
@@ -922,6 +1001,7 @@ input[type=number]:focus-visible {
   box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active svg,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header.has-active-menu svg,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header.has-active-menu svg,
@@ -934,7 +1014,9 @@ input[type=number]:focus-visible {
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header.is-active svg {
   color: rgb(var(--ctp-pink));
 }
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active:hover, .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active:hover svg,
+
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active:hover,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active:hover svg,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header.has-active-menu:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header.has-active-menu:hover,
@@ -957,6 +1039,7 @@ input[type=number]:focus-visible {
   box-shadow: none;
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header:hover,
@@ -966,6 +1049,7 @@ input[type=number]:focus-visible {
   background-color: rgb(var(--ctp-pink));
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon:hover svg,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header:hover svg,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header:hover svg,
@@ -974,15 +1058,18 @@ input[type=number]:focus-visible {
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .suggestion-item.is-selected,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .suggestion-item.is-selected {
   background-color: rgb(var(--ctp-lavender));
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .suggestion-item.is-selected:hover .suggestion-flair,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .suggestion-item.is-selected:hover .suggestion-flair {
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .suggestion .suggestion-item.mod-group,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .suggestion .suggestion-item.mod-group {
   background-color: inherit;
@@ -990,84 +1077,94 @@ input[type=number]:focus-visible {
   font-size: var(--font-ui-medium);
   font-variant: all-small-caps;
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .search-suggest-item.is-selected,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .search-suggest-item.is-selected {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .search-suggest-item.is-selected .list-item-part.clickable-icon,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .search-suggest-item.is-selected .list-item-part.clickable-icon {
   color: var(--text-muted);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .search-suggest-item.is-selected .search-suggest-info-text,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .search-suggest-item.is-selected .search-suggest-info-text {
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) select:focus,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .dropdown:focus,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) select:focus,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .dropdown:focus {
   box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) textarea:active,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=text]:active,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=search]:active,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=email]:active,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=password]:active,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=number]:active,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="text"]:active,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="search"]:active,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="email"]:active,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="password"]:active,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="number"]:active,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) textarea:focus,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=text]:focus,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=search]:focus,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=email]:focus,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=password]:focus,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=number]:focus,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="text"]:focus,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="search"]:focus,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="email"]:focus,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="password"]:focus,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="number"]:focus,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) textarea:focus-visible,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=text]:focus-visible,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=search]:focus-visible,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=email]:focus-visible,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=password]:focus-visible,
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=number]:focus-visible,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="text"]:focus-visible,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="search"]:focus-visible,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="email"]:focus-visible,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="password"]:focus-visible,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="number"]:focus-visible,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) textarea:active,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=text]:active,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=search]:active,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=email]:active,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=password]:active,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=number]:active,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="text"]:active,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="search"]:active,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="email"]:active,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="password"]:active,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="number"]:active,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) textarea:focus,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=text]:focus,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=search]:focus,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=email]:focus,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=password]:focus,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=number]:focus,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="text"]:focus,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="search"]:focus,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="email"]:focus,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="password"]:focus,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="number"]:focus,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) textarea:focus-visible,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=text]:focus-visible,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=search]:focus-visible,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=email]:focus-visible,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=password]:focus-visible,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=number]:focus-visible {
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="text"]:focus-visible,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="search"]:focus-visible,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="email"]:focus-visible,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="password"]:focus-visible,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="number"]:focus-visible {
   box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
 }
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:not(:checked),
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:not(:checked) {
+
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:not(:checked),
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:not(:checked) {
   border-color: rgb(var(--ctp-maroon));
   background-color: rgb(var(--ctp-red));
   box-shadow: inset 4px 4px 12px rgb(var(--ctp-mantle)), inset -4px -4px 12px rgb(var(--ctp-mantle));
 }
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:not(:checked):hover,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:not(:checked):hover {
+
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:not(:checked):hover,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:not(:checked):hover {
   border-width: 2px;
 }
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:checked,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:checked {
+
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:checked,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:checked {
   border-color: transparent;
   background-color: rgb(var(--ctp-green));
   box-shadow: 0 0 0 1px rgb(var(--ctp-green), 0.4);
 }
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:checked:hover,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type=checkbox]:checked:hover {
+
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:checked:hover,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) input[type="checkbox"]:checked:hover {
   background-color: rgb(var(--ctp-maroon));
   box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 0.4);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .horizontal-tab-nav-item:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .vertical-tab-nav-item:hover,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .horizontal-tab-nav-item:hover,
@@ -1075,29 +1172,34 @@ input[type=number]:focus-visible {
   background-color: rgb(var(--ctp-yellow));
   color: var(--text-on-accent);
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .horizontal-tab-nav-item.is-active,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .vertical-tab-nav-item.is-active,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .horizontal-tab-nav-item.is-active,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .vertical-tab-nav-item.is-active {
   background-color: rgb(var(--ctp-lavender));
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .horizontal-tab-nav-item.is-active:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .vertical-tab-nav-item.is-active:hover,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .horizontal-tab-nav-item.is-active:hover,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .vertical-tab-nav-item.is-active:hover {
   background-color: rgb(var(--ctp-yellow));
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .HyperMD-header .cm-formatting-header,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .HyperMD-header .cm-formatting-header {
   color: rgb(var(--ctp-sapphire));
   font-size: 75% !important;
 }
+
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input.slider,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input.slider {
   --slider-track-background: rgb(var(--ctp-green));
 }
-.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input[type=color]::-webkit-color-swatch:hover,
-.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input[type=color]::-webkit-color-swatch:hover {
+
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input[type="color"]::-webkit-color-swatch:hover,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input[type="color"]::-webkit-color-swatch:hover {
   box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
 }
 
@@ -1106,79 +1208,79 @@ input[type=number]:focus-visible {
   --callout-icon: lucide-pencil;
 }
 
-.callout[data-callout=abstract],
-.callout[data-callout=summary],
-.callout[data-callout=tldr] {
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
   --callout-color: var(--ctp-accent);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout=info],
-.callout[data-callout=todo] {
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
   --callout-color: var(--ctp-green);
 }
 
-.callout[data-callout=info] {
+.callout[data-callout="info"] {
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout=todo] {
+.callout[data-callout="todo"] {
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout=tip],
-.callout[data-callout=hint],
-.callout[data-callout=important] {
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
   --callout-color: var(--ctp-maroon);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout=success],
-.callout[data-callout=check],
-.callout[data-callout=done] {
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
   --callout-color: var(--ctp-green);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout=question],
-.callout[data-callout=help],
-.callout[data-callout=faq] {
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
   --callout-color: var(--ctp-mauve);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout=warning],
-.callout[data-callout=caution],
-.callout[data-callout=attention] {
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
   --callout-color: var(--ctp-red);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout=failure],
-.callout[data-callout=fail],
-.callout[data-callout=missing] {
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
   --callout-color: var(--ctp-red);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout=danger],
-.callout[data-callout=error] {
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
   --callout-color: var(--ctp-red);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout=bug] {
+.callout[data-callout="bug"] {
   --callout-color: 245, 0, 87;
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout=example] {
+.callout[data-callout="example"] {
   --callout-color: 124, 77, 255;
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout=quote],
-.callout[data-callout=cite] {
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
   --callout-color: 158, 158, 158;
   --callout-icon: quote-glyph;
 }
@@ -1186,13 +1288,16 @@ input[type=number]:focus-visible {
 .prompt {
   --prompt-border-color: rgb(var(--ctp-surface1));
 }
-.prompt .prompt-input[type=text] {
+
+.prompt .prompt-input[type="text"] {
   border: 0;
 }
+
 .prompt .prompt-results {
   background-color: var(--background-secondary);
   box-shadow: inset 0 0 10px rgb(var(--ctp-crust)), inset 0 0 12px rgb(var(--ctp-base));
 }
+
 .prompt:hover .suggestion-hotkey {
   box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-base));
 }
@@ -1201,6 +1306,7 @@ input[type=number]:focus-visible {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
+
 .suggestion-item.is-selected .suggestion-flair {
   color: var(--text-on-accent);
 }
@@ -1215,12 +1321,14 @@ input[type=number]:focus-visible {
 .mod-right-split .workspace-tab-header {
   margin: 0 2px;
 }
+
 .clickable-icon:hover,
 .mod-left-split .workspace-tab-header:hover,
 .mod-right-split .workspace-tab-header:hover {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
+
 .clickable-icon:hover svg,
 .mod-left-split .workspace-tab-header:hover svg,
 .mod-right-split .workspace-tab-header:hover svg {
@@ -1235,6 +1343,7 @@ input[type=number]:focus-visible {
   box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
 }
+
 .clickable-icon.is-active svg,
 .mod-left-split .workspace-tab-header.has-active-menu svg,
 .mod-right-split .workspace-tab-header.has-active-menu svg,
@@ -1242,7 +1351,9 @@ input[type=number]:focus-visible {
 .mod-right-split .workspace-tab-header.is-active svg {
   color: rgb(var(--ctp-accent));
 }
-.clickable-icon.is-active:hover, .clickable-icon.is-active:hover svg,
+
+.clickable-icon.is-active:hover,
+.clickable-icon.is-active:hover svg,
 .mod-left-split .workspace-tab-header.has-active-menu:hover,
 .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
 .mod-right-split .workspace-tab-header.has-active-menu:hover,
@@ -1275,6 +1386,7 @@ input[type=number]:focus-visible {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
+
 .search-suggest-item.is-selected .search-suggest-info-text {
   color: var(--text-on-accent);
 }
@@ -1290,9 +1402,11 @@ input[type=number]:focus-visible {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
+
 .search-suggest-item.is-selected .list-item-part.clickable-icon {
   color: var(--text-muted);
 }
+
 .search-suggest-item.is-selected .search-suggest-info-text {
   color: var(--text-on-accent);
 }
@@ -1322,23 +1436,31 @@ input[type=number]:focus-visible {
 .mod-settings input.slider {
   --slider-track-background: rgb(var(--ctp-accent));
 }
-.mod-settings input[type=color]::-webkit-color-swatch:hover {
+
+.mod-settings input[type="color"]::-webkit-color-swatch:hover {
   box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
 }
+
 .mod-settings .checkbox-container {
   --background-modifier-border-hover: rgb(var(--ctp-red));
+
   box-shadow: 0 0 2px inset rgb(var(--ctp-base));
 }
+
 .mod-settings .checkbox-container::after {
   --toggle-thumb-color: var(--text-on-accent);
+
   box-shadow: 0 0 4px rgb(var(--ctp-base));
 }
+
 .mod-settings .checkbox-container:hover {
   box-shadow: none;
 }
+
 .mod-settings .checkbox-container.is-enabled {
   background-color: rgb(var(--ctp-green));
 }
+
 .mod-settings .vertical-tab-header-group-title {
   color: var(--text-muted);
   font-size: var(--font-ui-medium);
@@ -1358,9 +1480,11 @@ button.mod-cta {
   user-select: none;
   white-space: nowrap;
 }
+
 button.mod-cta:not(.clickable-icon) {
   background-color: var(--interactive-normal);
 }
+
 button.mod-cta:hover {
   background-color: var(--interactive-hover);
 }
@@ -1384,6 +1508,7 @@ button.mod-cta:hover {
 .vertical-tab-nav-item.is-active {
   background-color: rgb(var(--ctp-accent));
 }
+
 .horizontal-tab-nav-item.is-active:hover,
 .vertical-tab-nav-item.is-active:hover {
   background-color: rgb(var(--ctp-accent));
@@ -1433,9 +1558,11 @@ button.mod-cta:hover {
   --background-modifier-hover: rgb(var(--ctp-accent));
   --background-modifier-active-hover: rgb(var(--ctp-accent));
 }
+
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
   color: var(--text-on-accent);
 }
+
 .mod-vertical .workspace-tab-header:not(.is-active):hover svg {
   color: var(--text-on-accent);
 }
@@ -1468,5 +1595,3 @@ body {
   --font-text-theme: "Vollkorn", "Gentium Book Basic", inter, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
   --font-interface-theme: "Public Sans", "Gill Sans", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 }
-
-/*# sourceMappingURL=theme.css.map */

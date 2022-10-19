@@ -456,19 +456,19 @@ body {
   --table-row-last-border-width: var(--table-border-width);
 
   /* Tags */
-  --tag-size: var(--font-smaller);
-  --tag-color: rgb(var(--ctp-peach));
-  --tag-color-hover: rgb(var(--ctp-peach));
+  --tag-size: var(--font-normal);
+  --tag-color: rgb(var(--ctp-accent));
+  --tag-color-hover: rgb(var(--ctp-accent));
   --tag-decoration: none;
   --tag-decoration-hover: underline;
-  --tag-background: rgb(var(--ctp-mauve), 0.4);
-  --tag-background-hover: rgb(var(--ctp-mauve), 0.6);
+  --tag-background: transparent;
+  --tag-background-hover: 0;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0;
-  --tag-padding-x: 0.45em;
-  --tag-padding-y: 0.25em;
-  --tag-radius: 0.4em;
+  --tag-padding-x: 0;
+  --tag-padding-y: 0;
+  --tag-radius: 0.8em;
 
   /* Window frame */
   --titlebar-background: var(--background-secondary);

@@ -26,3 +26,8 @@ body {
   --font-text-theme: "Vollkorn", "Gentium Book Basic", inter, -apple-system, blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light", sans-serif;
   --font-interface-theme: "Public Sans", "Gill Sans", -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 }
+
+.cm-hashtag.cm-hashtag-end:hover {
+  text-decoration: underline 1px var(--text-normal);
+  text-decoration-thickness: 2px;
+}
