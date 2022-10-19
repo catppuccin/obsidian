@@ -59,3 +59,14 @@ button.mod-cta {
 .modal {
   border-color: rgb(var(--ctp-surface1));
 }
+
+//Style settings customisation
+//Remove collapse option from catppuccin credits header
+.style-settings-heading[data-id="catppuccin-theme-credits-link"] {
+  + .style-settings-container, .style-settings-collapse-indicator {
+    display: none;
+  }
+  &:not(.is-collapsed) {
+    margin-bottom: 0px;
+  }
+}
