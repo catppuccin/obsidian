@@ -1396,11 +1396,18 @@ button.mod-cta:hover {
   border-color: rgb(var(--ctp-surface1));
 }
 
-.style-settings-heading[data-id=catppuccin-theme-credits-link] + .style-settings-container, .style-settings-heading[data-id=catppuccin-theme-credits-link] .style-settings-collapse-indicator {
+.style-settings-heading[data-id=catppuccin-theme-credits-link] + .style-settings-container,
+.style-settings-heading[data-id=catppuccin-theme-credits-link] .style-settings-collapse-indicator {
   display: none;
 }
 .style-settings-heading[data-id=catppuccin-theme-credits-link]:not(.is-collapsed) {
-  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+
+.community-item .flair:not(.mod-pop) {
+  --tag-background: rgb(var(--ctp-accent));
+  --tag-color: var(--text-on-accent);
+  text-transform: lowercase;
 }
 
 .horizontal-tab-nav-item,
