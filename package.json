@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "stylelint": "^14.13.0",
-    "stylelint-config-idiomatic-order": "^9.0.0",
-    "stylelint-config-standard-scss": "^5.0.0",
-    "stylelint-order": "^5.0.0"
-  }
-}
