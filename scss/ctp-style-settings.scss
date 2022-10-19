@@ -303,6 +303,29 @@ settings:
   --scrollbar-active-thumb-bg: rgba(var(--ctp-text), 0.2);
   --scrollbar-bg: rgba(var(--ctp-text), 0.05);
   --scrollbar-thumb-bg: rgba(var(--ctp-text), 0.1);
+  --mono-rgb-0: var(--ctp-crust);
+  --mono-rgb-100: var(--ctp-text);
+  --color-red-rgb: var(--ctp-red);
+  --color-red: rgb(var(--ctp-red));
+  --color-green-rgb: var(--ctp-green);
+  --color-green: rgb(var(--ctp-green));
+  --color-orange: rgb(var(--ctp-peach));
+  --color-yellow: rgb(var(--ctp-yellow));
+  --color-cyan: rgb(var(--ctp-sky));
+  --color-blue: rgb(var(--ctp-blue));
+  --color-purple: rgb(var(--ctp-lavender));
+  --color-pink: rgb(var(--ctp-pink));
+  --color-base-00: rgb(var(--ctp-crust));
+  --color-base-10: rgb(var(--ctp-mantle));
+  --color-base-20: rgb(var(--ctp-base));
+  --color-base-25: rgb(var(--ctp-surface0));
+  --color-base-30: rgb(var(--ctp-surface1));
+  --color-base-35: rgb(var(--ctp-surface2));
+  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-50: rgb(var(--ctp-overlay1));
+  --color-base-60: rgb(var(--ctp-overlay2));
+  --color-base-70: rgb(var(--ctp-subtext0));
+  --color-base-100: rgb(var(--ctp-text));
 }
 
 .theme-dark {
@@ -373,5 +396,7 @@ input[type="number"]:focus-visible {
     text-decoration-line: none;
   }
 }
-
-
+//Recolors copy button so it isn't broken on hover
+.markdown-rendered button.copy-code-button {
+  background-color: rgb(var(--ctp-crust));
+}
