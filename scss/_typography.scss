@@ -31,3 +31,7 @@ body {
   text-decoration: underline 1px var(--text-normal);
   text-decoration-thickness: 2px;
 }
+
+.cm-hashtag::selection {
+  text-shadow: .4px 0 0 black;
+}
