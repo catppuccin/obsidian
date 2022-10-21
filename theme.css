@@ -1283,7 +1283,7 @@ input[type=number]:focus-visible {
   color: var(--text-on-accent);
 }
 
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header-inner-close-button:hover,
@@ -1513,6 +1513,10 @@ body {
 .cm-hashtag.cm-hashtag-end:hover {
   text-decoration: underline 1px var(--text-normal);
   text-decoration-thickness: 2px;
+}
+
+.cm-hashtag::selection {
+  text-shadow: 0.4px 0 0 black;
 }
 
 /*# sourceMappingURL=theme.css.map */
