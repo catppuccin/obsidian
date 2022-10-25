@@ -1519,4 +1519,41 @@ body {
   text-shadow: 0.4px 0 0 black;
 }
 
+/* Better Command Palette */
+/* Fixes highlight error */
+.better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
+  color: var(--text-on-accent);
+}
+
+.better-command-palette .better-command-palette-title {
+  margin: var(--size-4-3);
+  padding-left: var(--size-4-3);
+}
+
+.better-command-palette .suggestion-item .suggestion-flair {
+  background-color: rgb(var(--ctp-surface0));
+  color: var(--text-muted);
+  border-radius: var(--radius-s);
+  margin-bottom: 1px;
+}
+
+.better-command-palette.better-command-palette .suggestion-item.is-selected:hover .suggestion-flair {
+  color: var(--text-muted);
+}
+
+/* Improves spacing around hidden palette items box */
+.better-command-palette.better-command-palette .suggestion-hotkey {
+  padding: var(--size-2-1) var(--size-4-3);
+  margin-right: var(--size-2-3);
+}
+
+.better-command-palette .hidden-items-header {
+  padding-left: 12px;
+  margin-bottom: 6px;
+}
+
+.better-command-palette .hidden-items-header:empty {
+  margin: 1px;
+}
+
 /*# sourceMappingURL=theme.css.map */
