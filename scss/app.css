@@ -1,5 +1,6 @@
 body {
   /*
+  NOTE: Changes here will not affect the theme -- this is just reference info.
 	List of variables is placed in body rather than :root so
 	that we can	combine all property types including colors
 	and sort alphabetically to maximize readability in
