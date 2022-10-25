@@ -1,0 +1,6 @@
+/* Better Command Palette */
+/* Fixes highlight error */
+
+.better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
+  color: var(--text-on-accent);
+}
