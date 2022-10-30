@@ -759,11 +759,11 @@ settings:
   --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
   --background-modifier-form-field-highlighted: rgba(var(--ctp-crust), 0.22);
   --background-modifier-box-shadow: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-success: rgba(var(--ctp-green), 0.1);
+  --background-modifier-success: rgba(var(--ctp-green), 0.9);
   --background-modifier-success-rgb: var(--ctp-green);
-  --background-modifier-error: rgba(var(--ctp-red), 0.1);
+  --background-modifier-error: rgba(var(--ctp-red), 0.9);
   --background-modifier-error-rgb: var(--ctp-red);
-  --background-modifier-error-hover: rgba(var(--ctp-red), 0.15);
+  --background-modifier-error-hover: rgba(var(--ctp-red), 1);
   --background-modifier-cover: rgba(var(--ctp-crust), 0.8);
   --color-accent: rgb(var(--ctp-accent));
   --color-accent-1: rgb(var(--ctp-accent));
