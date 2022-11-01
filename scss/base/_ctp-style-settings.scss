@@ -271,7 +271,10 @@ settings:
   --background-secondary-alt: rgb(var(--ctp-crust));
   --background-modifier-border: rgb(var(--ctp-surface0));
   --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-form-field-highlighted: rgba(var(--ctp-crust), 0.22);
+  --background-modifier-form-field-highlighted: rgba(
+    var(--ctp-crust),
+    0.22
+  );
   --background-modifier-box-shadow: rgba(var(--ctp-crust), 0.3);
   --background-modifier-success: rgba(var(--ctp-green), 0.9);
   --background-modifier-success-rgb: var(--ctp-green);
@@ -338,65 +341,4 @@ settings:
   color-scheme: light;
 
   --highlight-mix-blend-mode: darken;
-}
-
-.checkbox-container {
-  --background-modifier-border-hover: rgb(var(--ctp-red));
-
-  box-shadow: 0 0 2px inset rgb(var(--ctp-base));
-
-  &::after {
-    --toggle-thumb-color: var(--text-on-accent);
-
-    box-shadow: 0 0 4px rgb(var(--ctp-base));
-  }
-
-  &:hover {
-    box-shadow: none;
-  }
-}
-
-select:focus,
-.dropdown:focus {
-  box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
-}
-
-textarea:active,
-input[type="text"]:active,
-input[type="search"]:active,
-input[type="email"]:active,
-input[type="password"]:active,
-input[type="number"]:active,
-textarea:focus,
-input[type="text"]:focus,
-input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-textarea:focus-visible,
-input[type="text"]:focus-visible,
-input[type="search"]:focus-visible,
-input[type="email"]:focus-visible,
-input[type="password"]:focus-visible,
-input[type="number"]:focus-visible {
-  box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
-}
-
-.tooltip {
-  color: rgb(var(--ctp-rosewater));
-}
-
-.markdown-source-view.mod-cm6 .is-unresolved {
-  & .cm-underline {
-    text-decoration-line: none;
-  }
-
-  &:hover {
-    color: rgb(var(--ctp-red));
-    text-decoration-line: none;
-  }
-}
-//Recolors copy button so it isn't broken on hover
-.markdown-rendered button.copy-code-button {
-  background-color: rgb(var(--ctp-crust));
 }

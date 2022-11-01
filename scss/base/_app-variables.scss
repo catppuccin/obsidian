@@ -233,6 +233,12 @@ body {
   --clickable-icon-radius: var(--radius-s);
 
   /* Indentation guide */
+  --indentation-guide-color: rgba(var(--ctp-surface1));
+  --indentation-guide-color-active: rgba(
+    var(--ctp-accent),
+    0.7
+  );
+  --indentation-guide-width: 2px;
 
   /* Inline title */
   --inline-title-color: var(--h1-color);

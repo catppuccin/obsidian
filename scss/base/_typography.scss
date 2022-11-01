@@ -1,10 +1,18 @@
+:root {
+  --default-font: "Vollkorn", "Gentium Book Basic",
+    -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", sans-serif;
+  --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular,
+    consolas, "Roboto Mono", monospace;
+}
+
 body {
-  --indentation-guide-color: rgba(var(--ctp-surface1));
-  --indentation-guide-color-active: rgba(
-    var(--ctp-accent),
-    0.7
-  );
-  --indentation-guide-width: 2px;
+  --font-text-theme: "Vollkorn", -apple-system,
+    blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light",
+    inter, sans-serif;
+  --font-interface-theme: "Public Sans", -apple-system,
+    system-ui, blinkmacsystemfont, "Segoe UI", roboto,
+    "Helvetica Neue", arial, sans-serif;
 }
 
 ::selection {
@@ -20,23 +28,6 @@ body {
   left: -13px;
 }
 
-:root {
-  --default-font: "Vollkorn", "Gentium Book Basic",
-    -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", sans-serif;
-  --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular,
-    consolas, "Roboto Mono", monospace;
-}
-
-body {
-  --font-text-theme: "Vollkorn", "Gentium Book Basic", inter,
-    -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", sans-serif;
-  --font-interface-theme: "Public Sans", "Gill Sans",
-    -apple-system, system-ui, blinkmacsystemfont, "Segoe UI",
-    roboto, "Helvetica Neue", arial, sans-serif;
-}
-
 .cm-hashtag.cm-hashtag-end:hover {
   text-decoration: underline 1px var(--text-normal);
   text-decoration-thickness: 2px;
@@ -44,4 +35,19 @@ body {
 
 .cm-hashtag::selection {
   text-shadow: 0.4px 0 0 black;
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved {
+  & .cm-underline {
+    text-decoration-line: none;
+  }
+
+  &:hover {
+    color: rgb(var(--ctp-red));
+    text-decoration-line: none;
+  }
+}
+
+.tooltip {
+  color: rgb(var(--ctp-rosewater));
 }
