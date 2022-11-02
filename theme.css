@@ -1204,15 +1204,15 @@ settings:
 */
 /* @settings
 
-name: Credits
-id: credits
+name: Credits and Source Code
+id: source-code
 settings:
   -
-    id: credits
-    title: Source Code
+    id: catppuccin-theme-credits-link
+    title: Credits and Source Code
     type: heading
     level: 1
-    collapsed: true
+    collapsed: false
     description: 💎 View and contribute to the port at github.com/catppuccin/obsidian
 */
 .theme-light,
@@ -1404,8 +1404,10 @@ settings:
   --background-secondary-alt: rgb(var(--ctp-crust));
   --background-modifier-border: rgb(var(--ctp-surface0));
   --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-form-field-highlighted: rgba(var(--ctp-crust),
-      0.22);
+  --background-modifier-form-field-highlighted: rgba(
+    var(--ctp-crust),
+    0.22
+  );
   --background-modifier-box-shadow: rgba(var(--ctp-crust), 0.3);
   --background-modifier-success: rgba(var(--ctp-green), 0.9);
   --background-modifier-success-rgb: var(--ctp-green);
@@ -1756,9 +1758,10 @@ body {
 .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header-inner-close-button:hover,
-.suggestion :hover.list-item-part.clickable-icon[aria-label="Clear search history"] {
+.suggestion :hover.list-item-part.clickable-icon[aria-label="Clear search history"],
+.modal-close-button:hover {
   background-color: rgb(var(--ctp-red));
-  box-shadow: 0 0 0 1px rgb(var(--ctp-crust));
+  box-shadow: 0 0 4px 1px rgb(var(--ctp-surface1));
   color: rgb(var(--ctp-base));
   transition: var(--transition-hover-bg);
 }
@@ -1963,13 +1966,14 @@ input[type=number]:focus-visible {
 .mod-settings .checkbox-container:hover {
   box-shadow: none;
 }
-.mod-settings .checkbox-container.is-enabled {
-  background-color: rgb(var(--ctp-green));
-}
 .mod-settings .vertical-tab-header-group-title {
   color: var(--text-muted);
   font-size: var(--font-ui-medium);
   font-variant: all-small-caps;
+}
+
+.checkbox-container.is-enabled {
+  background-color: rgb(var(--ctp-green));
 }
 
 button.mod-cta {
