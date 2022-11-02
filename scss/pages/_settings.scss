@@ -24,15 +24,15 @@
     box-shadow: none;
   }
 
-  .checkbox-container.is-enabled {
-    background-color: rgb(var(--ctp-green));
-  }
-
   .vertical-tab-header-group-title {
     color: var(--text-muted);
     font-size: var(--font-ui-medium);
     font-variant: all-small-caps;
   }
+}
+
+.checkbox-container.is-enabled {
+  background-color: rgb(var(--ctp-green));
 }
 
 button.mod-cta {
