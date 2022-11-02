@@ -1,0 +1,7 @@
+.view-header-title-parent .view-header-breadcrumb {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+  &:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  }
+}

@@ -1,0 +1,7 @@
+/* App's default css seems to prefer ease-in-out, so sticking w/ that here */
+body {
+  --transition-hover-bg: background-color 0.3s ease-in-out;
+  --transition-hover-color: color 0.3s ease-in-out;
+  --transition-hover-color-fast: color 0.2s ease-in-out;
+  --transition-hover-box-shadow: box-shadow 0.3s ease-in-out;
+}

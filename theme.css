@@ -1586,6 +1586,14 @@ h6,
   color: rgb(var(--ctp-rosewater));
 }
 
+/* App's default css seems to prefer ease-in-out, so sticking w/ that here */
+body {
+  --transition-hover-bg: background-color 0.3s ease-in-out;
+  --transition-hover-color: color 0.3s ease-in-out;
+  --transition-hover-color-fast: color 0.2s ease-in-out;
+  --transition-hover-box-shadow: box-shadow 0.3s ease-in-out;
+}
+
 .callout {
   --callout-color: var(--ctp-accent);
   --callout-icon: lucide-pencil;
@@ -1698,6 +1706,7 @@ h6,
 .clickable-icon,
 .mod-left-split .workspace-tab-header,
 .mod-right-split .workspace-tab-header {
+  transition: var(--transition-hover-bg);
   margin: 0 2px;
 }
 .clickable-icon:hover,
@@ -1719,12 +1728,14 @@ h6,
 .mod-right-split .workspace-tab-header.is-active {
   box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
+  transition: var(--transition-hover-bg);
 }
 .clickable-icon.is-active svg,
 .mod-left-split .workspace-tab-header.has-active-menu svg,
 .mod-right-split .workspace-tab-header.has-active-menu svg,
 .mod-left-split .workspace-tab-header.is-active svg,
 .mod-right-split .workspace-tab-header.is-active svg {
+  transition: background-color 3s ease-in-out;
   color: rgb(var(--ctp-accent));
 }
 .clickable-icon.is-active:hover, .clickable-icon.is-active:hover svg,
@@ -1749,6 +1760,12 @@ h6,
   background-color: rgb(var(--ctp-red));
   box-shadow: 0 0 0 1px rgb(var(--ctp-crust));
   color: rgb(var(--ctp-base));
+  transition: var(--transition-hover-bg);
+}
+
+.workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
+  --icon-color-hover: var(--text-faint);
+  --opacity-icon-hover: 1;
 }
 
 select:focus,
@@ -1846,9 +1863,17 @@ input[type=number]:focus-visible {
   color: var(--text-on-accent);
 }
 
+.view-header-title-parent .view-header-breadcrumb {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+.view-header-title-parent .view-header-breadcrumb:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
 .horizontal-tab-nav-item,
 .vertical-tab-nav-item {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 .horizontal-tab-nav-item:hover,
@@ -1868,7 +1893,11 @@ input[type=number]:focus-visible {
 
 .nav-folder-title,
 .nav-file-title {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.tree-item-self {
+  transition: var(--transition-hover-bg);
 }
 
 :not(.is-grabbing) .nav-file-title:hover,
@@ -2054,6 +2083,7 @@ button.mod-cta:hover {
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header.has-active-menu,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header.is-active,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header.is-active {
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
   box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
 }
@@ -2068,6 +2098,8 @@ button.mod-cta:hover {
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header.is-active svg,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header.is-active svg {
   color: rgb(var(--ctp-pink));
+  /* extra long to prevent weird super fast move */
+  transition: background-color 4s ease-in-out;
 }
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active:hover, .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon.is-active:hover svg,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header.has-active-menu:hover,
@@ -2091,6 +2123,14 @@ button.mod-cta:hover {
   background-color: rgb(var(--ctp-pink));
   box-shadow: none;
   color: var(--text-on-accent);
+}
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header,
+.theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header,
+.theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-right-split .workspace-tab-header {
+  transition: var(--transition-hover-bg);
 }
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .clickable-icon:hover,
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-left-split .workspace-tab-header:hover,
