@@ -1,4 +1,3 @@
-
 /* @settings
 name: Catppuccin Accents
 id: catppuccin-theme-settings
@@ -674,18 +673,17 @@ settings:
 */
 /* @settings
 
-name: Credits
-id: credits
+name: Credits and Source Code
+id: source-code
 settings:
   -
-    id: credits
-    title: Source Code
+    id: catppuccin-theme-credits-link
+    title: Credits and Source Code
     type: heading
     level: 1
-    collapsed: true
+    collapsed: false
     description: 💎 View and contribute to the port at github.com/catppuccin/obsidian
 */
-
 
 .theme-light,
 .theme-light.ctp-latte {
@@ -877,8 +875,10 @@ settings:
   --background-secondary-alt: rgb(var(--ctp-crust));
   --background-modifier-border: rgb(var(--ctp-surface0));
   --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-form-field-highlighted: rgba(var(--ctp-crust),
-      0.22);
+  --background-modifier-form-field-highlighted: rgba(
+    var(--ctp-crust),
+    0.22
+  );
   --background-modifier-box-shadow: rgba(var(--ctp-crust), 0.3);
   --background-modifier-success: rgba(var(--ctp-green), 0.9);
   --background-modifier-success-rgb: var(--ctp-green);
