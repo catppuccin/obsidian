@@ -613,6 +613,7 @@ settings:
     title: Bold font color
     description: Select your bold font color
     type: variable-select
+    allowEmpty: false
     default: var(--ctp-sapphire)
     options:
       -
@@ -662,6 +663,7 @@ settings:
     title: Italic font color
     description: Select your italic font color
     type: variable-select
+    allowEmpty: false
     default: var(--ctp-green)
     options:
       -
@@ -764,8 +766,8 @@ settings:
         value: var(--ctp-lavender)
   -
     id: ctp-blockquote
-    title: Strikethrough color
-    description: Select your strikethrough color
+    title: Blockquote color
+    description: Select your blockquote text color
     type: variable-select
     allowEmpty: false
     default: var(--ctp-rosewater)
@@ -1444,6 +1446,7 @@ del,
 
 .markdown-rendered blockquote,
 .cm-s-obsidian span.cm-quote {
+  --blockquote-border-color: rgb(var(--ctp-blockquote, var(--ctp-accent)));
   --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
 }
 

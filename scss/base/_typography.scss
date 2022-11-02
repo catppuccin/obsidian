@@ -34,6 +34,7 @@ del,
 
 .markdown-rendered blockquote,
 .cm-s-obsidian span.cm-quote {
+  --blockquote-border-color: rgb(var(--ctp-blockquote, var(--ctp-accent)));
   --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
 }
 
