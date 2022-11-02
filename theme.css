@@ -1,11 +1,16 @@
 @charset "UTF-8";
 body {
-  /*
-  List of variables is placed in body rather than :root so
-  that we can	combine all property types including colors
-  and sort alphabetically to maximize readability in
-  the compiled app.css file.
-  ----------------------------------------------------- */
+  /** Variables controlling many core aspects of Obsidian's appearance.
+   * At present (11/1/22), some of these may be overwritten inside other
+   * selectors.
+   * If a change you make here is not reflected in the theme,
+   * cmd/ctrl+f to see if the variable is being defined elsewhere.
+   * -- Original theme author's notes:
+  * List of variables is placed in body rather than :root so
+  * that we can	combine all property types including colors
+  * and sort alphabetically to maximize readability in
+  * the compiled app.css file.
+  */
   /* Animations */
   --anim-duration-none: 0;
   --anim-duration-superfast: 70ms;
@@ -32,7 +37,8 @@ body {
   /* Callouts */
   --callout-border-width: 0.25px;
   --callout-border-opacity: 0.2;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3)
+    var(--size-4-3) var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-padding: 0;
@@ -89,8 +95,8 @@ body {
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover: 0 0 0 1px
+      var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 54ch;
@@ -124,7 +130,10 @@ body {
   /* Graphs */
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  );
   --graph-node: var(--text-muted);
   --graph-node-unresolved: var(--text-faint);
   --graph-node-focused: var(--text-accent);
@@ -199,6 +208,12 @@ body {
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
   /* Indentation guide */
+  --indentation-guide-color: rgba(var(--ctp-surface1));
+  --indentation-guide-color-active: rgba(
+    var(--ctp-accent),
+    0.7
+  );
+  --indentation-guide-width: 2px;
   /* Inline title */
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -262,8 +277,13 @@ body {
   --nav-item-color-selected: var(--text-normal);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--background-modifier-hover);
-  --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
+  --nav-item-background-active: var(
+    --background-modifier-hover
+  );
+  --nav-item-background-selected: hsla(
+    var(--color-accent-hsl),
+    0.2
+  );
   --nav-item-padding: var(--size-4-1) var(--size-4-2);
   --nav-item-weight: inherit;
   --nav-item-weight-hover: inherit;
@@ -281,7 +301,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   /* Popovers - file previews */
@@ -296,7 +319,10 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
@@ -306,7 +332,8 @@ body {
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-width: 44px;
-  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
+  --ribbon-padding: var(--size-4-2) var(--size-4-1)
+    var(--size-4-3);
   /* Scrollbars */
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
@@ -333,11 +360,15 @@ body {
   --size-4-16: 64px;
   --size-4-18: 72px;
   /* Sidebar */
-  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
+  --sidebar-markdown-font-size: calc(
+    var(--font-text-size) * 0.9
+  );
   --sidebar-tab-text-display: none;
   /* Sliders */
   --slider-thumb-border-width: 1px;
-  --slider-thumb-border-color: var(--background-modifier-border-hover);
+  --slider-thumb-border-color: var(
+    --background-modifier-border-hover
+  );
   --slider-thumb-height: 18px;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
@@ -358,7 +389,8 @@ body {
   --swatch-radius: 14px;
   --swatch-height: 24px;
   --swatch-width: 24px;
-  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
+  --swatch-shadow: inset 0 0 0 1px
+    rgba(var(--mono-rgb-100), 0.15);
   /* Tabs */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
@@ -415,14 +447,19 @@ body {
   --tag-background: transparent;
   --tag-background-hover: 0;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(
+    var(--interactive-accent-hsl),
+    0.15
+  );
   --tag-border-width: 0;
   --tag-padding-x: 0;
   --tag-padding-y: 0;
   --tag-radius: 0.8em;
   /* Window frame */
   --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-background-focused: var(
+    --background-secondary-alt
+  );
   --titlebar-border-width: 0;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
@@ -446,7 +483,10 @@ body {
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--text-normal);
   /* Workspace */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --workspace-background-translucent: rgba(
+    var(--mono-rgb-0),
+    0.6
+  );
   /* Color mappings ------------------------ */
   /* Accent HSL values */
   --accent-h: 254;
@@ -457,7 +497,10 @@ body {
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --background-modifier-active-hover: hsla(
+    var(--interactive-accent-hsl),
+    0.15
+  );
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
@@ -487,7 +530,7 @@ body {
 }
 
 /* @settings
-name: Catppuccin
+name: Catppuccin Accents
 id: catppuccin-theme-settings
 settings:
   -
@@ -498,15 +541,15 @@ settings:
     allowEmpty: false
     default: ctp-mocha
     options:
-        -
-            label: Frappe
-            value: ctp-frappe
-        -
-            label: Macchiato
-            value: ctp-macchiato
-        -
-            label: Mocha
-            value: ctp-mocha
+      -
+        label: Frappe
+        value: ctp-frappe
+      -
+        label: Macchiato
+        value: ctp-macchiato
+      -
+        label: Mocha
+        value: ctp-mocha
   -
     id: catppuccin-theme-accents
     title: Theme accent
@@ -515,58 +558,600 @@ settings:
     allowEmpty: false
     default: ctp-full-palette
     options:
-        -
-            label: Full palette
-            value: ctp-full-palette
-        -
-            label: Rosewater
-            value: ctp-accent-rosewater
-        -
-            label: Flamingo
-            value: ctp-accent-flamingo
-        -
-            label: Pink
-            value: ctp-accent-pink
-        -
-            label: Mauve
-            value: ctp-accent-mauve
-        -
-            label: Red
-            value: ctp-accent-red
-        -
-            label: Maroon
-            value: ctp-accent-maroon
-        -
-            label: Peach
-            value: ctp-accent-peach
-        -
-            label: Yellow
-            value: ctp-accent-yellow
-        -
-            label: Green
-            value: ctp-accent-green
-        -
-            label: Teal
-            value: ctp-accent-teal
-        -
-            label: Sky
-            value: ctp-accent-sky
-        -
-            label: Sapphire
-            value: ctp-accent-sapphire
-        -
-            label: Blue
-            value: ctp-accent-blue
-        -
-            label: Lavender
-            value: ctp-accent-lavender
+      -
+        label: Full palette
+        value: ctp-full-palette
+      -
+        label: Rosewater
+        value: ctp-accent-rosewater
+      -
+        label: Flamingo
+        value: ctp-accent-flamingo
+      -
+        label: Pink
+        value: ctp-accent-pink
+      -
+        label: Mauve
+        value: ctp-accent-mauve
+      -
+        label: Red
+        value: ctp-accent-red
+      -
+        label: Maroon
+        value: ctp-accent-maroon
+      -
+        label: Peach
+        value: ctp-accent-peach
+      -
+        label: Yellow
+        value: ctp-accent-yellow
+      -
+        label: Green
+        value: ctp-accent-green
+      -
+        label: Teal
+        value: ctp-accent-teal
+      -
+        label: Sky
+        value: ctp-accent-sky
+      -
+        label: Sapphire
+        value: ctp-accent-sapphire
+      -
+        label: Blue
+        value: ctp-accent-blue
+      -
+        label: Lavender
+        value: ctp-accent-lavender
+*/
+/* @settings
+name: Font Styles
+id: catppuccin-font-styles
+settings:
   -
-    id: catppuccin-theme-credits-link
+    id: ctp-bold
+    title: Bold font color
+    description: Select your bold font color
+    type: variable-select
+    default: var(--ctp-sapphire)
+    options:
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-italic
+    title: Italic font color
+    description: Select your italic font color
+    type: variable-select
+    default: var(--ctp-green)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-strikethrough
+    title: Strikethrough color
+    description: Select your strikethrough color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-maroon)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-blockquote
+    title: Strikethrough color
+    description: Select your strikethrough color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-rosewater)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: headings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: ctp-h1
+    title: H1 color
+    description: Select your H1 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-h2
+    title: H2 color
+    description: Select your H2 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-h3
+    title: H3 color
+    description: Select your H3 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-h4
+    title: H4 color
+    description: Select your H4 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-h5
+    title: H5 color
+    description: Select your H5 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+  -
+    id: ctp-h6
+    title: H6 color
+    description: Select your H6 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+*/
+/* @settings
+
+name: Credits
+id: credits
+settings:
+  -
+    id: credits
     title: Source Code
-    description: 💎 View and contribute to the port at github.com/catppuccin/obsidian
     type: heading
     level: 1
     collapsed: true
+    description: 💎 View and contribute to the port at github.com/catppuccin/obsidian
 */
 .theme-light,
 .theme-light.ctp-latte {
@@ -757,7 +1342,8 @@ settings:
   --background-secondary-alt: rgb(var(--ctp-crust));
   --background-modifier-border: rgb(var(--ctp-surface0));
   --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-form-field-highlighted: rgba(var(--ctp-crust), 0.22);
+  --background-modifier-form-field-highlighted: rgba(var(--ctp-crust),
+      0.22);
   --background-modifier-box-shadow: rgba(var(--ctp-crust), 0.3);
   --background-modifier-success: rgba(var(--ctp-green), 0.9);
   --background-modifier-success-rgb: var(--ctp-green);
@@ -824,67 +1410,83 @@ settings:
   --highlight-mix-blend-mode: darken;
 }
 
-.checkbox-container {
-  --background-modifier-border-hover: rgb(var(--ctp-red));
-  box-shadow: 0 0 2px inset rgb(var(--ctp-base));
-}
-.checkbox-container::after {
-  --toggle-thumb-color: var(--text-on-accent);
-  box-shadow: 0 0 4px rgb(var(--ctp-base));
-}
-.checkbox-container:hover {
-  box-shadow: none;
-}
-
-select:focus,
-.dropdown:focus {
-  box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
-}
-
-textarea:active,
-input[type=text]:active,
-input[type=search]:active,
-input[type=email]:active,
-input[type=password]:active,
-input[type=number]:active,
-textarea:focus,
-input[type=text]:focus,
-input[type=search]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=number]:focus,
-textarea:focus-visible,
-input[type=text]:focus-visible,
-input[type=search]:focus-visible,
-input[type=email]:focus-visible,
-input[type=password]:focus-visible,
-input[type=number]:focus-visible {
-  box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
-}
-
-.tooltip {
-  color: rgb(var(--ctp-rosewater));
-}
-
-.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
-  text-decoration-line: none;
-}
-.markdown-source-view.mod-cm6 .is-unresolved:hover {
-  color: rgb(var(--ctp-red));
-  text-decoration-line: none;
-}
-
-.markdown-rendered button.copy-code-button {
-  background-color: rgb(var(--ctp-crust));
+:root {
+  --default-font: "Vollkorn", "Gentium Book Basic",
+    -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", sans-serif;
+  --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular,
+    consolas, "Roboto Mono", monospace;
 }
 
 body {
-  --indentation-guide-color: rgba(var(--ctp-surface1));
-  --indentation-guide-color-active: rgba(
-    var(--ctp-accent),
-    0.7
-  );
-  --indentation-guide-width: 2px;
+  --font-text-theme: "Vollkorn", -apple-system,
+    blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light",
+    inter, sans-serif;
+  --font-interface-theme: "Public Sans", -apple-system,
+    system-ui, blinkmacsystemfont, "Segoe UI", roboto,
+    "Helvetica Neue", arial, sans-serif;
+}
+
+strong,
+.cm-strong {
+  --bold-color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
+}
+
+em,
+.cm-em {
+  --italic-color: rgb(var(--ctp-italic, var(--ctp-green)));
+}
+
+del,
+.cm-strikethrough {
+  color: rgb(var(--ctp-strikethrough, var(--ctp-maroon)));
+}
+
+.markdown-rendered blockquote,
+.cm-s-obsidian span.cm-quote {
+  --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
+}
+
+h1,
+.markdown-rendered h1,
+.HyperMD-header-1,
+.HyperMD-list-line .cm-header-1 {
+  --h1-color: rgb(var(--ctp-h1, var(--ctp-accent)));
+}
+
+h2,
+.markdown-rendered h2,
+.HyperMD-header-2,
+.HyperMD-list-line .cm-header-2 {
+  --h2-color: rgb(var(--ctp-h2, var(--ctp-accent)));
+}
+
+h3,
+.markdown-rendered h3,
+.HyperMD-header-3,
+.HyperMD-list-line .cm-header-3 {
+  --h3-color: rgb(var(--ctp-h3, var(--ctp-accent)));
+}
+
+h4,
+.markdown-rendered h4,
+.HyperMD-header-4,
+.HyperMD-list-line .cm-header-4 {
+  --h4-color: rgb(var(--ctp-h4, var(--ctp-accent)));
+}
+
+h5,
+.markdown-rendered h5,
+.HyperMD-header-5,
+.HyperMD-list-line .cm-header-5 {
+  --h5-color: rgb(var(--ctp-h5, var(--ctp-accent)));
+}
+
+h6,
+.markdown-rendered h6,
+.HyperMD-header-6,
+.HyperMD-list-line .cm-header-6 {
+  --h6-color: rgb(var(--ctp-h6, var(--ctp-accent)));
 }
 
 ::selection {
@@ -900,23 +1502,6 @@ body {
   left: -13px;
 }
 
-:root {
-  --default-font: "Vollkorn", "Gentium Book Basic",
-    -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", sans-serif;
-  --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular,
-    consolas, "Roboto Mono", monospace;
-}
-
-body {
-  --font-text-theme: "Vollkorn", "Gentium Book Basic", inter,
-    -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", sans-serif;
-  --font-interface-theme: "Public Sans", "Gill Sans",
-    -apple-system, system-ui, blinkmacsystemfont, "Segoe UI",
-    roboto, "Helvetica Neue", arial, sans-serif;
-}
-
 .cm-hashtag.cm-hashtag-end:hover {
   text-decoration: underline 1px var(--text-normal);
   text-decoration-thickness: 2px;
@@ -924,6 +1509,18 @@ body {
 
 .cm-hashtag::selection {
   text-shadow: 0.4px 0 0 black;
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
+  text-decoration-line: none;
+}
+.markdown-source-view.mod-cm6 .is-unresolved:hover {
+  color: rgb(var(--ctp-red));
+  text-decoration-line: none;
+}
+
+.tooltip {
+  color: rgb(var(--ctp-rosewater));
 }
 
 .callout {
@@ -1089,6 +1686,48 @@ body {
   background-color: rgb(var(--ctp-red));
   box-shadow: 0 0 0 1px rgb(var(--ctp-crust));
   color: rgb(var(--ctp-base));
+}
+
+select:focus,
+.dropdown:focus {
+  box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
+}
+
+textarea:active,
+input[type=text]:active,
+input[type=search]:active,
+input[type=email]:active,
+input[type=password]:active,
+input[type=number]:active,
+textarea:focus,
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+textarea:focus-visible,
+input[type=text]:focus-visible,
+input[type=search]:focus-visible,
+input[type=email]:focus-visible,
+input[type=password]:focus-visible,
+input[type=number]:focus-visible {
+  box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
+}
+
+.checkbox-container {
+  --background-modifier-border-hover: rgb(var(--ctp-red));
+  box-shadow: 0 0 2px inset rgb(var(--ctp-base));
+}
+.checkbox-container::after {
+  --toggle-thumb-color: var(--text-on-accent);
+  box-shadow: 0 0 4px rgb(var(--ctp-base));
+}
+.checkbox-container:hover {
+  box-shadow: none;
+}
+
+.markdown-rendered button.copy-code-button {
+  background-color: rgb(var(--ctp-crust));
 }
 
 .search-result-file-match:hover .search-result-file-match-destination-file:hover {
@@ -1532,83 +2171,6 @@ button.mod-cta:hover {
 .theme-dark:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input[type=color]::-webkit-color-swatch:hover,
 .theme-light:not(.ctp-accent-blue, .ctp-accent-flamingo, .ctp-accent-green, .ctp-accent-lavender, .ctp-accent-maroon, .ctp-accent-mauve, .ctp-accent-peach, .ctp-accent-pink, .ctp-accent-red, .ctp-accent-rosewater, .ctp-accent-sapphire, .ctp-accent-sky, .ctp-accent-teal, .ctp-accent-yellow) .mod-settings input[type=color]::-webkit-color-swatch:hover {
   box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
-}
-
-/*
-INFO: begin font style customization.
-*/
-/*
-Blockquote text
-*/
-.markdown-rendered blockquote,
-.cm-s-obsidian span.cm-quote {
-  --blockquote-color: rgb(var(--ctp-rosewater));
-}
-
-/*
-Strikethrough
-*/
-del,
-.cm-strikethrough {
-  color: rgb(var(--ctp-maroon));
-}
-
-/*
-Italics
-*/
-em,
-.cm-em {
-  --italic-color: rgb(var(--ctp-green));
-}
-
-strong,
-.cm-strong {
-  --bold-color: rgb(var(--ctp-sapphire));
-}
-
-/*
-Headers
-*/
-h1,
-.markdown-rendered h1,
-.HyperMD-header-1,
-.HyperMD-list-line .cm-header-1 {
-  --h1-color: rgb(var(--ctp-accent));
-}
-
-h2,
-.markdown-rendered h2,
-.HyperMD-header-2,
-.HyperMD-list-line .cm-header-2 {
-  --h2-color: rgb(var(--ctp-accent));
-}
-
-h3,
-.markdown-rendered h3,
-.HyperMD-header-3,
-.HyperMD-list-line .cm-header-3 {
-  --h3-color: rgb(var(--ctp-accent));
-}
-
-h4,
-.markdown-rendered h4,
-.HyperMD-header-4,
-.HyperMD-list-line .cm-header-4 {
-  --h4-color: rgb(var(--ctp-accent));
-}
-
-h5,
-.markdown-rendered h5,
-.HyperMD-header-5,
-.HyperMD-list-line .cm-header-5 {
-  --h5-color: rgb(var(--ctp-accent));
-}
-
-h6,
-.markdown-rendered h6,
-.HyperMD-header-6,
-.HyperMD-list-line .cm-header-6 {
-  --h6-color: rgb(var(--ctp-accent));
 }
 
 /* Better Command Palette */
