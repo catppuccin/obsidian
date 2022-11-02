@@ -15,6 +15,72 @@ body {
     "Helvetica Neue", arial, sans-serif;
 }
 
+
+
+strong,
+.cm-strong {
+  --bold-color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
+}
+
+em,
+.cm-em {
+  --italic-color: rgb(var(--ctp-italic, var(--ctp-green)));
+}
+
+del,
+.cm-strikethrough {
+  color: rgb(var(--ctp-strikethrough, var(--ctp-maroon)));
+}
+
+.markdown-rendered blockquote,
+.cm-s-obsidian span.cm-quote {
+  --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
+}
+
+h1,
+.markdown-rendered h1,
+.HyperMD-header-1,
+.HyperMD-list-line .cm-header-1 {
+  --h1-color: rgb(var(--ctp-h1, var(--ctp-accent)));
+}
+
+h2,
+.markdown-rendered h2,
+.HyperMD-header-2,
+.HyperMD-list-line .cm-header-2 {
+  --h2-color: rgb(var(--ctp-h2, var(--ctp-accent)));
+}
+
+h3,
+.markdown-rendered h3,
+.HyperMD-header-3,
+.HyperMD-list-line .cm-header-3 {
+  --h3-color: rgb(var(--ctp-h3, var(--ctp-accent)));
+}
+
+h4,
+.markdown-rendered h4,
+.HyperMD-header-4,
+.HyperMD-list-line .cm-header-4 {
+  --h4-color: rgb(var(--ctp-h4, var(--ctp-accent)));
+}
+
+h5,
+.markdown-rendered h5,
+.HyperMD-header-5,
+.HyperMD-list-line .cm-header-5 {
+  --h5-color: rgb(var(--ctp-h5, var(--ctp-accent)));
+}
+
+h6,
+.markdown-rendered h6,
+.HyperMD-header-6,
+.HyperMD-list-line .cm-header-6 {
+  --h6-color: rgb(var(--ctp-h6, var(--ctp-accent)));
+}
+
+
+
 ::selection {
   color: var(--text-on-accent);
 }
