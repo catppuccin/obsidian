@@ -1,16 +1,8 @@
-:root {
-  --default-font: "Vollkorn", "Gentium Book Basic",
-    -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", sans-serif;
-  --font-monospace: "Mononoki Nerd Font Mono", sfmono-regular,
-    consolas, "Roboto Mono", monospace;
-}
-
 body {
   --font-text-theme: "Vollkorn", -apple-system,
     blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light",
     inter, sans-serif;
-  --font-interface-theme: "Public Sans", -apple-system,
+  --font-interface-theme: "Nunito Sans", -apple-system,
     system-ui, blinkmacsystemfont, "Segoe UI", roboto,
     "Helvetica Neue", arial, sans-serif;
 }
