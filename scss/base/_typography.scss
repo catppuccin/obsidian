@@ -72,7 +72,6 @@ h6,
 }
 
 
-
 ::selection {
   color: var(--text-on-accent);
 }
@@ -108,4 +107,13 @@ h6,
 
 .tooltip {
   color: rgb(var(--ctp-rosewater));
+}
+
+
+/* markdown ==highlight== colors */
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  background-color: rgb(var(--ctp-rosewater));
+  color: var(--text-on-accent);
 }
