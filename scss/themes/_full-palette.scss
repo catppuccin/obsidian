@@ -11,12 +11,16 @@
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
-
+/*TODO: Find a longer term solution for both this hover color and close button hover */
   .mod-vertical .workspace-tab-header:not(.is-active):hover {
     --background-modifier-hover: rgb(var(--ctp-flamingo));
     --background-modifier-active-hover: rgb(
       var(--ctp-flamingo)
     );
+
+    & .workspace-tab-header-inner-close-button:hover {
+      box-shadow: none;
+    }
   }
 
   /*
@@ -28,7 +32,8 @@
   .nav-file-title.is-active,
   .nav-folder-title.is-active,
   .tree-item-self.is-clickable:hover {
-    background-color: rgb(var(--ctp-yellow));
+    color: var(--text-on-accent);
+
   }
 
   .nav-folder.mod-root > .nav-folder-title:hover {
