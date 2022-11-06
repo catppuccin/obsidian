@@ -37,19 +37,30 @@
   background-color: rgb(var(--ctp-accent));
 }
 
+
+.search-result-file-match {
+  transition: var(--transition-hover-bg);
+}
 .search-result-file-match:hover {
-  background-color: rgb(var(--ctp-yellow));
+  background-color: rgb(var(--ctp-rosewater));
   color: var(--text-on-accent);
 }
 
 .search-result-file-match:hover .search-result-file-matched-text {
-  color: var(--text-on-accent);
+  color: var(--text-normal);
+  background-color: var(--color-base-30);
 }
 
 .search-result-file-matched-text {
   color: var(--text-on-accent);
 }
 
-.is-flashing {
+.is-flashing,
+.cm-s-obsidian .is-flashing .cm-url {
   color: var(--text-on-accent);
 }
+
+.cm-s-obsidian .is-flashing .cm-url .cm-underline:hover {
+  color: var(--text-on-accent);
+}
+
