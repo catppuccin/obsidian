@@ -33,6 +33,7 @@
   .nav-folder-title.is-active,
   .tree-item-self.is-clickable:hover {
     color: var(--text-on-accent);
+    background-color: rgb(var(--ctp-accent));
 
   }
 

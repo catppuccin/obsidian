@@ -2036,6 +2036,7 @@ button.mod-cta:hover {
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
+  /*TODO: Find a longer term solution for both this hover color and close button hover */
   /*
   * Nav bar
   */
@@ -2067,12 +2068,16 @@ button.mod-cta:hover {
     var(--ctp-flamingo)
   );
 }
+.ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button:hover {
+  box-shadow: none;
+}
 .ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
 .ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover,
 .ctp-full-palette .nav-file-title.is-active,
 .ctp-full-palette .nav-folder-title.is-active,
 .ctp-full-palette .tree-item-self.is-clickable:hover {
-  background-color: rgb(var(--ctp-yellow));
+  color: var(--text-on-accent);
+  background-color: rgb(var(--ctp-accent));
 }
 .ctp-full-palette .nav-folder.mod-root > .nav-folder-title:hover {
   background-color: transparent;
