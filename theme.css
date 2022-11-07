@@ -1951,22 +1951,18 @@ input[type=number]:focus-visible {
   box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-mantle));
 }
 
-.mod-vertical .workspace-tab-header:not(.is-active):hover {
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   --background-modifier-hover: rgb(var(--ctp-accent));
   --background-modifier-active-hover: rgb(var(--ctp-accent));
 }
-.mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
   color: var(--text-on-accent);
 }
-.mod-vertical .workspace-tab-header:not(.is-active):hover svg {
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
   color: var(--text-on-accent);
 }
 
-/*TODO: Figure out where background-color is being applied incorrectly to begin
-with? */
-.workspace-tab-header-container :is(:hover),
-.workspace-tab-header-container-inner :is(:hover),
-.workspace-tab-header-inner :is(:hover) {
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
@@ -2048,7 +2044,6 @@ button.mod-cta:hover {
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
-  /*TODO: Find a longer term solution for both this hover color and close button hover */
   /*
   * Nav bar
   */
@@ -2074,13 +2069,7 @@ button.mod-cta:hover {
   *  settings slider
   */
 }
-.ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover {
-  --background-modifier-hover: rgb(var(--ctp-lavender));
-  --background-modifier-active-hover: rgb(
-    var(--ctp-lavender)
-  );
-}
-.ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button:hover {
+.ctp-full-palette .workspace-tab-header-inner-close-button:hover {
   box-shadow: none;
 }
 .ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
