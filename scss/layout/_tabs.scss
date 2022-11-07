@@ -10,3 +10,9 @@
     color: var(--text-on-accent);
   }
 }
+
+/* Necessary for transition effect on tabs -- couldn't find another way. */
+
+.workspace-tab-header :is(:hover) {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
