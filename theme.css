@@ -1590,7 +1590,7 @@ h6,
 /* App's default css seems to prefer ease-in-out, so sticking w/ that here */
 body {
   --transition-hover-bg: background-color 0.3s ease-in-out;
-  --transition-hover-color: color 0.3s ease-in-out;
+  --transition-hover-color: color 0.2s ease-in-out;
   --transition-hover-color-fast: color 0.2s ease-in-out;
   --transition-hover-box-shadow: box-shadow 0.3s ease-in-out;
 }
@@ -1875,6 +1875,10 @@ input[type=number]:focus-visible {
   color: var(--text-on-accent);
 }
 
+.community-item .suggestion-highlight {
+  color: var(--text-on-accent);
+}
+
 .view-header-title-parent .view-header-breadcrumb {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
@@ -1956,6 +1960,14 @@ input[type=number]:focus-visible {
 }
 .mod-vertical .workspace-tab-header:not(.is-active):hover svg {
   color: var(--text-on-accent);
+}
+
+/*TODO: Figure out where background-color is being applied incorrectly to begin
+with? */
+.workspace-tab-header-container :is(:hover),
+.workspace-tab-header-container-inner :is(:hover),
+.workspace-tab-header-inner :is(:hover) {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 .mod-settings input.slider {
@@ -2063,9 +2075,9 @@ button.mod-cta:hover {
   */
 }
 .ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover {
-  --background-modifier-hover: rgb(var(--ctp-flamingo));
+  --background-modifier-hover: rgb(var(--ctp-lavender));
   --background-modifier-active-hover: rgb(
-    var(--ctp-flamingo)
+    var(--ctp-lavender)
   );
 }
 .ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button:hover {
