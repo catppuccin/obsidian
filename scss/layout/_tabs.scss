@@ -11,8 +11,11 @@
   }
 }
 
-/* Necessary for transition effect on tabs -- couldn't find another way. */
+/*TODO: Figure out where background-color is being applied incorrectly to begin
+with? */
 
-.workspace-tab-header :is(:hover) {
+.workspace-tab-header-container :is(:hover),
+.workspace-tab-header-container-inner :is(:hover),
+.workspace-tab-header-inner :is(:hover)  {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
