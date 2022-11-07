@@ -1,4 +1,4 @@
-.mod-vertical .workspace-tab-header:not(.is-active):hover {
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner  {
   --background-modifier-hover: rgb(var(--ctp-accent));
   --background-modifier-active-hover: rgb(var(--ctp-accent));
 
@@ -11,11 +11,6 @@
   }
 }
 
-/*TODO: Figure out where background-color is being applied incorrectly to begin
-with? */
-
-.workspace-tab-header-container :is(:hover),
-.workspace-tab-header-container-inner :is(:hover),
-.workspace-tab-header-inner :is(:hover)  {
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
