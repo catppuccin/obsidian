@@ -6,19 +6,14 @@
   --divider-color-hover: rgb(var(--ctp-blue));
   --hr-color: rgb(var(--ctp-blue));
   --indentation-guide-color: rgb(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(
-    var(--ctp-sapphire),
-    0.7
-  );
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 0.7);
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
 
-
   .workspace-tab-header-inner-close-button:hover {
-      box-shadow: none;
+    box-shadow: none;
   }
-
 
   /*
   * Nav bar
@@ -31,7 +26,6 @@
   .tree-item-self.is-clickable:hover {
     color: var(--text-on-accent);
     background-color: rgb(var(--ctp-accent));
-
   }
 
   .nav-folder.mod-root > .nav-folder-title:hover {
@@ -48,8 +42,7 @@
   .mod-right-split .workspace-tab-header.has-active-menu,
   .mod-left-split .workspace-tab-header.is-active,
   .mod-right-split .workspace-tab-header.is-active {
-    transition: var(--transition-hover-bg),
-      var(--transition-hover-box-shadow);
+    transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
     box-shadow: inset 0 0 4px rgb(var(--ctp-crust)),
       inset 0 0 6px rgb(var(--ctp-base));
     outline: 1px solid rgb(var(--ctp-surface1));
@@ -205,8 +198,7 @@
     }
 
     & input[type="color"]::-webkit-color-swatch:hover {
-      box-shadow: inset 0 0 0 1px
-          rgba(var(--mono-rgb-100), 0.25),
+      box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25),
         0 0 0 2px rgb(var(--ctp-surface1));
     }
   }

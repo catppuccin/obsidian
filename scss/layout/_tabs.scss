@@ -1,4 +1,6 @@
-.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner  {
+.mod-vertical
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner {
   --background-modifier-hover: rgb(var(--ctp-accent));
   --background-modifier-active-hover: rgb(var(--ctp-accent));
 
