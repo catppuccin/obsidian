@@ -42,21 +42,21 @@
   .workspace-tabs.mod-stacked
   .workspace-tab-container
   .workspace-tab-header-inner-close-button:hover,
-.workspace-tab-header-inner-close-button:hover,
-.workspace-tab-header.is-active
-  .workspace-tab-header-inner-close-button:hover,
-.workspace-tab-header-inner-close-button:hover,
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
 .suggestion
   :hover.list-item-part.clickable-icon[aria-label="Clear search history"],
 .modal-close-button:hover {
   background-color: rgb(var(--ctp-red));
-  box-shadow: 0 0 4px 1px rgb(var(--ctp-surface1));
+  box-shadow: 0 0 2px 1px rgb(var(--ctp-surface1));
   color: rgb(var(--ctp-base));
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg);ob
 }
 
-.workspace-tab-header-inner:hover
-  .workspace-tab-header-inner-icon {
+.workspace-tab-header-inner-close-button:hover {
+  background-color: rgb(var(--ctp-red), 0.5);
+}
+
+.workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
   --icon-color-hover: var(--text-faint);
   --opacity-icon-hover: 1;
 }
