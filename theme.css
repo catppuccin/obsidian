@@ -2031,7 +2031,8 @@ button.mod-cta:hover {
   text-transform: lowercase;
 }
 
-.ctp-full-palette {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender),
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) {
   --blockquote-border-color: rgb(var(--ctp-lavender));
   --ctp-accent: var(--ctp-lavender);
   --divider-color-hover: rgb(var(--ctp-blue));
@@ -2069,153 +2070,228 @@ button.mod-cta:hover {
   *  settings slider
   */
 }
-.ctp-full-palette .workspace-tab-header-inner-close-button:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .workspace-tab-header-inner-close-button:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .workspace-tab-header-inner-close-button:hover {
   box-shadow: none;
 }
-.ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
-.ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover,
-.ctp-full-palette .nav-file-title.is-active,
-.ctp-full-palette .nav-folder-title.is-active,
-.ctp-full-palette .tree-item-self.is-clickable:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) :not(.is-grabbing) .nav-file-title:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) :not(.is-grabbing) .nav-folder-title:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .nav-file-title.is-active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .nav-folder-title.is-active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .tree-item-self.is-clickable:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) :not(.is-grabbing) .nav-file-title:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) :not(.is-grabbing) .nav-folder-title:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .nav-file-title.is-active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .nav-folder-title.is-active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .tree-item-self.is-clickable:hover {
   color: var(--text-on-accent);
   background-color: rgb(var(--ctp-accent));
 }
-.ctp-full-palette .nav-folder.mod-root > .nav-folder-title:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .nav-folder.mod-root > .nav-folder-title:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .nav-folder.mod-root > .nav-folder-title:hover {
   background-color: transparent;
   color: rgb(var(--text-normal));
 }
-.ctp-full-palette .clickable-icon.is-active,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active {
   transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
   box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
 }
-.ctp-full-palette .clickable-icon.is-active svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active svg {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active svg {
   color: rgb(var(--ctp-pink));
   /* extra long to prevent weird super fast move */
   transition: background-color 4s ease-in-out;
 }
-.ctp-full-palette .clickable-icon.is-active:hover, .ctp-full-palette .clickable-icon.is-active:hover svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover svg {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active:hover, .theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active:hover svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu:hover svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active:hover svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon.is-active:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.has-active-menu:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header.is-active:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header.is-active:hover svg {
   background-color: rgb(var(--ctp-pink));
   box-shadow: none;
   color: var(--text-on-accent);
 }
-.ctp-full-palette .clickable-icon,
-.ctp-full-palette .mod-left-split .workspace-tab-header,
-.ctp-full-palette .mod-right-split .workspace-tab-header {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header {
   transition: var(--transition-hover-bg);
 }
-.ctp-full-palette .clickable-icon:hover,
-.ctp-full-palette .mod-left-split .workspace-tab-header:hover,
-.ctp-full-palette .mod-right-split .workspace-tab-header:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header:hover {
   background-color: rgb(var(--ctp-pink));
   color: var(--text-on-accent);
 }
-.ctp-full-palette .clickable-icon:hover svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header:hover svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon:hover svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header:hover svg,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .clickable-icon:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-left-split .workspace-tab-header:hover svg,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
-.ctp-full-palette .suggestion-item.is-selected {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .suggestion-item.is-selected,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .suggestion-item.is-selected {
   background-color: rgb(var(--ctp-lavender));
   color: var(--text-on-accent);
 }
-.ctp-full-palette .suggestion-item.is-selected:hover .suggestion-flair {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .suggestion-item.is-selected:hover .suggestion-flair,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .suggestion-item.is-selected:hover .suggestion-flair {
   color: var(--text-on-accent);
 }
-.ctp-full-palette .suggestion .suggestion-item.mod-group {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .suggestion .suggestion-item.mod-group,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .suggestion .suggestion-item.mod-group {
   background-color: inherit;
   color: var(--text-muted);
   font-size: var(--font-ui-medium);
   font-variant: all-small-caps;
 }
-.ctp-full-palette .search-suggest-item.is-selected {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .search-suggest-item.is-selected,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .search-suggest-item.is-selected {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
-.ctp-full-palette .search-suggest-item.is-selected .list-item-part.clickable-icon {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .search-suggest-item.is-selected .list-item-part.clickable-icon,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .search-suggest-item.is-selected .list-item-part.clickable-icon {
   color: var(--text-muted);
 }
-.ctp-full-palette .search-suggest-item.is-selected .search-suggest-info-text {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .search-suggest-item.is-selected .search-suggest-info-text,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .search-suggest-item.is-selected .search-suggest-info-text {
   color: var(--text-on-accent);
 }
-.ctp-full-palette select:focus,
-.ctp-full-palette .dropdown:focus {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) select:focus,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .dropdown:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) select:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .dropdown:focus {
   box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
 }
-.ctp-full-palette textarea:active,
-.ctp-full-palette input[type=text]:active,
-.ctp-full-palette input[type=search]:active,
-.ctp-full-palette input[type=email]:active,
-.ctp-full-palette input[type=password]:active,
-.ctp-full-palette input[type=number]:active,
-.ctp-full-palette textarea:focus,
-.ctp-full-palette input[type=text]:focus,
-.ctp-full-palette input[type=search]:focus,
-.ctp-full-palette input[type=email]:focus,
-.ctp-full-palette input[type=password]:focus,
-.ctp-full-palette input[type=number]:focus,
-.ctp-full-palette textarea:focus-visible,
-.ctp-full-palette input[type=text]:focus-visible,
-.ctp-full-palette input[type=search]:focus-visible,
-.ctp-full-palette input[type=email]:focus-visible,
-.ctp-full-palette input[type=password]:focus-visible,
-.ctp-full-palette input[type=number]:focus-visible {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) textarea:active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=text]:active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=search]:active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=email]:active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=password]:active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=number]:active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) textarea:focus,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=text]:focus,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=search]:focus,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=email]:focus,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=password]:focus,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=number]:focus,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) textarea:focus-visible,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=text]:focus-visible,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=search]:focus-visible,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=email]:focus-visible,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=password]:focus-visible,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=number]:focus-visible,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) textarea:active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=text]:active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=search]:active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=email]:active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=password]:active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=number]:active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) textarea:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=text]:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=search]:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=email]:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=password]:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=number]:focus,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) textarea:focus-visible,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=text]:focus-visible,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=search]:focus-visible,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=email]:focus-visible,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=password]:focus-visible,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=number]:focus-visible {
   box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
 }
-.ctp-full-palette input[type=checkbox]:not(:checked) {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:not(:checked),
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:not(:checked) {
   border-color: rgb(var(--ctp-maroon));
   background-color: rgb(var(--ctp-red));
   box-shadow: inset 4px 4px 12px rgb(var(--ctp-mantle)), inset -4px -4px 12px rgb(var(--ctp-mantle));
 }
-.ctp-full-palette input[type=checkbox]:not(:checked):hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:not(:checked):hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:not(:checked):hover {
   border-width: 2px;
 }
-.ctp-full-palette input[type=checkbox]:checked {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:checked,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:checked {
   border-color: transparent;
   background-color: rgb(var(--ctp-green));
   box-shadow: 0 0 0 1px rgb(var(--ctp-green), 0.4);
 }
-.ctp-full-palette input[type=checkbox]:checked:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:checked:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) input[type=checkbox]:checked:hover {
   background-color: rgb(var(--ctp-maroon));
   box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 0.4);
 }
-.ctp-full-palette .horizontal-tab-nav-item:hover,
-.ctp-full-palette .vertical-tab-nav-item:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .horizontal-tab-nav-item:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .vertical-tab-nav-item:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .horizontal-tab-nav-item:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .vertical-tab-nav-item:hover {
   background-color: rgb(var(--ctp-yellow));
   color: var(--text-on-accent);
 }
-.ctp-full-palette .horizontal-tab-nav-item.is-active,
-.ctp-full-palette .vertical-tab-nav-item.is-active {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .horizontal-tab-nav-item.is-active,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .vertical-tab-nav-item.is-active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .horizontal-tab-nav-item.is-active,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .vertical-tab-nav-item.is-active {
   background-color: rgb(var(--ctp-lavender));
 }
-.ctp-full-palette .horizontal-tab-nav-item.is-active:hover,
-.ctp-full-palette .vertical-tab-nav-item.is-active:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .horizontal-tab-nav-item.is-active:hover,
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .vertical-tab-nav-item.is-active:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .horizontal-tab-nav-item.is-active:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .vertical-tab-nav-item.is-active:hover {
   background-color: rgb(var(--ctp-yellow));
 }
-.ctp-full-palette .HyperMD-header .cm-formatting-header {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .HyperMD-header .cm-formatting-header,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .HyperMD-header .cm-formatting-header {
   color: rgb(var(--ctp-sapphire));
   font-size: 75% !important;
 }
-.ctp-full-palette .mod-settings input.slider {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-settings input.slider,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-settings input.slider {
   --slider-track-background: rgb(var(--ctp-green));
 }
-.ctp-full-palette .mod-settings input[type=color]::-webkit-color-swatch:hover {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-settings input[type=color]::-webkit-color-swatch:hover,
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) .mod-settings input[type=color]::-webkit-color-swatch:hover {
   box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
 }
 

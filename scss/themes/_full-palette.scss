@@ -1,4 +1,5 @@
-.ctp-full-palette {
+.theme-dark:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender),
+.theme-light:not(.ctp-accent-rosewater, .ctp-accent-flamingo, .ctp-accent-pink, .ctp-accent-mauve, .ctp-accent-red, .ctp-accent-maroon, .ctp-accent-peach, .ctp-accent-yellow, .ctp-accent-green, .ctp-accent-teal, .ctp-accent-sky, .ctp-accent-sapphire, .ctp-accent-blue, .ctp-accent.ctp-accent-lavender) {
   --blockquote-border-color: rgb(var(--ctp-lavender));
   --ctp-accent: var(--ctp-lavender);
   --divider-color-hover: rgb(var(--ctp-blue));
