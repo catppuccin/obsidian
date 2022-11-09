@@ -203,7 +203,7 @@ body {
   --icon-color-hover: var(--text-on-accent);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
-  --icon-opacity: 0.8;
+  --icon-opacity: 1;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
@@ -1792,6 +1792,49 @@ body {
   color: var(--text-on-accent);
 }
 
+/*
+* Folder icons
+*/
+.nav-folder-collapse-indicator,
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::before {
+  display: none;
+}
+
+/*
+* Closed folder
+*/
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'%3E%3C/path%3E%3Cpath d='M2 10h20'%3E%3C/path%3E%3C/svg%3E");
+  transition: -webkit-mask-image 0.2s ease;
+}
+
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
+.nav-folder .nav-folder-title .nav-folder-title-content::before {
+  background-color: currentcolor;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  vertical-align: -2px;
+  height: var(--icon-xs);
+  width: var(--icon-xs);
+}
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before:hover,
+.nav-folder .nav-folder-title .nav-folder-title-content::before:hover {
+  color: var(--text-on-accent);
+}
+
+/*
+* Open folder
+*/
+.nav-folder .nav-folder-title .nav-folder-title-content::before {
+  display: inline-block;
+  content: "";
+  height: var(--icon-xs);
+  width: var(--icon-xs);
+  background-size: 16px 16px;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3C/svg%3E");
+  transition: -webkit-mask-image 0.2s ease;
+}
+
 select:focus,
 .dropdown:focus {
   box-shadow: 0 0 0 2px rgba(var(--ctp-accent), 0.7);
@@ -2095,20 +2138,22 @@ button.mod-cta:hover {
 .ctp-full-palette .workspace-tab-header-inner-close-button:hover {
   box-shadow: none;
 }
-.theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover,
-.theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover,
 .theme-dark:not(.css-settings-manager) .nav-file-title.is-active,
 .theme-dark:not(.css-settings-manager) .nav-folder-title.is-active,
+.theme-light:not(.css-settings-manager) .nav-file-title.is-active,
+.theme-light:not(.css-settings-manager) .nav-folder-title.is-active,
+.ctp-full-palette .nav-file-title.is-active,
+.ctp-full-palette .nav-folder-title.is-active {
+  background-color: rgb(var(--ctp-mauve));
+}
+.theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover,
+.theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover,
 .theme-dark:not(.css-settings-manager) .tree-item-self.is-clickable:hover,
 .theme-light:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover,
 .theme-light:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover,
-.theme-light:not(.css-settings-manager) .nav-file-title.is-active,
-.theme-light:not(.css-settings-manager) .nav-folder-title.is-active,
 .theme-light:not(.css-settings-manager) .tree-item-self.is-clickable:hover,
 .ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
 .ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover,
-.ctp-full-palette .nav-file-title.is-active,
-.ctp-full-palette .nav-folder-title.is-active,
 .ctp-full-palette .tree-item-self.is-clickable:hover {
   color: var(--text-on-accent);
   background-color: rgb(var(--ctp-accent));
