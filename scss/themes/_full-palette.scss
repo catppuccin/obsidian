@@ -19,10 +19,13 @@
   * Nav bar
   */
 
+  .nav-file-title.is-active,
+  .nav-folder-title.is-active {
+    background-color: rgb(var(--ctp-mauve));
+  }
+
   :not(.is-grabbing) .nav-file-title:hover,
   :not(.is-grabbing) .nav-folder-title:hover,
-  .nav-file-title.is-active,
-  .nav-folder-title.is-active,
   .tree-item-self.is-clickable:hover {
     color: var(--text-on-accent);
     background-color: rgb(var(--ctp-accent));
