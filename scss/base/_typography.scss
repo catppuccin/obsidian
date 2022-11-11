@@ -1,12 +1,9 @@
 body {
-  --font-text-theme: "Vollkorn", -apple-system,
-    blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light",
-    inter, sans-serif;
-  --font-interface-theme: "Nunito Sans", -apple-system,
-    system-ui, blinkmacsystemfont, "Segoe UI", roboto,
-    "Helvetica Neue", arial, sans-serif;
+  --font-text-theme: "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", inter, sans-serif;
+  --font-interface-theme: "Nunito Sans", -apple-system, system-ui,
+    blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 }
-
 
 strong,
 .cm-strong {
@@ -71,7 +68,6 @@ h6,
   --h6-color: rgb(var(--ctp-h6, var(--ctp-accent)));
 }
 
-
 ::selection {
   color: var(--text-on-accent);
 }
@@ -109,11 +105,42 @@ h6,
   color: rgb(var(--ctp-rosewater));
 }
 
-
 /* markdown ==highlight== colors */
-
+.markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
   background-color: rgb(var(--ctp-rosewater));
   color: var(--text-on-accent);
+
+
+  &.cm-em,
+  em {
+    text-align: left;
+    color: var(--text-on-accent);
+    background-image: linear-gradient(
+      rgb(var(--ctp-green), .4),
+      rgb(var(--ctp-green), .6),
+      rgb(var(--ctp-green), .4),
+    );
+  }
+
+  &.cm-strong,
+  strong {
+    color: var(--text-on-accent);
+    background-image: linear-gradient(
+      rgb(var(--ctp-sapphire), 0.4),
+      rgb(var(--ctp-sapphire), 0.6),
+      rgb(var(--ctp-sapphire), 0.4)
+    );
+  }
+
+  &.cm-strikethrough,
+  del {
+    color: var(--text-on-accent);
+    background-image: linear-gradient(
+      rgb(var(--ctp-red), 0.4),
+      rgb(var(--ctp-red), 0.6),
+      rgb(var(--ctp-red), 0.4)
+    );
+  }
 }

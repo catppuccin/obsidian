@@ -1475,12 +1475,10 @@ settings:
 }
 
 body {
-  --font-text-theme: "Vollkorn", -apple-system,
-    blinkmacsystemfont, "Segoe UI", "Microsoft YaHei Light",
-    inter, sans-serif;
-  --font-interface-theme: "Nunito Sans", -apple-system,
-    system-ui, blinkmacsystemfont, "Segoe UI", roboto,
-    "Helvetica Neue", arial, sans-serif;
+  --font-text-theme: "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", inter, sans-serif;
+  --font-interface-theme: "Nunito Sans", -apple-system, system-ui,
+    blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 }
 
 strong,
@@ -1581,10 +1579,39 @@ h6,
 }
 
 /* markdown ==highlight== colors */
+.markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
   background-color: rgb(var(--ctp-rosewater));
   color: var(--text-on-accent);
+}
+.markdown-rendered mark.cm-em,
+.markdown-rendered mark em,
+.cm-s-obsidian span.cm-formatting-highlight.cm-em,
+.cm-s-obsidian span.cm-formatting-highlight em,
+.cm-s-obsidian span.cm-highlight.cm-em,
+.cm-s-obsidian span.cm-highlight em {
+  text-align: left;
+  color: var(--text-on-accent);
+  background-image: linear-gradient(rgb(var(--ctp-green), 0.4), rgb(var(--ctp-green), 0.6), rgb(var(--ctp-green), 0.4));
+}
+.markdown-rendered mark.cm-strong,
+.markdown-rendered mark strong,
+.cm-s-obsidian span.cm-formatting-highlight.cm-strong,
+.cm-s-obsidian span.cm-formatting-highlight strong,
+.cm-s-obsidian span.cm-highlight.cm-strong,
+.cm-s-obsidian span.cm-highlight strong {
+  color: var(--text-on-accent);
+  background-image: linear-gradient(rgb(var(--ctp-sapphire), 0.4), rgb(var(--ctp-sapphire), 0.6), rgb(var(--ctp-sapphire), 0.4));
+}
+.markdown-rendered mark.cm-strikethrough,
+.markdown-rendered mark del,
+.cm-s-obsidian span.cm-formatting-highlight.cm-strikethrough,
+.cm-s-obsidian span.cm-formatting-highlight del,
+.cm-s-obsidian span.cm-highlight.cm-strikethrough,
+.cm-s-obsidian span.cm-highlight del {
+  color: var(--text-on-accent);
+  background-image: linear-gradient(rgb(var(--ctp-red), 0.4), rgb(var(--ctp-red), 0.6), rgb(var(--ctp-red), 0.4));
 }
 
 /* App's default css seems to prefer ease-in-out, so sticking w/ that here */
