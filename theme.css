@@ -605,6 +605,16 @@ settings:
         value: ctp-accent-lavender
 */
 /* @settings
+name: Interface Styles
+id: catppuccin-interface-styles
+settings:
+  -
+    id: ctp-bold-folder-title
+    title: Bold folder title
+    description: Show folder title in bold
+    type: class-toggle
+*/
+/* @settings
 name: Font Styles
 id: catppuccin-font-styles
 settings:
@@ -1472,6 +1482,11 @@ settings:
 .theme-light {
   color-scheme: light;
   --highlight-mix-blend-mode: darken;
+}
+
+/* ------------------CSS Snippets------------------ */
+.ctp-bold-folder-title .nav-folder-title-content {
+  font-weight: var(--font-bold);
 }
 
 body {
