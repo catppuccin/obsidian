@@ -56,7 +56,9 @@
 }
 
 .is-flashing,
-.cm-s-obsidian .is-flashing .cm-url {
+.cm-s-obsidian .is-flashing .cm-url,
+.is-flashing .cm-formatting-hashtag,
+.is-flashing .cm-hashtag {
   color: var(--text-on-accent);
 }
 
