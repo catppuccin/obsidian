@@ -78,12 +78,16 @@
     }
   }
 
+  .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+    --background-modifier-hover: rgb(var(--ctp-pink));
+  }
+
   /*
   * Prompts
   */
 
   .suggestion-item.is-selected {
-    background-color: rgb(var(--ctp-lavender));
+    --background-modifier-hover: rgb(var(--ctp-lavender));
     color: var(--text-on-accent);
 
     &:hover .suggestion-flair {
