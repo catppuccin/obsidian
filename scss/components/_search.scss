@@ -1,4 +1,5 @@
-.search-result-file-match:hover .search-result-file-match-destination-file:hover {
+.search-result-file-match:hover
+  .search-result-file-match-destination-file:hover {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
@@ -37,7 +38,6 @@
   background-color: rgb(var(--ctp-accent));
 }
 
-
 .search-result-file-match {
   transition: var(--transition-hover-bg);
 }
@@ -56,14 +56,14 @@
 }
 
 .is-flashing,
-.cm-s-obsidian .is-flashing .cm-url,
-.is-flashing .cm-formatting-hashtag,
-.is-flashing .cm-hashtag {
+.cm-s-obsidian .is-flashing .cm-url {
+  --tag-color: var(--text-on-accent);
   color: var(--text-on-accent);
 }
 
-.cm-s-obsidian .is-flashing .cm-url .cm-underline:hover {
-  color: var(--text-on-accent);
+.cm-s-obsidian .is-flashing .cm-url .cm-underline:hover,
+.cm-s-obsidian .is-flashing span.cm-url:hover {
+  --link-external-color-hover: var(--text-on-accent);
 }
 
 .community-item .suggestion-highlight {
