@@ -37,3 +37,9 @@
 .better-command-palette .hidden-items-header:empty {
   margin: 1px;
 }
+
+/* Obsidian Git */
+
+.git-commit-msg .git-commit-msg-clear-button:hover {
+ --search-clear-button-color: rgb(var(--ctp-red));
+}
