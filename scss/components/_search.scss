@@ -69,3 +69,11 @@
 .community-item .suggestion-highlight {
   color: var(--text-on-accent);
 }
+
+.community-item:hover {
+  --background-modifier-border-hover: rgb(var(--ctp-accent));
+}
+
+.community-item.is-selected, .community-item.is-selected:hover {
+  --interactive-accent: rgb(var(--ctp-mauve));
+}
