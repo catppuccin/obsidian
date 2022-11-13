@@ -61,6 +61,10 @@
   --opacity-icon-hover: 1;
 }
 
+.search-input-clear-button:hover, .search-input-clear-button:active {
+  color: rgb(var(--ctp-red));
+}
+
 /*
 * Windows and Linux mini, max, and close buttons
 */
