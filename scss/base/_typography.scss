@@ -26,6 +26,12 @@ del,
   --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
 }
 
+.cm-em.cm-strong,
+strong > em,
+em > strsong {
+  color: rgb(var(--ctp-teal));
+}
+
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1,
