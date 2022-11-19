@@ -94,6 +94,14 @@
     color: var(--icon-color);
   }
 
+  .mod-vertical
+    .workspace-tabs.mod-stacked
+    .workspace-tab-header:not(.is-active)
+    .workspace-tab-header-inner-close-button:hover
+    svg {
+    color: var(--text-on-accent);
+  }
+
   /*
   * Tabs
   */
