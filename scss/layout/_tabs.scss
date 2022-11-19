@@ -24,16 +24,20 @@
   .workspace-tabs.mod-stacked
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-    --background-modifier-hover: transparent;
-    --background-modifier-active-hover: transparent;
+  --background-modifier-hover: transparent;
+  --background-modifier-active-hover: transparent;
 
   .workspace-tab-header-inner-title {
     color: rgb(var(--ctp-accent));
   }
+}
 
-  .workspace-tab-header-inner-close-button svg {
-    color: var(--text-on-accent)
-  }
+.mod-vertical
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header-inner-close-button:hover
+  svg {
+  color: var(--text-on-accent);
 }
 
 .mod-vertical
@@ -53,6 +57,10 @@
   color: rgb(var(--ctp-accent)); // change to pink in full palette
 }
 
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover {
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-container
+  .workspace-tab-header-inner-icon:hover {
   background-color: transparent;
 }
