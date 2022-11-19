@@ -1517,6 +1517,12 @@ del,
   --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
 }
 
+.cm-em.cm-strong,
+strong > em,
+em > strsong {
+  color: rgb(var(--ctp-teal));
+}
+
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1,
@@ -1755,13 +1761,17 @@ body {
 .clickable-icon:hover,
 .mod-left-split .workspace-tab-header:hover,
 .mod-right-split .workspace-tab-header:hover {
-  background-color: rgb(var(--ctp-accent));
+  --background-modifier-hover: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
 .clickable-icon:hover svg,
 .mod-left-split .workspace-tab-header:hover svg,
 .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
+}
+
+.clickable-icon[aria-disabled=true]:hover {
+  background-color: rgb(var(--ctp-accent));
 }
 
 .clickable-icon.is-active,
@@ -1812,6 +1822,11 @@ body {
 .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
   --icon-color-hover: var(--text-faint);
   --opacity-icon-hover: 1;
+}
+
+.search-input-clear-button:hover,
+.search-input-clear-button:active {
+  color: rgb(var(--ctp-red));
 }
 
 /*
@@ -1975,14 +1990,33 @@ input[type=number]:focus-visible {
 
 .is-flashing,
 .cm-s-obsidian .is-flashing .cm-url {
+  --tag-color: var(--text-on-accent);
   color: var(--text-on-accent);
 }
 
-.cm-s-obsidian .is-flashing .cm-url .cm-underline:hover {
-  color: var(--text-on-accent);
+.cm-s-obsidian .is-flashing .cm-url .cm-underline:hover,
+.cm-s-obsidian .is-flashing span.cm-url:hover {
+  --link-external-color-hover: var(--text-on-accent);
 }
 
 .community-item .suggestion-highlight {
+  color: var(--text-on-accent);
+}
+
+.community-item:hover {
+  --background-modifier-border-hover: rgb(var(--ctp-accent));
+}
+
+.community-item.is-selected, .community-item.is-selected:hover {
+  --interactive-accent: rgb(var(--ctp-mauve));
+}
+
+.status-bar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.status-bar-item.mod-clickable:hover {
+  --background-modifier-hover: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
 
@@ -2073,6 +2107,32 @@ input[type=number]:focus-visible {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
+/* Stacked tabs */
+/*TODO disentangle all the tabs css*/
+.mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  --background-modifier-hover: transparent;
+  --background-modifier-active-hover: transparent;
+}
+.mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
+  color: rgb(var(--ctp-accent));
+}
+
+.mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg {
+  color: var(--text-on-accent);
+}
+
+.mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner svg {
+  color: var(--text-muted);
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title {
+  color: rgb(var(--ctp-accent));
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover {
+  background-color: transparent;
+}
+
 .mod-settings input.slider {
   --slider-track-background: rgb(var(--ctp-accent));
 }
@@ -2155,6 +2215,9 @@ button.mod-cta:hover {
   */
   /*
   * Icons
+  */
+  /*
+  * Tabs
   */
   /*
   * Prompts
@@ -2311,10 +2374,40 @@ button.mod-cta:hover {
 .ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
+.theme-dark:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
+.theme-light:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
+.ctp-full-palette .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  --background-modifier-hover: rgb(var(--ctp-pink));
+}
+.theme-dark:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover,
+.theme-light:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover,
+.ctp-full-palette .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover {
+  background-color: transparent;
+}
+.theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
+.theme-light:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
+.ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
+  color: var(--icon-color);
+}
+.theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
+.theme-light:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
+.ctp-full-palette .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg {
+  color: var(--text-on-accent);
+}
+.theme-dark:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title,
+.theme-light:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title,
+.ctp-full-palette .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title {
+  color: rgb(var(--ctp-pink));
+}
+.theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title,
+.theme-light:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title,
+.ctp-full-palette .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
+  color: rgb(var(--ctp-pink));
+}
 .theme-dark:not(.css-settings-manager) .suggestion-item.is-selected,
 .theme-light:not(.css-settings-manager) .suggestion-item.is-selected,
 .ctp-full-palette .suggestion-item.is-selected {
-  background-color: rgb(var(--ctp-lavender));
+  --background-modifier-hover: rgb(var(--ctp-lavender));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .suggestion-item.is-selected:hover .suggestion-flair,
@@ -2512,6 +2605,11 @@ button.mod-cta:hover {
 
 .better-command-palette .hidden-items-header:empty {
   margin: 1px;
+}
+
+/* Obsidian Git */
+.git-commit-msg .git-commit-msg-clear-button:hover {
+  --search-clear-button-color: rgb(var(--ctp-red));
 }
 
 /* cyrillic-ext */
