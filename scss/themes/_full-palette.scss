@@ -82,6 +82,38 @@
     --background-modifier-hover: rgb(var(--ctp-pink));
   }
 
+  .workspace
+    .mod-root
+    .workspace-tabs.mod-stacked
+    .workspace-tab-container
+    .workspace-tab-header-inner-icon:hover {
+    background-color: transparent;
+  }
+
+  .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
+    color: var(--icon-color);
+  }
+
+  /*
+  * Tabs
+  */
+
+  .workspace
+    .mod-root
+    .workspace-tabs.mod-stacked
+    .workspace-tab-header-inner:hover
+    .workspace-tab-header-inner-title {
+    color: rgb(var(--ctp-pink)); // change to pink in full palette
+  }
+
+  .mod-vertical
+    .workspace-tabs.mod-stacked
+    .workspace-tab-header:not(.is-active):hover
+    .workspace-tab-header-inner
+    .workspace-tab-header-inner-title {
+      color: rgb(var(--ctp-pink));
+  }
+
   /*
   * Prompts
   */
