@@ -723,6 +723,17 @@ settings:
   --ctp-base: 239, 241, 245;
   --ctp-mantle: 230, 233, 239;
   --ctp-crust: 220, 224, 232;
+  --hex-pink: #ea76cb;
+  --hex-mauve: #8839ef;
+  --hex-red: #d20f39;
+  --hex-peach: #fe640b;
+  --hex-yellow: #df8e1d;
+  --hex-green: #40a02b;
+  --hex-teal: #179299;
+  --hex-sky: #04a5e5;
+  --hex-sapphire: #209fb5;
+  --hex-blue: #1e66f5;
+  --hex-lavender: #7287fd;
 }
 
 .theme-dark.ctp-frappe {
@@ -752,6 +763,17 @@ settings:
   --ctp-base: 48, 52, 70;
   --ctp-mantle: 41, 44, 60;
   --ctp-crust: 35, 38, 52;
+  --hex-pink: #f4b8e4;
+  --hex-mauve: #ca9ee6;
+  --hex-red: #e78284;
+  --hex-peach: #ef9f76;
+  --hex-yellow: #e5c890;
+  --hex-green: #a6d189;
+  --hex-teal: #81c8be;
+  --hex-sky: #99d1db;
+  --hex-sapphire: #85c1dc;
+  --hex-blue: #8caaee;
+  --hex-lavender: #babbf1;
 }
 
 .theme-dark.ctp-macchiato {
@@ -781,6 +803,17 @@ settings:
   --ctp-base: 36, 39, 58;
   --ctp-mantle: 30, 32, 48;
   --ctp-crust: 24, 25, 38;
+  --hex-pink: #f5bde6;
+  --hex-mauve: #c6a0f6;
+  --hex-red: #ed8796;
+  --hex-peach: #f5a97f;
+  --hex-yellow: #eed49f;
+  --hex-green: #a6da95;
+  --hex-teal: #8bd5ca;
+  --hex-sky: #91d7e3;
+  --hex-sapphire: #7dc4e4;
+  --hex-blue: #8aadf4;
+  --hex-lavender: #b7bdf8;
 }
 
 .theme-dark,
@@ -811,6 +844,37 @@ settings:
   --ctp-base: 30, 30, 46;
   --ctp-mantle: 24, 24, 37;
   --ctp-crust: 17, 17, 27;
+  --hex-pink: #f5c2e7;
+  --hex-mauve: #cba6f7;
+  --hex-red: #f38ba8;
+  --hex-peach: #fab387;
+  --hex-yellow: #f9e2af;
+  --hex-green: #a6e3a1;
+  --hex-teal: #94e2d5;
+  --hex-sky: #89dceb;
+  --hex-sapphire: #74c7ec;
+  --hex-blue: #89b4fa;
+  --hex-lavender: #b4befe;
+}
+
+.theme-light,
+.theme-dark {
+  --color-red-rgb: var(--ctp-red);
+  --color-red: --hex-red;
+  --color-orange-rgb: var(--ctp-peach);
+  --color-orange: --hex-peach;
+  --color-yellow-rgb: var(--ctp-yellow);
+  --color-yellow: --hex-yellow;
+  --color-green-rgb: var(--ctp-green);
+  --color-green: --hex-green;
+  --color-cyan-rgb: var(ctp-sapphire);
+  --color-cyan: --hex-sapphire;
+  --color-blue-rgb: var(--ctp-blue);
+  --color-blue: --hex-blue;
+  --color-purple-rgb: var(--ctp-mauve);
+  --color-purple: --hex-mauve;
+  --color-pink-rgb: var(--ctp-pink);
+  --color-pink: --hex-pink;
 }
 
 /* ------------------Selecting Accents------------------- */
