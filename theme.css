@@ -44,6 +44,29 @@ body {
   --callout-title-padding: 0;
   --callout-title-size: inherit;
   --callout-content-padding: 0;
+  --callout-content-background: transparent;
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-question: var(--color-yellow-rgb);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --callout-quote: 158, 158, 158;
+  /* Canvas */
+  --canvas-dot-pattern: var(--color-base-30);
+  --canvas-color-1: var(--color-red-rgb);
+  --canvas-color-2: var(--color-orange-rgb);
+  --canvas-color-3: var(--color-yellow-rgb);
+  --canvas-color-4: var(--color-green-rgb);
+  --canvas-color-5: var(--color-cyan-rgb);
+  --canvas-color-6: var(--color-purple-rgb);
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: 15px;
@@ -1253,6 +1276,17 @@ settings:
   --ctp-base: 239, 241, 245;
   --ctp-mantle: 230, 233, 239;
   --ctp-crust: 220, 224, 232;
+  --hex-pink: #ea76cb;
+  --hex-mauve: #8839ef;
+  --hex-red: #d20f39;
+  --hex-peach: #fe640b;
+  --hex-yellow: #df8e1d;
+  --hex-green: #40a02b;
+  --hex-teal: #179299;
+  --hex-sky: #04a5e5;
+  --hex-sapphire: #209fb5;
+  --hex-blue: #1e66f5;
+  --hex-lavender: #7287fd;
 }
 
 .theme-dark.ctp-frappe {
@@ -1282,6 +1316,17 @@ settings:
   --ctp-base: 48, 52, 70;
   --ctp-mantle: 41, 44, 60;
   --ctp-crust: 35, 38, 52;
+  --hex-pink: #f4b8e4;
+  --hex-mauve: #ca9ee6;
+  --hex-red: #e78284;
+  --hex-peach: #ef9f76;
+  --hex-yellow: #e5c890;
+  --hex-green: #a6d189;
+  --hex-teal: #81c8be;
+  --hex-sky: #99d1db;
+  --hex-sapphire: #85c1dc;
+  --hex-blue: #8caaee;
+  --hex-lavender: #babbf1;
 }
 
 .theme-dark.ctp-macchiato {
@@ -1311,6 +1356,17 @@ settings:
   --ctp-base: 36, 39, 58;
   --ctp-mantle: 30, 32, 48;
   --ctp-crust: 24, 25, 38;
+  --hex-pink: #f5bde6;
+  --hex-mauve: #c6a0f6;
+  --hex-red: #ed8796;
+  --hex-peach: #f5a97f;
+  --hex-yellow: #eed49f;
+  --hex-green: #a6da95;
+  --hex-teal: #8bd5ca;
+  --hex-sky: #91d7e3;
+  --hex-sapphire: #7dc4e4;
+  --hex-blue: #8aadf4;
+  --hex-lavender: #b7bdf8;
 }
 
 .theme-dark,
@@ -1341,6 +1397,37 @@ settings:
   --ctp-base: 30, 30, 46;
   --ctp-mantle: 24, 24, 37;
   --ctp-crust: 17, 17, 27;
+  --hex-pink: #f5c2e7;
+  --hex-mauve: #cba6f7;
+  --hex-red: #f38ba8;
+  --hex-peach: #fab387;
+  --hex-yellow: #f9e2af;
+  --hex-green: #a6e3a1;
+  --hex-teal: #94e2d5;
+  --hex-sky: #89dceb;
+  --hex-sapphire: #74c7ec;
+  --hex-blue: #89b4fa;
+  --hex-lavender: #b4befe;
+}
+
+.theme-light,
+.theme-dark {
+  --color-red-rgb: var(--ctp-red);
+  --color-red: --hex-red;
+  --color-orange-rgb: var(--ctp-peach);
+  --color-orange: --hex-peach;
+  --color-yellow-rgb: var(--ctp-yellow);
+  --color-yellow: --hex-yellow;
+  --color-green-rgb: var(--ctp-green);
+  --color-green: --hex-green;
+  --color-cyan-rgb: var(ctp-sapphire);
+  --color-cyan: --hex-sapphire;
+  --color-blue-rgb: var(--ctp-blue);
+  --color-blue: --hex-blue;
+  --color-purple-rgb: var(--ctp-mauve);
+  --color-purple: --hex-mauve;
+  --color-pink-rgb: var(--ctp-pink);
+  --color-pink: --hex-pink;
 }
 
 /* ------------------Selecting Accents------------------- */
@@ -1638,20 +1725,13 @@ body {
 }
 
 .callout {
-  --callout-color: var(--ctp-accent);
   --callout-icon: lucide-pencil;
 }
 
 .callout[data-callout=abstract],
 .callout[data-callout=summary],
 .callout[data-callout=tldr] {
-  --callout-color: var(--ctp-accent);
   --callout-icon: lucide-clipboard-list;
-}
-
-.callout[data-callout=info],
-.callout[data-callout=todo] {
-  --callout-color: var(--ctp-green);
 }
 
 .callout[data-callout=info] {
@@ -1665,57 +1745,48 @@ body {
 .callout[data-callout=tip],
 .callout[data-callout=hint],
 .callout[data-callout=important] {
-  --callout-color: var(--ctp-maroon);
   --callout-icon: lucide-flame;
 }
 
 .callout[data-callout=success],
 .callout[data-callout=check],
 .callout[data-callout=done] {
-  --callout-color: var(--ctp-green);
   --callout-icon: lucide-check;
 }
 
 .callout[data-callout=question],
 .callout[data-callout=help],
 .callout[data-callout=faq] {
-  --callout-color: var(--ctp-mauve);
   --callout-icon: help-circle;
 }
 
 .callout[data-callout=warning],
 .callout[data-callout=caution],
 .callout[data-callout=attention] {
-  --callout-color: var(--ctp-red);
   --callout-icon: lucide-alert-triangle;
 }
 
 .callout[data-callout=failure],
 .callout[data-callout=fail],
 .callout[data-callout=missing] {
-  --callout-color: var(--ctp-red);
   --callout-icon: lucide-x;
 }
 
 .callout[data-callout=danger],
 .callout[data-callout=error] {
-  --callout-color: var(--ctp-red);
   --callout-icon: lucide-zap;
 }
 
 .callout[data-callout=bug] {
-  --callout-color: 245, 0, 87;
   --callout-icon: lucide-bug;
 }
 
 .callout[data-callout=example] {
-  --callout-color: 124, 77, 255;
   --callout-icon: lucide-list;
 }
 
 .callout[data-callout=quote],
 .callout[data-callout=cite] {
-  --callout-color: 158, 158, 158;
   --callout-icon: quote-glyph;
 }
 
@@ -1755,7 +1826,7 @@ body {
 .clickable-icon:hover,
 .mod-left-split .workspace-tab-header:hover,
 .mod-right-split .workspace-tab-header:hover {
-  background-color: rgb(var(--ctp-accent));
+  --background-modifier-hover: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
 .clickable-icon:hover svg,
@@ -1812,6 +1883,11 @@ body {
 .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
   --icon-color-hover: var(--text-faint);
   --opacity-icon-hover: 1;
+}
+
+.search-input-clear-button:hover,
+.search-input-clear-button:active {
+  color: rgb(var(--ctp-red));
 }
 
 /*
@@ -1919,6 +1995,7 @@ input[type=number]:focus-visible {
   background-color: rgb(var(--ctp-crust));
 }
 
+/* TODO Add to Style Settings instead */
 .search-result-file-match:hover .search-result-file-match-destination-file:hover {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
@@ -1975,14 +2052,33 @@ input[type=number]:focus-visible {
 
 .is-flashing,
 .cm-s-obsidian .is-flashing .cm-url {
+  --tag-color: var(--text-on-accent);
   color: var(--text-on-accent);
 }
 
-.cm-s-obsidian .is-flashing .cm-url .cm-underline:hover {
-  color: var(--text-on-accent);
+.cm-s-obsidian .is-flashing .cm-url .cm-underline:hover,
+.cm-s-obsidian .is-flashing span.cm-url:hover {
+  --link-external-color-hover: var(--text-on-accent);
 }
 
 .community-item .suggestion-highlight {
+  color: var(--text-on-accent);
+}
+
+.community-item:hover {
+  --background-modifier-border-hover: rgb(var(--ctp-accent));
+}
+
+.community-item.is-selected, .community-item.is-selected:hover {
+  --interactive-accent: rgb(var(--ctp-mauve));
+}
+
+.status-bar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.status-bar-item.mod-clickable:hover {
+  --background-modifier-hover: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
 
@@ -2071,6 +2167,29 @@ input[type=number]:focus-visible {
 
 .workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.canvas-node-container {
+  --canvas-color: var(--ctp-subtext0);
+}
+
+.canvas-node-label {
+  color: var(--text-muted);
+}
+
+/* Active node */
+.canvas-node.is-selected .canvas-node-label,
+.canvas-node.is-focused .canvas-node-label {
+  color: rgb(var(--ctp-accent));
+}
+
+.canvas-controls button:hover {
+  --interactive-hover: rgb(var(--ctp-accent));
+  --text-normal: var(--text-on-accent);
+}
+
+.canvas-controls button:disabled:hover {
+  opacity: 0.4;
 }
 
 .mod-settings input.slider {
@@ -2173,6 +2292,9 @@ button.mod-cta:hover {
   */
   /*
   *  settings slider
+  */
+  /*
+  * Canvas
   */
 }
 .theme-dark:not(.css-settings-manager) .workspace-tab-header-inner-close-button:hover,
@@ -2311,10 +2433,15 @@ button.mod-cta:hover {
 .ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
+.theme-dark:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
+.theme-light:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
+.ctp-full-palette .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  --background-modifier-hover: rgb(var(--ctp-pink));
+}
 .theme-dark:not(.css-settings-manager) .suggestion-item.is-selected,
 .theme-light:not(.css-settings-manager) .suggestion-item.is-selected,
 .ctp-full-palette .suggestion-item.is-selected {
-  background-color: rgb(var(--ctp-lavender));
+  --background-modifier-hover: rgb(var(--ctp-lavender));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .suggestion-item.is-selected:hover .suggestion-flair,
@@ -2476,6 +2603,11 @@ button.mod-cta:hover {
 .ctp-full-palette .mod-settings input[type=color]::-webkit-color-swatch:hover {
   box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25), 0 0 0 2px rgb(var(--ctp-surface1));
 }
+.theme-dark:not(.css-settings-manager) .canvas-controls button:hover,
+.theme-light:not(.css-settings-manager) .canvas-controls button:hover,
+.ctp-full-palette .canvas-controls button:hover {
+  background-color: rgb(var(--ctp-pink));
+}
 
 /* Better Command Palette */
 /* Fixes highlight error */
@@ -2512,6 +2644,11 @@ button.mod-cta:hover {
 
 .better-command-palette .hidden-items-header:empty {
   margin: 1px;
+}
+
+/* Obsidian Git */
+.git-commit-msg .git-commit-msg-clear-button:hover {
+  --search-clear-button-color: rgb(var(--ctp-red));
 }
 
 /* cyrillic-ext */
