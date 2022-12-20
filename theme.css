@@ -2472,7 +2472,6 @@ button.mod-cta:hover {
 .ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
-
 .theme-dark:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
 .theme-light:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
 .ctp-full-palette .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
@@ -2503,13 +2502,6 @@ button.mod-cta:hover {
 .ctp-full-palette .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
   color: rgb(var(--ctp-pink));
 }
-
-.theme-dark:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
-.theme-light:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
-.ctp-full-palette .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-  --background-modifier-hover: rgb(var(--ctp-pink));
-}
-
 .theme-dark:not(.css-settings-manager) .suggestion-item.is-selected,
 .theme-light:not(.css-settings-manager) .suggestion-item.is-selected,
 .ctp-full-palette .suggestion-item.is-selected {
