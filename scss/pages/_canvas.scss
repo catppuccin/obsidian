@@ -1,15 +1,5 @@
-.canvas-node-container {
-  --canvas-color: var(--ctp-subtext0);
-}
-
 .canvas-node-label {
   color: var(--text-muted);
-}
-
-/* Active node */
-.canvas-node.is-selected .canvas-node-label,
-.canvas-node.is-focused .canvas-node-label {
-  color: rgb(var(--ctp-accent));
 }
 
 .canvas-controls button:hover {
