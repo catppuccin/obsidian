@@ -1,0 +1,12 @@
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url,
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline {
+  text-decoration-color: transparent;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  transition: var(--transition-text-decoration-color);
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
