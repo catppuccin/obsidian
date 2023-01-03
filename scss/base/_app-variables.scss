@@ -511,7 +511,7 @@ body {
   --table-row-last-border-width: var(--table-border-width);
 
   /* Tags */
-  --tag-size: var(--font-normal);
+  --tag-size: max(var(--font-ui-medium),var(--font-small));
   --tag-color: rgb(var(--ctp-accent));
   --tag-color-hover: rgb(var(--ctp-accent));
   --tag-decoration: none;
