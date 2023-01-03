@@ -87,26 +87,6 @@ h6,
   left: -13px;
 }
 
-.cm-hashtag.cm-hashtag-end:hover {
-  text-decoration: underline 1px var(--text-normal);
-  text-decoration-thickness: 2px;
-}
-
-.cm-hashtag::selection {
-  text-shadow: 0.4px 0 0 black;
-}
-
-.markdown-source-view.mod-cm6 .is-unresolved {
-  & .cm-underline {
-    text-decoration-line: none;
-  }
-
-  &:hover {
-    color: rgb(var(--ctp-red));
-    text-decoration-line: none;
-  }
-}
-
 .tooltip {
   color: rgb(var(--ctp-rosewater));
 }

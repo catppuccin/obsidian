@@ -10,3 +10,30 @@
     text-decoration-color: inherit;
   }
 }
+
+.cm-hashtag.cm-hashtag-end {
+  text-decoration-color: transparent;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  transition: var(--transition-text-decoration-color);
+}
+
+.cm-hashtag.cm-hashtag-end:hover {
+  text-decoration: underline 1px rgb(var(--ctp-accent));
+  text-underline-offset: 1px;
+}
+
+.cm-hashtag::selection {
+  text-shadow: 0.4px 0 0 black;
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved {
+  & .cm-underline {
+    text-decoration-line: none;
+  }
+
+  &:hover {
+    color: rgb(var(--ctp-red));
+    text-decoration-line: none;
+  }
+}
