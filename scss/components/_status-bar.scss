@@ -4,5 +4,6 @@
 
 .status-bar-item.mod-clickable:hover {
   --background-modifier-hover: rgb(var(--ctp-accent));
+
   color: var(--text-on-accent);
 }

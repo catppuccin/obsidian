@@ -1,4 +1,5 @@
 /* Better Command Palette */
+
 /* Fixes highlight error */
 
 .better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
@@ -6,16 +7,15 @@
 }
 
 .better-command-palette .better-command-palette-title {
-  margin: var(--size-4-3);
   padding-left: var(--size-4-3);
+  margin: var(--size-4-3);
 }
 
 .better-command-palette .suggestion-item .suggestion-flair {
-  background-color: rgb(var(--ctp-surface0));
-  color: var(--text-muted);
   border-radius: var(--radius-s);
   margin-bottom: 1px;
-
+  background-color: rgb(var(--ctp-surface0));
+  color: var(--text-muted);
 }
 
 .better-command-palette.better-command-palette .suggestion-item.is-selected:hover .suggestion-flair {
@@ -41,5 +41,5 @@
 /* Obsidian Git */
 
 .git-commit-msg .git-commit-msg-clear-button:hover {
- --search-clear-button-color: rgb(var(--ctp-red));
+  --search-clear-button-color: rgb(var(--ctp-red));
 }

@@ -73,6 +73,7 @@ settings:
         label: Lavender
         value: ctp-accent-lavender
 */
+
 /* @settings
 name: Interface Styles
 id: catppuccin-interface-styles
@@ -83,6 +84,7 @@ settings:
     description: Show folder title in bold
     type: class-toggle
 */
+
 /* @settings
 name: Font Styles
 id: catppuccin-font-styles
@@ -681,6 +683,7 @@ settings:
         label: Gray
         value: var(--ctp-subtext0)
 */
+
 /* @settings
 
 name: Credits and Source Code
@@ -948,21 +951,22 @@ settings:
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
   --background-modifier-border: rgb(var(--ctp-surface0));
-  --background-modifier-form-field: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-form-field-highlighted: rgba(
-    var(--ctp-crust),
-    0.22
-  );
-  --background-modifier-box-shadow: rgba(var(--ctp-crust), 0.3);
-  --background-modifier-success: rgba(var(--ctp-green), 0.9);
+  --background-modifier-form-field: rgb(var(--ctp-crust) 0.3);
+  --background-modifier-form-field-highlighted:
+    rgb(
+      var(--ctp-crust)
+      0.22
+    );
+  --background-modifier-box-shadow: rgb(var(--ctp-crust) 0.3);
+  --background-modifier-success: rgb(var(--ctp-green) 0.9);
   --background-modifier-success-rgb: var(--ctp-green);
-  --background-modifier-error: rgba(var(--ctp-red), 0.9);
+  --background-modifier-error: rgb(var(--ctp-red) 0.9);
   --background-modifier-error-rgb: var(--ctp-red);
-  --background-modifier-error-hover: rgba(var(--ctp-red), 1);
-  --background-modifier-cover: rgba(var(--ctp-crust), 0.8);
+  --background-modifier-error-hover: rgb(var(--ctp-red) 1);
+  --background-modifier-cover: rgb(var(--ctp-crust) 0.8);
   --color-accent: rgb(var(--ctp-accent));
   --color-accent-1: rgb(var(--ctp-accent));
-  --color-accent-2: rgba(var(--ctp-accent), 0.9);
+  --color-accent-2: rgb(var(--ctp-accent) 0.9);
   --text-accent: rgb(var(--ctp-accent));
   --text-accent-hover: rgb(var(--ctp-accent));
   --text-normal: rgb(var(--ctp-text));
@@ -970,10 +974,10 @@ settings:
   --text-muted-rgb: var(--ctp-subtext0);
   --text-faint: rgb(var(--ctp-surface1));
   --text-error: rgb(var(--ctp-red));
-  --text-error-hover: rgba(var(--ctp-red), 0.8);
-  --text-highlight-bg: rgba(var(--ctp-rosewater), 1);
-  --text-highlight-bg-active: rgba(var(--ctp-rosewater), 1);
-  --text-selection: rgba(var(--ctp-rosewater), 1);
+  --text-error-hover: rgb(var(--ctp-red) 0.8);
+  --text-highlight-bg: rgb(var(--ctp-rosewater) 1);
+  --text-highlight-bg-active: rgb(var(--ctp-rosewater) 1);
+  --text-selection: rgb(var(--ctp-rosewater) 1);
   --text-on-accent: rgb(var(--ctp-base));
   --interactive-normal: rgb(var(--ctp-surface0));
   --interactive-hover: rgb(var(--ctp-surface1));
@@ -981,9 +985,9 @@ settings:
   --interactive-accent-rgb: var(--ctp-accent);
   --interactive-accent-hover: rgb(var(--ctp-accent));
   --interactive-success: rgb(var(--ctp-green));
-  --scrollbar-active-thumb-bg: rgba(var(--ctp-text), 0.2);
-  --scrollbar-bg: rgba(var(--ctp-text), 0.05);
-  --scrollbar-thumb-bg: rgba(var(--ctp-text), 0.1);
+  --scrollbar-active-thumb-bg: rgb(var(--ctp-text) 0.2);
+  --scrollbar-bg: rgb(var(--ctp-text) 0.05);
+  --scrollbar-thumb-bg: rgb(var(--ctp-text) 0.1);
   --mono-rgb-0: var(--ctp-crust);
   --mono-rgb-100: var(--ctp-text);
   --color-red-rgb: var(--ctp-red);

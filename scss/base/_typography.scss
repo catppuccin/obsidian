@@ -1,8 +1,22 @@
 body {
-  --font-text-theme: "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", inter, sans-serif;
-  --font-interface-theme: "Nunito Sans", -apple-system, system-ui,
-    blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+  --font-text-theme:
+    "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    inter,
+    sans-serif;
+  --font-interface-theme:
+    "Nunito Sans",
+    -apple-system,
+    system-ui,
+    blinkmacsystemfont,
+    "Segoe UI",
+    roboto,
+    "Helvetica Neue",
+    arial,
+    sans-serif;
 }
 
 strong,
@@ -32,7 +46,12 @@ em > strsong {
   color: rgb(var(--ctp-teal));
 }
 
-.markdown-source-view ol > li, .markdown-source-view ul > li, .markdown-preview-view ol > li, .markdown-preview-view ul > li, .markdown-rendered ul > li, .mod-cm6 .HyperMD-list-line.cm-line {
+.markdown-source-view ol > li,
+.markdown-source-view ul > li,
+.markdown-preview-view ol > li,
+.markdown-preview-view ul > li,
+.markdown-rendered ul > li,
+.mod-cm6 .HyperMD-list-line.cm-line {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -42,6 +61,7 @@ h1,
 .HyperMD-header-1,
 .HyperMD-list-line .cm-header-1 {
   --h1-color: rgb(var(--ctp-h1, var(--ctp-accent)));
+
   line-height: var(--h1-line-height);
 }
 
@@ -50,6 +70,7 @@ h2,
 .HyperMD-header-2,
 .HyperMD-list-line .cm-header-2 {
   --h2-color: rgb(var(--ctp-h2, var(--ctp-accent)));
+
   line-height: var(--h2-line-height);
 }
 
@@ -62,6 +83,7 @@ h3,
 .HyperMD-header-3,
 .HyperMD-list-line .cm-header-3 {
   --h3-color: rgb(var(--ctp-h3, var(--ctp-accent)));
+
   line-height: var(--h3-line-height);
 }
 
@@ -70,6 +92,7 @@ h4,
 .HyperMD-header-4,
 .HyperMD-list-line .cm-header-4 {
   --h4-color: rgb(var(--ctp-h4, var(--ctp-accent)));
+
   line-height: var(--h4-line-height);
 }
 
@@ -78,6 +101,7 @@ h5,
 .HyperMD-header-5,
 .HyperMD-list-line .cm-header-5 {
   --h5-color: rgb(var(--ctp-h5, var(--ctp-accent)));
+
   line-height: var(--line-height-normal);
 }
 
@@ -86,6 +110,7 @@ h6,
 .HyperMD-header-6,
 .HyperMD-list-line .cm-header-6 {
   --h6-color: rgb(var(--ctp-h6, var(--ctp-accent)));
+
   line-height: var(--line-height-normal);
 }
 
@@ -113,35 +138,37 @@ h6,
   background-color: rgb(var(--ctp-rosewater));
   color: var(--text-on-accent);
 
-
   &.cm-em,
   em {
-    text-align: left;
+    background-image:
+      linear-gradient(
+        rgb(var(--ctp-green) 0.4),
+        rgb(var(--ctp-green) 0.6),
+        rgb(var(--ctp-green) 0.4),
+      );
     color: var(--text-on-accent);
-    background-image: linear-gradient(
-      rgb(var(--ctp-green), .4),
-      rgb(var(--ctp-green), .6),
-      rgb(var(--ctp-green), .4),
-    );
+    text-align: left;
   }
 
   &.cm-strong,
   strong {
+    background-image:
+      linear-gradient(
+        rgb(var(--ctp-sapphire) 0.4),
+        rgb(var(--ctp-sapphire) 0.6),
+        rgb(var(--ctp-sapphire) 0.4)
+      );
     color: var(--text-on-accent);
-    background-image: linear-gradient(
-      rgb(var(--ctp-sapphire), 0.4),
-      rgb(var(--ctp-sapphire), 0.6),
-      rgb(var(--ctp-sapphire), 0.4)
-    );
   }
 
   &.cm-strikethrough,
   del {
+    background-image:
+      linear-gradient(
+        rgb(var(--ctp-red) 0.4),
+        rgb(var(--ctp-red) 0.6),
+        rgb(var(--ctp-red) 0.4)
+      );
     color: var(--text-on-accent);
-    background-image: linear-gradient(
-      rgb(var(--ctp-red), 0.4),
-      rgb(var(--ctp-red), 0.6),
-      rgb(var(--ctp-red), 0.4)
-    );
   }
 }

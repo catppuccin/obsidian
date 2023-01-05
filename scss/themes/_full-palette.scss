@@ -6,7 +6,7 @@
   --divider-color-hover: rgb(var(--ctp-blue));
   --hr-color: rgb(var(--ctp-blue));
   --indentation-guide-color: rgb(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 0.7);
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire) 0.7);
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
@@ -27,8 +27,8 @@
   :not(.is-grabbing) .nav-file-title:hover,
   :not(.is-grabbing) .nav-folder-title:hover,
   .tree-item-self.is-clickable:hover {
-    color: var(--text-on-accent);
     background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
   }
 
   .nav-folder.mod-root > .nav-folder-title:hover {
@@ -45,13 +45,15 @@
   .mod-right-split .workspace-tab-header.has-active-menu,
   .mod-left-split .workspace-tab-header.is-active,
   .mod-right-split .workspace-tab-header.is-active {
-    transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
-    box-shadow: inset 0 0 4px rgb(var(--ctp-crust)),
+    box-shadow:
+      inset 0 0 4px rgb(var(--ctp-crust)),
       inset 0 0 6px rgb(var(--ctp-base));
     outline: 1px solid rgb(var(--ctp-surface1));
+    transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
 
     svg {
       color: rgb(var(--ctp-pink));
+
       /* extra long to prevent weird super fast move */
       transition: background-color 4s ease-in-out;
     }
@@ -68,6 +70,7 @@
   .mod-left-split .workspace-tab-header,
   .mod-right-split .workspace-tab-header {
     transition: var(--transition-hover-bg);
+
     &:hover {
       background-color: rgb(var(--ctp-pink));
       color: var(--text-on-accent);
@@ -82,11 +85,7 @@
     --background-modifier-hover: rgb(var(--ctp-pink));
   }
 
-  .workspace
-    .mod-root
-    .workspace-tabs.mod-stacked
-    .workspace-tab-container
-    .workspace-tab-header-inner-icon:hover {
+  .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover {
     background-color: transparent;
   }
 
@@ -94,11 +93,7 @@
     color: var(--icon-color);
   }
 
-  .mod-vertical
-    .workspace-tabs.mod-stacked
-    .workspace-tab-header:not(.is-active)
-    .workspace-tab-header-inner-close-button:hover
-    svg {
+  .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg {
     color: var(--text-on-accent);
   }
 
@@ -106,20 +101,12 @@
   * Tabs
   */
 
-  .workspace
-    .mod-root
-    .workspace-tabs.mod-stacked
-    .workspace-tab-header-inner:hover
-    .workspace-tab-header-inner-title {
+  .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title {
     color: rgb(var(--ctp-pink)); // change to pink in full palette
   }
 
-  .mod-vertical
-    .workspace-tabs.mod-stacked
-    .workspace-tab-header:not(.is-active):hover
-    .workspace-tab-header-inner
-    .workspace-tab-header-inner-title {
-      color: rgb(var(--ctp-pink));
+  .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
+    color: rgb(var(--ctp-pink));
   }
 
   /*
@@ -128,6 +115,7 @@
 
   .suggestion-item.is-selected {
     --background-modifier-hover: rgb(var(--ctp-lavender));
+
     color: var(--text-on-accent);
 
     &:hover .suggestion-flair {
@@ -164,7 +152,7 @@
 
   select:focus,
   .dropdown:focus {
-    box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
+    box-shadow: 0 0 0 2px rgb(var(--ctp-blue) 0.7);
   }
 
   textarea:active,
@@ -185,7 +173,7 @@
   input[type="email"]:focus-visible,
   input[type="password"]:focus-visible,
   input[type="number"]:focus-visible {
-    box-shadow: 0 0 0 2px rgba(var(--ctp-blue), 0.7);
+    box-shadow: 0 0 0 2px rgb(var(--ctp-blue) 0.7);
   }
 
   /*
@@ -194,7 +182,8 @@
   input[type="checkbox"]:not(:checked) {
     border-color: rgb(var(--ctp-maroon));
     background-color: rgb(var(--ctp-red));
-    box-shadow: inset 4px 4px 12px rgb(var(--ctp-mantle)),
+    box-shadow:
+      inset 4px 4px 12px rgb(var(--ctp-mantle)),
       inset -4px -4px 12px rgb(var(--ctp-mantle));
 
     &:hover {
@@ -205,11 +194,11 @@
   input[type="checkbox"]:checked {
     border-color: transparent;
     background-color: rgb(var(--ctp-green));
-    box-shadow: 0 0 0 1px rgb(var(--ctp-green), 0.4);
+    box-shadow: 0 0 0 1px rgb(var(--ctp-green) 0.4);
 
     &:hover {
       background-color: rgb(var(--ctp-maroon));
-      box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 0.4);
+      box-shadow: 0 0 0 1px rgb(var(--ctp-maroon) 0.4);
     }
   }
 
@@ -245,7 +234,8 @@
     }
 
     & input[type="color"]::-webkit-color-swatch:hover {
-      box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25),
+      box-shadow:
+        inset 0 0 0 1px rgb(var(--mono-rgb-100) 0.25),
         0 0 0 2px rgb(var(--ctp-surface1));
     }
   }

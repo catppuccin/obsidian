@@ -1,7 +1,6 @@
 @use "base/app-variables";
 @use "base/ctp-style-settings";
 @use "base/typography";
-
 @use "components/animations";
 @use "components/callouts";
 @use "components/cmd-palette";
@@ -11,15 +10,11 @@
 @use "components/scrollbars";
 @use "components/search";
 @use "components/status-bar";
-
 @use "layout/header";
 @use "layout/sidebar";
 @use "layout/tabs";
-
 @use "pages/canvas";
 @use "pages/settings";
-
 @use "themes/full-palette";
-
 @use "vendors/plugins";
 @use "vendors/fonts";

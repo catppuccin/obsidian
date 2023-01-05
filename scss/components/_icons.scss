@@ -1,11 +1,12 @@
 .clickable-icon,
 .mod-left-split .workspace-tab-header,
 .mod-right-split .workspace-tab-header {
-  transition: var(--transition-hover-bg);
   margin: 0 2px;
+  transition: var(--transition-hover-bg);
 
   &:hover {
     --background-modifier-hover: rgb(var(--ctp-accent));
+
     color: var(--text-on-accent);
   }
 
@@ -14,7 +15,7 @@
   }
 }
 
-.clickable-icon[aria-disabled='true']:hover {
+.clickable-icon[aria-disabled="true"]:hover {
   background-color: rgb(var(--ctp-accent));
 }
 
@@ -23,14 +24,15 @@
 .mod-right-split .workspace-tab-header.has-active-menu,
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
-  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)),
+  box-shadow:
+    inset 0 0 4px rgb(var(--ctp-crust)),
     inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
   transition: var(--transition-hover-bg);
 
   svg {
-    transition: background-color 3s ease-in-out;
     color: rgb(var(--ctp-accent));
+    transition: background-color 3s ease-in-out;
   }
 
   &:hover,
@@ -41,14 +43,9 @@
   }
 }
 
-.workspace
-  .mod-root
-  .workspace-tabs.mod-stacked
-  .workspace-tab-container
-  .workspace-tab-header-inner-close-button:hover,
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover,
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
-.suggestion
-  :hover.list-item-part.clickable-icon[aria-label="Clear search history"],
+.suggestion :hover.list-item-part.clickable-icon[aria-label="Clear search history"],
 .modal-close-button:hover {
   background-color: rgb(var(--ctp-red));
   box-shadow: 0 0 2px 1px rgb(var(--ctp-surface1));
@@ -57,7 +54,7 @@
 }
 
 .workspace-tab-header-inner-close-button:hover {
-  background-color: rgb(var(--ctp-red), 0.5);
+  background-color: rgb(var(--ctp-red) 0.5);
 }
 
 .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
@@ -105,18 +102,18 @@
 */
 
 .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'%3E%3C/path%3E%3Cpath d='M2 10h20'%3E%3C/path%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'%3E%3C/path%3E%3Cpath d='M2 10h20'%3E%3C/path%3E%3C/svg%3E");
   transition: -webkit-mask-image 0.2s ease;
 }
 
 .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
 .nav-folder .nav-folder-title .nav-folder-title-content::before {
-  background-color: currentcolor;
+  width: var(--icon-xs);
+  height: var(--icon-xs);
   margin-right: 8px;
+  background-color: currentcolor;
   background-repeat: no-repeat;
   vertical-align: -2px;
-  height: var(--icon-xs);
-  width: var(--icon-xs);
 
   &:hover {
     color: var(--text-on-accent);
@@ -129,10 +126,10 @@
 
 .nav-folder .nav-folder-title .nav-folder-title-content::before {
   display: inline-block;
-  content: "";
-  height: var(--icon-xs);
   width: var(--icon-xs);
+  height: var(--icon-xs);
   background-size: 16px 16px;
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3C/svg%3E");
+  content: "";
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3C/svg%3E");
   transition: -webkit-mask-image 0.2s ease;
 }

@@ -1,17 +1,18 @@
 .search-result-file-matches {
+  border: 1px solid rgb(var(--ctp-surface1));
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
-  border: 1px solid rgb(var(--ctp-surface1));
 }
 
 @media (hover: hover) {
   .search-result-file-match:hover .search-result-file-match-destination-file {
     background-color: var(--background-secondary);
   }
+
   .search-result-file-match:hover {
     background-color: rgb(var(--ctp-accent));
     color: var(--text-on-accent);
-  };
+  }
 
   .search-result-file-match:hover .search-result-file-match-destination-file:hover {
     background-color: var(--interactive-hover);

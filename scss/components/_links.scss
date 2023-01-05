@@ -3,9 +3,10 @@
 .markdown-source-view.mod-cm6 .cm-link .cm-underline,
 .markdown-source-view.mod-cm6 .cm-url .cm-underline {
   text-decoration-color: transparent;
-  text-decoration-style: solid;
   text-decoration-line: underline;
+  text-decoration-style: solid;
   transition: var(--transition-text-decoration-color);
+
   &:hover {
     text-decoration-color: inherit;
   }
@@ -13,8 +14,8 @@
 
 .cm-hashtag.cm-hashtag-end {
   text-decoration-color: transparent;
-  text-decoration-style: solid;
   text-decoration-line: underline;
+  text-decoration-style: solid;
   transition: var(--transition-text-decoration-color);
 }
 
