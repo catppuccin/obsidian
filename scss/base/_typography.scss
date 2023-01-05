@@ -32,11 +32,17 @@ em > strsong {
   color: rgb(var(--ctp-teal));
 }
 
+.markdown-source-view ol > li, .markdown-source-view ul > li, .markdown-preview-view ol > li, .markdown-preview-view ul > li, .markdown-rendered ul > li, .mod-cm6 .HyperMD-list-line.cm-line {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1,
 .HyperMD-list-line .cm-header-1 {
   --h1-color: rgb(var(--ctp-h1, var(--ctp-accent)));
+  line-height: var(--h1-line-height);
 }
 
 h2,
@@ -44,6 +50,11 @@ h2,
 .HyperMD-header-2,
 .HyperMD-list-line .cm-header-2 {
   --h2-color: rgb(var(--ctp-h2, var(--ctp-accent)));
+  line-height: var(--h2-line-height);
+}
+
+::selection {
+  padding-bottom: 4px;
 }
 
 h3,
@@ -51,6 +62,7 @@ h3,
 .HyperMD-header-3,
 .HyperMD-list-line .cm-header-3 {
   --h3-color: rgb(var(--ctp-h3, var(--ctp-accent)));
+  line-height: var(--h3-line-height);
 }
 
 h4,
@@ -58,6 +70,7 @@ h4,
 .HyperMD-header-4,
 .HyperMD-list-line .cm-header-4 {
   --h4-color: rgb(var(--ctp-h4, var(--ctp-accent)));
+  line-height: var(--h4-line-height);
 }
 
 h5,
@@ -65,6 +78,7 @@ h5,
 .HyperMD-header-5,
 .HyperMD-list-line .cm-header-5 {
   --h5-color: rgb(var(--ctp-h5, var(--ctp-accent)));
+  line-height: var(--line-height-normal);
 }
 
 h6,
@@ -72,6 +86,7 @@ h6,
 .HyperMD-header-6,
 .HyperMD-list-line .cm-header-6 {
   --h6-color: rgb(var(--ctp-h6, var(--ctp-accent)));
+  line-height: var(--line-height-normal);
 }
 
 ::selection {
