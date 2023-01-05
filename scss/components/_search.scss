@@ -1,7 +1,23 @@
-.search-result-file-match:hover
-  .search-result-file-match-destination-file:hover {
+.search-result-file-matches {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
+  border: 1px solid rgb(var(--ctp-surface1));
+}
+
+@media (hover: hover) {
+  .search-result-file-match:hover .search-result-file-match-destination-file {
+    background-color: var(--background-secondary);
+  }
+  .search-result-file-match:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  };
+
+  .search-result-file-match:hover .search-result-file-match-destination-file:hover {
+    background-color: var(--interactive-hover);
+    box-shadow: var(--input-shadow-hover);
+    color: var(--text-normal);
+  }
 }
 
 .search-suggest-item.is-selected {
@@ -41,14 +57,10 @@
 .search-result-file-match {
   transition: var(--transition-hover-bg);
 }
-.search-result-file-match:hover {
-  background-color: rgb(var(--ctp-rosewater));
-  color: var(--text-on-accent);
-}
 
 .search-result-file-match:hover .search-result-file-matched-text {
-  color: var(--text-normal);
   background-color: var(--color-base-30);
+  color: var(--text-normal);
 }
 
 .search-result-file-matched-text {
@@ -58,6 +70,7 @@
 .is-flashing,
 .cm-s-obsidian .is-flashing .cm-url {
   --tag-color: var(--text-on-accent);
+
   color: var(--text-on-accent);
 }
 
@@ -74,6 +87,7 @@
   --background-modifier-border-hover: rgb(var(--ctp-accent));
 }
 
-.community-item.is-selected, .community-item.is-selected:hover {
+.community-item.is-selected,
+.community-item.is-selected:hover {
   --interactive-accent: rgb(var(--ctp-mauve));
 }
