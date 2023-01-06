@@ -6,7 +6,7 @@
   --divider-color-hover: rgb(var(--ctp-blue));
   --hr-color: rgb(var(--ctp-blue));
   --indentation-guide-color: rgb(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(var(--ctp-sapphire) 0.7);
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire) / 70%);
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
@@ -152,7 +152,7 @@
 
   select:focus,
   .dropdown:focus {
-    box-shadow: 0 0 0 2px rgb(var(--ctp-blue) 0.7);
+    box-shadow: 0 0 0 2px rgb(var(--ctp-blue) / 70%);
   }
 
   textarea:active,
@@ -173,7 +173,7 @@
   input[type="email"]:focus-visible,
   input[type="password"]:focus-visible,
   input[type="number"]:focus-visible {
-    box-shadow: 0 0 0 2px rgb(var(--ctp-blue) 0.7);
+    box-shadow: 0 0 0 2px rgb(var(--ctp-blue) / 70%);
   }
 
   /*
@@ -194,11 +194,11 @@
   input[type="checkbox"]:checked {
     border-color: transparent;
     background-color: rgb(var(--ctp-green));
-    box-shadow: 0 0 0 1px rgb(var(--ctp-green) 0.4);
+    box-shadow: 0 0 0 1px rgb(var(--ctp-green) / 40%);
 
     &:hover {
       background-color: rgb(var(--ctp-maroon));
-      box-shadow: 0 0 0 1px rgb(var(--ctp-maroon) 0.4);
+      box-shadow: 0 0 0 1px rgb(var(--ctp-maroon) / 40%);
     }
   }
 
@@ -235,7 +235,7 @@
 
     & input[type="color"]::-webkit-color-swatch:hover {
       box-shadow:
-        inset 0 0 0 1px rgb(var(--mono-rgb-100) 0.25),
+        inset 0 0 0 1px rgb(var(--mono-rgb-100) / 25%),
         0 0 0 2px rgb(var(--ctp-surface1));
     }
   }
