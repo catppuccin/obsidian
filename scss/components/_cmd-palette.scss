@@ -34,3 +34,7 @@
     color: var(--text-normal);
   }
 }
+
+.suggestion-item.mod-complex.is-selected .suggestion-note {
+  color: var(--text-on-accent);
+}
