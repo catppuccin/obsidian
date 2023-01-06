@@ -531,11 +531,10 @@ body {
   --tag-decoration-hover: underline;
   --tag-background: transparent;
   --tag-background-hover: 0;
-  --tag-border-color: hsl(var(--interactive-accent-hsl) 0.1);
+  --tag-border-color: hsl(var(--interactive-accent-hsl) / 10%);
   --tag-border-color-hover:
     hsl(
-      var(--interactive-accent-hsl)
-      0.15
+      var(--interactive-accent-hsl) / 15%
     );
   --tag-border-width: 0;
   --tag-padding-x: 0;
@@ -591,11 +590,11 @@ body {
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgb(var(--mono-rgb-100) 0.075);
+  --background-modifier-hover: rgb(var(--mono-rgb-100) / 7.5%);
   --background-modifier-active-hover:
     hsl(
       var(--interactive-accent-hsl)
-      0.15
+      / 15%
     );
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
@@ -617,7 +616,7 @@ body {
   --text-on-accent: var(--text-normal);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: hsla(var(--color-accent-hsl) 0.2);
+  --text-selection: hsla(var(--color-accent-hsl) / 2%);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);
