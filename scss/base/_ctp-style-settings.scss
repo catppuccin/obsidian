@@ -863,21 +863,21 @@ settings:
 .theme-light,
 .theme-dark {
   --color-red-rgb: var(--ctp-red);
-  --color-red: --hex-red;
+  --color-red: var(--hex-red);
   --color-orange-rgb: var(--ctp-peach);
-  --color-orange: --hex-peach;
+  --color-orange: var(--hex-peach);
   --color-yellow-rgb: var(--ctp-yellow);
-  --color-yellow: --hex-yellow;
+  --color-yellow: var(--hex-yellow);
   --color-green-rgb: var(--ctp-green);
-  --color-green: --hex-green;
-  --color-cyan-rgb: var(ctp-sapphire);
-  --color-cyan: --hex-sapphire;
+  --color-green: var(--hex-green);
+  --color-cyan-rgb: var(--ctp-sapphire);
+  --color-cyan: var(--hex-sapphire);
   --color-blue-rgb: var(--ctp-blue);
-  --color-blue: --hex-blue;
+  --color-blue: var(--hex-blue);
   --color-purple-rgb: var(--ctp-mauve);
-  --color-purple: --hex-mauve;
+  --color-purple: var(--hex-mauve);
   --color-pink-rgb: var(--ctp-pink);
-  --color-pink: --hex-pink;
+  --color-pink: var(--hex-pink);
 }
 
 /* ------------------Selecting Accents------------------- */
