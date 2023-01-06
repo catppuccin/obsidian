@@ -38,8 +38,11 @@
     text-decoration-line: none;
   }
 }
+
+.cm-s-obsidian .cm-formatting-link-string.cm-url,
+.cm-s-obsidian .cm-formatting-link.cm-link,
 .cm-s-obsidian .cm-formatting-link.cm-hmd-barelink,
 .cm-s-obsidian .cm-formatting-link.cm-formatting-link-start,
 .cm-s-obsidian .cm-formatting-link.cm-formatting-link-end {
-  color: rgb(var(--ctp-mauve));
+  color: rgb(var(--ctp-accent));
 }
