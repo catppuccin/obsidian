@@ -1,7 +1,7 @@
 .search-result-file-matches {
   border: 1px solid rgb(var(--ctp-surface1));
-  background-color: rgb(var(--ctp-accent));
-  color: var(--text-on-accent);
+  background-color: rgb(var(--background-secondary));
+  color: var(--text-normal);
 }
 
 @media (hover: hover) {
@@ -10,7 +10,7 @@
   }
 
   .search-result-file-match:hover {
-    background-color: rgb(var(--ctp-accent));
+    background-color: rgb(var(--ctp-accent) / 80%);
     color: var(--text-on-accent);
   }
 
@@ -60,11 +60,12 @@
 }
 
 .search-result-file-match:hover .search-result-file-matched-text {
-  background-color: var(--color-base-30);
-  color: var(--text-normal);
+  background-color: rgb(var(--ctp-rosewater) / 60%);
+  color: var(--text-on-accent);
 }
 
 .search-result-file-matched-text {
+  background-color: rgb(var(--ctp-rosewater));
   color: var(--text-on-accent);
 }
 
@@ -72,7 +73,7 @@
 .cm-s-obsidian .is-flashing .cm-url {
   --tag-color: var(--text-on-accent);
 
-  color: var(--text-on-accent);
+  background-color: rgb(var(--ctp-rosewater));
 }
 
 .cm-s-obsidian .is-flashing .cm-url .cm-underline:hover,
