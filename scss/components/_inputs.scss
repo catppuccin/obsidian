@@ -1,6 +1,6 @@
 select:focus,
 .dropdown:focus {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent) 0.7);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-accent) / 70%);
 }
 
 textarea:active,
@@ -21,7 +21,7 @@ input[type="search"]:focus-visible,
 input[type="email"]:focus-visible,
 input[type="password"]:focus-visible,
 input[type="number"]:focus-visible {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent) 0.7);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-accent) / 70%);
 }
 
 .checkbox-container {
@@ -40,7 +40,7 @@ input[type="number"]:focus-visible {
   }
 }
 
-//Recolors copy button so it isn't broken on hover
+// Recolors copy button so it isn't broken on hover
 .markdown-rendered button.copy-code-button {
   background-color: rgb(var(--ctp-crust));
 }
