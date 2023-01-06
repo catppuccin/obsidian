@@ -1,0 +1,32 @@
+{
+  "name": "obsidian",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\"> \t<img src=\"https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png\" width=\"100\" alt=\"Logo\"/><br/> \t<img src=\"https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png\" height=\"30\" width=\"0px\"/> \tCatppuccin for <a href=\"https://obsidian.md\">Obsidian</a> \t<img src=\"https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png\" height=\"30\" width=\"0px\"/> </h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catppuccin/obsidian.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catppuccin/obsidian/issues"
+  },
+  "homepage": "https://github.com/catppuccin/obsidian#readme",
+  "volta": {
+    "node": "18.12.1",
+    "npm": "9.2.0"
+  },
+  "dependencies": {
+    "stylelint": "^14.16.1",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
+    "stylelint-order": "^6.0.0"
+  }
+}

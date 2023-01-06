@@ -1,0 +1,8 @@
+extends:
+- stylelint-config-standard
+- stylelint-config-standard-scss
+- stylelint-config-idiomatic-order
+rules:
+  property-no-vendor-prefix:
+  ignoreProperties:
+    - "-webkit-mask-image"
