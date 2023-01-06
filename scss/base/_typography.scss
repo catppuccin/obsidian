@@ -134,9 +134,9 @@ h6,
   em {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-green) 0.4),
-        rgb(var(--ctp-green) 0.6),
-        rgb(var(--ctp-green) 0.4),
+        rgb(var(--ctp-green) / 40%),
+        rgb(var(--ctp-green) / 60%),
+        rgb(var(--ctp-green) / 60%),
       );
     color: var(--text-on-accent);
     text-align: left;
@@ -146,9 +146,9 @@ h6,
   strong {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-sapphire) 0.4),
-        rgb(var(--ctp-sapphire) 0.6),
-        rgb(var(--ctp-sapphire) 0.4)
+        rgb(var(--ctp-sapphire) / 40%),
+        rgb(var(--ctp-sapphire) / 60%),
+        rgb(var(--ctp-sapphire) / 40%)
       );
     color: var(--text-on-accent);
   }
@@ -157,9 +157,9 @@ h6,
   del {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-red) 0.4),
-        rgb(var(--ctp-red) 0.6),
-        rgb(var(--ctp-red) 0.4)
+        rgb(var(--ctp-red) / 40%),
+        rgb(var(--ctp-red) / 60%),
+        rgb(var(--ctp-red) / 40%)
       );
     color: var(--text-on-accent);
   }
@@ -167,4 +167,8 @@ h6,
 
 ::selection {
   color: var(--text-on-accent);
+}
+
+.cm-s-obsidian span.cm-error {
+  color: rgb(var(--ctp-red));
 }
