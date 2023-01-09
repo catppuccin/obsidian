@@ -4,7 +4,7 @@ extends:
 - stylelint-config-idiomatic-order
 rules:
   alpha-value-notation: percentage
-  color-function-notation: modern
+  color-function-notation: legacy
   property-no-vendor-prefix:
   - true
   - ignoreProperties:

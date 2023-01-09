@@ -2600,7 +2600,7 @@ body {
   --text-accent: hsl(115deg 54% 76%);
   --text-accent-hover: hsl(115deg 54% 76%);
   --text-normal: hsl(226deg 64% 88%);
-  --text-normal-transparent: hsl(220deg 38% 89% / 60%);
+  --text-normal-transparent: hsl(220deg 38% 89% , 60%);
   --text-muted: hsl(227deg 35% 80%);
   --text-muted-rgb: 166, 173, 201;
   --text-faint: hsl(228deg 24% 72%);
@@ -2616,9 +2616,9 @@ body {
   --interactive-accent-rgb: 166, 227, 161;
   --interactive-accent-hover: hsl(115deg 54% 76%);
   --interactive-success: hsl(115deg 54% 76%);
-  --scrollbar-active-thumb-bg: rgb(255 255 255 / 20%);
-  --scrollbar-bg: rgb(255 255 255 / 5%);
-  --scrollbar-thumb-bg: rgb(255 255 255 / 10%);
+  --scrollbar-active-thumb-bg: rgb(255 255 255 , 20%);
+  --scrollbar-bg: rgb(255 255 255 , 5%);
+  --scrollbar-thumb-bg: rgb(255 255 255 , 10%);
   --code-blocks: hsl(10deg 56% 91%);
   --border: hsl(249deg 18% 22%);
   --border-inset: hsl(254deg 12% 36%);

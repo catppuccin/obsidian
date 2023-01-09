@@ -1,6 +1,6 @@
 select:focus,
 .dropdown:focus {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent) / 70%);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
 }
 
 textarea:active,
@@ -21,7 +21,7 @@ input[type="search"]:focus-visible,
 input[type="email"]:focus-visible,
 input[type="password"]:focus-visible,
 input[type="number"]:focus-visible {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent) / 70%);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
 }
 
 .checkbox-container {

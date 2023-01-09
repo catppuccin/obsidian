@@ -1,8 +1,8 @@
 .callout {
   --callout-icon: lucide-pencil;
 
-  border-color: rgb(var(--callout-color) / 60%);
-  background-color: rgb(var(--callout-color) / 10%);
+  border-color: rgb(var(--callout-color), 60%);
+  background-color: rgb(var(--callout-color), 10%);
 }
 
 .callout[data-callout="abstract"],

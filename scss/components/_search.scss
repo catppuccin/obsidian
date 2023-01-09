@@ -17,7 +17,7 @@
   }
 
   .search-result-file-match:hover {
-    background-color: rgb(var(--ctp-accent) / 80%);
+    background-color: rgb(var(--ctp-accent), 80%);
     color: var(--text-on-accent);
   }
 
@@ -67,7 +67,7 @@
 }
 
 .search-result-file-match:hover .search-result-file-matched-text {
-  background-color: rgb(var(--ctp-rosewater) / 60%);
+  background-color: rgb(var(--ctp-rosewater), 60%);
   color: var(--text-on-accent);
 }
 
