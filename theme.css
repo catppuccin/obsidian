@@ -59,7 +59,7 @@ body {
   --callout-tip: var(--color-cyan-rgb);
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
-  --callout-quote: 158 158 158;
+  --callout-quote: 158, 158, 158;
   /* Canvas */
   --canvas-dot-pattern: var(--color-base-30);
   --canvas-color-1: var(--color-red-rgb);
@@ -108,7 +108,7 @@ body {
   --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
   /* Dragging */
-  --drag-ghost-background: rgb(0 0 0 / 85%);
+  --drag-ghost-background: rgb(0, 0, 0, 85%);
   --drag-ghost-text-color: var(--text-normal);
   /* Embeds */
   --embed-background: inherit;
@@ -138,7 +138,7 @@ body {
   /* UI font sizes */
   --font-ui-smaller: 12px;
   --font-ui-small: 13px;
-  --font-ui-medium: 15px;
+  --font-ui-medium: 16px;
   --font-ui-large: 20px;
   /* Font weights */
   --font-thin: 100;
@@ -235,11 +235,7 @@ body {
   --clickable-icon-radius: var(--radius-s);
   /* Indentation guide */
   --indentation-guide-color: rgba(var(--ctp-surface1));
-  --indentation-guide-color-active:
-    rgb(
-      var(--ctp-accent)
-      0.7
-    );
+  --indentation-guide-color-active: rgb(var(--ctp-accent), 70%);
   --indentation-guide-width: 2px;
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -304,15 +300,8 @@ body {
   --nav-item-color-selected: var(--text-normal);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active:
-    var(
-      --background-modifier-hover
-    );
-  --nav-item-background-selected:
-    hsl(
-      var(--color-accent-hsl)
-      0.2
-    );
+  --nav-item-background-active: var(--background-modifier-hover);
+  --nav-item-background-selected: hsl(var(--color-accent-hsl), 20%);
   --nav-item-padding: var(--size-4-1) var(--size-4-2);
   --nav-item-weight: inherit;
   --nav-item-weight-hover: inherit;
@@ -367,9 +356,9 @@ body {
     var(--size-4-2) var(--size-4-1)
     var(--size-4-3);
   /* Scrollbars */
-  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100) 0.2);
-  --scrollbar-bg: rgb(var(--mono-rgb-100) 0.05);
-  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100) 0.1);
+  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100), 20%);
+  --scrollbar-bg: rgb(var(--mono-rgb-100), 5%);
+  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100), 10%);
   /* Search */
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
@@ -425,7 +414,7 @@ body {
   --swatch-width: 24px;
   --swatch-shadow:
     inset 0 0 0 1px
-    rgb(var(--mono-rgb-100) 0.15);
+    rgb(var(--mono-rgb-100), 15%);
   /* Tabs */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
@@ -450,7 +439,7 @@ body {
   --tab-stacked-text-align: left;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-stacked-shadow: -8px 0 8px 0 rgb(0 0 0 / 5%);
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%);
   /* Tables */
   --table-background: transparent;
   --table-border-width: 1px;
@@ -481,10 +470,11 @@ body {
   --tag-decoration-hover: underline;
   --tag-background: transparent;
   --tag-background-hover: 0;
-  --tag-border-color: hsl(var(--interactive-accent-hsl) / 10%);
+  --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
   --tag-border-color-hover:
     hsl(
-      var(--interactive-accent-hsl) / 15%
+      var(--interactive-accent-hsl),
+      15%
     );
   --tag-border-width: 0;
   --tag-padding-x: 0;
@@ -519,11 +509,7 @@ body {
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--text-normal);
   /* Workspace */
-  --workspace-background-translucent:
-    rgb(
-      var(--mono-rgb-0)
-      0.6
-    );
+  --workspace-background-translucent: rgb(var(--mono-rgb-0), 60%);
   /* Color mappings ------------------------ */
   /* Accent HSL values */
   --accent-h: 254;
@@ -533,12 +519,8 @@ body {
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --background-modifier-hover: rgb(var(--mono-rgb-100) / 7.5%);
-  --background-modifier-active-hover:
-    hsl(
-      var(--interactive-accent-hsl)
-      / 15%
-    );
+  --background-modifier-hover: rgb(var(--mono-rgb-100), 7.5%);
+  --background-modifier-active-hover: hsl(var(--interactive-accent-hsl), 15%);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
@@ -547,7 +529,7 @@ body {
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-green);
-  --background-modifier-message: rgb(0 0 0 / 90%);
+  --background-modifier-message: rgb(0, 0, 0, 90%);
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);
   /* Text */
@@ -557,7 +539,7 @@ body {
   --text-on-accent: var(--text-normal);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: hsla(var(--color-accent-hsl) / 2%);
+  --text-selection: hsla(var(--color-accent-hsl), 2%);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);
@@ -1265,32 +1247,32 @@ settings:
 */
 .theme-light,
 .theme-light.ctp-latte {
-  --ctp-rosewater: 222 149 132;
-  --ctp-flamingo: 221 120 120;
-  --ctp-pink: 236 131 208;
-  --ctp-mauve: 136 57 239;
-  --ctp-red: 210 15 57;
-  --ctp-maroon: 230 69 83;
-  --ctp-peach: 254 100 11;
-  --ctp-yellow: 228 147 32;
-  --ctp-green: 64 160 43;
-  --ctp-teal: 23 146 153;
-  --ctp-sky: 4 165 229;
-  --ctp-sapphire: 32 159 181;
-  --ctp-blue: 42 110 245;
-  --ctp-lavender: 114 135 253;
-  --ctp-text: 76 79 105;
-  --ctp-subtext1: 92 95 119;
-  --ctp-subtext0: 108 111 133;
-  --ctp-overlay2: 124 127 147;
-  --ctp-overlay1: 140 143 161;
-  --ctp-overlay0: 156 160 176;
-  --ctp-surface2: 172 176 190;
-  --ctp-surface1: 188 192 204;
-  --ctp-surface0: 204 208 218;
-  --ctp-base: 239 241 245;
-  --ctp-mantle: 230 233 239;
-  --ctp-crust: 220 224 232;
+  --ctp-rosewater: 222, 149, 132;
+  --ctp-flamingo: 221, 120, 120;
+  --ctp-pink: 236, 131, 208;
+  --ctp-mauve: 136, 57, 239;
+  --ctp-red: 210, 15, 57;
+  --ctp-maroon: 230, 69, 83;
+  --ctp-peach: 254, 100, 11;
+  --ctp-yellow: 228, 147, 32;
+  --ctp-green: 64, 160, 43;
+  --ctp-teal: 23, 146, 153;
+  --ctp-sky: 4, 165, 229;
+  --ctp-sapphire: 32, 159, 181;
+  --ctp-blue: 42, 110, 245;
+  --ctp-lavender: 114, 135, 253;
+  --ctp-text: 76, 79, 105;
+  --ctp-subtext1: 92, 95, 119;
+  --ctp-subtext0: 108, 111, 133;
+  --ctp-overlay2: 124, 127, 147;
+  --ctp-overlay1: 140, 143, 161;
+  --ctp-overlay0: 156, 160, 176;
+  --ctp-surface2: 172, 176, 190;
+  --ctp-surface1: 188, 192, 204;
+  --ctp-surface0: 204, 208, 218;
+  --ctp-base: 239, 241, 245;
+  --ctp-mantle: 230, 233, 239;
+  --ctp-crust: 220, 224, 232;
   --hex-pink: #ea76cb;
   --hex-mauve: #8839ef;
   --hex-red: #d20f39;
@@ -1305,32 +1287,32 @@ settings:
 }
 
 .theme-dark.ctp-frappe {
-  --ctp-rosewater: 242 213 207;
-  --ctp-flamingo: 238 190 190;
-  --ctp-pink: 244 184 228;
-  --ctp-mauve: 202 158 230;
-  --ctp-red: 231 130 132;
-  --ctp-maroon: 234 153 156;
-  --ctp-peach: 239 159 118;
-  --ctp-yellow: 229 200 144;
-  --ctp-green: 166 209 137;
-  --ctp-teal: 129 200 190;
-  --ctp-sky: 153 209 219;
-  --ctp-sapphire: 133 193 220;
-  --ctp-blue: 140 170 238;
-  --ctp-lavender: 186 187 241;
-  --ctp-text: 198 206 239;
-  --ctp-subtext1: 181 189 220;
-  --ctp-subtext0: 165 172 201;
-  --ctp-overlay2: 148 155 183;
-  --ctp-overlay1: 131 138 164;
-  --ctp-overlay0: 115 120 145;
-  --ctp-surface2: 98 103 126;
-  --ctp-surface1: 81 86 108;
-  --ctp-surface0: 65 69 89;
-  --ctp-base: 48 52 70;
-  --ctp-mantle: 41 44 60;
-  --ctp-crust: 35 38 52;
+  --ctp-rosewater: 242, 213, 207;
+  --ctp-flamingo: 238, 190, 190;
+  --ctp-pink: 244, 184, 228;
+  --ctp-mauve: 202, 158, 230;
+  --ctp-red: 231, 130, 132;
+  --ctp-maroon: 234, 153, 156;
+  --ctp-peach: 239, 159, 118;
+  --ctp-yellow: 229, 200, 144;
+  --ctp-green: 166, 209, 137;
+  --ctp-teal: 129, 200, 190;
+  --ctp-sky: 153, 209, 219;
+  --ctp-sapphire: 133, 193, 220;
+  --ctp-blue: 140, 170, 238;
+  --ctp-lavender: 186, 187, 241;
+  --ctp-text: 198, 206, 239;
+  --ctp-subtext1: 181, 189, 220;
+  --ctp-subtext0: 165, 172, 201;
+  --ctp-overlay2: 148, 155, 183;
+  --ctp-overlay1: 131, 138, 164;
+  --ctp-overlay0: 115, 120, 145;
+  --ctp-surface2: 98, 103, 126;
+  --ctp-surface1: 81, 86, 108;
+  --ctp-surface0: 65, 69, 89;
+  --ctp-base: 48, 52, 70;
+  --ctp-mantle: 41, 44, 60;
+  --ctp-crust: 35, 38, 52;
   --hex-pink: #f4b8e4;
   --hex-mauve: #ca9ee6;
   --hex-red: #e78284;
@@ -1345,32 +1327,32 @@ settings:
 }
 
 .theme-dark.ctp-macchiato {
-  --ctp-rosewater: 244 219 214;
-  --ctp-flamingo: 240 198 198;
-  --ctp-pink: 245 189 230;
-  --ctp-mauve: 198 160 246;
-  --ctp-red: 237 135 150;
-  --ctp-maroon: 238 153 160;
-  --ctp-peach: 245 169 127;
-  --ctp-yellow: 238 212 159;
-  --ctp-green: 166 218 149;
-  --ctp-teal: 139 213 202;
-  --ctp-sky: 145 215 227;
-  --ctp-sapphire: 125 196 228;
-  --ctp-blue: 138 173 244;
-  --ctp-lavender: 183 189 248;
-  --ctp-text: 197 207 245;
-  --ctp-subtext1: 179 188 224;
-  --ctp-subtext0: 161 170 203;
-  --ctp-overlay2: 143 151 183;
-  --ctp-overlay1: 125 132 162;
-  --ctp-overlay0: 108 114 141;
-  --ctp-surface2: 90 95 120;
-  --ctp-surface1: 72 76 100;
-  --ctp-surface0: 54 58 79;
-  --ctp-base: 36 39 58;
-  --ctp-mantle: 30 32 48;
-  --ctp-crust: 24 25 38;
+  --ctp-rosewater: 244, 219, 214;
+  --ctp-flamingo: 240, 198, 198;
+  --ctp-pink: 245, 189, 230;
+  --ctp-mauve: 198, 160, 246;
+  --ctp-red: 237, 135, 150;
+  --ctp-maroon: 238, 153, 160;
+  --ctp-peach: 245, 169, 127;
+  --ctp-yellow: 238, 212, 159;
+  --ctp-green: 166, 218, 149;
+  --ctp-teal: 139, 213, 202;
+  --ctp-sky: 145, 215, 227;
+  --ctp-sapphire: 125, 196, 228;
+  --ctp-blue: 138, 173, 244;
+  --ctp-lavender: 183, 189, 248;
+  --ctp-text: 197, 207, 245;
+  --ctp-subtext1: 179, 188, 224;
+  --ctp-subtext0: 161, 170, 203;
+  --ctp-overlay2: 143, 151, 183;
+  --ctp-overlay1: 125, 132, 162;
+  --ctp-overlay0: 108, 114, 141;
+  --ctp-surface2: 90, 95, 120;
+  --ctp-surface1: 72, 76, 100;
+  --ctp-surface0: 54, 58, 79;
+  --ctp-base: 36, 39, 58;
+  --ctp-mantle: 30, 32, 48;
+  --ctp-crust: 24, 25, 38;
   --hex-pink: #f5bde6;
   --hex-mauve: #c6a0f6;
   --hex-red: #ed8796;
@@ -1386,32 +1368,32 @@ settings:
 
 .theme-dark,
 .theme-dark.ctp-mocha {
-  --ctp-rosewater: 245 224 220;
-  --ctp-flamingo: 242 205 205;
-  --ctp-pink: 245 194 231;
-  --ctp-mauve: 203 166 247;
-  --ctp-red: 243 139 168;
-  --ctp-maroon: 235 160 172;
-  --ctp-peach: 250 179 135;
-  --ctp-yellow: 249 226 175;
-  --ctp-green: 166 227 161;
-  --ctp-teal: 148 226 213;
-  --ctp-sky: 137 220 235;
-  --ctp-sapphire: 116 199 236;
-  --ctp-blue: 135 176 249;
-  --ctp-lavender: 180 190 254;
-  --ctp-text: 198 208 245;
-  --ctp-subtext1: 179 188 223;
-  --ctp-subtext0: 161 168 201;
-  --ctp-overlay2: 142 149 179;
-  --ctp-overlay1: 123 129 157;
-  --ctp-overlay0: 105 109 134;
-  --ctp-surface2: 86 89 112;
-  --ctp-surface1: 67 70 90;
-  --ctp-surface0: 49 50 68;
-  --ctp-base: 30 30 46;
-  --ctp-mantle: 24 24 37;
-  --ctp-crust: 17 17 27;
+  --ctp-rosewater: 245, 224, 220;
+  --ctp-flamingo: 242, 205, 205;
+  --ctp-pink: 245, 194, 231;
+  --ctp-mauve: 203, 166, 247;
+  --ctp-red: 243, 139, 168;
+  --ctp-maroon: 235, 160, 172;
+  --ctp-peach: 250, 179, 135;
+  --ctp-yellow: 249, 226, 175;
+  --ctp-green: 166, 227, 161;
+  --ctp-teal: 148, 226, 213;
+  --ctp-sky: 137, 220, 235;
+  --ctp-sapphire: 116, 199, 236;
+  --ctp-blue: 135, 176, 249;
+  --ctp-lavender: 180, 190, 254;
+  --ctp-text: 198, 208, 245;
+  --ctp-subtext1: 179, 188, 223;
+  --ctp-subtext0: 161, 168, 201;
+  --ctp-overlay2: 142, 149, 179;
+  --ctp-overlay1: 123, 129, 157;
+  --ctp-overlay0: 105, 109, 134;
+  --ctp-surface2: 86, 89, 112;
+  --ctp-surface1: 67, 70, 90;
+  --ctp-surface0: 49, 50, 68;
+  --ctp-base: 30, 30, 46;
+  --ctp-mantle: 24, 24, 37;
+  --ctp-crust: 17, 17, 27;
   --hex-pink: #f5c2e7;
   --hex-mauve: #cba6f7;
   --hex-red: #f38ba8;
@@ -1515,21 +1497,18 @@ settings:
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: rgb(var(--ctp-crust));
   --background-modifier-border: rgb(var(--ctp-surface0));
-  --background-modifier-form-field: rgb(var(--ctp-crust) / 30%);
-  --background-modifier-form-field-highlighted:
-    rgb(
-      var(--ctp-crust) / 22%
-    );
-  --background-modifier-box-shadow: rgb(var(--ctp-crust) / 30%);
-  --background-modifier-success: rgb(var(--ctp-green) / 90%);
+  --background-modifier-form-field: rgb(var(--ctp-crust), 30%);
+  --background-modifier-form-field-highlighted: rgb(var(--ctp-crust), 22%);
+  --background-modifier-box-shadow: rgb(var(--ctp-crust), 30%);
+  --background-modifier-success: rgb(var(--ctp-green), 90%);
   --background-modifier-success-rgb: var(--ctp-green);
-  --background-modifier-error: rgb(var(--ctp-red) / 90%);
+  --background-modifier-error: rgb(var(--ctp-red), 90%);
   --background-modifier-error-rgb: var(--ctp-red);
-  --background-modifier-error-hover: rgb(var(--ctp-red) / 100%);
-  --background-modifier-cover: rgb(var(--ctp-crust) / 90%);
+  --background-modifier-error-hover: rgb(var(--ctp-red), 100%);
+  --background-modifier-cover: rgb(var(--ctp-crust), 90%);
   --color-accent: rgb(var(--ctp-accent));
   --color-accent-1: rgb(var(--ctp-accent));
-  --color-accent-2: rgb(var(--ctp-accent) / 90%);
+  --color-accent-2: rgb(var(--ctp-accent), 90%);
   --text-accent: rgb(var(--ctp-accent));
   --text-accent-hover: rgb(var(--ctp-accent));
   --text-normal: rgb(var(--ctp-text));
@@ -1537,10 +1516,10 @@ settings:
   --text-muted-rgb: var(--ctp-subtext0);
   --text-faint: rgb(var(--ctp-surface1));
   --text-error: rgb(var(--ctp-red));
-  --text-error-hover: rgb(var(--ctp-red) / 80%);
-  --text-highlight-bg: rgb(var(--ctp-rosewater) / 100%);
-  --text-highlight-bg-active: rgb(var(--ctp-rosewater) / 100%);
-  --text-selection: rgb(var(--ctp-rosewater) / 100%);
+  --text-error-hover: rgb(var(--ctp-red), 80%);
+  --text-highlight-bg: rgb(var(--ctp-rosewater), 100%);
+  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%);
+  --text-selection: rgb(var(--ctp-rosewater), 100%);
   --text-on-accent: rgb(var(--ctp-base));
   --interactive-normal: rgb(var(--ctp-surface0));
   --interactive-hover: rgb(var(--ctp-surface1));
@@ -1548,9 +1527,9 @@ settings:
   --interactive-accent-rgb: var(--ctp-accent);
   --interactive-accent-hover: rgb(var(--ctp-accent));
   --interactive-success: rgb(var(--ctp-green));
-  --scrollbar-active-thumb-bg: rgb(var(--ctp-text) / 20%);
-  --scrollbar-bg: rgb(var(--ctp-text) / 5%);
-  --scrollbar-thumb-bg: rgb(var(--ctp-text) / 10%);
+  --scrollbar-active-thumb-bg: rgb(var(--ctp-text), 20%);
+  --scrollbar-bg: rgb(var(--ctp-text), 5%);
+  --scrollbar-thumb-bg: rgb(var(--ctp-text), 10%);
   --mono-rgb-0: var(--ctp-crust);
   --mono-rgb-100: var(--ctp-text);
   --color-red-rgb: var(--ctp-red);
@@ -1723,7 +1702,7 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight em,
 .cm-s-obsidian span.cm-highlight.cm-em,
 .cm-s-obsidian span.cm-highlight em {
-  background-image: linear-gradient(rgb(var(--ctp-green)/40%), rgb(var(--ctp-green)/60%), rgb(var(--ctp-green)/60%));
+  background-image: linear-gradient(rgb(var(--ctp-green), 40%), rgb(var(--ctp-green), 60%), rgb(var(--ctp-green), 60%));
   color: var(--text-on-accent);
   text-align: left;
 }
@@ -1733,7 +1712,7 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight strong,
 .cm-s-obsidian span.cm-highlight.cm-strong,
 .cm-s-obsidian span.cm-highlight strong {
-  background-image: linear-gradient(rgb(var(--ctp-sapphire)/40%), rgb(var(--ctp-sapphire)/60%), rgb(var(--ctp-sapphire)/40%));
+  background-image: linear-gradient(rgb(var(--ctp-sapphire), 40%), rgb(var(--ctp-sapphire), 60%), rgb(var(--ctp-sapphire), 40%));
   color: var(--text-on-accent);
 }
 .markdown-rendered mark.cm-strikethrough,
@@ -1742,7 +1721,7 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight del,
 .cm-s-obsidian span.cm-highlight.cm-strikethrough,
 .cm-s-obsidian span.cm-highlight del {
-  background-image: linear-gradient(rgb(var(--ctp-red)/40%), rgb(var(--ctp-red)/60%), rgb(var(--ctp-red)/40%));
+  background-image: linear-gradient(rgb(var(--ctp-red), 40%), rgb(var(--ctp-red), 60%), rgb(var(--ctp-red), 40%));
   color: var(--text-on-accent);
 }
 
@@ -1765,8 +1744,8 @@ body {
 
 .callout {
   --callout-icon: lucide-pencil;
-  border-color: rgb(var(--callout-color)/60%);
-  background-color: rgb(var(--callout-color)/10%);
+  border-color: rgb(var(--callout-color), 60%);
+  background-color: rgb(var(--callout-color), 10%);
 }
 
 .callout[data-callout=abstract],
@@ -1926,7 +1905,7 @@ body {
 }
 
 .workspace-tab-header-inner-close-button:hover {
-  background-color: rgb(var(--ctp-red)/50%);
+  background-color: rgb(var(--ctp-red), 50%);
 }
 
 .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
@@ -2004,7 +1983,7 @@ body {
 
 select:focus,
 .dropdown:focus {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent)/70%);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
 }
 
 textarea:active,
@@ -2025,7 +2004,7 @@ input[type=search]:focus-visible,
 input[type=email]:focus-visible,
 input[type=password]:focus-visible,
 input[type=number]:focus-visible {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent)/70%);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
 }
 
 .checkbox-container {
@@ -2115,7 +2094,7 @@ input[type=number]:focus-visible {
     background-color: var(--background-secondary);
   }
   .search-result-file-match:hover {
-    background-color: rgb(var(--ctp-accent)/80%);
+    background-color: rgb(var(--ctp-accent), 80%);
     color: var(--text-on-accent);
   }
   .search-result-file-match:hover .search-result-file-match-destination-file:hover {
@@ -2160,7 +2139,7 @@ input[type=number]:focus-visible {
 }
 
 .search-result-file-match:hover .search-result-file-matched-text {
-  background-color: rgb(var(--ctp-rosewater)/60%);
+  background-color: rgb(var(--ctp-rosewater), 60%);
   color: var(--text-on-accent);
 }
 
@@ -2320,6 +2299,12 @@ input[type=number]:focus-visible {
   color: var(--text-muted);
 }
 
+/* Indicates item is selected/focused */
+.canvas-node.is-selected .canvas-node-label,
+.canvas-node.is-focused .canvas-node-label {
+  color: rgb(var(--canvas-color));
+}
+
 .canvas-controls button:hover {
   --interactive-hover: rgb(var(--ctp-accent));
   --text-normal: var(--text-on-accent);
@@ -2329,11 +2314,32 @@ input[type=number]:focus-visible {
   opacity: 40%;
 }
 
+.canvas-node-container {
+  border-radius: var(--radius-l);
+}
+
+/* Makes boxes a little less intense */
+.canvas-node.is-themed .canvas-node-container {
+  border-width: 1px;
+  border-color: rgb(var(--canvas-color), 60%);
+  box-shadow: none;
+}
+
+.canvas-node.is-selected.is-themed .canvas-node-container,
+.canvas-node.is-focused.is-themed .canvas-node-container {
+  border-width: 2px;
+  box-shadow: none;
+}
+
+.canvas-node.is-themed .canvas-node-content {
+  background-color: rgb(var(--canvas-color), 10%);
+}
+
 .mod-settings input.slider {
   --slider-track-background: rgb(var(--ctp-accent));
 }
 .mod-settings input[type=color]::-webkit-color-swatch:hover {
-  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100)/25%), 0 0 0 2px rgb(var(--ctp-surface1));
+  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 25%), 0 0 0 2px rgb(var(--ctp-surface1));
 }
 .mod-settings .checkbox-container {
   --background-modifier-border-hover: rgb(var(--ctp-red));
@@ -2402,7 +2408,7 @@ button.mod-cta:hover {
   --divider-color-hover: rgb(var(--ctp-blue));
   --hr-color: rgb(var(--ctp-blue));
   --indentation-guide-color: rgb(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(var(--ctp-sapphire) / 70%);
+  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 70%);
   --indentation-guide-width: 2px;
   --list-marker-color: rgb(var(--ctp-sapphire));
   --checklist-done-color: rgb(var(--ctp-green));
@@ -2644,7 +2650,7 @@ button.mod-cta:hover {
 .theme-light:not(.css-settings-manager) .dropdown:focus,
 .ctp-full-palette select:focus,
 .ctp-full-palette .dropdown:focus {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-blue)/70%);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-blue), 70%);
 }
 .theme-dark:not(.css-settings-manager) textarea:active,
 .theme-dark:not(.css-settings-manager) input[type=text]:active,
@@ -2700,7 +2706,7 @@ button.mod-cta:hover {
 .ctp-full-palette input[type=email]:focus-visible,
 .ctp-full-palette input[type=password]:focus-visible,
 .ctp-full-palette input[type=number]:focus-visible {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-blue)/70%);
+  box-shadow: 0 0 0 2px rgb(var(--ctp-blue), 70%);
 }
 .theme-dark:not(.css-settings-manager) input[type=checkbox]:not(:checked),
 .theme-light:not(.css-settings-manager) input[type=checkbox]:not(:checked),
@@ -2719,13 +2725,13 @@ button.mod-cta:hover {
 .ctp-full-palette input[type=checkbox]:checked {
   border-color: transparent;
   background-color: rgb(var(--ctp-green));
-  box-shadow: 0 0 0 1px rgb(var(--ctp-green)/40%);
+  box-shadow: 0 0 0 1px rgb(var(--ctp-green), 40%);
 }
 .theme-dark:not(.css-settings-manager) input[type=checkbox]:checked:hover,
 .theme-light:not(.css-settings-manager) input[type=checkbox]:checked:hover,
 .ctp-full-palette input[type=checkbox]:checked:hover {
   background-color: rgb(var(--ctp-maroon));
-  box-shadow: 0 0 0 1px rgb(var(--ctp-maroon)/40%);
+  box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 40%);
 }
 .theme-dark:not(.css-settings-manager) .horizontal-tab-nav-item:hover,
 .theme-dark:not(.css-settings-manager) .vertical-tab-nav-item:hover,
@@ -2766,7 +2772,7 @@ button.mod-cta:hover {
 .theme-dark:not(.css-settings-manager) .mod-settings input[type=color]::-webkit-color-swatch:hover,
 .theme-light:not(.css-settings-manager) .mod-settings input[type=color]::-webkit-color-swatch:hover,
 .ctp-full-palette .mod-settings input[type=color]::-webkit-color-swatch:hover {
-  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100)/25%), 0 0 0 2px rgb(var(--ctp-surface1));
+  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 25%), 0 0 0 2px rgb(var(--ctp-surface1));
 }
 .theme-dark:not(.css-settings-manager) .canvas-controls button:hover,
 .theme-light:not(.css-settings-manager) .canvas-controls button:hover,
