@@ -2,6 +2,13 @@
   color: var(--text-muted);
 }
 
+/* Indicates item is selected/focused */
+
+.canvas-node.is-selected .canvas-node-label,
+.canvas-node.is-focused .canvas-node-label {
+  color: rgb(var(--canvas-color));
+}
+
 .canvas-controls button:hover {
   --interactive-hover: rgb(var(--ctp-accent));
   --text-normal: var(--text-on-accent);
@@ -9,4 +16,26 @@
 
 .canvas-controls button:disabled:hover {
   opacity: 40%;
+}
+
+.canvas-node-container {
+  border-radius: var(--radius-l);
+}
+
+/* Makes boxes a little less intense */
+
+.canvas-node.is-themed .canvas-node-container {
+  border-width: 1px;
+  border-color: rgb(var(--canvas-color), 60%);
+  box-shadow: none;
+}
+
+.canvas-node.is-selected.is-themed .canvas-node-container,
+.canvas-node.is-focused.is-themed .canvas-node-container {
+  border-width: 2px;
+  box-shadow: none;
+}
+
+.canvas-node.is-themed .canvas-node-content {
+  background-color: rgb(var(--canvas-color), 10%);
 }
