@@ -5,6 +5,10 @@
   background-color: rgb(var(--callout-color), 10%);
 }
 
+.cm-s-obsidian span.cm-formatting-quote {
+  color: rgb(var(--ctp-accent));
+}
+
 .callout[data-callout="abstract"],
 .callout[data-callout="summary"],
 .callout[data-callout="tldr"] {
