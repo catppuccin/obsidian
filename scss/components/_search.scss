@@ -84,6 +84,10 @@
   color: var(--text-on-accent);
 }
 
+.is-flashing .cm-quote.cm-quote {
+  color: var(--text-on-accent);
+}
+
 .cm-s-obsidian .is-flashing .cm-url .cm-underline:hover,
 .cm-s-obsidian .is-flashing span.cm-url:hover {
   --link-external-color-hover: var(--text-on-accent);
