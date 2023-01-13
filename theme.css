@@ -2831,13 +2831,23 @@ button.mod-cta:hover {
 }
 
 /* Another Quick Switcher */
-.suggestion-item.is-selected .another-quick-switcher__item__directory {
+.suggestion-item.is-selected .another-quick-switcher__item__directory,
+.suggestion-item.is-selected .another-quick-switcher__item__description {
+  color: var(--text-on-accent);
+}
+
+.another-quick-switcher__hit_word {
+  background-color: rgb(var(--ctp-rosewater), 60%);
   color: var(--text-on-accent);
 }
 
 /* Adds some padding for larger Catppuccin separator */
 .another-quick-switcher__status__search-command {
   padding-bottom: 0.5rem;
+}
+
+.another-quick-switcher__grep__path-input__wrapper {
+  margin: var(--size-4-1);
 }
 
 /* cyrillic-ext */
