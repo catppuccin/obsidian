@@ -2080,6 +2080,12 @@ input[type=number]:focus-visible {
 }
 
 /* TODO Add to Style Settings instead */
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  color: var(--text-on-accent);
+  box-shadow: 0 0 0 3px rgb(var(--ctp-accent));
+  background-color: rgb(var(--ctp-rosewater));
+}
+
 .search-result-file-matches {
   background-color: rgb(var(--background-secondary));
   color: var(--text-normal);
@@ -2789,7 +2795,9 @@ button.mod-cta:hover {
 }
 
 /* Better Command Palette */
-/* Fixes highlight error */
+/*
+* Fixes highlight error
+*/
 .better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
   color: var(--text-on-accent);
 }
@@ -2810,7 +2818,9 @@ button.mod-cta:hover {
   color: var(--text-muted);
 }
 
-/* Improves spacing around hidden palette items box */
+/*
+*Improves spacing around hidden palette items box
+*/
 .better-command-palette.better-command-palette .suggestion-hotkey {
   padding: var(--size-2-1) var(--size-4-3);
   margin-right: var(--size-2-3);
@@ -2841,13 +2851,28 @@ button.mod-cta:hover {
   color: var(--text-on-accent);
 }
 
-/* Adds some padding for larger Catppuccin separator */
+/*
+* Adds some padding for larger Catppuccin separator
+*/
 .another-quick-switcher__status__search-command {
   padding-bottom: 0.5rem;
 }
 
 .another-quick-switcher__grep__path-input__wrapper {
   margin: var(--size-4-1);
+}
+
+/* Omnisearch */
+.suggestion-item.is-selected .omnisearch-result__body {
+  color: var(--text-on-accent);
+}
+
+.omnisearch-default-highlight {
+  color: var(--text-on-accent);
+}
+
+.omnisearch-result.is-selected .omnisearch-default-highlight {
+  background-color: rgb(var(--ctp-rosewater), 60%);
 }
 
 /* cyrillic-ext */
