@@ -1,3 +1,9 @@
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  color: var(--text-on-accent);
+  box-shadow: 0 0 0 3px rgb(var(--ctp-accent));
+  background-color: rgb(var(--ctp-rosewater));
+}
+
 .search-result-file-matches {
   background-color: rgb(var(--background-secondary));
   color: var(--text-normal);
