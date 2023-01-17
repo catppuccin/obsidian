@@ -142,15 +142,11 @@ The theme currently has limited CSS for a few plugins in [_plugins.scss](https:/
 
 See the [Releases](https://github.com/catppuccin/obsidian/releases) page for the latest news.
 
-[^development]: If you're new to all of this, here's one way to work on the theme: Go to the linked SASS docs above and follow the instructions to install it. In Obsidian, turn off any snippets or theme currently in use. Create a snippet in your Obsidian vault's `.obsidian/snippets` folder called, say, `catppuccin.css`. Turn this snippet on. Fork the Catppuccin Obsidian repository (for more the GitHub part of this, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) and/or [here](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)). From your terminal, `cd` to the repository and run: 
-```css
-sass scss/main.scss obsidianvaultlocation/.obsidian/snippets/catppuccin.css --watch
-```
-Changes you make will now be updated when the file you are working on is saved. Make liberal use of the development tools (`cmd+opt+i` or `ctrl+shift+i`) When you are done with your changes, run:
-```css
-sass scss/main.css theme.css
-```
-and, if you don't mind, update the `manifest.json` file by 0.0.1 (e.g. from `0.1.0` to `0.1.1`). Then, begin the pull request process (see [this link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) and/or [this link](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/) again). 
+[^development]: If you're new to all of this, here's one way to work on the theme: Go to the linked SASS docs above and follow the instructions to install it. In Obsidian, turn off any snippets or theme currently in use. Create a snippet in your Obsidian vault's `.obsidian/snippets` folder called, say, `catppuccin.css`. Turn this snippet on. Fork the Catppuccin Obsidian repository (for more the GitHub part of this, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) and/or [here](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)).
+
+    From your terminal, `cd` to the repository and run: `sass scss/main.scss obsidianvaultlocation/.obsidian/snippets/catppuccin.css --watch`. Changes you make will now be updated when the file you are working on is saved. Make liberal use of the development tools in Obsidian (`cmd+opt+i` or `ctrl+shift+i`).
+
+     When you are done with your changes, run: `sass scss/main.css theme.css` and, if you don't mind, update the `manifest.json` file by 0.0.1 (e.g. from `0.1.0` to `0.1.1`). Then, begin the pull request process (see [this link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) and/or [this link](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/) again). 
 
 ## 💝 Thanks to
 
