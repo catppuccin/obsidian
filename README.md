@@ -1,18 +1,18 @@
-<h3 align="center">
+<h3 style="text-align: center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px" alt=""/>
 	Catppuccin for <a href="https://obsidian.md">Obsidian</a>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px" alt=""/>
 </h3>
 
-<p align="center">
-    <a href="https://github.com/catppuccin/obsidian/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/obsidian?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/obsidian/issues"><img src="https://img.shields.io/github/issues/catppuccin/obsidian?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/obsidian/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/obsidian?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+<p style="text-align: center">
+    <a href="https://github.com/catppuccin/obsidian/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/obsidian?colorA=363a4f&colorB=b7bdf8&style=for-the-badge" alt="GitHub star count"></a>
+    <a href="https://github.com/catppuccin/obsidian/issues"><img src="https://img.shields.io/github/issues/catppuccin/obsidian?colorA=363a4f&colorB=f5a97f&style=for-the-badge" alt="Open issues on GitHub"></a>
+    <a href="https://github.com/catppuccin/obsidian/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/obsidian?colorA=363a4f&colorB=a6da95&style=for-the-badge" alt="List of contributors"></a>
 </p>
 
-<p align="center">
-  <img src="https://github.com/catppuccin/obsidian/blob/main/assets/screenshot-hq.png"/>
+<p style="text-align: center">
+  <img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/screenshot-hq.png" alt="Example of the Catppuccin theme for Obsidian"/>
 </p>
 
 - [Previews](#previews)
@@ -32,19 +32,19 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/latte.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/latte.webp" alt="Preview of Latte theme"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/frappe.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/frappe.webp" alt="Preview of Frappé theme"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/macchiato.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/macchiato.webp" alt="Preview of Macchiato theme"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/mocha.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/mocha.webp" alt="Preview of Mocha theme"/>
 </details>
 
 ## About
@@ -58,7 +58,7 @@ This theme provides the full range of Catppuccin palettes when used with the [St
 ### Obsidian theme store
 
 To install from the Obsidian theme store:
-Open Obisidian and go to `Preferences` >> `Appearance`, click `Manage` and scroll down to 'Community Themes.' Type 'Catppuccin' in the filter bar and then click 'Use' under the theme name.
+Open Obsidian and go to `Preferences` >> `Appearance`, click `Manage` and scroll down to 'Community Themes.' Type 'Catppuccin' in the filter bar and then click 'Use' under the theme name.
 
 ## Problems?
 
@@ -76,7 +76,7 @@ There are two files that might be helpful to investigate before contributing: [_
 
  `_app-variables.scss` contains variables from Obsidian's CSS, some of which have been customized for Catppuccin. You can rely on these variables as references, but it is generally best to leave this file untouched. However, it can sometimes make sense to change variables inside specific selectors. For example:
 
- ```css
+ ```scss
  .some-guy {
   --h1-color: rgb(var(--ctp-accent));
 
@@ -95,9 +95,9 @@ Obsidian has a few selectors to keep in mind when modifying its CSS. Three of th
   + `var(--ctp-mauve)` is used for active files in the file explorer sidebar, the active page in the settings sidebar, and so on
   + `var(--ctp-pink)` is used for active button icons
   + An inset box-shadow is used for many active items, such as buttons or the file type label for items in the file explorer sidebar, indicating they have been "pressed down":
-    ```css
+    ```scss
     .workspace-tab-header.is-active {
-    box-shadow:
+      box-shadow:
       inset 0 0 4px rgb(var(--ctp-crust)), 
       inset 0 0 6px rgb(var(--ctp-base));
     }
@@ -114,7 +114,7 @@ Obsidian has a few selectors to keep in mind when modifying its CSS. Three of th
   + Items in this category will often need their `color` changed from something like `var(--text-normal)` to `var(--text-on-accent)`
 
 When transitioning from a default state to one of the above states, the relevant transition from [_animations.scss](https://github.com/catppuccin/obsidian/blob/main/scss/components/_animations.scss) is often applied. For example:
-```css
+```scss
 .a-guy {
   color: var(--text-normal);
   transition: var(--transition-hover-color);
@@ -124,6 +124,7 @@ When transitioning from a default state to one of the above states, the relevant
   }
 }
 ```
+
 
 ### CSS for plugins
 
@@ -160,7 +161,7 @@ See the [Releases](https://github.com/catppuccin/obsidian/releases) page for the
 
 &nbsp;
 
-<p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
-<p align="center">Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
-<p align="center"><a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a></p>
+<p style="text-align: center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" alt="Cat sitting on gray line"/></p>
+<p style="text-align: center">Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+<p style="text-align: center"><a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8" alt="MIT license"/></a></p>
 
