@@ -77,15 +77,10 @@ theme name.
 
 ### Style Settings plugin installation and use
 
-To install Style Settings, open Obsidian's Settings page and
-navigate to `Community plugins` in the left-hand sidebar.
-Disable `Restricted mode` if you have not already and then,
-under `Community plugins`, click `Browse`.
-Search "Style Settings" by mgmeyers and install. You should now
-see a tab for `Style Settings` in your left-hand sidebar. Click this tab to
-adjust the theme's appearance. Credit to 
-[pitoniak32](https://github.com/pitoniak32) for this
-section. [#37](https://github.com/catppuccin/obsidian/issues/37)
+To install Style Settings, open Obsidian's `Preferences`, and navigate to the OPTIONS section, select `Community plugins` and ensure that `Restricted Mode` is off.
+Now you can search for "[Style Settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin)" by mgmeyers.
+Once you have the plugin installed, you should be able to see a heading entry `Style Settings` on the left under `COMMUNITY PLUGINS` in the `Preferences` window.
+From there you can select, and configure your Catppuccin flavor, and make customizations :)
 
 ## Problems?
 
