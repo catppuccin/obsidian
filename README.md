@@ -15,15 +15,16 @@
   <img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/screenshot-hq.png" alt="Example of the Catppuccin theme for Obsidian"/>
 </p>
 
-- [Previews](#previews)
-- [About](#about)
-- [Usage](#usage)
-  - [Obsidian theme store](#obsidian-theme-store)
-- [Problems?](#problems)
-- [Contributing](#contributing)
-- [Plugins](#plugins)
-- [Development](#development)
-- [💝 Thanks to](#-thanks-to)
++ [Previews](#previews)
++ [About](#about)
++ [Usage](#usage)
+  + [Obsidian theme store](#obsidian-theme-store)
+  + [Style Settings plugin installation and use](#style-settings-plugin-installation-and-use)
++ [Problems?](#problems)
++ [Contributing](#contributing)
++ [Plugins](#plugins)
++ [Development](#development)
++ [💝 Thanks to](#-thanks-to)
 
 ## Previews
 
@@ -46,20 +47,57 @@
 
 ## About
 
-This is the Catppuccin theme for the note-taking app Obsidian. The theme is a constant work in progress, given the quick development pace of Obsidian itself and the user-made plugin scene.
+This is the Catppuccin theme for the note-taking app Obsidian.
+The theme is a constant work in progress, given the quick
+development pace of Obsidian itself and the user-made plugin
+scene.
 
 ## Usage
 
-This theme provides the full range of Catppuccin palettes when used with the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin) plugin. This plugin will allow users to pick from several variations on Catppuccin, including accents for each color in the palette and one that features the full host of Catppuccin colors (the default). New options will be exposed through the Style Settings plugin over time.
+This theme provides the full range of Catppuccin palettes when
+used with the
+[Style Settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin)
+plugin
+(see [here](https://help.obsidian.md/Extending+Obsidian/Community+plugins)
+for more on using plugins with Obsidian).
+This plugin will allow users to pick from several variations on
+Catppuccin, including accents for each color in the palette and
+one that features the full host of Catppuccin colors (the
+default). New options will be exposed through the Style Settings
+plugin over time.
 
 ### Obsidian theme store
 
 To install from the Obsidian theme store:
-Open Obsidian and go to `Preferences` >> `Appearance`, click `Manage` and scroll down to 'Community Themes.' Type 'Catppuccin' in the filter bar and then click 'Use' under the theme name.
+
+Open Obsidian and go to `Preferences` >> `Appearance`,
+click `Manage` and scroll down to 'Community Themes.' Type '
+Catppuccin' in the filter bar and then click 'Use' under the
+theme name.
+
+### Style Settings plugin installation and use
+
+To install Style Settings, open Obsidian's Settings page and
+navigate to `Community plugins` in the left-hand sidebar.
+Disable `Restricted mode` if you have not already and then,
+under `Community plugins`, click `Browse`.
+Search "Style Settings" by mgmeyers and install. You should now
+see a tab for `Style Settings` in your left-hand sidebar. Click this tab to
+adjust the theme's appearance. Credit to 
+[pitoniak32](https://github.com/pitoniak32) for this
+section. [#37](https://github.com/catppuccin/obsidian/issues/37)
 
 ## Problems?
 
-Obsidian is a large and constantly expanding app with a variety of use cases and plugins. If you run into theme-related issues or want CSS adjustments made for your favorite plugin(s), please [open an issue](https://github.com/catppuccin/obsidian/issues). While there is a [Discord community](https://discord.com/channels/907385605422448742/1027435548165558303) for the theme, using GitHub Issues is good for the development process, [less ephemeral](https://karl-voit.at/2020/10/23/avoid-web-forums/), and helps other users who need support or want to contribute.
+Obsidian is a large and constantly expanding app with a variety
+of use cases and plugins. If you run into theme-related issues or
+want CSS adjustments made for your favorite plugin(s),
+please [open an issue](https://github.com/catppuccin/obsidian/issues).
+While there is
+a [Discord community](https://discord.com/channels/907385605422448742/1027435548165558303)
+for the theme, using GitHub Issues is good for the development
+process, [less ephemeral](https://karl-voit.at/2020/10/23/avoid-web-forums/),
+and helps other users who need support or want to contribute.
 
 ## Contributing
 
@@ -67,7 +105,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Plugins
 
-The theme currently has limited CSS for a few plugins in [_plugins.scss](https://github.com/catppuccin/obsidian/blob/main/scss/vendors/_plugins.scss). These include:
+The theme currently has limited CSS for a few plugins
+in [_plugins.scss](https://github.com/catppuccin/obsidian/blob/main/scss/vendors/_plugins.scss).
+These include:
 
 + Another Quick Switcher
 + Better Command Palette
@@ -76,13 +116,17 @@ The theme currently has limited CSS for a few plugins in [_plugins.scss](https:/
 
 ## Development
 
-See the [Releases](https://github.com/catppuccin/obsidian/releases) page for the latest news.
+See
+the [Releases](https://github.com/catppuccin/obsidian/releases)
+page for the latest news.
 
 ## 💝 Thanks to
 
 + [mbeckrich](https://github.com/mbeckrich)
 + [AnubisNekhet](https://github.com/anubisnekhet)
-+ The talented and kindhearted people in the Obsidian discord's CSS channel. In particular:
++ [pitoniak32](https://github.com/pitoniak32)
++ The talented and kindhearted people in the Obsidian discord's
+  CSS channel. In particular:
     + [Chetachi](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/)
     + [Kepano](https://github.com/kepano/obsidian-minimal)
     + [mgmeyers](https://github.com/mgmeyers/obsidian-california-coast-theme)
