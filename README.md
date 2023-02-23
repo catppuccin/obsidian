@@ -18,8 +18,8 @@
 + [Previews](#previews)
 + [About](#about)
 + [Usage](#usage)
-  + [Obsidian theme store](#obsidian-theme-store)
-  + [Style Settings plugin installation and use](#style-settings-plugin-installation-and-use)
+    + [Obsidian theme store](#obsidian-theme-store)
+    + [Style Settings plugin installation and use](#style-settings-plugin-installation-and-use)
 + [Problems?](#problems)
 + [Contributing](#contributing)
 + [Plugins](#plugins)
@@ -50,7 +50,9 @@
 This is the Catppuccin theme for the note-taking app Obsidian.
 The theme is a constant work in progress, given the quick
 development pace of Obsidian itself and the user-made plugin
-scene.
+scene. Runner up
+in 🎉 [Obsidian's 2022 Gems of the Year](https://forum.obsidian.md/t/gems-of-the-year-2022-winners/54903)
+awards. Thank you to everyone who voted.
 
 ## Usage
 
@@ -77,10 +79,21 @@ theme name.
 
 ### Style Settings plugin installation and use
 
-To install Style Settings, open Obsidian's `Preferences`, and navigate to the OPTIONS section, select `Community plugins` and ensure that `Restricted Mode` is off.
-Now you can search for "[Style Settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin)" by mgmeyers.
-Once you have the plugin installed, you should be able to see a heading entry `Style Settings` on the left under `COMMUNITY PLUGINS` in the `Preferences` window.
-From there you can select, and configure your Catppuccin flavor, and make customizations :)
+A note on Style Settings setup from [pitoniak32](https://github.com/pitoniak32):
+
+> To install Style Settings, open Obsidian's `Preferences`, and navigate to the
+> OPTIONS section, select `Community plugins` and ensure that `Restricted Mode` is
+> off.
+>
+> Now you can search
+> for "[Style Settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin)"
+> by mgmeyers.
+> Once you have the plugin installed, you should be able to see a heading
+> entry `Style Settings` on the left under `COMMUNITY PLUGINS` in
+> the `Preferences` window.
+>
+> From there you can select, and configure your Catppuccin flavor, and make
+> customizations :)
 
 ## Problems?
 
