@@ -48,3 +48,15 @@
 .cm-s-obsidian .cm-formatting-link.cm-formatting-link-end {
   color: rgb(var(--ctp-accent));
 }
+
+.empty-state-action {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+  border-radius: var(--radius-s);
+}
+
+@media (hover: hover) {
+  .empty-state-action:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  }
+}
