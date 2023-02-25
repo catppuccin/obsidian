@@ -28,7 +28,7 @@
 }
 
 .tree-item-self {
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 :not(.is-grabbing) .nav-file-title:hover,

@@ -19,7 +19,7 @@
 }
 
 .canvas-control-item {
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 @media (hover: hover) {

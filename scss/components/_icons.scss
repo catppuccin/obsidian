@@ -2,7 +2,7 @@
 .mod-left-split .workspace-tab-header,
 .mod-right-split .workspace-tab-header {
   margin: 0 2px;
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 
   &:hover {
     --background-modifier-hover: rgb(var(--ctp-accent));
@@ -28,7 +28,7 @@
     inset 0 0 4px rgb(var(--ctp-crust)),
     inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 
   svg {
     color: rgb(var(--ctp-accent));
@@ -50,7 +50,7 @@
   background-color: rgb(var(--ctp-red));
   box-shadow: 0 0 2px 1px rgb(var(--ctp-surface1));
   color: rgb(var(--ctp-base));
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 .workspace-tab-header-inner-close-button:hover {
@@ -68,7 +68,7 @@
 }
 
 /*
-* Windows and Linux mini, max, and close buttons
+* Windows and Linux min, max, and close buttons
 */
 
 .mod-linux .titlebar-button,

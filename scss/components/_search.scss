@@ -69,7 +69,7 @@
 }
 
 .search-result-file-match {
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 .search-result-file-match:hover .search-result-file-matched-text {

@@ -53,9 +53,7 @@
 
     svg {
       color: rgb(var(--ctp-pink));
-
-      /* extra long to prevent weird super fast move */
-      transition: background-color 4s ease-in-out;
+      transition: var(--transition-hover-bg), var(--transition-hover-color);
     }
 
     &:hover,
@@ -69,7 +67,7 @@
   .clickable-icon,
   .mod-left-split .workspace-tab-header,
   .mod-right-split .workspace-tab-header {
-    transition: var(--transition-hover-bg);
+    transition: var(--transition-hover-bg), var(--transition-hover-color);
 
     &:hover {
       background-color: rgb(var(--ctp-pink));
