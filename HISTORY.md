@@ -6,7 +6,7 @@
 + cleanup ./scss/base/_ctp-style-setting.scss
 + update ./scss/base/_app-variables.scss with any changes to app.css
 
-## [0.4.4] - 2023-02-24
+## [0.4.5] - 2023-02-24
 
 ### Adds
 + HISTORY.md file
