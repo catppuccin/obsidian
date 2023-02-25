@@ -119,10 +119,6 @@ h6,
   left: -13px;
 }
 
-.tooltip {
-  color: rgb(var(--ctp-rosewater));
-}
-
 /* markdown ==highlight== colors */
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
@@ -171,4 +167,60 @@ h6,
 
 .cm-s-obsidian span.cm-error {
   color: rgb(var(--ctp-red));
+}
+
+.tooltip {
+  background-color: var(--background-secondary);
+  color: rgb(var(--ctp-rosewater));
+  box-shadow: 0 0 4px rgb(var(--ctp-mantle));
+  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+}
+
+/*
+* From app.css
+*/
+
+/* Triangle hack to make tooltip look like a speech bubble */
+.tooltip .tooltip-arrow {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 0;
+  margin-left: -5px;
+  border-bottom: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+.tooltip.mod-right .tooltip-arrow {
+  top: calc(50% - 5px);
+  left: -5px;
+  border-right: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.tooltip.mod-left .tooltip-arrow {
+  top: calc(50% - 5px);
+  left: calc(100% + 5px);
+  border-left: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.tooltip.mod-top .tooltip-arrow {
+  top: calc(100%);
+  border-top: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-bottom: 5px solid transparent;
+}
+.tooltip.mod-error .tooltip-arrow {
+  border-bottom-color: rgb(var(--ctp-red), 60%);
+}
+.tooltip.mod-error.mod-right .tooltip-arrow {
+  border-right-color: rgb(var(--ctp-red), 60%);
+  border-bottom: 5px solid transparent;
+}
+.tooltip.mod-error.mod-left .tooltip-arrow {
+  border-left-color: rgb(var(--ctp-red), 60%);
+  border-bottom: 5px solid transparent;
 }
