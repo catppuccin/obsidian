@@ -1,7 +1,12 @@
 extends:
-- stylelint-config-standard
-- stylelint-config-standard-scss
-- stylelint-config-idiomatic-order
+  - stylelint-config-standard
+  - stylelint-config-standard-scss
+  - stylelint-config-idiomatic-order
+ignore-files:
+  - node_modules/**/*
+plugins:
+  - stylelint-order
+  - stylelint-declaration-block-no-ignored-properties
 rules:
   alpha-value-notation: percentage
   color-function-notation: legacy
