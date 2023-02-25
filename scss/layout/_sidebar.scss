@@ -67,3 +67,15 @@
     inset 0 0 2px rgb(var(--ctp-crust)),
     inset 0 0 4px rgb(var(--ctp-mantle));
 }
+
+/*
+* #TODO?
+* This is trying to minimize how jarring this weird thing
+* that happens when you click the folder name in the header title.
+* It looks odd in the default theme, too.
+*/
+
+.is-flashing .nav-folder-title,
+.is-flashing .nav-file-title {
+  color: var(--text-on-accent);
+}
