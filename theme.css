@@ -61,6 +61,8 @@ body {
   --callout-warning: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   /* Canvas */
+  --canvas-background: var(--background-primary);
+  --canvas-card-label-color: var(--text-faint);
   --canvas-dot-pattern: var(--color-base-30);
   --canvas-color-1: var(--color-red-rgb);
   --canvas-color-2: var(--color-orange-rgb);
@@ -1614,7 +1616,7 @@ del,
 
 .cm-em.cm-strong,
 strong > em,
-em > strsong {
+em > strong {
   color: rgb(var(--ctp-teal));
 }
 
@@ -1685,10 +1687,6 @@ h6,
   left: -13px;
 }
 
-.tooltip {
-  color: rgb(var(--ctp-rosewater));
-}
-
 /* markdown ==highlight== colors */
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
@@ -1731,6 +1729,71 @@ h6,
 
 .cm-s-obsidian span.cm-error {
   color: rgb(var(--ctp-red));
+}
+
+.tooltip {
+  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+  background-color: var(--background-secondary);
+  box-shadow: 0 0 4px rgb(var(--ctp-mantle));
+  color: rgb(var(--ctp-rosewater), 80%);
+}
+
+/*
+* From app.css
+*/
+/*
+* TODO: Add border to popups that appear during plugin, theme, etc.
+* updates.
+*/
+/* Triangle hack to make tooltip look like a speech bubble */
+.tooltip .tooltip-arrow {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 0;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-left: 5px solid transparent;
+  margin-left: -5px;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+.tooltip.mod-right .tooltip-arrow {
+  top: calc(50% - 5px);
+  left: -5px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-bottom: 5px solid transparent;
+}
+
+.tooltip.mod-left .tooltip-arrow {
+  top: calc(50% - 5px);
+  left: calc(100% + 5px);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid rgb(var(--ctp-rosewater), 60%);
+}
+
+.tooltip.mod-top .tooltip-arrow {
+  top: 100%;
+  border-top: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-bottom: 5px solid transparent;
+}
+
+.tooltip.mod-error .tooltip-arrow {
+  border-bottom-color: rgb(var(--ctp-red), 60%);
+}
+
+.tooltip.mod-error.mod-right .tooltip-arrow {
+  border-right-color: rgb(var(--ctp-red), 60%);
+  border-bottom: 5px solid transparent;
+}
+
+.tooltip.mod-error.mod-left .tooltip-arrow {
+  border-bottom: 5px solid transparent;
+  border-left-color: rgb(var(--ctp-red), 60%);
 }
 
 /* bezier from Josh Comeau's blog */
@@ -1849,7 +1912,7 @@ body {
 .mod-left-split .workspace-tab-header,
 .mod-right-split .workspace-tab-header {
   margin: 0 2px;
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 .clickable-icon:hover,
 .mod-left-split .workspace-tab-header:hover,
@@ -1874,7 +1937,7 @@ body {
 .mod-right-split .workspace-tab-header.is-active {
   box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 .clickable-icon.is-active svg,
 .mod-left-split .workspace-tab-header.has-active-menu svg,
@@ -1905,7 +1968,7 @@ body {
   background-color: rgb(var(--ctp-red));
   box-shadow: 0 0 2px 1px rgb(var(--ctp-surface1));
   color: rgb(var(--ctp-base));
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 .workspace-tab-header-inner-close-button:hover {
@@ -1923,7 +1986,7 @@ body {
 }
 
 /*
-* Windows and Linux mini, max, and close buttons
+* Windows and Linux min, max, and close buttons
 */
 .mod-linux .titlebar-button,
 .mod-windows .titlebar-button {
@@ -2079,6 +2142,17 @@ input[type=number]:focus-visible {
   color: rgb(var(--ctp-accent));
 }
 
+.empty-state-action {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+  border-radius: var(--radius-s);
+}
+
+@media (hover: hover) {
+  .empty-state-action:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  }
+}
 /* TODO Add to Style Settings instead */
 .cm-s-obsidian span.obsidian-search-match-highlight {
   color: var(--text-on-accent);
@@ -2145,7 +2219,7 @@ input[type=number]:focus-visible {
 }
 
 .search-result-file-match {
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 .search-result-file-match:hover .search-result-file-matched-text {
@@ -2230,7 +2304,7 @@ input[type=number]:focus-visible {
 }
 
 .tree-item-self {
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 :not(.is-grabbing) .nav-file-title:hover,
@@ -2266,6 +2340,17 @@ input[type=number]:focus-visible {
 
 .is-active .nav-file-tag {
   box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-mantle));
+}
+
+/*
+* #TODO?
+* This is trying to minimize how jarring this weird thing
+* that happens when you click the folder name in the header title.
+* It looks odd in the default theme, too.
+*/
+.is-flashing .nav-folder-title,
+.is-flashing .nav-file-title {
+  color: var(--text-on-accent);
 }
 
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
@@ -2328,6 +2413,16 @@ input[type=number]:focus-visible {
   opacity: 40%;
 }
 
+.canvas-control-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+@media (hover: hover) {
+  .canvas-control-item:hover {
+    background-color: rgb(var(--ctp-pink));
+    color: var(--text-on-accent);
+  }
+}
 .canvas-node-container {
   border-radius: var(--radius-l);
 }
@@ -2523,8 +2618,7 @@ button.mod-cta:hover {
 .ctp-full-palette .mod-left-split .workspace-tab-header.is-active svg,
 .ctp-full-palette .mod-right-split .workspace-tab-header.is-active svg {
   color: rgb(var(--ctp-pink));
-  /* extra long to prevent weird super fast move */
-  transition: background-color 4s ease-in-out;
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 .theme-dark:not(.css-settings-manager) .clickable-icon.is-active:hover, .theme-dark:not(.css-settings-manager) .clickable-icon.is-active:hover svg,
 .theme-dark:not(.css-settings-manager) .mod-left-split .workspace-tab-header.has-active-menu:hover,
@@ -2568,7 +2662,7 @@ button.mod-cta:hover {
 .ctp-full-palette .clickable-icon,
 .ctp-full-palette .mod-left-split .workspace-tab-header,
 .ctp-full-palette .mod-right-split .workspace-tab-header {
-  transition: var(--transition-hover-bg);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 .theme-dark:not(.css-settings-manager) .clickable-icon:hover,
 .theme-dark:not(.css-settings-manager) .mod-left-split .workspace-tab-header:hover,
@@ -2875,6 +2969,10 @@ button.mod-cta:hover {
   background-color: rgb(var(--ctp-rosewater), 60%);
 }
 
+/*
+* Vollkorn is included as a base64 font in this theme.
+* See font website here: http://vollkorn-typeface.com
+*/
 /* cyrillic-ext */
 @font-face {
   font-display: swap;
