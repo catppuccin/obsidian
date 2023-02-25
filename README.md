@@ -50,8 +50,8 @@
 This is the Catppuccin theme for the note-taking app Obsidian.
 The theme is a constant work in progress, given the quick
 development pace of Obsidian itself and the user-made plugin
-scene. Runner up
-in 🎉 [Obsidian's 2022 Gems of the Year](https://forum.obsidian.md/t/gems-of-the-year-2022-winners/54903)
+scene. The theme uses a base64-encoded version of Friedrich Althausen's font [Vollkorn](http://vollkorn-typeface.com) as its default editor text.
+Runner up in 🎉 [Obsidian's 2022 Gems of the Year](https://forum.obsidian.md/t/gems-of-the-year-2022-winners/54903)
 awards. Thank you to everyone who voted.
 
 ## Usage
