@@ -18,6 +18,17 @@
   opacity: 40%;
 }
 
+.canvas-control-item {
+  transition: var(--transition-hover-bg);
+}
+
+@media (hover: hover) {
+  .canvas-control-item:hover {
+    background-color: rgb(var(--ctp-pink));
+    color: var(--text-on-accent);
+  }
+}
+
 .canvas-node-container {
   border-radius: var(--radius-l);
 }

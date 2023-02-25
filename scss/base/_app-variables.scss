@@ -67,6 +67,8 @@ body {
   --callout-quote: 158, 158, 158;
 
   /* Canvas */
+  --canvas-background: var(--background-primary);
+  --canvas-card-label-color: var(--text-faint);
   --canvas-dot-pattern: var(--color-base-30);
   --canvas-color-1: var(--color-red-rgb);
   --canvas-color-2: var(--color-orange-rgb);
