@@ -21,7 +21,7 @@
 
   .nav-file-title.is-active,
   .nav-folder-title.is-active {
-    background-color: rgb(var(--ctp-mauve));
+    --nav-item-background-active: rgb(var(--ctp-mauve));
   }
 
   :not(.is-grabbing) .nav-file-title:hover,

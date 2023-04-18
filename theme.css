@@ -2626,7 +2626,7 @@ button.mod-cta:hover {
 .theme-light:not(.css-settings-manager) .nav-folder-title.is-active,
 .ctp-full-palette .nav-file-title.is-active,
 .ctp-full-palette .nav-folder-title.is-active {
-  background-color: rgb(var(--ctp-mauve));
+  --nav-item-background-active: rgb(var(--ctp-mauve));
 }
 .theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover,
 .theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover,
