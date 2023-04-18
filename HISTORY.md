@@ -6,6 +6,11 @@
 + cleanup ./scss/base/_ctp-style-setting.scss
 + update ./scss/base/_app-variables.scss with any changes to app.css
 
+## [0.4.6] - 2023-04-18
+
+### Changes
++ font stack css — _typography.scss
+
 ## [0.4.5] - 2023-02-24
 
 ### Adds

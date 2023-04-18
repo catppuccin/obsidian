@@ -1,7 +1,7 @@
 .cm-s-obsidian span.obsidian-search-match-highlight {
-  color: var(--text-on-accent);
-  box-shadow: 0 0 0 3px rgb(var(--ctp-accent));
   background-color: rgb(var(--ctp-rosewater));
+  box-shadow: 0 0 0 3px rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
 }
 
 .search-result-file-matches {
