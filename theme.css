@@ -297,9 +297,9 @@ body {
   /* File navigator */
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
-  --nav-item-color-hover: var(--text-normal);
-  --nav-item-color-active: var(--text-normal);
-  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-hover: var(--text-on-accent);
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
@@ -874,11 +874,70 @@ settings:
         label: Gray
         value: var(--ctp-subtext0)
   -
-    id: headings
-    title: Headings
-    type: heading
-    level: 2
-    collapsed: true
+  */
+/* @settings
+name: File Name and Headings
+id: catppuccin-heading-settings
+settings:
+  -
+    id: ctp-page-title
+    title: File name color
+    description: Select your file name color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-text)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
   -
     id: ctp-h1
     title: H1 color
@@ -1579,17 +1638,17 @@ body {
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
+    roboto,
     inter,
-    sans-serif;
+    serif;
   --font-interface-theme:
     "Nunito Sans",
     -apple-system,
-    system-ui,
     blinkmacsystemfont,
     "Segoe UI",
+    "Microsoft YaHei Light",
     roboto,
-    "Helvetica Neue",
-    arial,
+    inter,
     sans-serif;
 }
 
@@ -1628,6 +1687,10 @@ em > strong {
 .mod-cm6 .HyperMD-list-line.cm-line {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.inline-title {
+  --inline-title-color: rgb(var(--ctp-page-title, var(--ctp-text)));
 }
 
 h1,
@@ -2155,9 +2218,9 @@ input[type=number]:focus-visible {
 }
 /* TODO Add to Style Settings instead */
 .cm-s-obsidian span.obsidian-search-match-highlight {
-  color: var(--text-on-accent);
-  box-shadow: 0 0 0 3px rgb(var(--ctp-accent));
   background-color: rgb(var(--ctp-rosewater));
+  box-shadow: 0 0 0 3px rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
 }
 
 .search-result-file-matches {
@@ -2888,10 +2951,6 @@ button.mod-cta:hover {
   background-color: rgb(var(--ctp-pink));
 }
 
-/* Better Command Palette */
-/*
-* Fixes highlight error
-*/
 .better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
   color: var(--text-on-accent);
 }
@@ -2913,7 +2972,7 @@ button.mod-cta:hover {
 }
 
 /*
-*Improves spacing around hidden palette items box
+* Improves spacing around hidden palette items box
 */
 .better-command-palette.better-command-palette .suggestion-hotkey {
   padding: var(--size-2-1) var(--size-4-3);
@@ -2967,6 +3026,107 @@ button.mod-cta:hover {
 
 .omnisearch-result.is-selected .omnisearch-default-highlight {
   background-color: rgb(var(--ctp-rosewater), 60%);
+}
+
+/*
+* MAKE.md
+*/
+body:not(.is-mobile) .mk-main-menu-button:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.ctp-full-palette .mk-sidebar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+.ctp-full-palette .mk-sidebar-item:hover {
+  background-color: rgb(var(--ctp-pink));
+  color: var(--text-on-accent);
+}
+.ctp-full-palette .mk-sidebar-item:hover svg {
+  color: var(--text-on-accent);
+}
+
+.ctp-full-palette .mk-sidebar-item-active {
+  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+}
+.ctp-full-palette .mk-sidebar-item-active svg {
+  color: rgb(var(--ctp-pink)) !important;
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+.ctp-full-palette .mk-sidebar-item-active:hover svg, .ctp-full-palette .mk-sidebar-item-active:hover {
+  background-color: rgb(var(--ctp-pink));
+  box-shadow: none;
+  color: var(--text-on-accent) !important;
+}
+
+.mk-sidebar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+.mk-sidebar-item:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+.mk-sidebar-item:hover svg {
+  color: var(--text-on-accent);
+}
+
+.mk-sidebar-item-active {
+  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+}
+.mk-sidebar-item-active svg {
+  color: rgb(var(--ctp-accent)) !important;
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+.mk-sidebar-item-active:hover svg, .mk-sidebar-item-active:hover {
+  background-color: rgb(var(--ctp-accent));
+  box-shadow: none;
+  color: var(--text-on-accent) !important;
+}
+
+.mk-tree-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.mk-tree-item svg {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+body:not(.is-mobile) .mk-tree-item:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.mk-tree-item:hover svg {
+  color: var(--text-on-accent) !important;
+}
+
+.mk-options-menu__suggestions li {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+body:not(.is-grabbing) .tree-item-self.is-selected:hover, .tree-item-self.is-selected {
+  --nav-item-color-selected: var(--text-on-accent);
+}
+
+.mk-options-menu__suggestions li.is-active,
+.mk-options-menu__suggestions li:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.mk-file-context-field,
+.mk-file-context-field-new button,
+.mk-file-context-field-new button svg {
+  color: var(--text-muted) !important;
+}
+
+.mk-file-context-field-new button:hover {
+  color: rgb(var(--ctp-accent)) !important;
 }
 
 /*

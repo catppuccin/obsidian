@@ -1,9 +1,4 @@
-@layer makemd, default
-
-
-
-
-  .better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
+.better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
   color: var(--text-on-accent);
 }
 
@@ -180,9 +175,22 @@ body:not(.is-mobile) .mk-tree-item:hover {
 .mk-options-menu__suggestions li {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
+body:not(.is-grabbing) .tree-item-self.is-selected:hover, .tree-item-self.is-selected {
+  --nav-item-color-selected: var(--text-on-accent);
+}
 
 .mk-options-menu__suggestions li.is-active,
 .mk-options-menu__suggestions li:hover {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
+}
+
+.mk-file-context-field,
+.mk-file-context-field-new button,
+.mk-file-context-field-new button svg {
+  color: var(--text-muted) !important;
+}
+
+.mk-file-context-field-new button:hover {
+  color: rgb(var(--ctp-accent)) !important;
 }
