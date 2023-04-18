@@ -8,6 +8,9 @@
 
 ## [0.4.6] - 2023-04-18
 
+## Adds
++ initial compatibility for MAKE.md plugin
+
 ### Changes
 + font stack css — _typography.scss
 

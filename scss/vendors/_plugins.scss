@@ -1,10 +1,9 @@
-/* Better Command Palette */
+@layer makemd, default
 
-/*
-* Fixes highlight error
-*/
 
-.better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
+
+
+  .better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
   color: var(--text-on-accent);
 }
 
@@ -25,7 +24,7 @@
 }
 
 /*
-*Improves spacing around hidden palette items box
+* Improves spacing around hidden palette items box
 */
 
 .better-command-palette.better-command-palette .suggestion-hotkey {
@@ -65,7 +64,7 @@
 */
 
 .another-quick-switcher__status__search-command {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .another-quick-switcher__grep__path-input__wrapper {
@@ -84,4 +83,106 @@
 
 .omnisearch-result.is-selected .omnisearch-default-highlight {
   background-color: rgb(var(--ctp-rosewater), 60%);
+}
+
+/*
+* MAKE.md
+*/
+
+body:not(.is-mobile) .mk-main-menu-button:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.ctp-full-palette .mk-sidebar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+
+  &:hover {
+    background-color: rgb(var(--ctp-pink));
+    color: var(--text-on-accent);
+  }
+
+  &:hover svg {
+    color: var(--text-on-accent);
+  }
+}
+
+.ctp-full-palette .mk-sidebar-item-active {
+  box-shadow:
+    inset 0 0 4px rgb(var(--ctp-crust)),
+    inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+
+  svg {
+    color: rgb(var(--ctp-pink)) !important;
+    transition: var(--transition-hover-bg), var(--transition-hover-color);
+  }
+
+  &:hover svg,
+  &:hover {
+    background-color: rgb(var(--ctp-pink));
+    box-shadow: none;
+    color: var(--text-on-accent) !important;
+  }
+}
+
+.mk-sidebar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+
+  &:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  }
+
+  &:hover svg {
+    color: var(--text-on-accent);
+  }
+}
+
+.mk-sidebar-item-active {
+  box-shadow:
+    inset 0 0 4px rgb(var(--ctp-crust)),
+    inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+
+  svg {
+    color: rgb(var(--ctp-accent)) !important;
+    transition: var(--transition-hover-bg), var(--transition-hover-color);
+  }
+
+  &:hover svg,
+  &:hover {
+    background-color: rgb(var(--ctp-accent));
+    box-shadow: none;
+    color: var(--text-on-accent) !important;
+  }
+}
+
+.mk-tree-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.mk-tree-item svg {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+body:not(.is-mobile) .mk-tree-item:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.mk-tree-item:hover svg {
+  color: var(--text-on-accent) !important;
+}
+
+.mk-options-menu__suggestions li {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.mk-options-menu__suggestions li.is-active,
+.mk-options-menu__suggestions li:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
 }
