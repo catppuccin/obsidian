@@ -10,6 +10,7 @@
 
 ## Adds
 + initial compatibility for MAKE.md plugin
++ Style Settings config for file name color
 
 ### Changes
 + font stack css — _typography.scss

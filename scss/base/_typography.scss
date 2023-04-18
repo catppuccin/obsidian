@@ -56,6 +56,10 @@ em > strong {
   padding-bottom: 0;
 }
 
+.inline-title {
+  --inline-title-color: rgb(var(--ctp-page-title, var(--ctp-text)));
+}
+
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1,

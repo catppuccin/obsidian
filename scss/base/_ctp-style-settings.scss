@@ -323,11 +323,71 @@ settings:
         label: Gray
         value: var(--ctp-subtext0)
   -
-    id: headings
-    title: Headings
-    type: heading
-    level: 2
-    collapsed: true
+  */
+
+/* @settings
+name: File Name and Headings
+id: catppuccin-heading-settings
+settings:
+  -
+    id: ctp-page-title
+    title: File name color
+    description: Select your file name color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-text)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
   -
     id: ctp-h1
     title: H1 color
