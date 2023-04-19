@@ -175,9 +175,6 @@ body:not(.is-mobile) .mk-tree-item:hover {
 .mk-options-menu__suggestions li {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
-body:not(.is-grabbing) .tree-item-self.is-selected:hover, .tree-item-self.is-selected {
-  --nav-item-color-selected: var(--text-on-accent);
-}
 
 .mk-options-menu__suggestions li.is-active,
 .mk-options-menu__suggestions li:hover {
@@ -193,4 +190,41 @@ body:not(.is-grabbing) .tree-item-self.is-selected:hover, .tree-item-self.is-sel
 
 .mk-file-context-field-new button:hover {
   color: rgb(var(--ctp-accent)) !important;
+}
+
+body:not(.is-mobile) .mk-tree-wrapper button {
+  transition: var(--transition-hover-bg), var(--transition-hover-color), var(--transition-hover-box-shadow);
+}
+
+body:not(.is-mobile) .mk-folder-buttons button {
+  margin-left: 2px;
+  background-color: transparent !important;
+  & svg { border-radius: 4px; }
+
+  &:hover svg {
+    background-color: rgb(var(--ctp-surface0));
+    box-shadow: var(--box-shadow-large);
+    color: var(--text-normal) !important;
+    outline: 1px solid rgb(var(--ctp-surface1));
+  }
+}
+
+/*
+* TODO: Some of this is redundant in that it's css from app.css
+* but not required for the theme to work when MAKE.md is off, so
+* it should be simplified at some point.
+*/
+
+body:not(.is-grabbing).ctp-full-palette .mk-sidebar {
+  --nav-item-background-active: rgb(var(--ctp-mauve));
+  --nav-item-background-selected: rgb(var(--ctp-mauve));
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
+}
+
+body:not(.is-grabbing .ctp-full-palette) .mk-sidebar {
+  --nav-item-background-active: rgb(var(--ctp-accent), 90%);
+  --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
 }

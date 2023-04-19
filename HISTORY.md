@@ -6,9 +6,14 @@
 + cleanup ./scss/base/_ctp-style-setting.scss
 + update ./scss/base/_app-variables.scss with any changes to app.css
 
+## [0.4.7] - 2023-04-19
+
+### Fixes
++ various hover, active, and selection issues with the make.md plugin in _plugins.scss
+
 ## [0.4.6] - 2023-04-18
 
-## Adds
+### Adds
 + initial compatibility for MAKE.md plugin
 + Style Settings config for file name color
 
