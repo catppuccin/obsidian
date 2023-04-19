@@ -8,6 +8,9 @@
 
 ## [0.4.7] - 2023-04-19
 
+### Adds
++ note to plugins section of README.md about MAKE.md compatibility
+
 ### Fixes
 + various hover, active, and selection issues with the make.md plugin in _plugins.scss
 

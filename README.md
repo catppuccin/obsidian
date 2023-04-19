@@ -121,6 +121,7 @@ These include:
 + Better Command Palette
 + Obsidian Git
 + Omnisearch
++ MAKE.md
 
 ## Development
 
