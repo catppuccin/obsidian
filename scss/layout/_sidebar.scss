@@ -27,8 +27,15 @@
     var(--transition-hover-color);
 }
 
-.tree-item-self {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
+.search-result:not(.is-collapsed) .search-result-file-title {
+  --nav-item-color-active: var(--text-normal);
+}
+
+.tree-item-self,
+.embedded-backlinks .backlink-pane .tree-item-flair {
+  transition:
+    var(--transition-hover-bg),
+    var(--transition-hover-color);
 }
 
 :not(.is-grabbing) .nav-file-title:hover,

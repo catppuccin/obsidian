@@ -1640,7 +1640,7 @@ body {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    serif;
+    sans-serif;
   --font-interface-theme:
     "Nunito Sans",
     -apple-system,
@@ -2173,6 +2173,14 @@ input[type=number]:focus-visible {
   text-decoration-color: inherit;
 }
 
+.cm-s-obsidian .is-flashing .cm-hmd-internal-link,
+.cm-s-obsidian .is-flashing .cm-hmd-internal-link:hover,
+.cm-s-obsidian .is-flashing .cm-formatting-link-start.cm-formatting-link,
+.cm-s-obsidian .is-flashing .cm-formatting-link-end.cm-formatting-link {
+  --link-color: var(--text-on-accent);
+  color: var(--link-color);
+}
+
 .cm-hashtag.cm-hashtag-end {
   text-decoration-color: transparent;
   text-decoration-line: underline;
@@ -2366,7 +2374,12 @@ input[type=number]:focus-visible {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
-.tree-item-self {
+.search-result:not(.is-collapsed) .search-result-file-title {
+  --nav-item-color-active: var(--text-normal);
+}
+
+.tree-item-self,
+.embedded-backlinks .backlink-pane .tree-item-flair {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 

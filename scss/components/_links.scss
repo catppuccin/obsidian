@@ -14,6 +14,14 @@
   }
 }
 
+.cm-s-obsidian .is-flashing .cm-hmd-internal-link,
+.cm-s-obsidian .is-flashing .cm-hmd-internal-link:hover,
+.cm-s-obsidian .is-flashing .cm-formatting-link-start.cm-formatting-link,
+.cm-s-obsidian .is-flashing .cm-formatting-link-end.cm-formatting-link {
+  --link-color: var(--text-on-accent);
+  color: var(--link-color);
+}
+
 .cm-hashtag.cm-hashtag-end {
   text-decoration-color: transparent;
   text-decoration-line: underline;
