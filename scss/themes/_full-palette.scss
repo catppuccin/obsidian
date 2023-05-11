@@ -244,4 +244,17 @@
   .canvas-controls button:hover {
     background-color: rgb(var(--ctp-pink));
   }
+
+  /*
+  * Bookmarks
+  */
+
+  body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-active {
+    --nav-item-color-active: var(--text-on-accent);
+    --nav-item-background-active: rgb(var(--ctp-mauve));
+
+    .tree-item-icon {
+      --icon-color: var(--text-on-accent);
+    }
+  }
 }

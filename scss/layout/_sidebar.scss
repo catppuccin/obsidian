@@ -86,3 +86,35 @@
 .is-flashing .nav-file-title {
   color: var(--text-on-accent);
 }
+
+/*
+* Bookmarks
+*/
+
+body:not(.is-grabbing) .tree-item-self.is-active,
+.tree-item-self.is-active,
+.tree-item-self.is-clickable {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+body:not(.is-grabbing) .tree-item-self.is-active:hover,
+.tree-item-self.is-active {
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-background-active: rgb(var(--ctp-accent));
+
+  .tree-item-icon {
+    --icon-color: var(--text-on-accent);
+  }
+}
+
+@media (hover: hover) {
+  body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
+    .tree-item-icon {
+      --icon-color: var(--text-on-accent);
+    }
+  }
+}
+
+.tree-item-icon {
+  transition: var(--transition-hover-color);
+}

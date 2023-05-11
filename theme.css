@@ -2429,6 +2429,34 @@ input[type=number]:focus-visible {
   color: var(--text-on-accent);
 }
 
+/*
+* Bookmarks
+*/
+body:not(.is-grabbing) .tree-item-self.is-active,
+.tree-item-self.is-active,
+.tree-item-self.is-clickable {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+body:not(.is-grabbing) .tree-item-self.is-active:hover,
+.tree-item-self.is-active {
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-background-active: rgb(var(--ctp-accent));
+}
+body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
+.tree-item-self.is-active .tree-item-icon {
+  --icon-color: var(--text-on-accent);
+}
+
+@media (hover: hover) {
+  body:not(.is-grabbing) .tree-item-self.is-clickable:hover .tree-item-icon {
+    --icon-color: var(--text-on-accent);
+  }
+}
+.tree-item-icon {
+  transition: var(--transition-hover-color);
+}
+
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   --background-modifier-hover: rgb(var(--ctp-accent));
   --background-modifier-active-hover: rgb(var(--ctp-accent));
@@ -2626,6 +2654,9 @@ button.mod-cta:hover {
   */
   /*
   * Canvas
+  */
+  /*
+  * Bookmarks
   */
 }
 .theme-dark:not(.css-settings-manager) .workspace-tab-header-inner-close-button:hover,
@@ -2962,6 +2993,21 @@ button.mod-cta:hover {
 .theme-light:not(.css-settings-manager) .canvas-controls button:hover,
 .ctp-full-palette .canvas-controls button:hover {
   background-color: rgb(var(--ctp-pink));
+}
+.theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover, .theme-dark:not(.css-settings-manager) .tree-item-self.is-active,
+.theme-light:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover,
+.theme-light:not(.css-settings-manager) .tree-item-self.is-active,
+.ctp-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover,
+.ctp-full-palette .tree-item-self.is-active {
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-background-active: rgb(var(--ctp-mauve));
+}
+.theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon, .theme-dark:not(.css-settings-manager) .tree-item-self.is-active .tree-item-icon,
+.theme-light:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
+.theme-light:not(.css-settings-manager) .tree-item-self.is-active .tree-item-icon,
+.ctp-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
+.ctp-full-palette .tree-item-self.is-active .tree-item-icon {
+  --icon-color: var(--text-on-accent);
 }
 
 .better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
