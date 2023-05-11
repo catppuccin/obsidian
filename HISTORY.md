@@ -6,6 +6,11 @@
 + cleanup ./scss/base/_ctp-style-setting.scss
 + update ./scss/base/_app-variables.scss with any changes to app.css
 
+## [0.4.9] - 2023-05-11
+
+### Fixes
++ incorrect colors shown when hovering and selecting items in the new bookmarks sidebar
+
 ## [0.4.7] - 2023-04-19
 
 ### Adds
