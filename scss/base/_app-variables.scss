@@ -1,6 +1,6 @@
 body {
   /** Variables controlling many core aspects of Obsidian's appearance.
-  * At present (11/1/22), some of these may be overwritten inside other
+  * At present (5/15/23), some of these may be overwritten inside other
   * selectors.
   * If a change you make here is not reflected in the theme,
   * cmd/ctrl+f to see if the variable is being defined elsewhere.
@@ -69,13 +69,13 @@ body {
   /* Canvas */
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
-  --canvas-dot-pattern: var(--color-base-30);
   --canvas-color-1: var(--color-red-rgb);
   --canvas-color-2: var(--color-orange-rgb);
   --canvas-color-3: var(--color-yellow-rgb);
   --canvas-color-4: var(--color-green-rgb);
   --canvas-color-5: var(--color-cyan-rgb);
   --canvas-color-6: var(--color-purple-rgb);
+  --canvas-dot-pattern: var(--color-base-30);
 
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
@@ -89,6 +89,7 @@ body {
   --checklist-done-color: rgb(var(--ctp-accent));
 
   /* Code */
+  --code-white-space: pre-wrap;
   --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-muted);
@@ -127,6 +128,8 @@ body {
   --drag-ghost-text-color: var(--text-normal);
 
   /* Embeds */
+  --embed-max-height: 4000px;
+  --embed-canvas-max-height: 400px;
   --embed-background: inherit;
   --embed-border-left: 2px solid var(--interactive-accent);
   --embed-border-right: none;
@@ -248,10 +251,12 @@ body {
   --icon-s: 16px;
   --icon-m: 18px;
   --icon-l: 18px;
+  --icon-xl: 32px;
   --icon-xs-stroke-width: 2px;
   --icon-s-stroke-width: 2px;
   --icon-m-stroke-width: 1.75px;
   --icon-l-stroke-width: 1.75px;
+  --icon-xl-stroke-width: 1.25px;
   --icon-color: var(--text-muted);
   --icon-color-hover: var(--text-on-accent);
   --icon-color-active: var(--text-accent);
@@ -274,6 +279,7 @@ body {
   --inline-title-style: var(--h1-style);
   --inline-title-variant: var(--h1-variant);
   --inline-title-weight: var(--h1-weight);
+  --inline-title-margin-bottom: 0.5em;
 
   /* Inputs */
   --input-height: 30px;
@@ -283,6 +289,7 @@ body {
 
   /* Italic */
   --italic-color: inherit;
+  --italic-weight: inherit;
 
   /* Z-index */
   --layer-cover: 5;
@@ -323,10 +330,11 @@ body {
   --list-marker-color: rgb(var(--ctp-accent));
   --list-marker-color-hover: var(--text-muted);
   --list-marker-color-collapsed: var(--text-accent);
-  --list-bullet-border: 0;
+  --list-bullet-border: none;
   --list-bullet-radius: 50%;
-  --list-bullet-size: 6px;
+  --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
+  --list-numbered-style: decimal;
 
   /* File navigator */
   --nav-item-size: var(--font-ui-small);
@@ -338,7 +346,10 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
   --nav-item-background-selected: hsl(var(--color-accent-hsl), 20%);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-parent-padding: var(--nav-item-padding);
+  --nav-item-children-padding-left: var(--size-2-2);
+  --nav-item-children-margin-left: var(--size-4-3);
   --nav-item-weight: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-weight-active: inherit;
@@ -363,6 +374,13 @@ body {
     );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
+
+  /* PDF view */
+  --pdf-background: var(--background-primary);
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 5%), 0 2px 8px rgba(0, 0, 0, 10%);
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 5%);
+  --pdf-sidebar-background: var(--background-primary);
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 15%), 0 2px 8px rgba(0, 0, 0, 20%);
 
   /* Popovers - file previews */
   --popover-width: 450px;
@@ -455,6 +473,7 @@ body {
   --status-bar-text-color: var(--text-muted);
   --status-bar-position: fixed;
   --status-bar-radius: var(--radius-m) 0 0 0;
+  --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
 
   /* Swatch for color inputs */
   --swatch-radius: 14px;
@@ -467,8 +486,11 @@ body {
   /* Tabs */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
+  --tab-text-color-active: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
   --tab-text-color-focused-active: var(--text-normal);
+  --tab-text-color-focused-highlighted: var(--text-accent);
+  --tab-text-color-focused-active-current: var(--text-normal);
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
   --tab-container-background: var(--background-secondary);

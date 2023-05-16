@@ -6,6 +6,13 @@
 + cleanup ./scss/base/_ctp-style-setting.scss
 + update ./scss/base/_app-variables.scss with any changes to app.css
 
+## [0.4.10] - 2023-5-15
+### Adds
++ more of the default app variables Obsidian devs have included at the top of `app.css` since I last checked
+
+### Fixes
++ some padding issues that would have broken the theme when Obsidian 1.3 ships
+
 ## [0.4.9] - 2023-05-11
 
 ### Fixes
