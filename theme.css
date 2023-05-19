@@ -2836,7 +2836,7 @@ button.mod-cta:hover {
 .theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
 .theme-light:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
 .ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
-  color: var(--icon-color);
+  color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
 .theme-light:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
@@ -3023,7 +3023,8 @@ button.mod-cta:hover {
 .ctp-full-palette .canvas-controls button:hover {
   background-color: rgb(var(--ctp-pink));
 }
-.theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover, .theme-dark:not(.css-settings-manager) .tree-item-self.is-active,
+.theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover,
+.theme-dark:not(.css-settings-manager) .tree-item-self.is-active,
 .theme-light:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .theme-light:not(.css-settings-manager) .tree-item-self.is-active,
 .ctp-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover,
@@ -3031,7 +3032,8 @@ button.mod-cta:hover {
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-background-active: rgb(var(--ctp-mauve));
 }
-.theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon, .theme-dark:not(.css-settings-manager) .tree-item-self.is-active .tree-item-icon,
+.theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
+.theme-dark:not(.css-settings-manager) .tree-item-self.is-active .tree-item-icon,
 .theme-light:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 .theme-light:not(.css-settings-manager) .tree-item-self.is-active .tree-item-icon,
 .ctp-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
