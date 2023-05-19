@@ -91,6 +91,15 @@
 * Bookmarks
 */
 
+.tree-item-self.is-selected {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+
+  .tree-item-icon {
+    color: var(--text-on-accent);
+  }
+}
+
 body:not(.is-grabbing) .tree-item-self.is-active,
 .tree-item-self.is-active,
 .tree-item-self.is-clickable {
@@ -117,4 +126,12 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 
 .tree-item-icon {
   transition: var(--transition-hover-color);
+}
+
+/*
+* Drop indicator (e.g. line that appears when dragging a sidebar item)
+*/
+
+.drop-indicator.is-active {
+  border: rgb(var(--ctp-rosewater)) 2px solid;
 }
