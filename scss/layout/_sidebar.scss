@@ -127,11 +127,3 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .tree-item-icon {
   transition: var(--transition-hover-color);
 }
-
-/*
-* Drop indicator (e.g. line that appears when dragging a sidebar item)
-*/
-
-.drop-indicator.is-active {
-  border: rgb(var(--ctp-rosewater)) 2px solid;
-}

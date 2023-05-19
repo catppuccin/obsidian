@@ -2453,6 +2453,14 @@ input[type=number]:focus-visible {
 /*
 * Bookmarks
 */
+.tree-item-self.is-selected {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+.tree-item-self.is-selected .tree-item-icon {
+  color: var(--text-on-accent);
+}
+
 body:not(.is-grabbing) .tree-item-self.is-active,
 .tree-item-self.is-active,
 .tree-item-self.is-clickable {
