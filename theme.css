@@ -648,6 +648,16 @@ settings:
         value: ctp-accent-lavender
 */
 /* @settings
+name: Icon Styles
+id: catppuccin-icon-styles
+settings:
+  -
+    id: ctp-icon-hide
+    title: Hide icons
+    description: Hide icons styled or created by the theme. May solve compatibility issues between the theme and other third party plugins. Currently applies to folder icons in the file sidebar.
+    type: class-toggle
+*/
+/* @settings
 name: Interface Styles
 id: catppuccin-interface-styles
 settings:
@@ -2130,6 +2140,16 @@ body {
   content: "";
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3C/svg%3E");
   transition: -webkit-mask-image 0.2s ease;
+}
+
+/*
+* Hide icons with Style Settings
+*/
+.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
+.ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
+.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
+.ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  display: none;
 }
 
 select:focus,
