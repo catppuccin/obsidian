@@ -5,6 +5,12 @@
 + expand Style Settings support
 + cleanup ./scss/base/_ctp-style-setting.scss
 + update ./scss/base/_app-variables.scss with any changes to app.css
++ rewrite theme
+
+## [0.4.14] - 2023-6-22
+### Fixes
++ incorrect rgb colors in certain parts of the _ctp-style-settings.scss file. They may have always been a little bit off -- I can't find a record in the main palette's commit history that explains where they came from, but they appear to have been part of this theme since its Catppuccin 2.0 launch. My guess is they are a relic of the sass mapping process their creator used, but I have no memory of why we/he/I chose that route.
++ incorrect transition speeds on inactive tabs. Maybe.
 
 ## [0.4.10] - 2023-5-15
 ### Adds
