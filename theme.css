@@ -2517,7 +2517,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
   color: var(--text-on-accent);
 }
 
-.workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 

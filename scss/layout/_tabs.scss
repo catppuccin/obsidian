@@ -11,7 +11,7 @@
   }
 }
 
-.workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
