@@ -134,6 +134,7 @@ page for the latest news.
 + [mbeckrich](https://github.com/mbeckrich)
 + [AnubisNekhet](https://github.com/anubisnekhet)
 + [pitoniak32](https://github.com/pitoniak32)
++ [hiimsergey](https://github.com/hiimsergey)
 + The talented and kindhearted people in the Obsidian discord's
   CSS channel. In particular:
     + [Chetachi](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/)
