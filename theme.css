@@ -1832,6 +1832,16 @@ h6,
   color: rgb(var(--ctp-rosewater), 80%);
 }
 
+.drag-ghost {
+  --drag-ghost-background: var(--background-secondary);
+  --drag-ghost-text-color: rgb(var(--ctp-rosewater), 80%);
+  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+}
+
+.tree-item-self.is-clickable.nav-file-title.has-focus[style] {
+  --background-modifier-border-focus: var(--background-modifier-border-focus);
+}
+
 /*
 * From app.css
 */
@@ -2155,6 +2165,10 @@ body {
 select:focus,
 .dropdown:focus {
   box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
+}
+
+.dropdown {
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
 }
 
 textarea:active,
@@ -2624,6 +2638,10 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
   background-color: rgb(var(--ctp-green));
 }
 
+button:not(.clickable-icon) {
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+}
+
 button.mod-cta {
   border: 0;
   border-radius: var(--button-radius);
@@ -2639,6 +2657,7 @@ button.mod-cta {
 }
 button.mod-cta:not(.clickable-icon) {
   background-color: var(--interactive-normal);
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
 }
 button.mod-cta:hover {
   background-color: var(--interactive-hover);
@@ -2662,6 +2681,9 @@ button.mod-cta:hover {
   text-transform: lowercase;
 }
 
+/*
+* TODO: Some tweaks for the light/Catppuccin Latte theme.
+*/
 .theme-dark:not(.css-settings-manager),
 .theme-light:not(.css-settings-manager),
 .ctp-full-palette {

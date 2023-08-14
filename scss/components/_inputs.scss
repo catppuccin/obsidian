@@ -3,6 +3,10 @@ select:focus,
   box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
 }
 
+.dropdown {
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+}
+
 textarea:active,
 input[type="text"]:active,
 input[type="search"]:active,

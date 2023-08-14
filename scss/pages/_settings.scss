@@ -36,6 +36,10 @@
   background-color: rgb(var(--ctp-green));
 }
 
+button:not(.clickable-icon) {
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+}
+
 button.mod-cta {
   border: 0;
   border-radius: var(--button-radius);
@@ -51,6 +55,7 @@ button.mod-cta {
 
   &:not(.clickable-icon) {
     background-color: var(--interactive-normal);
+    transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
   }
 
   &:hover {

@@ -180,6 +180,17 @@ h6,
   color: rgb(var(--ctp-rosewater), 80%);
 }
 
+.drag-ghost {
+  --drag-ghost-background: var(--background-secondary);
+  --drag-ghost-text-color: rgb(var(--ctp-rosewater), 80%);
+
+  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+}
+
+.tree-item-self.is-clickable.nav-file-title.has-focus[style] {
+  --background-modifier-border-focus: var(--background-modifier-border-focus);
+}
+
 /*
 * From app.css
 */
