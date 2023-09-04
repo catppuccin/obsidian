@@ -1,0 +1,80 @@
+@use "catppuccin";
+@use "sass:list";
+
+/*
+* Converts colors to raw rgb
+* Source: https://github.com/ghostdevv/sass-hex-rgb
+*/
+
+@function raw($hex) {
+  @return red($hex) + ', ' + green($hex) + ', ' + blue($hex);
+}
+
+@function to_hsl($hex) {
+  @return hsl(round(hue($hex)) round(saturation($hex)) round(lightness($hex)));
+}
+
+/*
+* Generates the Catppuccin palette and sets 'Mocha' and 'Latte' as
+* dark and light defaults, respectively.
+*/
+
+@mixin accents {
+  $accents: null;
+  --ctp-test-accent: $accents;
+}
+
+@each $flavor, $color in catppuccin.$palette {
+
+  @if not(#{$flavor} == "latte") {
+    .theme-dark.ctp-#{$flavor} {
+      @each $c in $color {
+        $rgb: raw(list.nth($c, 2));
+        $hex: list.nth($c, 2);
+
+        --ctp-#{list.nth($c, 1)}: #{$hex};
+        --ctp-#{list.nth($c, 1)}-rgb: #{$rgb};
+      }
+    }
+    @if #{$flavor} == "mocha" {
+      .theme-dark {
+        @extend .ctp-mocha;
+        $color_accent: map-get($color, "lavender");
+        $color_accent_green: map-get($color, "green");
+        $color_accent_pink: map-get($color, "pink");
+
+        --ctp-accent: #{$color_accent};
+        --ctp-accent-h: #{round(hue($color_accent))};
+        --ctp-accent-s: #{round(saturation($color_accent))};
+        --ctp-accent-l: #{round(lightness($color_accent))};
+
+        --ctp-accent-green: #{$color_accent_green};
+        --ctp-accent-green-h: #{round(hue($color_accent_green))};
+        --ctp-accent-green-s: #{round(saturation($color_accent_green))};
+        --ctp-accent-green-l: #{round(lightness($color_accent_green))};
+
+        --ctp-accent-pink: #{$color_accent_pink};
+        --ctp-accent-pink-h: #{round(hue($color_accent_pink))};
+        --ctp-accent-pink-s: #{round(saturation($color_accent_pink))};
+        --ctp-accent-pink-l: #{round(lightness($color_accent_pink))};
+      }
+    }
+  } @else {
+    @if #{$flavor} == "latte" {
+      .theme-light.ctp-#{$flavor} {
+        @extend .ctp-latte
+      }
+    }
+  }
+}
+
+@each $color in catppuccin.$brights {
+  .ctp-#{list.nth($color, 1)} {
+    $color_accent: list.nth($color, 2);
+
+    --ctp-accent: #{$color_accent};
+    --ctp-accent-h: #{round(hue($color_accent))};
+    --ctp-accent-s: #{round(saturation($color_accent))};
+    --ctp-accent-l: #{round(lightness($color_accent))};
+  }
+}

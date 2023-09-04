@@ -1,8 +1,0 @@
-/* bezier from Josh Comeau's blog */
-body {
-  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-}

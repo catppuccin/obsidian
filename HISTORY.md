@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [1.0.0] - 2023-9-3
+### Adds
++ The first phase of the rewrite of the theme. Everything is currently barebones, but the basics should all work and look a bit nicer than they do on the main branch (properties in particular are broken on main right now). 
+
 ## [0.4.17] - 2023-8-14
 ### Adds
 + Transition effects now exist on button/dropdown hovers
