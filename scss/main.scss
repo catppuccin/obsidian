@@ -15,19 +15,24 @@ body {
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
+
   /* Bold */
   --bold-weight: var(--font-semibold);
   --bold-color: var(--color-green);
+
   /* Borders */
   --border-width: 1px;
+
   /* Buttons */
   --button-radius: var(--input-radius);
+
   /* Callouts */
   --callout-border-width: 1px;
   --callout-border-opacity: 0.25;
@@ -53,6 +58,7 @@ body {
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --callout-quote: var(--ctp-overlay1-rgb);
+
   /* Canvas */
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
@@ -63,6 +69,7 @@ body {
   --canvas-color-5: var(--color-cyan-rgb);
   --canvas-color-6: var(--color-purple-rgb);
   --canvas-dot-pattern: var(--color-base-30);
+
   /* Checkboxes */
   --checkbox-radius: var(--radius-m);
   --checkbox-size: var(--font-text-size);
@@ -73,6 +80,7 @@ body {
   --checkbox-border-color-hover: var(--color-yellow);
   --checklist-done-decoration: line-through;
   --checklist-done-color: var(--text-muted);
+
   /* Code */
   --code-white-space: pre-wrap;
   --code-radius: var(--radius-m);
@@ -89,25 +97,31 @@ body {
   --code-string: var(--color-green);
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
+
   /* Collapse icons */
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-faint);
+
   /* Cursor */
   --cursor: default;
   --cursor-link: pointer;
+
   /* Dialogs - e.g. small modals, confirmations */
   --dialog-width: 560px;
   --dialog-max-width: 80vw;
   --dialog-max-height: 85vh;
+
   /* Dividers â€” between panes */
   --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
   --divider-width: 1px;
   --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
+
   /* Dragging */
   --drag-ghost-background: rgba(var(--mono-rgb-0), 1);
   --drag-ghost-text-color: var(--ctp-rosewater);
+
   /* Embeds */
   --embed-max-height: 4000px;
   --embed-canvas-max-height: 400px;
@@ -118,9 +132,12 @@ body {
   --embed-border-bottom: none;
   --embed-padding: 0 0 0 var(--size-4-6);
   --embed-font-style: inherit;
+
   /* Blocks */
-  --embed-block-shadow-hover: var(--mono-rgb-0) 1px var(--background-modifier-border),
-  inset var(--mono-rgb-0) 1px var(--background-modifier-border);
+  --embed-block-shadow-hover:
+    var(--mono-rgb-0) 1px var(--background-modifier-border),
+    inset var(--mono-rgb-0) 1px var(--background-modifier-border);
+
   /* File layout */
   --file-line-width: 700px;
   --file-folding-offset: 24px;
@@ -129,15 +146,18 @@ body {
   --file-header-font-weight: var(--font-bold);
   --file-header-border: var(--border-width) solid transparent;
   --file-header-justify: center;
+
   /* Relative font sizes */
   --font-smallest: 0.8em;
   --font-smaller: 0.875em;
   --font-small: 0.933em;
+
   /* UI font sizes */
   --font-ui-smaller: 12px;
   --font-ui-small: 13px;
   --font-ui-medium: 15px;
   --font-ui-large: 20px;
+
   /* Font weights */
   --font-thin: 100;
   --font-extralight: 200;
@@ -148,8 +168,10 @@ body {
   --font-bold: 700;
   --font-extrabold: 800;
   --font-black: 900;
+
   /* Footnotes */
   --footnote-size: var(--font-smaller);
+
   /* Graphs */
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
@@ -159,13 +181,14 @@ body {
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: var(--color-green);
   --graph-node-attachment: var(--color-yellow);
+
   /* Headings */
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --h1-color: var(--text-accent);
   --h2-color: var(--color-cyan);
   --h3-color: var(--color-purple);
-  --h4-color: var(--color-pink);
+  --h4-color: var(--ctp-maroon);
   --h5-color: var(--color-yellow);
   --h6-color: var(--color-orange);
   --h1-font: inherit;
@@ -204,11 +227,14 @@ body {
   --h4-weight: 600;
   --h5-weight: 600;
   --h6-weight: 600;
+
   /* View header */
   --header-height: 40px;
+
   /* Horizontal rules */
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
+
   /* Icons */
   --icon-size: var(--icon-m);
   --icon-stroke: var(--icon-m-stroke-width);
@@ -223,18 +249,20 @@ body {
   --icon-l-stroke-width: 1.75px;
   --icon-xl-stroke-width: 1.25px;
   --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-accent);
-  --icon-color-focused: var(--text-normal);
+  --icon-color-hover: var(--text-accent);
+  --icon-color-active: var(--color-purple);
+  --icon-color-focused: var(--color-purple);
   --icon-opacity: 0.85;
   --icon-opacity-hover: 1;
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
+
   /* Indentation guide */
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+
   /* Inline title */
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -244,14 +272,17 @@ body {
   --inline-title-variant: var(--h1-variant);
   --inline-title-weight: var(--h1-weight);
   --inline-title-margin-bottom: 0.5em;
+
   /* Inputs */
   --input-height: 30px;
   --input-radius: var(--radius-m);
   --input-font-weight: var(--font-normal);
   --input-border-width: 1px;
+
   /* Italic */
   --italic-color: var(--ctp-rosewater);
   --italic-weight: inherit;
+
   /* Z-index */
   --layer-cover: 5;
   --layer-sidedock: 10;
@@ -263,18 +294,20 @@ body {
   --layer-menu: 65;
   --layer-tooltip: 70;
   --layer-dragged-item: 80;
+
   /* Line heights */
   --line-height-normal: 1.45;
   --line-height-tight: 1.3;
+
   /* Links */
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent);
-  --link-decoration: underline;
+  --link-decoration: none;
   --link-decoration-hover: underline;
   --link-decoration-thickness: 1px;
   --link-external-color: var(--color-blue);
   --link-external-color-hover: var(--color-blue);
-  --link-external-decoration: underline;
+  --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-muted);
@@ -282,9 +315,10 @@ body {
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: rgba(var(--color-red-rgb), 0.7);
+
   /* Lists */
   --list-indent: 2.16em;
-  --list-spacing: .27ex;
+  --list-spacing: 0.27ex;
   --list-marker-color: var(--text-accent);
   --list-marker-color-hover: var(--text-accent);
   --list-marker-color-collapsed: var(--text-accent);
@@ -293,6 +327,7 @@ body {
   --list-bullet-size: 0.54ex;
   --list-bullet-transform: none;
   --list-numbered-style: decimal;
+
   /* File navigator */
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
@@ -315,6 +350,7 @@ body {
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-collapse-icon-color: var(--collapse-icon-color);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
+
   /* Metadata */
   --metadata-background: var(--background-secondary);
   --metadata-display-reading: block;
@@ -349,6 +385,7 @@ body {
   --metadata-input-background-active: var(--background-modifier-hover);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-sidebar-input-font-size: var(--font-ui-small);
+
   /* Modals - e.g. settings, community themes, community plugins */
   --modal-background: var(--background-primary);
   --modal-width: 90vw;
@@ -360,19 +397,20 @@ body {
   --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
+
   /* Multi-select pills
    *NOTE:
    * 2023-09-03
    * These seem to be overwritten by other variables elsewhere in the theme.
-   * Maybe not fully implemented yet? */
+   * Maybe not fully implemented yet? Adjustments made elsewhere for now. */
   --pill-color: var(--text-muted);
   --pill-color-hover: var(--text-normal);
   --pill-color-remove: var(--text-faint);
-  --pill-color-remove-hover: var(--text-accent);
+  --pill-color-remove-hover: var(--color-red);
   --pill-decoration: none;
   --pill-decoration-hover: none;
-  --pill-background: transparent;
-  --pill-background-hover: transparent;
+  --pill-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --pill-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
   --pill-border-color: var(--background-modifier-border);
   --pill-border-color-hover: var(--background-modifier-border-hover);
   --pill-border-width: var(--border-width);
@@ -380,9 +418,11 @@ body {
   --pill-padding-y: 0.25em;
   --pill-radius: 2em;
   --pill-weight: inherit;
+
   /* Paragraphs */
   --p-spacing: 1rem;
-  --p-spacing-empty: 0rem;
+  --p-spacing-empty: 0;
+
   /* PDF view */
   --pdf-background: var(--background-secondary);
   --pdf-page-background: var(--background-secondary);
@@ -390,6 +430,7 @@ body {
   --pdf-spread-shadow: 0 0 0 1px rgba(var(--mono-rgb-0), 0.05);
   --pdf-sidebar-background: var(--background-secondary);
   --pdf-thumbnail-shadow: 0 0 0 1px rgba(var(--mono-rgb-0), 0.15), 0 2px 8px rgba(var(--mono-rgb-0), 0.2);
+
   /* Popovers - file previews */
   --popover-width: 450px;
   --popover-height: 400px;
@@ -397,32 +438,38 @@ body {
   --popover-pdf-width: 600px;
   --popover-pdf-height: 800px;
   --popover-font-size: var(--font-text-size);
+
   /* Prompts - e.g. quick switcher, command palette */
   --prompt-width: 700px;
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
   --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 12px;
   --radius-xl: 16px;
+
   /* Ribbon */
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-width: 44px;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
+
   /* Scrollbars */
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+
   /* Search */
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
   --search-icon-size: 18px;
   --search-result-background: var(--background-secondary);
+
   /* Layout sizing - for padding and margins */
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -438,9 +485,11 @@ body {
   --size-4-12: 48px;
   --size-4-16: 64px;
   --size-4-18: 72px;
+
   /* Sidebar */
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
+
   /* Sliders */
   --slider-thumb-border-width: 1px;
   --slider-thumb-border-color: var(--background-modifier-border-hover);
@@ -452,6 +501,7 @@ body {
   --slider-s-thumb-position: -5px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
+
   /* Status bar */
   --status-bar-background: var(--background-secondary);
   --status-bar-border-color: var(--divider-color);
@@ -461,11 +511,13 @@ body {
   --status-bar-position: fixed;
   --status-bar-radius: var(--radius-m) 0 0 0;
   --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
+
   /* Swatch for color inputs */
   --swatch-radius: 14px;
   --swatch-height: 24px;
   --swatch-width: 24px;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
+
   /* Tabs */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
@@ -485,6 +537,7 @@ body {
   --tab-radius-active: 6px 6px 0 0;
   --tab-width: 200px;
   --tab-max-width: 320px;
+
   /* Stacked tabs */
   --tab-stacked-pane-width: 700px;
   --tab-stacked-header-width: var(--header-height);
@@ -494,6 +547,7 @@ body {
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(var(--mono-rgb-0), 0.05);
+
   /* Tables */
   --table-background: var(--background-secondary);
   --table-border-width: 1px;
@@ -516,29 +570,32 @@ body {
   --table-row-background-hover: var(--table-background);
   --table-row-alt-background: var(--table-background);
   --table-row-last-border-width: var(--table-border-width);
+
   /* Tags */
-  --tag-size: var(--font-smaller);
+  --tag-size: var(--font-text-size);
   --tag-color: var(--text-accent);
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-decoration-hover: var(--text-accent) 1px underline;
+  --tag-background: none;
+  --tag-background-hover: none;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --tag-border-width: 0px;
-  --tag-padding-x: 0.65em;
-  --tag-padding-y: 0.25em;
-  --tag-radius: 2em;
+  --tag-border-width: 0;
+  --tag-padding-x: 0;
+  --tag-padding-y: 0;
+  --tag-radius: 0;
   --tag-weight: inherit;
+
   /* Window frame */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
-  --titlebar-border-width: 0px;
+  --titlebar-border-width: 0;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
   --titlebar-text-color-focused: var(--text-normal);
   --titlebar-text-weight: var(--font-bold);
+
   /* Toggles */
   --toggle-border-width: 2px;
   --toggle-width: 40px;
@@ -551,23 +608,27 @@ body {
   --toggle-s-width: 34px;
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
+
   /* Vault name */
   --vault-name-font-size: var(--font-ui-small);
   --vault-name-font-weight: var(--font-medium);
   --vault-name-color: var(--text-normal);
+
   /* Workspace */
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
 
   /* Color mappings ------------------------ */
+
   /* Accent HSL values */
   --accent-h: var(--ctp-accent-h);
   --accent-s: var(--ctp-accent-s);
   --accent-l: var(--ctp-accent-l);
-
   --accent-green-h: var(--ctp-accent-green-h);
   --accent-green-s: var(--ctp-accent-green-s);
   --accent-green-l: var(--ctp-accent-green-l);
-
+  --accent-mauve-h: var(--ctp-accent-mauve-h);
+  --accent-mauve-s: var(--ctp-accent-mauve-s);
+  --accent-mauve-l: var(--ctp-accent-mauve-l);
   --accent-pink-h: var(--ctp-accent-pink-h);
   --accent-pink-s: var(--ctp-accent-pink-s);
   --accent-pink-l: var(--ctp-accent-pink-l);
@@ -587,8 +648,10 @@ body {
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-green);
   --background-modifier-message: rgba(var(--mono-rgb-0), 1);
+
   /* Inputs */
   --background-modifier-form-field: var(--color-base-00);
+
   /* Text */
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -606,12 +669,13 @@ body {
   --interactive-normal: var(--color-base-00);
   --interactive-hover: var(--color-base-10);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent: var(--color-accent-2);
-  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-accent: var(--color-accent-1);
+  --interactive-accent-hover: var(--color-accent-2);
 }
 
 .theme-dark {
   color-scheme: dark;
+
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: var(--ctp-crust-rgb);
   --mono-rgb-100: var(--ctp-text-rgb);
@@ -643,12 +707,16 @@ body {
   --color-base-60: var(--ctp-overlay1);
   --color-base-70: var(--ctp-subtext1);
   --color-base-100: var(--ctp-text);
-  --color-accent-hsl: var(--accent-h),
-  var(--accent-s),
-  var(--accent-l);
+  --color-accent-hsl:
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --color-accent-mauve: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
+  --color-accent-mauve-1: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
+  --color-accent-mauve-2: hsl(var(--accent-mauve-h), var(--accent-mauve-s), calc(var(--accent-mauve-l) - 3%));
   --background-modifier-form-field: var(--color-base-20);
   --background-secondary-alt: var(--color-base-20);
   --interactive-normal: var(--color-base-30);
@@ -656,22 +724,26 @@ body {
   --background-modifier-box-shadow: rgba(var(--mono-rgb-0), 0.3);
   --background-modifier-cover: rgba(var(--mono-rgb-0), 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.2);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-  0 2px 4px 0 rgba(0, 0, 0, .15),
-  0 1px 1.5px 0 rgba(0, 0, 0, .1),
-  0 1px 2px 0 rgba(0, 0, 0, .2),
-  0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-  0 2px 3px 0 rgba(0, 0, 0, .3),
-  0 1px 1.5px 0 rgba(0, 0, 0, .2),
-  0 1px 2px 0 rgba(0, 0, 0, .4),
-  0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
-  0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-  0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-  0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-  0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 9%),
+    0 2px 4px 0 rgba(0, 0, 0, 15%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 10%),
+    0 1px 2px 0 rgba(0, 0, 0, 20%),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 16%),
+    0 2px 3px 0 rgba(0, 0, 0, 30%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 20%),
+    0 1px 2px 0 rgba(0, 0, 0, 40%),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0 1px 2px rgba(0, 0, 0, 12.1%),
+    0 3.4px 6.7px rgba(0, 0, 0, 17.9%),
+    0 15px 30px rgba(0, 0, 0, 30%);
+  --shadow-l:
+    0 1.8px 7.3px rgba(0, 0, 0, 7.1%),
+    0 6.3px 24.7px rgba(0, 0, 0, 11.2%),
+    0 30px 90px rgba(0, 0, 0, 20%);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 }
@@ -682,10 +754,11 @@ body {
 */
 
 .native-scrollbars ::-webkit-scrollbar {
-  background-color: var(--scrollbar-bg);
   width: 12px;
   height: 12px;
-  -webkit-border-radius: var(--radius-l);
+  border-radius: var(--radius-l);
+  background-color: var(--scrollbar-bg);
+
 }
 
 .native-scrollbars ::-webkit-scrollbar-track {
@@ -693,15 +766,15 @@ body {
 }
 
 .native-scrollbars ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb-bg);
-  -webkit-border-radius: var(--radius-l);
-  background-clip: padding-box;
-  border: 2px solid transparent;
   min-height: 45px;
+  border: 2px solid transparent;
+  border-radius: var(--radius-l);
+  background-clip: padding-box;
+  background-color: var(--scrollbar-thumb-bg);
 }
 
 .native-scrollbars ::-webkit-scrollbar-thumb:active {
-  -webkit-border-radius: var(--radius-l);
+  border-radius: var(--radius-l);
 }
 
 .native-scrollbars ::-webkit-scrollbar-thumb:hover,
@@ -714,8 +787,8 @@ body {
 }
 
 .native-scrollbars * {
-  scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+  scrollbar-width: thin;
 }
 
 /*
@@ -756,27 +829,128 @@ body {
 * TODO: Temporary fix for icon type background color change on drag
 */
 
-.is-being-dragged > * {
-  color: black !important;
+.is-being-dragged > .nav-file-tag {
+  background-color: var(--background-primary);
 }
 
 /*
 * Fixes unresolved links and their color/underline issues
 */
 
-.cm-s-obsidian span.cm-hmd-internal-link:hover:has(.is-unresolved)  {
+.cm-s-obsidian span.cm-hmd-internal-link:hover:has(.is-unresolved) {
   text-decoration-color: var(--link-unresolved-decoration-color);
 }
 
 .markdown-source-view.mod-cm6 .is-unresolved:hover {
-   color: var(--text-muted);
-  opacity: 0.7;
+  color: var(--text-muted);
 }
 
 /*
 * Highlight backlink search result area
 */
 
-//.search-result:not(.is-collapsed) .search-result-file-title {
-//  background-color: var(--nav-item-background-active);
-//}
+.search-result:not(.is-collapsed) .search-result-file-title {
+  --nav-item-color-active: var(--text-normal);
+}
+
+/*
+* Reduce border size on dropdown :focus
+*/
+
+select:focus,
+.dropdown:focus {
+  box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+}
+
+/*
+* Darken input shadow for buttons with color
+*/
+
+button.mod-cta {
+  --interactive-accent: var(--color-accent-mauve);
+  --interactive-accent-hover: var(--color-accent-mauve-2);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 24%),
+    0 1px 2px 0 rgba(0, 0, 0, 40%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 20%),
+    0 2px 4px 0 rgba(0, 0, 0, 60%),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 18%),
+    0 1px 2px 0 rgba(0, 0, 0, 30%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 10%),
+    0 1px 3px 0 rgba(0, 0, 0, 50%),
+    0 0 0 0 transparent;
+}
+
+/*
+* Pills
+* Currently app.css sets pill background based on tag background
+*/
+
+.metadata-property[data-property-key="tags"] {
+  --pill-color-remove-hover: var(--color-red);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --pill-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --pill-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --pill-decoration: none;
+  --pill-decoration-hover: none;
+  --pill-padding-x: 0.65em;
+  --pill-padding-y: 0.25em;
+  --pill-radius: 2em;
+  --pill-weight: inherit;
+}
+
+/*
+* Tags
+ */
+
+.cm-hashtag:hover {
+  text-decoration: underline 1px var(--text-accent);
+}
+
+/*
+* Icons
+*/
+
+// Active state icon color
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  --tab-text-color-focused-active-current: var(--color-purple);
+}
+
+// Change from app.css to mauve
+
+.mod-root .workspace-tab-header-status-icon {
+  --text-accent: var(--color-purple);
+}
+
+// Change from app.css to red
+
+@media (hover: hover) {
+  .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
+    color: var(--color-red);
+  }
+}
+
+@media (hover: hover) {
+  .mod-left-split .workspace-tab-header.has-active-menu:hover,
+  .mod-right-split .workspace-tab-header.has-active-menu:hover,
+  .mod-left-split .workspace-tab-header.is-active:hover,
+  .mod-right-split .workspace-tab-header.is-active:hover {
+    color: var(--text-accent);
+  }
+}
+
+// Search results from backlinks
+
+.cm-s-obsidian .is-flashing > .cm-hmd-internal-link {
+  --link-color-hover: var(--text-on-accent);
+
+  color: var(--text-on-accent);
+}
+
+/*
+* Link transitions, maybe?
+*/
