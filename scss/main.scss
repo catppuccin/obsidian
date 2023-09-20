@@ -1,4 +1,5 @@
 @use "colors";
+@use "style-settings";
 
 /*
 *Obsidian theme variables
@@ -99,8 +100,8 @@ body {
   --code-value: var(--color-purple);
 
   /* Collapse icons */
-  --collapse-icon-color: var(--text-faint);
-  --collapse-icon-color-collapsed: var(--text-faint);
+  --collapse-icon-color: var(--text-accent);
+  --collapse-icon-color-collapsed: var(--text-accent);
 
   /* Cursor */
   --cursor: default;
@@ -185,12 +186,12 @@ body {
   /* Headings */
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
-  --h1-color: var(--text-accent);
+  --h1-color: var(--ctp-lavender);
   --h2-color: var(--color-cyan);
-  --h3-color: var(--color-purple);
-  --h4-color: var(--ctp-maroon);
-  --h5-color: var(--color-yellow);
-  --h6-color: var(--color-orange);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-orange);
+  --h5-color: var(--ctp-maroon);
+  --h6-color: var(--ctp-mauve);
   --h1-font: inherit;
   --h2-font: inherit;
   --h3-font: inherit;
@@ -296,25 +297,25 @@ body {
   --layer-dragged-item: 80;
 
   /* Line heights */
-  --line-height-normal: 1.45;
+  --line-height-normal: 1.5;
   --line-height-tight: 1.3;
 
   /* Links */
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent);
-  --link-decoration: none;
+  --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: 1px;
   --link-external-color: var(--color-blue);
   --link-external-color-hover: var(--color-blue);
-  --link-external-decoration: none;
+  --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-muted);
-  --link-unresolved-opacity: 0.7;
+  --link-unresolved-opacity: 0.8;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: rgba(var(--color-red-rgb), 0.7);
+  --link-unresolved-decoration-color: rgba(var(--color-red-rgb), 0.8);
 
   /* Lists */
   --list-indent: 2.16em;
@@ -597,13 +598,13 @@ body {
   --titlebar-text-weight: var(--font-bold);
 
   /* Toggles */
-  --toggle-border-width: 2px;
+  --toggle-border-width: 4px;
   --toggle-width: 40px;
   --toggle-radius: 18px;
-  --toggle-thumb-color: white;
-  --toggle-thumb-radius: 18px;
-  --toggle-thumb-height: 18px;
-  --toggle-thumb-width: 18px;
+  --toggle-thumb-color: var(--text-normal);
+  --toggle-thumb-radius: 12px;
+  --toggle-thumb-height: 12px;
+  --toggle-thumb-width: 12px;
   --toggle-s-border-width: 2px;
   --toggle-s-width: 34px;
   --toggle-s-thumb-height: 15px;
@@ -758,7 +759,6 @@ body {
   height: 12px;
   border-radius: var(--radius-l);
   background-color: var(--scrollbar-bg);
-
 }
 
 .native-scrollbars ::-webkit-scrollbar-track {
@@ -825,12 +825,26 @@ body {
   color: var(--text-on-accent);
 }
 
+.nav-file-tag {
+  background-color: var(--color-base-30);
+  outline: 1px solid var(--color-base-40);
+}
+
 /*
 * TODO: Temporary fix for icon type background color change on drag
 */
 
 .is-being-dragged > .nav-file-tag {
   background-color: var(--background-primary);
+}
+
+/*
+* Nav file tags when active
+*/
+
+.is-active .nav-file-tag {
+  background-color: var(--background-primary);
+  color: var(--text-muted);
 }
 
 /*
@@ -867,20 +881,9 @@ select:focus,
 */
 
 button.mod-cta {
-  --interactive-accent: var(--color-accent-mauve);
-  --interactive-accent-hover: var(--color-accent-mauve-2);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 24%),
-    0 1px 2px 0 rgba(0, 0, 0, 40%),
-    0 1px 1.5px 0 rgba(0, 0, 0, 20%),
-    0 2px 4px 0 rgba(0, 0, 0, 60%),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 18%),
-    0 1px 2px 0 rgba(0, 0, 0, 30%),
-    0 1px 1.5px 0 rgba(0, 0, 0, 10%),
-    0 1px 3px 0 rgba(0, 0, 0, 50%),
-    0 0 0 0 transparent;
+  background-color: var(--interactive-normal);
+  box-shadow: var(--input-shadow);
+  color: var(--text-normal);
 }
 
 /*
@@ -902,6 +905,13 @@ button.mod-cta {
   --pill-weight: inherit;
 }
 
+// Move arrow a little to prevent cramping on the properties box
+
+.metadata-properties-heading .collapse-indicator {
+  left: -33px;
+  padding-right: 0.5rem;
+}
+
 /*
 * Tags
  */
@@ -918,6 +928,11 @@ button.mod-cta {
 
 .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
   --tab-text-color-focused-active-current: var(--color-purple);
+}
+
+// Change for bookmarks sidebar
+.tree-item-self.is-active .tree-item-icon {
+  color: var(--text-on-accent);
 }
 
 // Change from app.css to mauve
@@ -952,5 +967,66 @@ button.mod-cta {
 }
 
 /*
-* Link transitions, maybe?
+* Add warning text that accent color is disabled --
+* modified CSS from Sanctum and Shimmering Focus themes.
 */
+
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > .setting-editor-extra-setting-button > .lucide-rotate-ccw {
+  display: none;
+}
+
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > .setting-editor-extra-setting-button + input[type="color"] {
+  width: fit-content;
+  visibility: hidden;
+}
+
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > input[type="color"]::before {
+  position: relative;
+  top: 1px;
+  color: var(--text-error);
+  content: "The accent color is set by the theme. Please use the Style Settings community plugin to change this and other settings in Catppuccin.";
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-smaller);
+  visibility: visible;
+}
+
+/*
+* Settings checkbox colors
+*/
+
+.checkbox-container {
+  height: calc(var(--toggle-thumb-height) + var(--toggle-border-width) * 2);
+  background-color: var(--ctp-maroon);
+  box-shadow: 0 0 1px inset var(--background-primary);
+
+}
+
+.checkbox-container:hover::after {
+  background-color: var(--color-yellow);
+}
+
+@media (hover: hover) {
+  .checkbox-container:hover {
+    box-shadow: 0 0 2px inset var(--background-primary);
+  }
+}
+
+.checkbox-container.is-enabled {
+  background-color: var(--color-green);
+}
+
+.checkbox-container::after {
+  outline: 1px solid var(--background-modifier-border);
+}
+
+/*
+* Link underlines
+*/
+
+.markdown-source-view.mod-cm6 .cm-underline {
+  text-underline-offset: 2px;
+}
+
+.markdown-source-view.mod-cm6 .cm-underline:hover {
+  --link-decoration-thickness: 2px;
+}

@@ -74,7 +74,7 @@
 }
 
 @each $color in catppuccin.$brights {
-  .ctp-#{list.nth($color, 1)} {
+  .ctp-accent-#{list.nth($color, 1)} {
     $color_accent: list.nth($color, 2);
 
     --ctp-accent: #{$color_accent};

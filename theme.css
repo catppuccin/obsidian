@@ -191,104 +191,869 @@
   --ctp-crust-rgb: 35, 38, 52;
 }
 
-.ctp-rosewater {
+.ctp-accent-rosewater {
   --ctp-accent: #f5e0dc;
   --ctp-accent-h: 10deg;
   --ctp-accent-s: 56%;
   --ctp-accent-l: 91%;
 }
 
-.ctp-flamingo {
+.ctp-accent-flamingo {
   --ctp-accent: #f2cdcd;
   --ctp-accent-h: 0deg;
   --ctp-accent-s: 59%;
   --ctp-accent-l: 88%;
 }
 
-.ctp-pink {
+.ctp-accent-pink {
   --ctp-accent: #f5c2e7;
   --ctp-accent-h: 316deg;
   --ctp-accent-s: 72%;
   --ctp-accent-l: 86%;
 }
 
-.ctp-mauve {
+.ctp-accent-mauve {
   --ctp-accent: #cba6f7;
   --ctp-accent-h: 267deg;
   --ctp-accent-s: 84%;
   --ctp-accent-l: 81%;
 }
 
-.ctp-red {
+.ctp-accent-red {
   --ctp-accent: #f38ba8;
   --ctp-accent-h: 343deg;
   --ctp-accent-s: 81%;
   --ctp-accent-l: 75%;
 }
 
-.ctp-maroon {
+.ctp-accent-maroon {
   --ctp-accent: #eba0ac;
   --ctp-accent-h: 350deg;
   --ctp-accent-s: 65%;
   --ctp-accent-l: 77%;
 }
 
-.ctp-peach {
+.ctp-accent-peach {
   --ctp-accent: #fab387;
   --ctp-accent-h: 23deg;
   --ctp-accent-s: 92%;
   --ctp-accent-l: 75%;
 }
 
-.ctp-yellow {
+.ctp-accent-yellow {
   --ctp-accent: #f9e2af;
   --ctp-accent-h: 41deg;
   --ctp-accent-s: 86%;
   --ctp-accent-l: 83%;
 }
 
-.ctp-green {
+.ctp-accent-green {
   --ctp-accent: #a6e3a1;
   --ctp-accent-h: 115deg;
   --ctp-accent-s: 54%;
   --ctp-accent-l: 76%;
 }
 
-.ctp-teal {
+.ctp-accent-teal {
   --ctp-accent: #94e2d5;
   --ctp-accent-h: 170deg;
   --ctp-accent-s: 57%;
   --ctp-accent-l: 73%;
 }
 
-.ctp-sky {
+.ctp-accent-sky {
   --ctp-accent: #89dceb;
   --ctp-accent-h: 189deg;
   --ctp-accent-s: 71%;
   --ctp-accent-l: 73%;
 }
 
-.ctp-sapphire {
+.ctp-accent-sapphire {
   --ctp-accent: #74c7ec;
   --ctp-accent-h: 199deg;
   --ctp-accent-s: 76%;
   --ctp-accent-l: 69%;
 }
 
-.ctp-blue {
+.ctp-accent-blue {
   --ctp-accent: #89b4fa;
   --ctp-accent-h: 217deg;
   --ctp-accent-s: 92%;
   --ctp-accent-l: 76%;
 }
 
-.ctp-lavender {
+.ctp-accent-lavender {
   --ctp-accent: #b4befe;
   --ctp-accent-h: 232deg;
   --ctp-accent-s: 97%;
   --ctp-accent-l: 85%;
 }
 
+/* @settings
+name: Catppuccin Accents
+id: catppuccin-theme-settings
+settings:
+  -
+    id: catppuccin-theme-dark
+    title: Dark theme flavor
+    description: Select your preferred dark mode flavor
+    type: class-select
+    allowEmpty: false
+    default: ctp-mocha
+    options:
+      -
+        label: Frappe
+        value: ctp-frappe
+      -
+        label: Macchiato
+        value: ctp-macchiato
+      -
+        label: Mocha
+        value: ctp-mocha
+  -
+    id: catppuccin-theme-accents
+    title: Theme accent
+    description: Select your preferred accent
+    type: class-select
+    allowEmpty: false
+    default: ctp-full-palette
+    options:
+      -
+        label: Full palette
+        value: ctp-full-palette
+      -
+        label: Rosewater
+        value: ctp-accent-rosewater
+      -
+        label: Flamingo
+        value: ctp-accent-flamingo
+      -
+        label: Pink
+        value: ctp-accent-pink
+      -
+        label: Mauve
+        value: ctp-accent-mauve
+      -
+        label: Red
+        value: ctp-accent-red
+      -
+        label: Maroon
+        value: ctp-accent-maroon
+      -
+        label: Peach
+        value: ctp-accent-peach
+      -
+        label: Yellow
+        value: ctp-accent-yellow
+      -
+        label: Green
+        value: ctp-accent-green
+      -
+        label: Teal
+        value: ctp-accent-teal
+      -
+        label: Sky
+        value: ctp-accent-sky
+      -
+        label: Sapphire
+        value: ctp-accent-sapphire
+      -
+        label: Blue
+        value: ctp-accent-blue
+      -
+        label: Lavender
+        value: ctp-accent-lavender
+*/
+/* @settings
+name: Icon Styles
+id: catppuccin-icon-styles
+settings:
+  -
+    id: ctp-icon-hide
+    title: Hide icons
+    description: Hide icons styled or created by the theme. May solve compatibility issues between the theme and other third party plugins. Currently applies to folder icons in the file sidebar.
+    type: class-toggle
+*/
+/* @settings
+name: Interface Styles
+id: catppuccin-interface-styles
+settings:
+  -
+    id: ctp-bold-folder-title
+    title: Bold folder title
+    description: Show folder title in bold
+    type: class-toggle
+*/
+/* @settings
+name: Font Styles
+id: catppuccin-font-styles
+settings:
+  -
+    id: ctp-bold
+    title: Bold font color
+    description: Select your bold font color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-sapphire)
+    options:
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-italic
+    title: Italic font color
+    description: Select your italic font color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-green)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-strikethrough
+    title: Strikethrough color
+    description: Select your strikethrough color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-maroon)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-blockquote
+    title: Blockquote color
+    description: Select your blockquote text color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-rosewater)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+  */
+/* @settings
+name: File Name and Headings
+id: catppuccin-heading-settings
+settings:
+  -
+    id: ctp-page-title
+    title: File name color
+    description: Select your file name color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-text)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-h1
+    title: H1 color
+    description: Select your H1 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-h2
+    title: H2 color
+    description: Select your H2 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-h3
+    title: H3 color
+    description: Select your H3 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-h4
+    title: H4 color
+    description: Select your H4 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-h5
+    title: H5 color
+    description: Select your H5 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+  -
+    id: ctp-h6
+    title: H6 color
+    description: Select your H6 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+*/
+/* @settings
+
+name: Credits and Source Code
+id: source-code
+settings:
+  -
+    id: catppuccin-theme-credits-link
+    title: Credits and Source Code
+    type: heading
+    level: 1
+    collapsed: false
+    description: 💎 View and contribute to the port at github.com/catppuccin/obsidian
+*/
 /*
 *Obsidian theme variables
 */
@@ -378,8 +1143,8 @@ body {
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
   /* Collapse icons */
-  --collapse-icon-color: var(--text-faint);
-  --collapse-icon-color-collapsed: var(--text-faint);
+  --collapse-icon-color: var(--text-accent);
+  --collapse-icon-color-collapsed: var(--text-accent);
   /* Cursor */
   --cursor: default;
   --cursor-link: pointer;
@@ -451,12 +1216,12 @@ body {
   /* Headings */
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
-  --h1-color: var(--text-accent);
+  --h1-color: var(--ctp-lavender);
   --h2-color: var(--color-cyan);
-  --h3-color: var(--color-purple);
-  --h4-color: var(--ctp-maroon);
-  --h5-color: var(--color-yellow);
-  --h6-color: var(--color-orange);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-orange);
+  --h5-color: var(--ctp-maroon);
+  --h6-color: var(--ctp-mauve);
   --h1-font: inherit;
   --h2-font: inherit;
   --h3-font: inherit;
@@ -553,24 +1318,24 @@ body {
   --layer-tooltip: 70;
   --layer-dragged-item: 80;
   /* Line heights */
-  --line-height-normal: 1.45;
+  --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   /* Links */
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent);
-  --link-decoration: none;
+  --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: 1px;
   --link-external-color: var(--color-blue);
   --link-external-color-hover: var(--color-blue);
-  --link-external-decoration: none;
+  --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-muted);
-  --link-unresolved-opacity: 0.7;
+  --link-unresolved-opacity: 0.8;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: rgba(var(--color-red-rgb), 0.7);
+  --link-unresolved-decoration-color: rgba(var(--color-red-rgb), 0.8);
   /* Lists */
   --list-indent: 2.16em;
   --list-spacing: 0.27ex;
@@ -829,13 +1594,13 @@ body {
   --titlebar-text-color-focused: var(--text-normal);
   --titlebar-text-weight: var(--font-bold);
   /* Toggles */
-  --toggle-border-width: 2px;
+  --toggle-border-width: 4px;
   --toggle-width: 40px;
   --toggle-radius: 18px;
-  --toggle-thumb-color: white;
-  --toggle-thumb-radius: 18px;
-  --toggle-thumb-height: 18px;
-  --toggle-thumb-width: 18px;
+  --toggle-thumb-color: var(--text-normal);
+  --toggle-thumb-radius: 12px;
+  --toggle-thumb-height: 12px;
+  --toggle-thumb-width: 12px;
   --toggle-s-border-width: 2px;
   --toggle-s-width: 34px;
   --toggle-s-thumb-height: 15px;
@@ -1042,11 +1807,24 @@ body {
   color: var(--text-on-accent);
 }
 
+.nav-file-tag {
+  background-color: var(--color-base-30);
+  outline: 1px solid var(--color-base-40);
+}
+
 /*
 * TODO: Temporary fix for icon type background color change on drag
 */
 .is-being-dragged > .nav-file-tag {
   background-color: var(--background-primary);
+}
+
+/*
+* Nav file tags when active
+*/
+.is-active .nav-file-tag {
+  background-color: var(--background-primary);
+  color: var(--text-muted);
 }
 
 /*
@@ -1079,20 +1857,9 @@ select:focus,
 * Darken input shadow for buttons with color
 */
 button.mod-cta {
-  --interactive-accent: var(--color-accent-mauve);
-  --interactive-accent-hover: var(--color-accent-mauve-2);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 24%),
-    0 1px 2px 0 rgba(0, 0, 0, 40%),
-    0 1px 1.5px 0 rgba(0, 0, 0, 20%),
-    0 2px 4px 0 rgba(0, 0, 0, 60%),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 18%),
-    0 1px 2px 0 rgba(0, 0, 0, 30%),
-    0 1px 1.5px 0 rgba(0, 0, 0, 10%),
-    0 1px 3px 0 rgba(0, 0, 0, 50%),
-    0 0 0 0 transparent;
+  background-color: var(--interactive-normal);
+  box-shadow: var(--input-shadow);
+  color: var(--text-normal);
 }
 
 /*
@@ -1113,6 +1880,11 @@ button.mod-cta {
   --pill-weight: inherit;
 }
 
+.metadata-properties-heading .collapse-indicator {
+  left: -33px;
+  padding-right: 0.5rem;
+}
+
 /*
 * Tags
  */
@@ -1125,6 +1897,10 @@ button.mod-cta {
 */
 .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
   --tab-text-color-focused-active-current: var(--color-purple);
+}
+
+.tree-item-self.is-active .tree-item-icon {
+  color: var(--text-on-accent);
 }
 
 .mod-root .workspace-tab-header-status-icon {
@@ -1150,7 +1926,63 @@ button.mod-cta {
 }
 
 /*
-* Link transitions, maybe?
+* Add warning text that accent color is disabled --
+* modified CSS from Sanctum and Shimmering Focus themes.
 */
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > .setting-editor-extra-setting-button > .lucide-rotate-ccw {
+  display: none;
+}
+
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > .setting-editor-extra-setting-button + input[type=color] {
+  width: fit-content;
+  visibility: hidden;
+}
+
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > input[type=color]::before {
+  position: relative;
+  top: 1px;
+  color: var(--text-error);
+  content: "The accent color is set by the theme. Please use the Style Settings community plugin to change this and other settings in Catppuccin.";
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-smaller);
+  visibility: visible;
+}
+
+/*
+* Settings checkbox colors
+*/
+.checkbox-container {
+  height: calc(var(--toggle-thumb-height) + var(--toggle-border-width) * 2);
+  background-color: var(--ctp-maroon);
+  box-shadow: 0 0 1px inset var(--background-primary);
+}
+
+.checkbox-container:hover::after {
+  background-color: var(--color-yellow);
+}
+
+@media (hover: hover) {
+  .checkbox-container:hover {
+    box-shadow: 0 0 2px inset var(--background-primary);
+  }
+}
+.checkbox-container.is-enabled {
+  background-color: var(--color-green);
+}
+
+.checkbox-container::after {
+  outline: 1px solid var(--background-modifier-border);
+}
+
+/*
+* Link underlines
+*/
+.markdown-source-view.mod-cm6 .cm-underline {
+  text-underline-offset: 2px;
+}
+
+.markdown-source-view.mod-cm6 .cm-underline:hover {
+  --link-decoration-thickness: 2px;
+}
 
 /*# sourceMappingURL=theme.css.map */
