@@ -1425,8 +1425,8 @@ body {
   --pill-color-remove-hover: var(--color-red);
   --pill-decoration: none;
   --pill-decoration-hover: none;
-  --pill-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --pill-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --pill-background: transparent;
+  --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
   --pill-border-color-hover: var(--background-modifier-border-hover);
   --pill-border-width: var(--border-width);
@@ -1710,6 +1710,8 @@ body {
   --background-secondary-alt: var(--color-base-20);
   --interactive-normal: var(--color-base-30);
   --interactive-hover: var(--color-base-35);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-2);
   --background-modifier-box-shadow: rgba(var(--mono-rgb-0), 0.3);
   --background-modifier-cover: rgba(var(--mono-rgb-0), 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.2);
@@ -1807,11 +1809,19 @@ body {
   color: var(--text-on-accent);
 }
 
-.nav-file-tag {
-  background-color: var(--color-base-30);
-  outline: 1px solid var(--color-base-40);
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  box-shadow: 0 0 0 1px var(--text-accent);
 }
 
+.nav-file-tag {
+  background-color: var(--color-base-30);
+}
+
+@media (hover: hover) {
+  body:not(.is-grabbing) .tree-item-self.is-clickable:hover .nav-file-tag {
+    background-color: var(--background-primary);
+  }
+}
 /*
 * TODO: Temporary fix for icon type background color change on drag
 */
@@ -1858,10 +1868,14 @@ select:focus,
 */
 button.mod-cta {
   background-color: var(--interactive-normal);
-  box-shadow: var(--input-shadow);
   color: var(--text-normal);
 }
 
+@media (hover: hover) {
+  button.mod-cta:hover {
+    background-color: var(--interactive-hover);
+  }
+}
 /*
 * Pills
 * Currently app.css sets pill background based on tag background
@@ -1883,6 +1897,10 @@ button.mod-cta {
 .metadata-properties-heading .collapse-indicator {
   left: -33px;
   padding-right: 0.5rem;
+}
+
+.metadata-properties-heading {
+  margin-bottom: 0;
 }
 
 /*
@@ -1942,7 +1960,7 @@ button.mod-cta {
   position: relative;
   top: 1px;
   color: var(--text-error);
-  content: "The accent color is set by the theme. Please use the Style Settings community plugin to change this and other settings in Catppuccin.";
+  content: "The accent color is set by the current theme. Please use the Style Settings community plugin to change this and other settings in Catppuccin.";
   font-family: var(--font-interface);
   font-size: var(--font-ui-smaller);
   visibility: visible;
@@ -1954,7 +1972,16 @@ button.mod-cta {
 .checkbox-container {
   height: calc(var(--toggle-thumb-height) + var(--toggle-border-width) * 2);
   background-color: var(--ctp-maroon);
-  box-shadow: 0 0 1px inset var(--background-primary);
+}
+
+.checkbox-container.is-enabled::after {
+  box-shadow: inset -1px 0 1px var(--color-base-10);
+  outline: 1px solid var(--color-base-40);
+}
+
+.checkbox-container::after {
+  box-shadow: inset 1px 0 1px var(--color-base-10);
+  outline: 1px solid var(--color-base-40);
 }
 
 .checkbox-container:hover::after {
@@ -1962,16 +1989,15 @@ button.mod-cta {
 }
 
 @media (hover: hover) {
-  .checkbox-container:hover {
-    box-shadow: 0 0 2px inset var(--background-primary);
+  .checkbox-container.is-enabled:hover::after {
+    box-shadow: inset -2px 0 1px var(--color-base-00);
+  }
+  .checkbox-container:hover::after {
+    box-shadow: inset 2px 0 1px var(--color-base-00);
   }
 }
 .checkbox-container.is-enabled {
   background-color: var(--color-green);
-}
-
-.checkbox-container::after {
-  outline: 1px solid var(--background-modifier-border);
 }
 
 /*
@@ -1982,7 +2008,31 @@ button.mod-cta {
 }
 
 .markdown-source-view.mod-cm6 .cm-underline:hover {
-  --link-decoration-thickness: 2px;
+  --link-decoration-thickness: 1px;
+}
+
+/*
+* Prompt
+*/
+.prompt {
+  background-color: var(--background-secondary);
+}
+
+.prompt .prompt-results {
+  box-shadow: inset 0 0 10px var(--color-base-10), inset 0 0 12px var(--color-base-00);
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--text-accent);
+  color: var(--text-on-accent);
+}
+
+.suggestion-hotkey {
+  background-color: var(--color-base-40);
+}
+
+.suggestion-item.is-selected .suggestion-hotkey {
+  background-color: var(--background-primary);
 }
 
 /*# sourceMappingURL=theme.css.map */
