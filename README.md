@@ -81,6 +81,10 @@ click `Manage` and scroll down to 'Community Themes.' Type '
 Catppuccin' in the filter bar and then click 'Use' under the
 theme name.
 
+To use Catppuccin Latte, set the `Base color scheme` option to `Light`.
+For one of the three dark themes, set `Base color scheme` to `Dark`.
+This defaults to Catppuccin Mocha; install Style Settings as described below to change your dark theme flavor to Frappé or Macchiato.
+
 ### Style Settings plugin installation and use
 
 A note on Style Settings setup from [pitoniak32](https://github.com/pitoniak32):
