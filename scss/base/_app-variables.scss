@@ -557,10 +557,7 @@ body {
 
   /* Window frame */
   --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused:
-    var(
-      --background-secondary-alt
-    );
+  --titlebar-background-focused: var(--background-secondary-alt);
   --titlebar-border-width: 0;
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-text-color: var(--text-muted);
