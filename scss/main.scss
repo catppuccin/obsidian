@@ -1036,16 +1036,6 @@ button.mod-cta {
   background-color: var(--color-yellow);
 }
 
-@media (hover: hover) {
-  .checkbox-container.is-enabled:hover::after {
-    box-shadow: inset -2px 0 1px var(--color-base-00);
-  }
-
-  .checkbox-container:hover::after {
-    box-shadow: inset 2px 0 1px var(--color-base-00);
-  }
-}
-
 .checkbox-container.is-enabled {
   background-color: var(--color-green);
 }
