@@ -1,11 +1,15 @@
 @charset "UTF-8";
-/*
-* Converts colors to raw rgb
-* Source: https://github.com/ghostdevv/sass-hex-rgb
+/**
+* 1. Run `sass _colors.scss output.css` to create color classes for theme.
 */
 /*
-* Generates the Catppuccin palette and sets 'Mocha' and 'Latte' as
+* 1. Converts colors to raw rgb
+* Source: https://github.com/ghostdevv/sass-hex-rgb
+*/
+/**
+* 1. Generates the Catppuccin palette and sets 'Mocha' and 'Latte' as
 * dark and light defaults, respectively.
+* 2. Ran sass-migrator 2023-11-30.
 */
 .theme-dark.ctp-mocha, .theme-dark {
   --ctp-rosewater: #f5e0dc;
@@ -1355,7 +1359,7 @@ body {
   --nav-item-color-selected: var(--text-on-accent);
   --nav-item-color-highlighted: var(--text-accent-hover);
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--interactive-accent-hover);
+  --nav-item-background-active: var(--interactive-accent);
   --nav-item-background-selected: var(--interactive-accent-hover);
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
@@ -1931,6 +1935,11 @@ button.mod-cta {
   }
 }
 @media (hover: hover) {
+  .modal-close-button:hover {
+    color: var(--color-red);
+  }
+}
+@media (hover: hover) {
   .mod-left-split .workspace-tab-header.has-active-menu:hover,
   .mod-right-split .workspace-tab-header.has-active-menu:hover,
   .mod-left-split .workspace-tab-header.is-active:hover,
@@ -2025,6 +2034,84 @@ button.mod-cta {
 
 .suggestion-item.is-selected .suggestion-hotkey {
   background-color: var(--background-primary);
+}
+
+/**
+* 1. Shadows for active icons
+*/
+.clickable-icon.is-active,
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+.mod-left-split .workspace-tab-header.is-active,
+.mod-right-split .workspace-tab-header.is-active {
+  box-shadow: inset 0 0 4px var(--color-base-10), inset 0 0 6px var(--color-base-00);
+  outline: 1px solid var(--color-base-40);
+}
+.clickable-icon.is-active:hover, .clickable-icon.is-active:hover svg,
+.mod-left-split .workspace-tab-header.has-active-menu:hover,
+.mod-left-split .workspace-tab-header.has-active-menu:hover svg,
+.mod-right-split .workspace-tab-header.has-active-menu:hover,
+.mod-right-split .workspace-tab-header.has-active-menu:hover svg,
+.mod-left-split .workspace-tab-header.is-active:hover,
+.mod-left-split .workspace-tab-header.is-active:hover svg,
+.mod-right-split .workspace-tab-header.is-active:hover,
+.mod-right-split .workspace-tab-header.is-active:hover svg {
+  background-color: var(--color-accent);
+  box-shadow: none;
+  color: var(--text-on-accent);
+}
+
+/**
+* 1. Community plugins
+*/
+.community-item {
+  border-width: 2px;
+}
+
+.community-item.is-selected,
+.community-item.is-selected:hover {
+  --background-modifier-border-hover: var(--color-purple);
+  --interactive-accent: var(--background-primary);
+  --text-on-accent: var(--text-on-accent-inverted);
+  border-color: var(--color-purple);
+}
+.community-item.is-selected:hover,
+.community-item.is-selected:hover:hover {
+  border-color: var(--ctp-accent);
+}
+
+.community-item.is-selected .flair {
+  background-color: var(--color-purple);
+  color: var(--color-base-20);
+}
+
+.community-item.is-selected:hover .flair {
+  background-color: var(--ctp-accent);
+  color: var(--color-base-20);
+}
+
+.flair.mod-pop {
+  background-color: var(--color-base-70);
+  color: var(--color-base-20);
+}
+
+@media (hover: hover) {
+  .community-item:hover {
+    --background-modifier-border-hover: var(--ctp-accent);
+  }
+  .community-item:hover .flair.mod-pop {
+    background-color: var(--ctp-accent);
+  }
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background-color: var(--color-purple);
+}
+
+body:not(.is-grabbing) .nav-file-title.is-active:hover,
+body:not(.is-grabbing) .nav-folder-title.is-active:hover {
+  background-color: var(--ctp-accent);
+  color: var(--text-on-accent);
 }
 
 /*# sourceMappingURL=theme.css.map */
