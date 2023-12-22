@@ -1,0 +1,11 @@
+.metadata-property[data-property-key='tags'] {
+  --pill-color-remove-hover: var(--color-red);
+  --pill-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --pill-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --pill-decoration: none;
+  --pill-decoration-hover: none;
+  --pill-padding-x: 0.65em;
+  --pill-padding-y: 0.25em;
+  --pill-radius: 2em;
+  --pill-weight: inherit;
+}

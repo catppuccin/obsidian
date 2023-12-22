@@ -1,0 +1,12 @@
+// Move arrow a little to prevent cramping on the properties box
+
+.metadata-properties-heading .collapse-indicator {
+  left: -33px;
+  padding-right: 0.5rem;
+}
+
+// Remove margin bottom of collapsed properties
+
+.metadata-properties-heading {
+  margin-bottom: 0;
+}

@@ -1,0 +1,165 @@
+.theme-dark {
+  color-scheme: dark;
+
+  --ctp-rosewater: #f5e0dc;
+  --ctp-rosewater-rgb: 245, 224, 220;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-flamingo-rgb: 242, 205, 205;
+  --ctp-pink: #f5c2e7;
+  --ctp-pink-rgb: 245, 194, 231;
+  --ctp-mauve: #cba6f7;
+  --ctp-mauve-rgb: 203, 166, 247;
+  --ctp-red: #f38ba8;
+  --ctp-red-rgb: 243, 139, 168;
+  --ctp-maroon: #eba0ac;
+  --ctp-maroon-rgb: 235, 160, 172;
+  --ctp-peach: #fab387;
+  --ctp-peach-rgb: 250, 179, 135;
+  --ctp-yellow: #f9e2af;
+  --ctp-yellow-rgb: 249, 226, 175;
+  --ctp-green: #a6e3a1;
+  --ctp-green-rgb: 166, 227, 161;
+  --ctp-teal: #94e2d5;
+  --ctp-teal-rgb: 148, 226, 213;
+  --ctp-sky: #89dceb;
+  --ctp-sky-rgb: 137, 220, 235;
+  --ctp-sapphire: #74c7ec;
+  --ctp-sapphire-rgb: 116, 199, 236;
+  --ctp-blue: #89b4fa;
+  --ctp-blue-rgb: 137, 180, 250;
+  --ctp-lavender: #b4befe;
+  --ctp-lavender-rgb: 180, 190, 254;
+  --ctp-text: #cdd6f4;
+  --ctp-text-rgb: 205, 214, 244;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext1-rgb: 186, 194, 222;
+  --ctp-subtext0: #a6adc8;
+  --ctp-subtext0-rgb: 166, 173, 200;
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay2-rgb: 147, 153, 178;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay1-rgb: 127, 132, 156;
+  --ctp-overlay0: #6c7086;
+  --ctp-overlay0-rgb: 108, 112, 134;
+  --ctp-surface2: #585b70;
+  --ctp-surface2-rgb: 88, 91, 112;
+  --ctp-surface1: #45475a;
+  --ctp-surface1-rgb: 69, 71, 90;
+  --ctp-surface0: #313244;
+  --ctp-surface0-rgb: 49, 50, 68;
+  --ctp-base: #1e1e2e;
+  --ctp-base-rgb: 30, 30, 46;
+  --ctp-mantle: #181825;
+  --ctp-mantle-rgb: 24, 24, 37;
+  --ctp-crust: #11111b;
+  --ctp-crust-rgb: 17, 17, 27;
+  --ctp-accent: #b4befe;
+  --ctp-accent-h: 232deg;
+  --ctp-accent-s: 97%;
+  --ctp-accent-l: 85%;
+  --ctp-accent-green: #a6e3a1;
+  --ctp-accent-green-h: 115deg;
+  --ctp-accent-green-s: 54%;
+  --ctp-accent-green-l: 76%;
+  --ctp-accent-mauve: #cba6f7;
+  --ctp-accent-mauve-h: 267deg;
+  --ctp-accent-mauve-s: 84%;
+  --ctp-accent-mauve-l: 81%;
+  --ctp-accent-pink: #f5c2e7;
+  --ctp-accent-pink-h: 316deg;
+  --ctp-accent-pink-s: 72%;
+  --ctp-accent-pink-l: 86%;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: var(--ctp-crust-rgb);
+  --mono-rgb-100: var(--ctp-text-rgb);
+  --color-red-rgb: var(--ctp-red-rgb);
+  --color-red: var(--ctp-red);
+  --color-orange-rgb: var(--ctp-peach-rgb);
+  --color-orange: var(--ctp-peach);
+  --color-yellow-rgb: var(--ctp-peach-rgb);
+  --color-yellow: var(--ctp-yellow);
+  --color-green-rgb: var(--ctp-green-rgb);
+  --color-green: var(--ctp-green);
+  --color-cyan-rgb: var(--ctp-sky-rgb);
+  --color-cyan: var(--ctp-sky);
+  --color-blue-rgb: var(--ctp-blue-rgb);
+  --color-blue: var(--ctp-blue);
+  --color-purple-rgb: var(--ctp-mauve-rgb);
+  --color-purple: var(--ctp-mauve);
+  --color-pink-rgb: var(--ctp-pink-rgb);
+  --color-pink: var(--ctp-pink);
+  --color-base-00: var(--ctp-base);
+  --color-base-05: var(--ctp-crust);
+  --color-base-10: var(--ctp-crust);
+  --color-base-20: var(--ctp-mantle);
+  --color-base-25: var(--ctp-surface0);
+  --color-base-30: var(--ctp-surface0);
+  --color-base-35: var(--ctp-surface1);
+  --color-base-40: var(--ctp-surface1);
+  --color-base-50: var(--ctp-overlay0);
+  --color-base-60: var(--ctp-overlay1);
+  --color-base-70: var(--ctp-subtext1);
+  --color-base-100: var(--ctp-text);
+  --color-accent-hsl:
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --color-accent-mauve: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
+  --color-accent-mauve-1: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
+  --color-accent-mauve-2: hsl(var(--accent-mauve-h), var(--accent-mauve-s), calc(var(--accent-mauve-l) - 3%));
+  --background-modifier-form-field: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-20);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-2);
+  --background-modifier-box-shadow: rgba(var(--mono-rgb-0), 0.3);
+  --background-modifier-cover: rgba(var(--mono-rgb-0), 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.2);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 9%),
+    0 2px 4px 0 rgba(0, 0, 0, 15%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 10%),
+    0 1px 2px 0 rgba(0, 0, 0, 20%),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 16%),
+    0 2px 3px 0 rgba(0, 0, 0, 30%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 20%),
+    0 1px 2px 0 rgba(0, 0, 0, 40%),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0 1px 2px rgba(0, 0, 0, 12.1%),
+    0 3.4px 6.7px rgba(0, 0, 0, 17.9%),
+    0 15px 30px rgba(0, 0, 0, 30%);
+  --shadow-l:
+    0 1.8px 7.3px rgba(0, 0, 0, 7.1%),
+    0 6.3px 24.7px rgba(0, 0, 0, 11.2%),
+    0 30px 90px rgba(0, 0, 0, 20%);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  // Shopify Polaris shadows
+  --shadow-bevel:
+    1px 0 0 0 rgb(var(--ctp-crust-rgb), 87%) inset,
+    -1px 0 0 0 rgb(var(--ctp-crust-rgb), 87%) inset,
+    0 -1px 0 0  rgb(var(--ctp-crust-rgb), 83%) inset,
+    0 1px 0 0 rgb(var(--ctp-crust-rgb), 79%) inset;
+  --shadow-button-inset:
+    0 1px 1px 0 var(--ctp-mantle) inset,
+    1px 0 1px 0 var(--ctp-mantle) inset,
+    -1px 0 1px 0 var(--ctp-crust) inset;
+  --shadow-button:
+    0 1px 0 0 var(--ctp-mantle) inset,
+    1px 0 0 0 var(--ctp-mantle) inset,
+    -1px 0 0 0 var(--ctp-mantle) inset,
+    0 -1px 0 0 var(--ctp-crust) inset;
+  --shadow-button-hover:
+    0 1px 0 0 var(--ctp-mantle) inset,
+    -1px 0 0 0 var(--ctp-mantle) inset,
+    1px 0 0 0 var(--ctp-mantle) inset,
+    0 -1px 0 0 var(--ctp-crust) inset;
+}

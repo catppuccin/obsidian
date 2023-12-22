@@ -1,0 +1,8 @@
+/*
+* Reduce border size on dropdown :focus
+*/
+
+select:focus,
+.dropdown:focus {
+  box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+}

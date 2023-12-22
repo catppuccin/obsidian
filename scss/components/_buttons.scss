@@ -1,0 +1,58 @@
+// 'On' state icons
+
+.clickable-icon.is-active,
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+.mod-left-split .workspace-tab-header.is-active,
+.mod-right-split .workspace-tab-header.is-active {
+  box-shadow: var(--shadow-button-inset);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+
+  &:hover {
+    box-shadow: var(--shadow-button-inset);
+  }
+
+  &:hover,
+  &:hover svg {
+    color: var(--ctp-accent);
+  }
+}
+
+// Button icon hovers
+
+.mod-left-split .workspace-tab-header:hover,
+.mod-right-split .workspace-tab-header:hover {
+  box-shadow: var(--shadow-button-hover);
+}
+
+@media (hover: hover) {
+  .clickable-icon:hover {
+    box-shadow: var(--shadow-button-hover);
+  }
+}
+
+// Remove box shadow from link icon in properties box
+.metadata-property-value .clickable-icon:hover {
+  color: var(--ctp-accent);
+  box-shadow: none;
+}
+
+// Fix color for left icons in properties
+.metadata-property-icon:hover .svg-icon{
+--icon-color-focused: var(--ctp-accent);
+}
+
+/*
+* Darken input shadow for buttons with color
+*/
+
+button.mod-cta {
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+}
+
+@media (hover: hover) {
+  button.mod-cta:hover {
+    background-color: var(--interactive-hover);
+  }
+}

@@ -1,0 +1,93 @@
+@use 'sass:color';
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:list';
+@use 'variables';
+
+/*
+* 1. Converts colors to raw rgb
+* Source: https://github.com/ghostdevv/sass-hex-rgb
+*/
+
+@function raw($hex) {
+  @return color.red($hex) + ', ' + color.green($hex) + ', ' + color.blue($hex);
+}
+
+@function to-hsl($hex) {
+  @return hsl(math.round(color.hue($hex)) math.round(color.saturation($hex)) math.round(color.lightness($hex)));
+}
+
+/**
+* 1. Run `sass utilities/index.scss base/colors.css` to create reference color classes for theme.
+*/
+
+/**
+* 1. Generates the Catppuccin palette and sets 'Mocha' and 'Latte' as
+* dark and light defaults, respectively.
+* 2. Ran sass-migrator 2023-11-30.
+*/
+
+@each $flavor, $color in variables.$palette {
+  @if #{$flavor} == 'mocha' {
+    .theme-dark,
+    .theme-dark.ctp-mocha {
+      @each $c in $color {
+        $rgb: raw(list.nth($c, 2));
+        $hex: list.nth($c, 2);
+
+        --ctp-#{list.nth($c, 1)}: #{$hex};
+        --ctp-#{list.nth($c, 1)}-rgb: #{$rgb};
+      }
+
+      $color-accent: map.get($color, 'lavender');
+      $color-accent-green: map.get($color, 'green');
+      $color-accent-mauve: map.get($color, 'mauve');
+      $color-accent-pink: map.get($color, 'pink');
+
+      --ctp-accent: #{$color-accent};
+      --ctp-accent-h: #{math.round(color.hue($color-accent))};
+      --ctp-accent-s: #{math.round(color.saturation($color-accent))};
+      --ctp-accent-l: #{math.round(color.lightness($color-accent))};
+      --ctp-accent-green: #{$color-accent-green};
+      --ctp-accent-green-h: #{math.round(color.hue($color-accent-green))};
+      --ctp-accent-green-s: #{math.round(color.saturation($color-accent-green))};
+      --ctp-accent-green-l: #{math.round(color.lightness($color-accent-green))};
+      --ctp-accent-mauve: #{$color-accent-mauve};
+      --ctp-accent-mauve-h: #{math.round(color.hue($color-accent-mauve))};
+      --ctp-accent-mauve-s: #{math.round(color.saturation($color-accent-mauve))};
+      --ctp-accent-mauve-l: #{math.round(color.lightness($color-accent-mauve))};
+      --ctp-accent-pink: #{$color-accent-pink};
+      --ctp-accent-pink-h: #{math.round(color.hue($color-accent-pink))};
+      --ctp-accent-pink-s: #{math.round(color.saturation($color-accent-pink))};
+      --ctp-accent-pink-l: #{math.round(color.lightness($color-accent-pink))};
+    }
+  }
+
+  @if not(#{$flavor} == 'latte' or #{$flavor} == 'mocha') {
+    .theme-dark.ctp-#{$flavor} {
+      @each $c in $color {
+        $rgb: raw(list.nth($c, 2));
+        $hex: list.nth($c, 2);
+
+        --ctp-#{list.nth($c, 1)}: #{$hex};
+        --ctp-#{list.nth($c, 1)}-rgb: #{$rgb};
+      }
+    }
+  } @else {
+    @if #{$flavor} == 'latte' {
+      .theme-light.ctp-#{$flavor} {
+      }
+    }
+  }
+}
+
+@each $color in variables.$brights {
+  .ctp-accent-#{list.nth($color, 1)} {
+    $color-accent: list.nth($color, 2);
+
+    --ctp-accent: #{$color-accent};
+    --ctp-accent-h: #{math.round(color.hue($color-accent))};
+    --ctp-accent-s: #{math.round(color.saturation($color-accent))};
+    --ctp-accent-l: #{math.round(color.lightness($color-accent))};
+  }
+}

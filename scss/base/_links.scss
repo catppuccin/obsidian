@@ -1,0 +1,31 @@
+/*
+* Fix digit color when highlighting "Linked mentions" and similar
+*/
+
+.tree-item-self:hover .tree-item-flair {
+  color: inherit;
+}
+
+/*
+* Fixes unresolved links and their color/underline issues
+*/
+
+.cm-s-obsidian span.cm-hmd-internal-link:hover:has(.is-unresolved) {
+  text-decoration-color: var(--link-unresolved-decoration-color);
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved:hover {
+  color: var(--text-muted);
+}
+
+/*
+* Link underlines
+*/
+
+.markdown-source-view.mod-cm6 .cm-underline {
+  text-underline-offset: 2px;
+}
+
+.markdown-source-view.mod-cm6 .cm-underline:hover {
+  --link-decoration-thickness: 1px;
+}

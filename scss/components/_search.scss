@@ -1,0 +1,56 @@
+// Search suggestion modal
+
+.search-suggest-item.is-selected .search-suggest-info-text {
+  color: var(--text-on-accent);
+}
+
+.search-suggest-item.mod-group:hover,
+.search-suggest-item.mod-group.is-selected {
+  color: var(--text-muted);
+}
+
+// Box shadow for caps match
+
+.input-right-decorator.clickable-icon.is-active {
+  background-color: var(--background-modifier-hover);
+  box-shadow: var(--shadow-button-inset);
+}
+
+/*
+* Allow for more opaque highlight colors in search results
+*/
+
+.search-result-file-matched-text {
+  color: var(--text-on-accent);
+}
+
+// Reduce size of box shadow around search-found text
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  box-shadow: 0 0 0 1px var(--text-accent);
+}
+
+.nav-file-tag {
+  background-color: var(--color-base-30);
+}
+
+@media (hover: hover) {
+  body:not(.is-grabbing) .tree-item-self.is-clickable:hover .nav-file-tag {
+    background-color: var(--background-primary);
+  }
+}
+
+/*
+* Highlight backlink search result area
+*/
+
+.search-result:not(.is-collapsed) .search-result-file-title {
+  --nav-item-color-active: var(--text-normal);
+}
+
+// Search results from backlinks
+
+.cm-s-obsidian .is-flashing > .cm-hmd-internal-link {
+  --link-color-hover: var(--text-on-accent);
+
+  color: var(--text-on-accent);
+}

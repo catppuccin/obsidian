@@ -1,0 +1,293 @@
+/*
+* 1. Converts colors to raw rgb
+* Source: https://github.com/ghostdevv/sass-hex-rgb
+*/
+/**
+* 1. Run `sass _generate-palette-loop.scss output.css` to create color classes for theme.
+*/
+/**
+* 1. Generates the Catppuccin palette and sets 'Mocha' and 'Latte' as
+* dark and light defaults, respectively.
+* 2. Ran sass-migrator 2023-11-30.
+*/
+.theme-dark,
+.theme-dark.ctp-mocha {
+  --ctp-rosewater: #f5e0dc;
+  --ctp-rosewater-rgb: 245, 224, 220;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-flamingo-rgb: 242, 205, 205;
+  --ctp-pink: #f5c2e7;
+  --ctp-pink-rgb: 245, 194, 231;
+  --ctp-mauve: #cba6f7;
+  --ctp-mauve-rgb: 203, 166, 247;
+  --ctp-red: #f38ba8;
+  --ctp-red-rgb: 243, 139, 168;
+  --ctp-maroon: #eba0ac;
+  --ctp-maroon-rgb: 235, 160, 172;
+  --ctp-peach: #fab387;
+  --ctp-peach-rgb: 250, 179, 135;
+  --ctp-yellow: #f9e2af;
+  --ctp-yellow-rgb: 249, 226, 175;
+  --ctp-green: #a6e3a1;
+  --ctp-green-rgb: 166, 227, 161;
+  --ctp-teal: #94e2d5;
+  --ctp-teal-rgb: 148, 226, 213;
+  --ctp-sky: #89dceb;
+  --ctp-sky-rgb: 137, 220, 235;
+  --ctp-sapphire: #74c7ec;
+  --ctp-sapphire-rgb: 116, 199, 236;
+  --ctp-blue: #89b4fa;
+  --ctp-blue-rgb: 137, 180, 250;
+  --ctp-lavender: #b4befe;
+  --ctp-lavender-rgb: 180, 190, 254;
+  --ctp-text: #cdd6f4;
+  --ctp-text-rgb: 205, 214, 244;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext1-rgb: 186, 194, 222;
+  --ctp-subtext0: #a6adc8;
+  --ctp-subtext0-rgb: 166, 173, 200;
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay2-rgb: 147, 153, 178;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay1-rgb: 127, 132, 156;
+  --ctp-overlay0: #6c7086;
+  --ctp-overlay0-rgb: 108, 112, 134;
+  --ctp-surface2: #585b70;
+  --ctp-surface2-rgb: 88, 91, 112;
+  --ctp-surface1: #45475a;
+  --ctp-surface1-rgb: 69, 71, 90;
+  --ctp-surface0: #313244;
+  --ctp-surface0-rgb: 49, 50, 68;
+  --ctp-base: #1e1e2e;
+  --ctp-base-rgb: 30, 30, 46;
+  --ctp-mantle: #181825;
+  --ctp-mantle-rgb: 24, 24, 37;
+  --ctp-crust: #11111b;
+  --ctp-crust-rgb: 17, 17, 27;
+  --ctp-accent: #b4befe;
+  --ctp-accent-h: 232deg;
+  --ctp-accent-s: 97%;
+  --ctp-accent-l: 85%;
+  --ctp-accent-green: #a6e3a1;
+  --ctp-accent-green-h: 115deg;
+  --ctp-accent-green-s: 54%;
+  --ctp-accent-green-l: 76%;
+  --ctp-accent-mauve: #cba6f7;
+  --ctp-accent-mauve-h: 267deg;
+  --ctp-accent-mauve-s: 84%;
+  --ctp-accent-mauve-l: 81%;
+  --ctp-accent-pink: #f5c2e7;
+  --ctp-accent-pink-h: 316deg;
+  --ctp-accent-pink-s: 72%;
+  --ctp-accent-pink-l: 86%;
+}
+
+.theme-dark.ctp-macchiato {
+  --ctp-rosewater: #f4dbd6;
+  --ctp-rosewater-rgb: 244, 219, 214;
+  --ctp-flamingo: #f0c6c6;
+  --ctp-flamingo-rgb: 240, 198, 198;
+  --ctp-pink: #f5bde6;
+  --ctp-pink-rgb: 245, 189, 230;
+  --ctp-mauve: #c6a0f6;
+  --ctp-mauve-rgb: 198, 160, 246;
+  --ctp-red: #ed8796;
+  --ctp-red-rgb: 237, 135, 150;
+  --ctp-maroon: #ee99a0;
+  --ctp-maroon-rgb: 238, 153, 160;
+  --ctp-peach: #f5a97f;
+  --ctp-peach-rgb: 245, 169, 127;
+  --ctp-yellow: #eed49f;
+  --ctp-yellow-rgb: 238, 212, 159;
+  --ctp-green: #a6da95;
+  --ctp-green-rgb: 166, 218, 149;
+  --ctp-teal: #8bd5ca;
+  --ctp-teal-rgb: 139, 213, 202;
+  --ctp-sky: #91d7e3;
+  --ctp-sky-rgb: 145, 215, 227;
+  --ctp-sapphire: #7dc4e4;
+  --ctp-sapphire-rgb: 125, 196, 228;
+  --ctp-blue: #8aadf4;
+  --ctp-blue-rgb: 138, 173, 244;
+  --ctp-lavender: #b7bdf8;
+  --ctp-lavender-rgb: 183, 189, 248;
+  --ctp-text: #cad3f5;
+  --ctp-text-rgb: 202, 211, 245;
+  --ctp-subtext1: #b8c0e0;
+  --ctp-subtext1-rgb: 184, 192, 224;
+  --ctp-subtext0: #a5adcb;
+  --ctp-subtext0-rgb: 165, 173, 203;
+  --ctp-overlay2: #939ab7;
+  --ctp-overlay2-rgb: 147, 154, 183;
+  --ctp-overlay1: #8087a2;
+  --ctp-overlay1-rgb: 128, 135, 162;
+  --ctp-overlay0: #6e738d;
+  --ctp-overlay0-rgb: 110, 115, 141;
+  --ctp-surface2: #5b6078;
+  --ctp-surface2-rgb: 91, 96, 120;
+  --ctp-surface1: #494d64;
+  --ctp-surface1-rgb: 73, 77, 100;
+  --ctp-surface0: #363a4f;
+  --ctp-surface0-rgb: 54, 58, 79;
+  --ctp-base: #24273a;
+  --ctp-base-rgb: 36, 39, 58;
+  --ctp-mantle: #1e2030;
+  --ctp-mantle-rgb: 30, 32, 48;
+  --ctp-crust: #181926;
+  --ctp-crust-rgb: 24, 25, 38;
+}
+
+.theme-dark.ctp-frappe {
+  --ctp-rosewater: #f2d5cf;
+  --ctp-rosewater-rgb: 242, 213, 207;
+  --ctp-flamingo: #eebebe;
+  --ctp-flamingo-rgb: 238, 190, 190;
+  --ctp-pink: #f4b8e4;
+  --ctp-pink-rgb: 244, 184, 228;
+  --ctp-mauve: #ca9ee6;
+  --ctp-mauve-rgb: 202, 158, 230;
+  --ctp-red: #e78284;
+  --ctp-red-rgb: 231, 130, 132;
+  --ctp-maroon: #ea999c;
+  --ctp-maroon-rgb: 234, 153, 156;
+  --ctp-peach: #ef9f76;
+  --ctp-peach-rgb: 239, 159, 118;
+  --ctp-yellow: #e5c890;
+  --ctp-yellow-rgb: 229, 200, 144;
+  --ctp-green: #a6d189;
+  --ctp-green-rgb: 166, 209, 137;
+  --ctp-teal: #81c8be;
+  --ctp-teal-rgb: 129, 200, 190;
+  --ctp-sky: #99d1db;
+  --ctp-sky-rgb: 153, 209, 219;
+  --ctp-sapphire: #85c1dc;
+  --ctp-sapphire-rgb: 133, 193, 220;
+  --ctp-blue: #8caaee;
+  --ctp-blue-rgb: 140, 170, 238;
+  --ctp-lavender: #babbf1;
+  --ctp-lavender-rgb: 186, 187, 241;
+  --ctp-text: #c6d0f5;
+  --ctp-text-rgb: 198, 208, 245;
+  --ctp-subtext1: #b5bfe2;
+  --ctp-subtext1-rgb: 181, 191, 226;
+  --ctp-subtext0: #a5adce;
+  --ctp-subtext0-rgb: 165, 173, 206;
+  --ctp-overlay2: #949cbb;
+  --ctp-overlay2-rgb: 148, 156, 187;
+  --ctp-overlay1: #838ba7;
+  --ctp-overlay1-rgb: 131, 139, 167;
+  --ctp-overlay0: #737994;
+  --ctp-overlay0-rgb: 115, 121, 148;
+  --ctp-surface2: #626880;
+  --ctp-surface2-rgb: 98, 104, 128;
+  --ctp-surface1: #51576d;
+  --ctp-surface1-rgb: 81, 87, 109;
+  --ctp-surface0: #414559;
+  --ctp-surface0-rgb: 65, 69, 89;
+  --ctp-base: #303446;
+  --ctp-base-rgb: 48, 52, 70;
+  --ctp-mantle: #292c3c;
+  --ctp-mantle-rgb: 41, 44, 60;
+  --ctp-crust: #232634;
+  --ctp-crust-rgb: 35, 38, 52;
+}
+
+.ctp-accent-rosewater {
+  --ctp-accent: #f5e0dc;
+  --ctp-accent-h: 10deg;
+  --ctp-accent-s: 56%;
+  --ctp-accent-l: 91%;
+}
+
+.ctp-accent-flamingo {
+  --ctp-accent: #f2cdcd;
+  --ctp-accent-h: 0deg;
+  --ctp-accent-s: 59%;
+  --ctp-accent-l: 88%;
+}
+
+.ctp-accent-pink {
+  --ctp-accent: #f5c2e7;
+  --ctp-accent-h: 316deg;
+  --ctp-accent-s: 72%;
+  --ctp-accent-l: 86%;
+}
+
+.ctp-accent-mauve {
+  --ctp-accent: #cba6f7;
+  --ctp-accent-h: 267deg;
+  --ctp-accent-s: 84%;
+  --ctp-accent-l: 81%;
+}
+
+.ctp-accent-red {
+  --ctp-accent: #f38ba8;
+  --ctp-accent-h: 343deg;
+  --ctp-accent-s: 81%;
+  --ctp-accent-l: 75%;
+}
+
+.ctp-accent-maroon {
+  --ctp-accent: #eba0ac;
+  --ctp-accent-h: 350deg;
+  --ctp-accent-s: 65%;
+  --ctp-accent-l: 77%;
+}
+
+.ctp-accent-peach {
+  --ctp-accent: #fab387;
+  --ctp-accent-h: 23deg;
+  --ctp-accent-s: 92%;
+  --ctp-accent-l: 75%;
+}
+
+.ctp-accent-yellow {
+  --ctp-accent: #f9e2af;
+  --ctp-accent-h: 41deg;
+  --ctp-accent-s: 86%;
+  --ctp-accent-l: 83%;
+}
+
+.ctp-accent-green {
+  --ctp-accent: #a6e3a1;
+  --ctp-accent-h: 115deg;
+  --ctp-accent-s: 54%;
+  --ctp-accent-l: 76%;
+}
+
+.ctp-accent-teal {
+  --ctp-accent: #94e2d5;
+  --ctp-accent-h: 170deg;
+  --ctp-accent-s: 57%;
+  --ctp-accent-l: 73%;
+}
+
+.ctp-accent-sky {
+  --ctp-accent: #89dceb;
+  --ctp-accent-h: 189deg;
+  --ctp-accent-s: 71%;
+  --ctp-accent-l: 73%;
+}
+
+.ctp-accent-sapphire {
+  --ctp-accent: #74c7ec;
+  --ctp-accent-h: 199deg;
+  --ctp-accent-s: 76%;
+  --ctp-accent-l: 69%;
+}
+
+.ctp-accent-blue {
+  --ctp-accent: #89b4fa;
+  --ctp-accent-h: 217deg;
+  --ctp-accent-s: 92%;
+  --ctp-accent-l: 76%;
+}
+
+.ctp-accent-lavender {
+  --ctp-accent: #b4befe;
+  --ctp-accent-h: 232deg;
+  --ctp-accent-s: 97%;
+  --ctp-accent-l: 85%;
+}
+
+/*# sourceMappingURL=colors.css.map */

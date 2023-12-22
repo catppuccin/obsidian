@@ -1,0 +1,6 @@
+.menu-item:hover:not(.is-label):not(.is-disabled) {
+  box-shadow: var(--shadow-bevel);
+}
+
+.menu-item:hover:not(.is-label):not(.is-disabled).is-warning {
+}

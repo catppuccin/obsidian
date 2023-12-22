@@ -1,0 +1,24 @@
+/*
+* Prompt
+*/
+
+.prompt {
+  background-color: var(--background-secondary);
+}
+
+.prompt .prompt-results {
+  box-shadow: var(--shadow-bevel);
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--text-accent);
+  color: var(--text-on-accent);
+}
+
+.suggestion-hotkey {
+  background-color: var(--color-base-40);
+}
+
+.suggestion-item.is-selected .suggestion-hotkey {
+  background-color: var(--background-primary);
+}

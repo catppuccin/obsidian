@@ -1,0 +1,8 @@
+@media (hover: hover) {
+  .status-bar-item.plugin-editor-status:hover,
+  .status-bar-item.plugin-sync:hover,
+  .status-bar-item.mod-clickable:hover {
+    box-shadow: var(--shadow-button-hover);
+    color: var(--ctp-accent);
+  }
+}

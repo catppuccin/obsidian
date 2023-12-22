@@ -1,0 +1,54 @@
+/*
+* TODO: Temporary fix for icon type background color change on drag
+*/
+
+.is-being-dragged > .nav-file-tag {
+  background-color: var(--background-primary);
+}
+
+// Active state icon color
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  --tab-text-color-focused-active-current: var(--color-purple);
+}
+
+// Change for bookmarks sidebar
+.tree-item-self.is-active .tree-item-icon {
+  color: var(--text-on-accent);
+}
+
+// Change from app.css to mauve
+
+.mod-root .workspace-tab-header-status-icon {
+  --text-accent: var(--color-purple);
+}
+
+// Change from app.css to red
+
+.suggestion-item.is-selected [aria-label='Clear search history']:hover {
+  box-shadow: var(--shadow-button-hover);
+  color: var(--color-red);
+}
+
+@media (hover: hover) {
+  .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
+    box-shadow: var(--shadow-button-hover);
+    color: var(--color-red);
+  }
+}
+
+@media (hover: hover) {
+  .modal-close-button:hover {
+    box-shadow: var(--shadow-button-hover);
+    color: var(--color-red);
+  }
+}
+
+@media (hover: hover) {
+  .mod-left-split .workspace-tab-header.has-active-menu:hover,
+  .mod-right-split .workspace-tab-header.has-active-menu:hover,
+  .mod-left-split .workspace-tab-header.is-active:hover,
+  .mod-right-split .workspace-tab-header.is-active:hover {
+    color: var(--text-accent);
+  }
+}

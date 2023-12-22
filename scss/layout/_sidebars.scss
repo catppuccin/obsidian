@@ -1,0 +1,41 @@
+/*
+* Fix vault title hover color
+*/
+
+@media (hover: hover) {
+  .nav-folder.mod-root > .nav-folder-title:hover {
+    color: inherit;
+  }
+}
+
+/*
+* Nav file tags when active
+*/
+
+.is-active .nav-file-tag {
+  background-color: var(--background-primary);
+  color: var(--text-muted);
+}
+
+// Active nav files and folders
+.tree-item-self.is-active,
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+  background-color: var(--color-purple);
+  box-shadow: var(--shadow-bevel);
+  color: var(--text-on-accent);
+}
+
+body:not(.is-grabbing) .tree-item-self.is-active:hover,
+body:not(.is-grabbing) .nav-file-title.is-active:hover,
+body:not(.is-grabbing) .nav-folder-title.is-active:hover {
+  background-color: var(--ctp-accent);
+  color: var(--text-on-accent);
+}
+
+// Hover nav files and folders
+
+body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
+  box-shadow: var(--shadow-bevel);
+}

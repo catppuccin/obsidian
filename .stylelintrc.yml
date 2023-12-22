@@ -14,4 +14,5 @@ rules:
   - true
   - ignoreProperties:
     - "/^mask-/"
+  string-quotes: single
 
