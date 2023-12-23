@@ -19,14 +19,16 @@
 // Allow for more opaque highlight colors in search results
 
 .search-result-file-matched-text {
+  border-radius: 2px;
   color: var(--text-on-accent);
 }
 
 // Reduce size of box shadow around search-found text
 .cm-s-obsidian span.obsidian-search-match-highlight > span.cm-hmd-internal-link,
-.cm-s-obsidian span.obsidian-search-match-highlight {
-  background-color: var(--text-highlight-bg);
+.cm-s-obsidian span.obsidian-search-match-highlight,
+.cm-s-obsidian span.cm-highlight {
   border-radius: 2px;
+  background-color: var(--text-highlight-bg);
   box-shadow: 0 0 0 1px var(--background-modifier-border);
   color: var(--text-on-accent);
 }
@@ -57,7 +59,7 @@
 
 .cm-s-obsidian .is-flashing > .cm-hmd-internal-link,
 .cm-s-obsidian .is-flashing,
-.cm-s-obsidian .is-flashing span.cm-url  {
+.cm-s-obsidian .is-flashing span.cm-url {
   --link-color-hover: var(--text-on-accent);
 
   color: var(--link-color-hover);
