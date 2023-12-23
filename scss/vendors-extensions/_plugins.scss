@@ -1,0 +1,230 @@
+.better-command-palette .suggestion-item.mod-complex.is-selected .suggestion-note {
+  color: var(--text-on-accent);
+}
+
+.better-command-palette .better-command-palette-title {
+  padding-left: var(--size-4-3);
+  margin: var(--size-4-3);
+}
+
+.better-command-palette .suggestion-item .suggestion-flair {
+  border-radius: var(--radius-s);
+  margin-bottom: 1px;
+  background-color: rgb(var(--ctp-surface0));
+  color: var(--text-muted);
+}
+
+.better-command-palette.better-command-palette .suggestion-item.is-selected:hover .suggestion-flair {
+  color: var(--text-muted);
+}
+
+/*
+* Improves spacing around hidden palette items box
+*/
+
+.better-command-palette.better-command-palette .suggestion-hotkey {
+  padding: var(--size-2-1) var(--size-4-3);
+  margin-right: var(--size-2-3);
+}
+
+.better-command-palette .hidden-items-header {
+  padding-left: 12px;
+  margin-bottom: 6px;
+}
+
+.better-command-palette .hidden-items-header:empty {
+  margin: 1px;
+}
+
+/* Obsidian Git */
+
+.git-commit-msg .git-commit-msg-clear-button:hover {
+  --search-clear-button-color: rgb(var(--ctp-red));
+}
+
+/* Another Quick Switcher */
+
+.suggestion-item.is-selected .another-quick-switcher__item__directory,
+.suggestion-item.is-selected .another-quick-switcher__item__description {
+  color: var(--text-on-accent);
+}
+
+.another-quick-switcher__hit_word {
+  background-color: rgb(var(--ctp-rosewater), 60%);
+  color: var(--text-on-accent);
+}
+
+/*
+* Adds some padding for larger Catppuccin separator
+*/
+
+.another-quick-switcher__status__search-command {
+  padding-bottom: 0.5rem;
+}
+
+.another-quick-switcher__grep__path-input__wrapper {
+  margin: var(--size-4-1);
+}
+
+/* Omnisearch */
+
+.suggestion-item.is-selected .omnisearch-result__body {
+  color: var(--text-on-accent);
+}
+
+.omnisearch-default-highlight {
+  color: var(--text-on-accent);
+}
+
+.omnisearch-result.is-selected .omnisearch-default-highlight {
+  background-color: rgb(var(--ctp-rosewater), 60%);
+}
+
+/*
+* MAKE.md
+*/
+
+body:not(.is-mobile) .mk-main-menu-button:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.ctp-full-palette .mk-sidebar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+
+  &:hover {
+    background-color: rgb(var(--ctp-pink));
+    color: var(--text-on-accent);
+  }
+
+  &:hover svg {
+    color: var(--text-on-accent);
+  }
+}
+
+.ctp-full-palette .mk-sidebar-item-active {
+  box-shadow:
+    inset 0 0 4px rgb(var(--ctp-crust)),
+    inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+
+  svg {
+    color: rgb(var(--ctp-pink)) !important;
+    transition: var(--transition-hover-bg), var(--transition-hover-color);
+  }
+
+  &:hover svg,
+  &:hover {
+    background-color: rgb(var(--ctp-pink));
+    box-shadow: none;
+    color: var(--text-on-accent) !important;
+  }
+}
+
+.mk-sidebar-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+
+  &:hover {
+    background-color: rgb(var(--ctp-accent));
+    color: var(--text-on-accent);
+  }
+
+  &:hover svg {
+    color: var(--text-on-accent);
+  }
+}
+
+.mk-sidebar-item-active {
+  box-shadow:
+    inset 0 0 4px rgb(var(--ctp-crust)),
+    inset 0 0 6px rgb(var(--ctp-base));
+  outline: 1px solid rgb(var(--ctp-surface1));
+  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
+
+  svg {
+    color: rgb(var(--ctp-accent)) !important;
+    transition: var(--transition-hover-bg), var(--transition-hover-color);
+  }
+
+  &:hover svg,
+  &:hover {
+    background-color: rgb(var(--ctp-accent));
+    box-shadow: none;
+    color: var(--text-on-accent) !important;
+  }
+}
+
+.mk-tree-item {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.mk-tree-item svg {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+body:not(.is-mobile) .mk-tree-item:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.mk-tree-item:hover svg {
+  color: var(--text-on-accent) !important;
+}
+
+.mk-options-menu__suggestions li {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.mk-options-menu__suggestions li.is-active,
+.mk-options-menu__suggestions li:hover {
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
+}
+
+.mk-file-context-field,
+.mk-file-context-field-new button,
+.mk-file-context-field-new button svg {
+  color: var(--text-muted) !important;
+}
+
+.mk-file-context-field-new button:hover {
+  color: rgb(var(--ctp-accent)) !important;
+}
+
+body:not(.is-mobile) .mk-tree-wrapper button {
+  transition: var(--transition-hover-bg), var(--transition-hover-color), var(--transition-hover-box-shadow);
+}
+
+body:not(.is-mobile) .mk-folder-buttons button {
+  margin-left: 2px;
+  background-color: transparent !important;
+  & svg { border-radius: 4px; }
+
+  &:hover svg {
+    background-color: rgb(var(--ctp-surface0));
+    box-shadow: var(--box-shadow-large);
+    color: var(--text-normal) !important;
+    outline: 1px solid rgb(var(--ctp-surface1));
+  }
+}
+
+/*
+* TODO: Some of this is redundant in that it's css from app.css
+* but not required for the theme to work when MAKE.md is off, so
+* it should be simplified at some point.
+*/
+
+body:not(.is-grabbing).ctp-full-palette .mk-sidebar {
+  --nav-item-background-active: rgb(var(--ctp-mauve));
+  --nav-item-background-selected: rgb(var(--ctp-mauve));
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
+}
+
+body:not(.is-grabbing .ctp-full-palette) .mk-sidebar {
+  --nav-item-background-active: rgb(var(--ctp-accent), 90%);
+  --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
+}
