@@ -1,18 +1,5 @@
 @charset "UTF-8";
-/*
-* 1. Converts colors to raw rgb
-* Source: https://github.com/ghostdevv/sass-hex-rgb
-*/
-/**
-* 1. Run `sass utilities/_index.scss base/colors.css` to create reference color classes for theme.
-*/
-/**
-* 1. Generates the Catppuccin palette and sets 'Mocha' and 'Latte' as
-* dark and light defaults, respectively.
-* 2. Ran sass-migrator 2023-11-30.
-*/
-.theme-dark,
-.theme-dark.ctp-mocha {
+.ctp-mocha {
   --ctp-rosewater: #f5e0dc;
   --ctp-rosewater-rgb: 245, 224, 220;
   --ctp-flamingo: #f2cdcd;
@@ -83,7 +70,7 @@
   --ctp-accent-pink-l: 86%;
 }
 
-.theme-dark.ctp-macchiato {
+.ctp-macchiato {
   --ctp-rosewater: #f4dbd6;
   --ctp-rosewater-rgb: 244, 219, 214;
   --ctp-flamingo: #f0c6c6;
@@ -136,9 +123,25 @@
   --ctp-mantle-rgb: 30, 32, 48;
   --ctp-crust: #181926;
   --ctp-crust-rgb: 24, 25, 38;
+  --ctp-accent: #b7bdf8;
+  --ctp-accent-h: 234deg;
+  --ctp-accent-s: 82%;
+  --ctp-accent-l: 85%;
+  --ctp-accent-green: #a6da95;
+  --ctp-accent-green-h: 105deg;
+  --ctp-accent-green-s: 48%;
+  --ctp-accent-green-l: 72%;
+  --ctp-accent-mauve: #c6a0f6;
+  --ctp-accent-mauve-h: 267deg;
+  --ctp-accent-mauve-s: 83%;
+  --ctp-accent-mauve-l: 80%;
+  --ctp-accent-pink: #f5bde6;
+  --ctp-accent-pink-h: 316deg;
+  --ctp-accent-pink-s: 74%;
+  --ctp-accent-pink-l: 85%;
 }
 
-.theme-dark.ctp-frappe {
+.ctp-frappe {
   --ctp-rosewater: #f2d5cf;
   --ctp-rosewater-rgb: 242, 213, 207;
   --ctp-flamingo: #eebebe;
@@ -191,6 +194,93 @@
   --ctp-mantle-rgb: 41, 44, 60;
   --ctp-crust: #232634;
   --ctp-crust-rgb: 35, 38, 52;
+  --ctp-accent: #babbf1;
+  --ctp-accent-h: 239deg;
+  --ctp-accent-s: 66%;
+  --ctp-accent-l: 84%;
+  --ctp-accent-green: #a6d189;
+  --ctp-accent-green-h: 96deg;
+  --ctp-accent-green-s: 44%;
+  --ctp-accent-green-l: 68%;
+  --ctp-accent-mauve: #ca9ee6;
+  --ctp-accent-mauve-h: 277deg;
+  --ctp-accent-mauve-s: 59%;
+  --ctp-accent-mauve-l: 76%;
+  --ctp-accent-pink: #f4b8e4;
+  --ctp-accent-pink-h: 316deg;
+  --ctp-accent-pink-s: 73%;
+  --ctp-accent-pink-l: 84%;
+}
+
+.ctp-latte {
+  --ctp-rosewater: #dc8a78;
+  --ctp-rosewater-rgb: 220, 138, 120;
+  --ctp-flamingo: #dd7878;
+  --ctp-flamingo-rgb: 221, 120, 120;
+  --ctp-pink: #ea76cb;
+  --ctp-pink-rgb: 234, 118, 203;
+  --ctp-mauve: #8839ef;
+  --ctp-mauve-rgb: 136, 57, 239;
+  --ctp-red: #d20f39;
+  --ctp-red-rgb: 210, 15, 57;
+  --ctp-maroon: #e64553;
+  --ctp-maroon-rgb: 230, 69, 83;
+  --ctp-peach: #fe640b;
+  --ctp-peach-rgb: 254, 100, 11;
+  --ctp-yellow: #df8e1d;
+  --ctp-yellow-rgb: 223, 142, 29;
+  --ctp-green: #40a02b;
+  --ctp-green-rgb: 64, 160, 43;
+  --ctp-teal: #179299;
+  --ctp-teal-rgb: 23, 146, 153;
+  --ctp-sky: #04a5e5;
+  --ctp-sky-rgb: 4, 165, 229;
+  --ctp-sapphire: #209fb5;
+  --ctp-sapphire-rgb: 32, 159, 181;
+  --ctp-blue: #1e66f5;
+  --ctp-blue-rgb: 30, 102, 245;
+  --ctp-lavender: #7287fd;
+  --ctp-lavender-rgb: 114, 135, 253;
+  --ctp-text: #4c4f69;
+  --ctp-text-rgb: 76, 79, 105;
+  --ctp-subtext1: #5c5f77;
+  --ctp-subtext1-rgb: 92, 95, 119;
+  --ctp-subtext0: #6c6f85;
+  --ctp-subtext0-rgb: 108, 111, 133;
+  --ctp-overlay2: #7c7f93;
+  --ctp-overlay2-rgb: 124, 127, 147;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay1-rgb: 140, 143, 161;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-overlay0-rgb: 156, 160, 176;
+  --ctp-surface2: #acb0be;
+  --ctp-surface2-rgb: 172, 176, 190;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface1-rgb: 188, 192, 204;
+  --ctp-surface0: #ccd0da;
+  --ctp-surface0-rgb: 204, 208, 218;
+  --ctp-crust: #dce0e8;
+  --ctp-crust-rgb: 220, 224, 232;
+  --ctp-mantle: #e6e9ef;
+  --ctp-mantle-rgb: 230, 233, 239;
+  --ctp-base: #eff1f5;
+  --ctp-base-rgb: 239, 241, 245;
+  --ctp-accent: #7287fd;
+  --ctp-accent-h: 231deg;
+  --ctp-accent-s: 97%;
+  --ctp-accent-l: 72%;
+  --ctp-accent-green: #40a02b;
+  --ctp-accent-green-h: 109deg;
+  --ctp-accent-green-s: 58%;
+  --ctp-accent-green-l: 40%;
+  --ctp-accent-mauve: #8839ef;
+  --ctp-accent-mauve-h: 266deg;
+  --ctp-accent-mauve-s: 85%;
+  --ctp-accent-mauve-l: 58%;
+  --ctp-accent-pink: #ea76cb;
+  --ctp-accent-pink-h: 316deg;
+  --ctp-accent-pink-s: 73%;
+  --ctp-accent-pink-l: 69%;
 }
 
 .ctp-accent-rosewater {
@@ -926,6 +1016,19 @@ body {
   --link-decoration-thickness: 1px;
 }
 
+button.document-search-button {
+  background-color: var(--interactive-normal);
+  box-shadow: var(--shadow-button);
+  font-family: var(--font-interface);
+}
+button.document-search-button:hover {
+  background-color: var(--background-modifier-hover);
+  box-shadow: var(--shadow-button-hover);
+}
+button.document-search-button:hover, button.document-search-button:hover svg {
+  color: var(--ctp-accent);
+}
+
 .clickable-icon.is-active,
 .mod-left-split .workspace-tab-header.has-active-menu,
 .mod-right-split .workspace-tab-header.has-active-menu,
@@ -964,17 +1067,14 @@ body {
   }
 }
 .metadata-property-value .clickable-icon:hover {
-  color: var(--ctp-accent);
   box-shadow: none;
+  color: var(--ctp-accent);
 }
 
 .metadata-property-icon:hover .svg-icon {
   --icon-color-focused: var(--ctp-accent);
 }
 
-/*
-* Darken input shadow for buttons with color
-*/
 button.mod-cta {
   background-color: var(--interactive-normal);
   color: var(--text-normal);
@@ -1146,8 +1246,12 @@ select:focus,
   color: var(--text-on-accent);
 }
 
+.cm-s-obsidian span.obsidian-search-match-highlight > span.cm-hmd-internal-link,
 .cm-s-obsidian span.obsidian-search-match-highlight {
-  box-shadow: 0 0 0 1px var(--text-accent);
+  background-color: var(--text-highlight-bg);
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--background-modifier-border);
+  color: var(--text-on-accent);
 }
 
 .nav-file-tag {
@@ -1166,9 +1270,11 @@ select:focus,
   --nav-item-color-active: var(--text-normal);
 }
 
-.cm-s-obsidian .is-flashing > .cm-hmd-internal-link {
+.cm-s-obsidian .is-flashing > .cm-hmd-internal-link,
+.cm-s-obsidian .is-flashing,
+.cm-s-obsidian .is-flashing span.cm-url {
   --link-color-hover: var(--text-on-accent);
-  color: var(--text-on-accent);
+  color: var(--link-color-hover);
 }
 
 @media (hover: hover) {
@@ -1348,74 +1454,6 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
 
 .theme-dark {
   color-scheme: dark;
-  --ctp-rosewater: #f5e0dc;
-  --ctp-rosewater-rgb: 245, 224, 220;
-  --ctp-flamingo: #f2cdcd;
-  --ctp-flamingo-rgb: 242, 205, 205;
-  --ctp-pink: #f5c2e7;
-  --ctp-pink-rgb: 245, 194, 231;
-  --ctp-mauve: #cba6f7;
-  --ctp-mauve-rgb: 203, 166, 247;
-  --ctp-red: #f38ba8;
-  --ctp-red-rgb: 243, 139, 168;
-  --ctp-maroon: #eba0ac;
-  --ctp-maroon-rgb: 235, 160, 172;
-  --ctp-peach: #fab387;
-  --ctp-peach-rgb: 250, 179, 135;
-  --ctp-yellow: #f9e2af;
-  --ctp-yellow-rgb: 249, 226, 175;
-  --ctp-green: #a6e3a1;
-  --ctp-green-rgb: 166, 227, 161;
-  --ctp-teal: #94e2d5;
-  --ctp-teal-rgb: 148, 226, 213;
-  --ctp-sky: #89dceb;
-  --ctp-sky-rgb: 137, 220, 235;
-  --ctp-sapphire: #74c7ec;
-  --ctp-sapphire-rgb: 116, 199, 236;
-  --ctp-blue: #89b4fa;
-  --ctp-blue-rgb: 137, 180, 250;
-  --ctp-lavender: #b4befe;
-  --ctp-lavender-rgb: 180, 190, 254;
-  --ctp-text: #cdd6f4;
-  --ctp-text-rgb: 205, 214, 244;
-  --ctp-subtext1: #bac2de;
-  --ctp-subtext1-rgb: 186, 194, 222;
-  --ctp-subtext0: #a6adc8;
-  --ctp-subtext0-rgb: 166, 173, 200;
-  --ctp-overlay2: #9399b2;
-  --ctp-overlay2-rgb: 147, 153, 178;
-  --ctp-overlay1: #7f849c;
-  --ctp-overlay1-rgb: 127, 132, 156;
-  --ctp-overlay0: #6c7086;
-  --ctp-overlay0-rgb: 108, 112, 134;
-  --ctp-surface2: #585b70;
-  --ctp-surface2-rgb: 88, 91, 112;
-  --ctp-surface1: #45475a;
-  --ctp-surface1-rgb: 69, 71, 90;
-  --ctp-surface0: #313244;
-  --ctp-surface0-rgb: 49, 50, 68;
-  --ctp-base: #1e1e2e;
-  --ctp-base-rgb: 30, 30, 46;
-  --ctp-mantle: #181825;
-  --ctp-mantle-rgb: 24, 24, 37;
-  --ctp-crust: #11111b;
-  --ctp-crust-rgb: 17, 17, 27;
-  --ctp-accent: #b4befe;
-  --ctp-accent-h: 232deg;
-  --ctp-accent-s: 97%;
-  --ctp-accent-l: 85%;
-  --ctp-accent-green: #a6e3a1;
-  --ctp-accent-green-h: 115deg;
-  --ctp-accent-green-s: 54%;
-  --ctp-accent-green-l: 76%;
-  --ctp-accent-mauve: #cba6f7;
-  --ctp-accent-mauve-h: 267deg;
-  --ctp-accent-mauve-s: 84%;
-  --ctp-accent-mauve-l: 81%;
-  --ctp-accent-pink: #f5c2e7;
-  --ctp-accent-pink-h: 316deg;
-  --ctp-accent-pink-s: 72%;
-  --ctp-accent-pink-l: 86%;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: var(--ctp-crust-rgb);
   --mono-rgb-100: var(--ctp-text-rgb);
@@ -1501,12 +1539,12 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
     0 1px 0 0 var(--ctp-mantle) inset,
     1px 0 0 0 var(--ctp-mantle) inset,
     -1px 0 0 0 var(--ctp-mantle) inset,
-    0 -1px 0 0 var(--ctp-crust) inset;
+    0 -1px 0 0 var(--ctp-mantle) inset;
   --shadow-button-hover:
     0 1px 0 0 var(--ctp-mantle) inset,
     -1px 0 0 0 var(--ctp-mantle) inset,
     1px 0 0 0 var(--ctp-mantle) inset,
-    0 -1px 0 0 var(--ctp-crust) inset;
+    0 -1px 0 0 var(--ctp-mantle) inset;
 }
 
 /* @settings

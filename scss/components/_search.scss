@@ -25,10 +25,12 @@
 }
 
 // Reduce size of box shadow around search-found text
+.cm-s-obsidian span.obsidian-search-match-highlight > span.cm-hmd-internal-link,
 .cm-s-obsidian span.obsidian-search-match-highlight {
   background-color: var(--text-highlight-bg);
-  color: var(--text-on-accent);
+  border-radius: 2px;
   box-shadow: 0 0 0 1px var(--background-modifier-border);
+  color: var(--text-on-accent);
 }
 
 .nav-file-tag {
@@ -51,8 +53,10 @@
 
 // Search results from backlinks
 
-.cm-s-obsidian .is-flashing > .cm-hmd-internal-link {
+.cm-s-obsidian .is-flashing > .cm-hmd-internal-link,
+.cm-s-obsidian .is-flashing,
+.cm-s-obsidian .is-flashing span.cm-url  {
   --link-color-hover: var(--text-on-accent);
 
-  color: var(--text-on-accent);
+  color: var(--link-color-hover);
 }

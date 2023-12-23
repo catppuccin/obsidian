@@ -1,3 +1,21 @@
+// Search buttons
+
+button.document-search-button {
+  background-color: var(--interactive-normal);
+  box-shadow: var(--shadow-button);
+  font-family: var(--font-interface);
+
+  &:hover {
+    background-color: var(--background-modifier-hover);
+    box-shadow: var(--shadow-button-hover);
+  }
+
+  &:hover,
+  &:hover svg {
+    color: var(--ctp-accent);
+  }
+}
+
 // 'On' state icons
 
 .clickable-icon.is-active,
@@ -33,18 +51,16 @@
 
 // Remove box shadow from link icon in properties box
 .metadata-property-value .clickable-icon:hover {
-  color: var(--ctp-accent);
   box-shadow: none;
+  color: var(--ctp-accent);
 }
 
 // Fix color for left icons in properties
-.metadata-property-icon:hover .svg-icon{
---icon-color-focused: var(--ctp-accent);
+.metadata-property-icon:hover .svg-icon {
+  --icon-color-focused: var(--ctp-accent);
 }
 
-/*
-* Darken input shadow for buttons with color
-*/
+// Darken input shadow for buttons with color
 
 button.mod-cta {
   background-color: var(--interactive-normal);
