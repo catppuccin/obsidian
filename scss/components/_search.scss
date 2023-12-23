@@ -26,7 +26,9 @@
 
 // Reduce size of box shadow around search-found text
 .cm-s-obsidian span.obsidian-search-match-highlight {
-  box-shadow: 0 0 0 1px var(--text-accent);
+  background-color: var(--text-highlight-bg);
+  color: var(--text-on-accent);
+  box-shadow: 0 0 0 1px var(--background-modifier-border);
 }
 
 .nav-file-tag {

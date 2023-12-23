@@ -1,0 +1,12 @@
+@use 'sass:color';
+@use 'sass:math';
+
+// Convert hex codes to RGB for tokens (format of: `000, 000, 000`)
+
+@function raw($hex) {
+  @return color.red($hex) + ', ' + color.green($hex) + ', ' + color.blue($hex);
+}
+
+@function to-hsl($hex) {
+  @return hsl(math.round(color.hue($hex)) math.round(color.saturation($hex)) math.round(color.lightness($hex)));
+}

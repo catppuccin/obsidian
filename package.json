@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/catppuccin/obsidian#readme",
   "volta": {
-    "node": "18.12.1",
-    "npm": "9.2.0"
+    "node": "21.2.0",
+    "npm": "10.2.4"
   },
   "dependencies": {
     "stylelint": "^14.16.1",
@@ -30,3 +30,4 @@
     "stylelint-order": "^6.0.0"
   }
 }
+

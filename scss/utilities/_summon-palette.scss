@@ -1,0 +1,25 @@
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:math';
+@use 'mixins';
+@use 'variables';
+@include mixins.mix-colors;
+
+// Invokes mix-colors and sends palette on its way
+
+@each $flavor, $color in variables.$palette {
+  .ctp-#{$flavor} {
+    @extend %#{$flavor};
+  }
+}
+
+@each $color in variables.$brights {
+  .ctp-accent-#{list.nth($color, 1)} {
+    $color-accent: list.nth($color, 2);
+
+    --ctp-accent: #{$color-accent};
+    --ctp-accent-h: #{math.round(color.hue($color-accent))};
+    --ctp-accent-s: #{math.round(color.saturation($color-accent))};
+    --ctp-accent-l: #{math.round(color.lightness($color-accent))};
+  }
+}

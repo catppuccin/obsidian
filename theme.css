@@ -4,7 +4,7 @@
 * Source: https://github.com/ghostdevv/sass-hex-rgb
 */
 /**
-* 1. Run `sass utilities/index.scss base/colors.css` to create reference color classes for theme.
+* 1. Run `sass utilities/_index.scss base/colors.css` to create reference color classes for theme.
 */
 /**
 * 1. Generates the Catppuccin palette and sets 'Mocha' and 'Latte' as

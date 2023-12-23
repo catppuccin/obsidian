@@ -1,9 +1,6 @@
 @use 'utilities';
-@use 'base/index';
+@use 'base';
 @use 'components';
-@use 'layout/properties';
-@use 'layout/settings';
-@use 'layout/sidebars';
-@use 'layout/titlebar';
-@use 'themes/theme-dark';
-@use 'vendors-extensions/style-settings';
+@use 'layout';
+@use 'themes';
+@use 'vendors-extensions';
