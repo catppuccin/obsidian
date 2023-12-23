@@ -78,13 +78,16 @@ select,
 .community-item.is-selected:hover {
   --background-modifier-border-hover: var(--color-purple);
   --interactive-accent: var(--background-primary);
-  --text-on-accent: var(--text-on-accent-inverted);
-
   border-color: var(--color-purple);
+  color: var(--text-on-accent-inverted);
 
   &:hover {
     border-color: var(--ctp-accent);
   }
+}
+
+.community-item.is-selected .community-item-author, .community-item.is-selected:hover .community-item-author, .community-item.is-selected .community-item-repo, .community-item.is-selected:hover .community-item-repo, .community-item.is-selected .community-item-downloads, .community-item.is-selected:hover .community-item-downloads, .community-item.is-selected .community-item-updated, .community-item.is-selected:hover .community-item-updated {
+  color: var(--text-on-accent-inverted);
 }
 
 .community-item.is-selected .flair {

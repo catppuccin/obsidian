@@ -16,9 +16,7 @@
   box-shadow: var(--shadow-button-inset);
 }
 
-/*
-* Allow for more opaque highlight colors in search results
-*/
+// Allow for more opaque highlight colors in search results
 
 .search-result-file-matched-text {
   color: var(--text-on-accent);
@@ -30,6 +28,10 @@
   background-color: var(--text-highlight-bg);
   border-radius: 2px;
   box-shadow: 0 0 0 1px var(--background-modifier-border);
+  color: var(--text-on-accent);
+}
+
+.community-item span.suggestion-highlight {
   color: var(--text-on-accent);
 }
 
