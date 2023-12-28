@@ -24,7 +24,6 @@ button.document-search-button {
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
   box-shadow: var(--shadow-button-inset);
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
 
   &:hover {
     box-shadow: var(--shadow-button-inset);

@@ -1,0 +1,71 @@
+// Big time WIP
+
+// When ready to use, add to style-settings.scss
+/* @settings
+name: Catppuccin - Catppuccin Excalidraw Settings
+id: catppuccin-excalidraw-settings
+settings:
+  -
+    id: catppuccin-excalidraw
+    title: Add Catppuccin to Excalidraw
+    description: Select your preferred Catppuccin flavor
+    type: class-select
+    allowEmpty: false
+    default: ctp-mocha-excalidraw
+    options:
+      -
+        label: Frappe - Dark
+        value: ctp-frappe-excalidraw
+      -
+        label: Macchiato - Dark
+        value: ctp-macchiato-excalidraw
+      -
+        label: Mocha - Dark
+        value: ctp-mocha-excalidraw
+      -
+        label: Latte - Light
+        value: ctp-latte-excalidraw
+*/
+
+body .excalidraw {
+  --ui-pointerEvents: all;
+  --color-primary: var(--ctp-accent);
+  --color-surface-low: var(--background-secondary);
+  --color-surface-mid: var(--background-secondary);
+  --color-surface-lowest: var(--background-secondary);
+  --color-surface-high: var(--background-primary);
+  --color-on-primary-container: var(--ctp-accent);
+  --color-surface-primary-container: var(--background-primary);
+  --button-gray-1: var(--color-base-30);
+  --button-gray-2: var(--color-base-40);
+  --input-border-color: var(--background-modifier-border);
+  --input-bg-color: var(--background-modifier-border);
+  --input-label-color: var(--text-muted);
+  --island-bg-color: var(--background-secondary);
+  --popup-secondary-bg-color: var(--background-primary);
+  --icon-fill-color: var(--text-normal);
+  --text-primary-color: var(--text-normal);
+  --overlay-bg-color: var(--color-base-40);
+  --popup-bg-color: var(--color-base-30);
+  --color-on-surface: var(--text-normal);
+  --color-gray-40: #242424;
+  --color-gray-50: #242424;
+  --color-surface-highlight: #f2f2f2;
+  --color-gray-80: #000;
+  --sidebar-border-color: #f2f2f2;
+  --color-primary-light: #f6f7ff;
+  --button-hover-bg: var(--background-modifier-hover);
+  --sidebar-bg-color: #fafafaed;
+  --sidebar-shadow: #f2f2f2;
+  --popup-text-color: var(--text-normal);
+  --code-normal: var(--text-normal);
+  --code-background: #fafafa;
+  --h1-color: #000;
+  --h2-color: #000;
+  --h3-color: #000;
+  --h4-color: #000;
+
+  color: var(--text-normal);
+
+  --select-highlight-color: #f2f2f2;
+}
