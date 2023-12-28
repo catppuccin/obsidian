@@ -1,0 +1,97 @@
+.theme-light {
+  color-scheme: light;
+
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: var(--ctp-crust-rgb);
+  --mono-rgb-100: var(--ctp-text-rgb);
+  --color-red-rgb: var(--ctp-red-rgb);
+  --color-red: var(--ctp-red);
+  --color-orange-rgb: var(--ctp-peach-rgb);
+  --color-orange: var(--ctp-peach);
+  --color-yellow-rgb: var(--ctp-peach-rgb);
+  --color-yellow: var(--ctp-yellow);
+  --color-green-rgb: var(--ctp-green-rgb);
+  --color-green: var(--ctp-green);
+  --color-cyan-rgb: var(--ctp-sky-rgb);
+  --color-cyan: var(--ctp-sky);
+  --color-blue-rgb: var(--ctp-blue-rgb);
+  --color-blue: var(--ctp-blue);
+  --color-purple-rgb: var(--ctp-mauve-rgb);
+  --color-purple: var(--ctp-mauve);
+  --color-pink-rgb: var(--ctp-pink-rgb);
+  --color-pink: var(--ctp-pink);
+  --color-base-00: var(--ctp-base);
+  --color-base-05: var(--ctp-crust);
+  --color-base-10: var(--ctp-crust);
+  --color-base-20: var(--ctp-mantle);
+  --color-base-25: var(--ctp-surface0);
+  --color-base-30: var(--ctp-surface0);
+  --color-base-35: var(--ctp-surface1);
+  --color-base-40: var(--ctp-surface1);
+  --color-base-50: var(--ctp-overlay0);
+  --color-base-60: var(--ctp-overlay1);
+  --color-base-70: var(--ctp-subtext1);
+  --color-base-100: var(--ctp-text);
+  --color-accent-hsl:
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --color-accent-mauve: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
+  --color-accent-mauve-1: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
+  --color-accent-mauve-2: hsl(var(--accent-mauve-h), var(--accent-mauve-s), calc(var(--accent-mauve-l) - 3%));
+  --background-modifier-form-field: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-20);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-2);
+  --background-modifier-box-shadow: rgba(var(--mono-rgb-0), 0.3);
+  --background-modifier-cover: rgba(var(--mono-rgb-0), 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.2);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 9%),
+    0 2px 4px 0 rgba(0, 0, 0, 15%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 10%),
+    0 1px 2px 0 rgba(0, 0, 0, 20%),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 16%),
+    0 2px 3px 0 rgba(0, 0, 0, 30%),
+    0 1px 1.5px 0 rgba(0, 0, 0, 20%),
+    0 1px 2px 0 rgba(0, 0, 0, 40%),
+    0 0 0 0 transparent;
+  --shadow-s:
+    0 1px 2px rgba(0, 0, 0, 12.1%),
+    0 3.4px 6.7px rgba(0, 0, 0, 17.9%),
+    0 15px 30px rgba(0, 0, 0, 30%);
+  --shadow-l:
+    0 1.8px 7.3px rgba(0, 0, 0, 7.1%),
+    0 6.3px 24.7px rgba(0, 0, 0, 11.2%),
+    0 30px 90px rgba(0, 0, 0, 20%);
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+
+  // Shopify Polaris shadows
+  --shadow-bevel:
+    1px 0 0 0 rgb(var(--ctp-crust-rgb), 87%) inset,
+    -1px 0 0 0 rgb(var(--ctp-crust-rgb), 87%) inset,
+    0 -1px 0 0  rgb(var(--ctp-crust-rgb), 83%) inset,
+    0 1px 0 0 rgb(var(--ctp-crust-rgb), 79%) inset;
+  --shadow-button-inset:
+    0 1px 1px 0 var(--ctp-mantle) inset,
+    1px 0 1px 0 var(--ctp-mantle) inset,
+    -1px 0 1px 0 var(--ctp-crust) inset;
+  --shadow-button:
+    0 1px 0 0 var(--ctp-mantle) inset,
+    1px 0 0 0 var(--ctp-mantle) inset,
+    -1px 0 0 0 var(--ctp-mantle) inset,
+    0 -1px 0 0 var(--ctp-mantle) inset;
+  --shadow-button-hover:
+    0 1px 0 0 var(--ctp-mantle) inset,
+    -1px 0 0 0 var(--ctp-mantle) inset,
+    1px 0 0 0 var(--ctp-mantle) inset,
+    0 -1px 0 0 var(--ctp-mantle) inset;
+}

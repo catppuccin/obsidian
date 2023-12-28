@@ -11,6 +11,17 @@
   .ctp-#{$flavor} {
     @extend %#{$flavor};
   }
+
+  @if #{$flavor} == 'mocha' {
+    .theme-dark {
+      @extend %#{$flavor};
+    }
+  }
+  @if #{$flavor} == 'latte' {
+    .theme-light {
+      @extend %#{$flavor};
+    }
+  }
 }
 
 @each $color in variables.$brights {

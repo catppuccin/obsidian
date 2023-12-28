@@ -59,15 +59,30 @@ button.document-search-button {
   --icon-color-focused: var(--ctp-accent);
 }
 
+button:not(.clickable-icon) {
+  background-color: var(--interactive-normal);
+  box-shadow: var(--shadow-button);
+  color: var(--text-normal);
+
+  &:hover {
+    background-color: var(--interactive-hover);
+    box-shadow: var(--shadow-button-hover);
+    color: var(--ctp-accent);
+  }
+}
+
 // Darken input shadow for buttons with color
 
 button.mod-cta {
   background-color: var(--interactive-normal);
+  box-shadow: var(--shadow-button);
   color: var(--text-normal);
 }
 
 @media (hover: hover) {
   button.mod-cta:hover {
     background-color: var(--interactive-hover);
+    box-shadow: var(--shadow-button-hover);
+    color: var(--ctp-accent);
   }
 }

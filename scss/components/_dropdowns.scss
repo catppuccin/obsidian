@@ -1,8 +1,20 @@
+select,
+.dropdown {
+  box-shadow: var(--shadow-bevel);
+}
+
+@media (hover: hover) {
+  select:hover,
+  .dropdown:hover {
+    box-shadow: var(--shadow-button-hover);
+  }
+}
+
 /*
 * Reduce border size on dropdown :focus
 */
 
 select:focus,
 .dropdown:focus {
-  box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+  box-shadow: 0 0 0 1px var(--ctp-accent);
 }
