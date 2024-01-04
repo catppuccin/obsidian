@@ -39,6 +39,7 @@
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  --color-accent-blue-hsl: var(--accent-blue-h), var(--accent-blue-s), var(--accent-blue-l);
   --color-accent-mauve: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
   --color-accent-mauve-1: hsl(var(--accent-mauve-h), var(--accent-mauve-s), var(--accent-mauve-l));
   --color-accent-mauve-2: hsl(var(--accent-mauve-h), var(--accent-mauve-s), calc(var(--accent-mauve-l) - 3%));

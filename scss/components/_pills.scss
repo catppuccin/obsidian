@@ -1,11 +1,24 @@
 .metadata-property[data-property-key='tags'] {
+  --pill-color: var(--text-on-accent);
+  --pill-color-hover: var(--text-on-accent);
+  --pill-color-remove: var(--text-on-accent);
   --pill-color-remove-hover: var(--color-red);
-  --pill-background: hsla(var(--interactive-accent-hsl), 0.1);
-  --pill-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-  --pill-decoration: none;
+  --pill-background: hsla(var(--color-accent-blue-hsl), 1);
+  --pill-background-hover: hsla(var(--color-accent-blue-hsl), 1);
   --pill-decoration-hover: none;
   --pill-padding-x: 0.65em;
   --pill-padding-y: 0.25em;
   --pill-radius: 2em;
   --pill-weight: inherit;
+
+  box-shadow: var(--shadow-bevel);
+}
+
+.multi-select-pill-remove-button {
+  margin-left: var(--size-2-1);
+}
+
+.multi-select-pill-remove-button:hover {
+  background-color: var(--color-base-30);
+  box-shadow: var(--shadow-button-hover);
 }
