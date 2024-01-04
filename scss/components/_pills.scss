@@ -1,10 +1,15 @@
 .metadata-property[data-property-key='tags'] {
-  --pill-color: var(--text-on-accent);
-  --pill-color-hover: var(--text-on-accent);
-  --pill-color-remove: var(--text-on-accent);
+  // --pill-decoration: none;
+  // --pill-border-color: var(--background-modifier-border);
+  // --pill-border-color-hover: var(--background-modifier-border-hover);
+  // --pill-border-width: var(--border-width);
+
+  --pill-color: var(--color-blue);
+  --pill-color-hover: var(--color-blue);
+  --pill-color-remove: var(--text-muted);
   --pill-color-remove-hover: var(--color-red);
-  --pill-background: hsla(var(--color-accent-blue-hsl), 1);
-  --pill-background-hover: hsla(var(--color-accent-blue-hsl), 1);
+  --pill-background: hsla(var(--color-accent-hsl), 0.1);
+  --pill-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --pill-decoration-hover: none;
   --pill-padding-x: 0.65em;
   --pill-padding-y: 0.25em;
@@ -16,9 +21,4 @@
 
 .multi-select-pill-remove-button {
   margin-left: var(--size-2-1);
-}
-
-.multi-select-pill-remove-button:hover {
-  background-color: var(--color-base-30);
-  box-shadow: var(--shadow-button-hover);
 }
