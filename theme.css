@@ -1835,8 +1835,13 @@ h6,
   border: 1px solid rgb(var(--ctp-rosewater), 60%);
 }
 
+/**
+* 1. Not sure when or why I added this, but it became an issue in
+https://github.com/catppuccin/obsidian/issues/60. I have set it to the value it
+should have. Hopefully it doesn't break anything!
+*/
 .tree-item-self.is-clickable.nav-file-title.has-focus[style] {
-  --background-modifier-border-focus: var(--background-modifier-border-focus);
+  --background-modifier-border-focus: var(--color-base-40);
 }
 
 /*
