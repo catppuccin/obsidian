@@ -80,6 +80,19 @@
   background-color: rgb(var(--ctp-rosewater), 60%);
 }
 
+.omnisearch-result:not(.is-selected) .omnisearch-highlight.omnisearch-default-highlight {
+  background-color: rgb(var(--ctp-rosewater), 100%);
+}
+
+.omnisearch-result.is-selected {
+  .omnisearch-result__folder-path > span,
+  .omnisearch-result__extension,
+  .omnisearch-result__counter {
+    color: var(--text-faint);
+  }
+}
+
+
 /*
 * MAKE.md
 */
