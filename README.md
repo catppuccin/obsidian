@@ -47,10 +47,6 @@
 
 ## About
 
-### Brief note on development 2023-9-3
-
-I am currently in the process of rewriting the theme. Get the theme.css file from the development branch (https://github.com/catppuccin/obsidian/tree/development) if you want to try it out. It's barebones ath the moment, but has fixes for some issues currently in the main branch. Thanks for your patience! 
-
 This is the Catppuccin theme for the note-taking app Obsidian.
 The theme is a constant work in progress, given the quick
 development pace of Obsidian itself and the user-made plugin
