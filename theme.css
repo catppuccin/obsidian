@@ -1695,6 +1695,10 @@ del,
   color: rgb(var(--ctp-strikethrough, var(--ctp-maroon)));
 }
 
+.cm-s-obsidian .cm-link.cm-strikethrough {
+  text-decoration: line-through;
+}
+
 .markdown-rendered blockquote,
 .cm-s-obsidian span.cm-quote {
   --blockquote-border-color: rgb(var(--ctp-blockquote, var(--ctp-accent)));
