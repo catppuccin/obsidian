@@ -120,6 +120,10 @@
   }
 }
 
+.tree-item-self.is-being-renamed:focus-within {
+  color: currentcolor;
+}
+
 /*
 * Open folder
 */
