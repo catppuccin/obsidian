@@ -20,8 +20,11 @@ body {
 }
 
 strong,
-.cm-strong {
+.cm-strong,
+.cm-s-obsidian span.cm-formatting-strong,
+.cm-s-obsidian span.cm-strong {
   --bold-color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
+  color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
 }
 
 em,
