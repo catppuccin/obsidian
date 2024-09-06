@@ -1,0 +1,35 @@
+/**
+* 1. User requested integration with Style Settings plugin to replicate Minimal
+* and its treatment of PDFs. Credit/source of modified scss:
+* https://github.com/kepano/obsidian-minimal/blob/0b98cc8ec4576e148057ce6c0ff751ab4df1ece4/src/scss/content/pdf.scss
+*/
+
+.theme-light,
+.theme-dark {
+  &.ctp-seamless-pdf {
+    --pdf-shadow: none;
+
+    .pdf-viewer .page {
+      border: 0;
+    }
+  }
+}
+
+.theme-dark {
+  &.ctp-pdf-darken {
+    .pdf-viewer .canvasWrapper,
+    .pdf-thumbnail-view .thumbnailImage {
+      filter: invert(1) hue-rotate(180deg);
+      mix-blend-mode: screen;
+    }
+  }
+}
+
+.theme-light {
+  &.ctp-pdf-blend {
+    .pdf-viewer .canvasWrapper,
+    .pdf-thumbnail-view .thumbnailImage {
+      mix-blend-mode: multiply;
+    }
+  }
+}
