@@ -150,3 +150,12 @@
     display: none;
   }
 }
+
+/*
+* Bring block edit button in line with rest of button hovers
+*/
+
+.markdown-source-view.mod-cm6 .pdf-embed .edit-block-button:hover {
+  background-color: rgb(var(--ctp-pink));
+  color: var(--text-on-accent);
+}
