@@ -2195,6 +2195,14 @@ body {
   display: none;
 }
 
+/*
+* Bring block edit button in line with rest of button hovers
+*/
+.markdown-source-view.mod-cm6 .pdf-embed .edit-block-button:hover {
+  background-color: rgb(var(--ctp-pink));
+  color: var(--text-on-accent);
+}
+
 select:focus,
 .dropdown:focus {
   box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
