@@ -756,6 +756,27 @@ settings:
 */
 
 /* @settings
+name: PDF Settings
+id: catppuccin-pdf
+settings:
+  -
+    id: ctp-seamless-pdf
+    title: Remove borders around PDF pages
+    description: View PDFs without borders, akin to the Minimal theme's "seamless" setting
+    type: class-toggle
+  -
+    id: ctp-pdf-darken
+    title: Darken PDF background
+    description: When using a dark flavor, causes PDF backgrounds to inherit the flavor's primary background color
+    type: class-toggle
+  -
+    id: ctp-pdf-blend
+    title: Blend PDF background
+    description: When using light mode, causes PDF backgrounds to inherit the flavor's primary background color
+    type: class-toggle
+*/
+
+/* @settings
 
 name: Credits and Source Code
 id: source-code
