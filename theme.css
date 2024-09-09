@@ -1333,12 +1333,12 @@ settings:
   -
     id: ctp-pdf-darken
     title: Darken PDF background
-    description: When using a dark flavor, causes PDF backgrounds to inherit the flavor's primary background color
+    description: When using a dark flavor, inverts a PDF's background color. This might be helpful when using a PDF with a light background in dark mode Obsidian, depending on your preferences and the colors present in the PDF
     type: class-toggle
   -
     id: ctp-pdf-blend
     title: Blend PDF background
-    description: When using light mode, causes PDF backgrounds to inherit the flavor's primary background color
+    description: When using light mode, attempts to blend the theme's background color into the PDF
     type: class-toggle
 */
 /* @settings
