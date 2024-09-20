@@ -7,9 +7,13 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
-## [0.4.27] - 2023-9-9
+## [0.4.27] - 2024-9-20
+### Adds
++ Clarify what belongs to Catppuccin in Style Settings
+
+## [0.4.27] - 2024-9-9
 ### Fixes
-- Improve wording in Style Settings PDF section
++ Improve wording in Style Settings PDF section
 
 ## [0.4.17] - 2023-8-14
 ### Adds
