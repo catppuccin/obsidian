@@ -487,8 +487,8 @@ body {
   --table-row-last-border-width: var(--table-border-width);
   /* Tags */
   --tag-size: max(var(--font-ui-medium), var(--font-small));
-  --tag-color: rgb(var(--ctp-accent));
-  --tag-color-hover: rgb(var(--ctp-accent));
+  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-background: transparent;
@@ -1340,6 +1340,75 @@ settings:
     title: Blend PDF background
     description: When using light mode, attempts to blend the theme's background color into the PDF
     type: class-toggle
+*/
+/* @settings
+name: "Catppuccin: Tag Styles"
+id: catppuccin-tag-styles
+settings:
+  -
+    id: ctp-tag-pill
+    title: Pill-shaped tags
+    description: Make tags stand out with a pill-shaped appearance, reverts to Obsidian's default style
+    type: class-toggle
+  -
+    id: ctp-tag-pill-color
+    title: Tag text color
+    description: Change the text color of tags to a different accent
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
 */
 /* @settings
 
@@ -2277,22 +2346,41 @@ input[type=number]:focus-visible {
   color: var(--link-color);
 }
 
-.cm-hashtag.cm-hashtag-end {
+body:not(.ctp-tag-pill) .cm-hashtag.cm-hashtag-end {
   text-decoration-color: transparent;
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: var(--transition-text-decoration-color);
 }
-
-.cm-hashtag.cm-hashtag-end:hover {
-  text-decoration: underline 1px rgb(var(--ctp-accent));
+body:not(.ctp-tag-pill) .cm-hashtag.cm-hashtag-end:hover {
+  text-decoration: underline 1px rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
   text-underline-offset: 1px;
 }
-
-.cm-hashtag::selection {
-  text-shadow: 0.4px 0 0 rgb(var(--ctp-crust));
+body:not(.ctp-tag-pill) .cm-hashtag::selection {
+  text-shadow: 0.4px 0 0 rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
 }
 
+/**
+* 1. Restores default Obsidian settings to tags. See: #56
+*/
+.ctp-tag-pill {
+  --tag-size: var(--font-smaller);
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-width: 0px;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
+  --tag-weight: inherit;
+}
+
+/**
+* 1. Allow users to pick tag text color with Style Settings
+*/
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
   text-decoration-line: none;
 }

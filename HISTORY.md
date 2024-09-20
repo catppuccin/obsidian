@@ -7,7 +7,11 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
-## [0.4.27] - 2024-9-20
+## [0.4.29] - 2024-9-20
+### Adds
++ Users can now use Style Settings to revert to default tag appearance (pill-shaped) and/or adjust tag text color
+
+## [0.4.28] - 2024-9-20
 ### Adds
 + Clarify what belongs to Catppuccin in Style Settings
 
