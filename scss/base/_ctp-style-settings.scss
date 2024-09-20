@@ -777,6 +777,76 @@ settings:
 */
 
 /* @settings
+name: "Catppuccin: Tag Styles"
+id: catppuccin-tag-styles
+settings:
+  -
+    id: ctp-tag-pill
+    title: Pill-shaped tags
+    description: Make tags stand out with a pill-shaped appearance, reverts to Obsidian's default style
+    type: class-toggle
+  -
+    id: ctp-tag-pill-color
+    title: Tag text color
+    description: Change the text color of tags to a different accent
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
+*/
+
+/* @settings
 
 name: "Catppuccin: Credits and Source Code"
 id: source-code

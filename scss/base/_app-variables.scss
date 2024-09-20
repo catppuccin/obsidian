@@ -538,8 +538,8 @@ body {
 
   /* Tags */
   --tag-size: max(var(--font-ui-medium), var(--font-small));
-  --tag-color: rgb(var(--ctp-accent));
-  --tag-color-hover: rgb(var(--ctp-accent));
+  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-background: transparent;
