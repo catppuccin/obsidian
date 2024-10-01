@@ -3458,6 +3458,31 @@ body:not(.is-grabbing .ctp-full-palette) .mk-sidebar {
   --nav-item-color-selected: var(--text-on-accent);
 }
 
+/**
+* 1.  Folder Notes, issue #67
+*/
+body:not(.disable-folder-highlight) .tree-item-self.fn-is-active,
+body.ctp-full-palette:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
+  --nav-item-background-active: rgb(var(--ctp-mauve));
+  --nav-item-background-selected: rgb(var(--ctp-mauve));
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
+}
+
+body:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
+  --nav-item-background-active: rgb(var(--ctp-accent));
+  --nav-item-background-selected: rgb(var(--ctp-accent));
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
+}
+
+body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
+  --nav-item-background-active: rgb(var(--ctp-accent), 90%);
+  --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
+  --nav-item-color-active: var(--text-on-accent);
+  --nav-item-color-selected: var(--text-on-accent);
+}
+
 /*
 * Vollkorn is included as a base64 font in this theme.
 * See font website here: http://vollkorn-typeface.com
