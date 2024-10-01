@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.32] - 2024-9-30
+### Adds
++ Initial compatibility for Folder Notes plugin, see issue #67
+
 ## [0.4.29] - 2024-9-20
 ### Adds
 + Users can now use Style Settings to revert to default tag appearance (pill-shaped) and/or adjust tag text color
