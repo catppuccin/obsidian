@@ -9,13 +9,15 @@ The theme file structure is loosely based on the [7-1 Pattern](https://sass-guid
 There are two files that might be helpful to investigate before contributing: [_app-variables.scss](https://github.com/catppuccin/obsidian/blob/main/scss/base/_app-variables.scss) and [_ctp-style-settings.scss](https://github.com/catppuccin/obsidian/blob/main/scss/base/_ctp-style-settings.scss).
 
 `_app-variables.scss` contains variables from Obsidian's CSS, some of which have been customized for Catppuccin. You can rely on these variables as references, but it is generally best to leave this file untouched. However, it can sometimes make sense to change variables inside specific selectors. For example:
- ```scss
- .some-guy {
+
+```scss
+.some-guy {
   --h1-color: rgb(var(--ctp-accent));
 
   color: var(--h1-color);
- }
- ```
+}
+```
+
 `_ctp-style-settings.scss` defines the Catppuccin colors for the theme. This file provides the names of the colors being used elsewhere in the theme. Color usage unique to the default user experience can be found in [_full-palette.scss](https://github.com/catppuccin/obsidian/blob/main/scss/themes/_full-palette.scss).
 
 ## What colors go where?
