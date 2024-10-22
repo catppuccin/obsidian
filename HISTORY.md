@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.35] - 2024-10-22
+### Fixes
++ Changed some wording and formatting in CONTRIBUTING.md to hopefully make the building process clearer
+
 ## [0.4.34] - 2024-10-22
 ### Fixes
 + theme.css was missing after merging PRs, breaking repo, should be back now

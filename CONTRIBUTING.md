@@ -61,9 +61,9 @@ When transitioning from a default state to one of the above states, the relevant
 }
 ```
 
-## Building the theme
-Here's one way to build the theme:  
-+ Fork and clone the repository
+## Working the theme
+Here's one way to work the theme:
++ Fork or clone the repository
 + From your terminal, `cd` to the repository
 + Run `npm install`
 + Run `npm run build`
@@ -72,6 +72,8 @@ Here's one way to build the theme:
 + Enable the snippet in Obsidian's settings
 + In Obsidian, turn off any snippets or theme currently in use
 + Make liberal use of the development tools in Obsidian (`cmd+opt+i` or `ctrl+shift+i`)
+
+To compile the sass files for a pull review, run `sass scss/main.scss theme.css`.
 
 ## CSS for plugins
 
