@@ -4,7 +4,8 @@
   "description": "<h3 align=\"center\"> \t<img src=\"https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png\" width=\"100\" alt=\"Logo\"/><br/> \t<img src=\"https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png\" height=\"30\" width=\"0px\"/> \tCatppuccin for <a href=\"https://obsidian.md\">Obsidian</a> \t<img src=\"https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png\" height=\"30\" width=\"0px\"/> </h3>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/main.scss:dist/catppuccin.css"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,8 @@
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
     "stylelint-order": "^6.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.80.3"
   }
 }
