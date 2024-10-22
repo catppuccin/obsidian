@@ -66,7 +66,6 @@ When transitioning from a default state to one of the above states, the relevant
 If you are contributing plugin-related CSS, `./scss/vendors/_plugins` is where to go to make changes/additions. Add a comment indicating the name of the plugin you're adding CSS for and write your CSS below the comment. If you are adding CSS to a plugin already named in the file, just include your CSS at the bottom of that plugin's section.
 
 [^development]: If you're new to all of this, here's one way to work on the theme:
-
 1. Fork and clone the repository
 2. From your terminal, `cd` to the repository
 3. Run `npm install`
