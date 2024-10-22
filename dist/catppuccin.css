@@ -2303,7 +2303,7 @@ input[type=number]:focus-visible {
 }
 
 .checkbox-container {
-  --background-modifier-border-hover: rgb(var(--ctp-green));
+  --background-modifier-border-hover: rgb(var(--ctp-red));
   box-shadow: 0 0 2px inset rgb(var(--ctp-base));
 }
 .checkbox-container::after {
