@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.34] - 2024-10-22
+### Fixes
++ theme.css was missing after merging PRs, breaking repo, should be back now
+
 ## [0.4.33] - 2024-10-22
 ### Adds
 + PRs #68 and #68
