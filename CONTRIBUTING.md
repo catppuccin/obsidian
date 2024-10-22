@@ -4,7 +4,7 @@ Contributions are always appreciated, especially if you want to use your contrib
 
 ## Theme layout and colors
 
-The theme file structure is loosely based on the [7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern). It's written largely in plain CSS, but contained in SCSS files. If you are not familiar with SCSS, please see [sass-lang.com](https://sass-lang.com/).[^development] The repository includes a `.stylelintrc.yml` file if you care to use [Stylelint](https://stylelint.io/).
+The theme file structure is loosely based on the [7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern). It's written largely in plain CSS, but contained in SCSS files. If you are not familiar with SCSS, please see [sass-lang.com](https://sass-lang.com/). The repository includes a `.stylelintrc.yml` file if you care to use [Stylelint](https://stylelint.io/).
 
 There are two files that might be helpful to investigate before contributing: [_app-variables.scss](https://github.com/catppuccin/obsidian/blob/main/scss/base/_app-variables.scss) and [_ctp-style-settings.scss](https://github.com/catppuccin/obsidian/blob/main/scss/base/_ctp-style-settings.scss).
 
@@ -61,17 +61,18 @@ When transitioning from a default state to one of the above states, the relevant
 }
 ```
 
+## Building the theme
+Here's one way to build the theme:  
++ Fork and clone the repository
++ From your terminal, `cd` to the repository
++ Run `npm install`
++ Run `npm run build`
+  + You will now be able to see the compiled SASS under `dist/`
++ Symlink the `dist/catppuccin.css` file to your Obsidian vault's `.obsidian/snippets` directory using `ln dist/catppuccin.css /path/to/your/vault/.obsidian/snippets/catppuccin.css`
++ Enable the snippet in Obsidian's settings
++ In Obsidian, turn off any snippets or theme currently in use
++ Make liberal use of the development tools in Obsidian (`cmd+opt+i` or `ctrl+shift+i`)
+
 ## CSS for plugins
 
 If you are contributing plugin-related CSS, `./scss/vendors/_plugins` is where to go to make changes/additions. Add a comment indicating the name of the plugin you're adding CSS for and write your CSS below the comment. If you are adding CSS to a plugin already named in the file, just include your CSS at the bottom of that plugin's section.
-
-[^development]: If you're new to all of this, here's one way to work on the theme:
-1. Fork and clone the repository
-2. From your terminal, `cd` to the repository
-3. Run `npm install`
-4. Run `npm run build`
-5. You will now be able to see the compiled SASS under `dist/`
-6. Symlink the `dist/catppuccin.css` file to your Obsidian vault's `.obsidian/snippets` directory using `ln dist/catppuccin.css /path/to/your/vault/.obsidian/snippets/catppuccin.css`
-7. Enable the snippet in Obsidian's settings
-8. In Obsidian, turn off any snippets or theme currently in use.
-9. Make liberal use of the development tools in Obsidian (`cmd+opt+i` or `ctrl+shift+i`).
