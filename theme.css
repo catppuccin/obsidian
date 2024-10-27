@@ -2319,6 +2319,31 @@ input[type=number]:focus-visible {
   background-color: rgb(var(--ctp-crust));
 }
 
+input[type=date]::-webkit-datetime-edit-month-field:active,
+input[type=datetime-local]::-webkit-datetime-edit-month-field:active,
+input[type=date]::-webkit-datetime-edit-month-field:focus,
+input[type=datetime-local]::-webkit-datetime-edit-month-field:focus,
+input[type=date]::-webkit-datetime-edit-day-field:active,
+input[type=datetime-local]::-webkit-datetime-edit-day-field:active,
+input[type=date]::-webkit-datetime-edit-day-field:focus,
+input[type=datetime-local]::-webkit-datetime-edit-day-field:focus,
+input[type=date]::-webkit-datetime-edit-year-field:active,
+input[type=datetime-local]::-webkit-datetime-edit-year-field:active,
+input[type=date]::-webkit-datetime-edit-year-field:focus,
+input[type=datetime-local]::-webkit-datetime-edit-year-field:focus {
+  color: var(--text-on-accent);
+}
+
+input[type=datetime-local]::-webkit-datetime-edit-minute-field:active,
+input[type=datetime-local]::-webkit-datetime-edit-minute-field:focus,
+input[type=datetime-local]::-webkit-datetime-edit-hour-field:active,
+input[type=datetime-local]::-webkit-datetime-edit-hour-field:focus,
+input[type=datetime-local]::-webkit-datetime-edit-second-field:active,
+input[type=datetime-local]::-webkit-datetime-edit-second-field:focus {
+  background-color: var(--text-selection);
+  color: var(--text-on-accent);
+}
+
 .cm-s-obsidian .cm-formatting-link.cm-url,
 .cm-s-obsidian .cm-url,
 .cm-s-obsidian .cm-link,
