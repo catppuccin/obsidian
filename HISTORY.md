@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.36] - 2024-11-12
+### Fixes
++ Corrects an issue identified in #73 that resulted in poor color contrast when using Mermaid mindmaps
+
 ## [0.4.35] - 2024-10-22
 ### Fixes
 + Changed some wording and formatting in CONTRIBUTING.md to hopefully make the building process clearer
