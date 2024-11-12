@@ -1,0 +1,80 @@
+/**
+* 1. Compatibility for mermaid mindmaps #73
+* 2. CSS modified from obsidian forums post, !important seems to be req
+*/
+
+.theme-dark .mermaid .mindmap-node  text {
+  fill: var(--text-on-accent) !important;
+}
+
+.theme-light .mermaid .mindmap-node text {
+  fill: var(--text-on-accent) !important;
+}
+
+
+/**
+* 1. --color-red: #ff7777;
+    --color-orange: #ffbb99;
+    --color-yellow: #ffeeaa;
+    --color-green: #bbffbb;
+    --color-cyan: #bbffee;
+    --color-blue: #aaccff;
+    --color-purple: #ddbbff;
+    --color-pink: #ffcccc;
+*/
+
+
+.mermaid .section-0 path,
+.mermaid .section-0 line,
+.mermaid .section-edge-0 {
+  fill: var(--color-orange) !important;
+  stroke: var(--color-orange) !important;
+}
+
+.mermaid .section-1 path,
+.mermaid .section-1 line,
+.mermaid .section-edge-1 {
+  fill: var(--color-yellow) !important;
+  stroke: var(--color-yellow) !important;
+}
+
+.mermaid .section-2 path,
+.mermaid .section-2 line,
+.mermaid .section-edge-3 {
+  fill: var(--color-green) !important;
+  stroke: var(--color-green) !important;
+}
+
+.mermaid .section-3 path,
+.mermaid .section-3 line,
+.mermaid .section-edge-3 {
+  fill: var(--color-red) !important;
+  stroke: var(--color-red) !important;
+}
+
+.mermaid .section-4 path,
+.mermaid .section-4 line,
+.mermaid .section-edge-4 {
+  fill: var(--color-blue) !important;
+  stroke: var(--color-blue) !important;
+}
+
+.mermaid .section-5 path,
+.mermaid .section-5 line,
+.mermaid .section-edge-5 {
+  fill: var(--color-purple) !important;
+  stroke: var(--color-purple) !important;
+}
+
+.mermaid .section-6 path,
+.mermaid .section-6 line,
+.mermaid .section-edge-6 {
+  fill: var(--color-pink) !important;
+  stroke: var(--color-pink) !important;
+}
+.mermaid .section-7 path,
+.mermaid .section-7 line,
+.mermaid .section-edge-7 {
+  fill: var(--color-cyan) !important;
+  stroke: var(--color-cyan) !important;
+}
