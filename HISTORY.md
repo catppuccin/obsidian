@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.38] - 2024-11-13
+### Fixes
++ Fixes issue raised in #73, where linked mentions did not take on the right color when hovered
+
 ## [0.4.37] - 2024-11-12
 ### Fixes
 + Corrects an issue identified in #73 that resulted in poor color contrast when using Mermaid mindmaps
