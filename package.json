@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/catppuccin/obsidian#readme",
   "volta": {
-    "node": "18.12.1",
+    "node": "22.11.0",
     "npm": "10.9.0"
   },
   "dependencies": {
