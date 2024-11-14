@@ -86,7 +86,7 @@ A note on Style Settings setup from [pitoniak32](https://github.com/pitoniak32):
 
 > To install Style Settings, open Obsidian's `Preferences`, and navigate to the
 > OPTIONS section, select `Community plugins` and ensure that `Restricted Mode` is
-> off.The theme uses a 
+> off.
 >
 > Now you can search
 > for "[Style Settings](https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin)"
