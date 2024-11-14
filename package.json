@@ -23,7 +23,7 @@
     "npm": "10.9.0"
   },
   "dependencies": {
-    "stylelint": "^14.16.1",
+    "stylelint": "^16.0.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-config-standard-scss": "^6.1.0",
