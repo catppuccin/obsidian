@@ -45,16 +45,14 @@
 <img src="https://raw.githubusercontent.com/catppuccin/obsidian/main/assets/raw-flavor-screenshots/mocha.webp" alt="Preview of Mocha theme"/>
 </details>
 
-## About
-
-This is the Catppuccin theme for the note-taking app Obsidian.
-The theme is a constant work in progress, given the quick
-development pace of Obsidian itself and the user-made plugin
-scene. The theme uses a base64-encoded version of Friedrich Althausen's font [Vollkorn](http://vollkorn-typeface.com) as its default editor text.
-Runner up in 🎉 [Obsidian's 2022 Gems of the Year](https://forum.obsidian.md/t/gems-of-the-year-2022-winners/54903)
-awards. Thank you to everyone who voted.
-
 ## Usage
+
+> [!NOTE]  
+> The theme is a constant work in progress, given the quick development pace of Obsidian itself and the user-made plugin scene.
+> Currently, the default editor text uses a base64-encoded version of Friedrich Althausen's font [Vollkorn](http://vollkorn-typeface.com).
+>
+> The theme was also a runner up in 🎉 [Obsidian's 2022 Gems of the Year](https://obsidian.md/blog/2022-goty-winners/) awards.
+> Thank you to everyone who voted.
 
 This theme provides the full range of Catppuccin palettes when
 used with the
@@ -62,6 +60,7 @@ used with the
 plugin
 (see [here](https://help.obsidian.md/Extending+Obsidian/Community+plugins)
 for more on using plugins with Obsidian).
+
 This plugin will allow users to pick from several variations on
 Catppuccin, including accents for each color in the palette and
 one that features the full host of Catppuccin colors (the
