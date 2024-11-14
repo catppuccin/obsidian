@@ -19,18 +19,18 @@
   },
   "homepage": "https://github.com/catppuccin/obsidian#readme",
   "volta": {
-    "node": "18.12.1",
+    "node": "23.2.0",
     "npm": "10.9.0"
   },
   "dependencies": {
-    "stylelint": "^14.16.1",
-    "stylelint-config-idiomatic-order": "^10.0.0",
-    "stylelint-config-standard": "^29.0.0",
-    "stylelint-config-standard-scss": "^6.1.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
-    "stylelint-order": "^6.0.0"
+    "sass": "^1.80.6"
   },
   "devDependencies": {
-    "sass": "^1.80.3"
+    "stylelint": "^16.10.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+    "stylelint-order": "^6.0.4"
   }
 }
