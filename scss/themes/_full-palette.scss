@@ -181,22 +181,36 @@
     border-color: rgb(var(--ctp-maroon));
     background-color: rgb(var(--ctp-red));
     box-shadow:
-      inset 4px 4px 12px rgb(var(--ctp-mantle)),
-      inset -4px -4px 12px rgb(var(--ctp-mantle));
+      inset 2px 2px 24px rgb(var(--ctp-mantle)),
+      inset -2px -2px 24px rgb(var(--ctp-mantle));
 
     &:hover {
       border-width: 2px;
     }
   }
 
-  input[type="checkbox"]:checked {
+  input[type="checkbox"]:not([data-task=">"],
+[data-task="!"],
+[data-task="-"],
+[data-task="<"],
+[data-task="l"],
+[data-task="*"],
+[data-task="I"],
+[data-task="p"],
+[data-task="f"],
+[data-task="k"],
+[data-task="u"],
+[data-task="w"],
+[data-task="c"],
+[data-task="d"],
+[data-task="b"]):checked {
     border-color: transparent;
     background-color: rgb(var(--ctp-green));
     box-shadow: 0 0 0 1px rgb(var(--ctp-green), 40%);
 
     &:hover {
-      background-color: rgb(var(--ctp-maroon));
-      box-shadow: 0 0 0 1px rgb(var(--ctp-maroon), 40%);
+      background-color: rgb(var(--ctp-accent));
+      box-shadow: 0 0 0 1px rgb(var(--ctp-accent), 40%);
     }
   }
 
@@ -216,7 +230,7 @@
   }
 
   /*
-? I think !important is necessary to overwrite app.css's
+? I think !important is necessary to overwrite app.css
 */
   .HyperMD-header .cm-formatting-header {
     color: rgb(var(--ctp-sapphire));
