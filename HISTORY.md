@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.39] - 2024-11-25
+### Adds
++ Adds requested Minimal theme checklist items. Thanks, Kepano! <3
+
 ## [0.4.38] - 2024-11-13
 ### Fixes
 + Fixes issue raised in #73, where linked mentions did not take on the right color when hovered
