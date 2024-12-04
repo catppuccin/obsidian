@@ -1697,7 +1697,7 @@ settings:
   --text-error-hover: rgb(var(--ctp-red), 80%);
   --text-highlight-bg: rgb(var(--ctp-rosewater), 100%);
   --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%);
-  --text-selection: rgb(var(--ctp-rosewater), 100%);
+  --text-selection: rgb(var(--ctp-overlay2), 30%);
   --text-on-accent: rgb(var(--ctp-mantle));
   --text-on-accent-inverted: rgb(var(--ctp-mantle));
   --interactive-normal: rgb(var(--ctp-surface0));
@@ -1908,10 +1908,6 @@ h6,
 .cm-s-obsidian span.cm-highlight.cm-strikethrough,
 .cm-s-obsidian span.cm-highlight del {
   background-image: linear-gradient(rgb(var(--ctp-red), 40%), rgb(var(--ctp-red), 60%), rgb(var(--ctp-red), 40%));
-  color: var(--text-on-accent);
-}
-
-::selection {
   color: var(--text-on-accent);
 }
 
@@ -2424,8 +2420,8 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 }
 
 .empty-state-action {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
   border-radius: var(--radius-s);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 @media (hover: hover) {
@@ -2434,6 +2430,23 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
     color: var(--text-on-accent);
   }
 }
+/**
+* 1. Fix #97 highlighted link contrast issues
+*/
+.cm-s-obsidian .cm-highlight.cm-link .cm-underline {
+  color: var(--text-on-accent);
+  text-decoration: var(--text-on-accent) solid underline;
+}
+.cm-s-obsidian .cm-highlight.cm-link .cm-underline:hover {
+  color: var(--text-on-accent);
+  text-decoration-color: var(--text-on-accent);
+}
+
+.cm-s-obsidian .cm-highlight.cm-link:hover,
+.cm-s-obsidian .cm-highlight.cm-url:hover {
+  color: var(--text-on-accent);
+}
+
 /**
 * 1. Compatibility for mermaid mindmaps #73
 * 2. CSS modified from obsidian forums post, !important seems to be req
@@ -2936,8 +2949,8 @@ button.mod-cta:hover {
   text-transform: lowercase;
 }
 
-/*
-* TODO: Some tweaks for the light/Catppuccin Latte theme.
+/**
+* Some tweaks for the light/Catppuccin Latte theme.
 */
 .theme-dark:not(.css-settings-manager),
 .theme-light:not(.css-settings-manager),

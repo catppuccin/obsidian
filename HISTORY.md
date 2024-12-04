@@ -7,6 +7,11 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.40] -2024-12-4
+### Fixes
++ Fixes #97, where highlights applied to links had poor contrast
++ Fixed a text selection issue where ctp-rosewater was being incorrectly applied to highlighted text. It should now be ctp-overlay2/30%
+
 ## [0.4.39] - 2024-11-25
 ### Adds
 + Adds requested Minimal theme checklist items. Thanks, Kepano! <3

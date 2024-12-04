@@ -19,6 +19,7 @@
 .cm-s-obsidian .is-flashing .cm-formatting-link-start.cm-formatting-link,
 .cm-s-obsidian .is-flashing .cm-formatting-link-end.cm-formatting-link {
   --link-color: var(--text-on-accent);
+
   color: var(--link-color);
 }
 
@@ -58,6 +59,7 @@ body:not(.ctp-tag-pill) {
   --tag-radius: 2em;
   --tag-weight: inherit;
 }
+
 /**
 * 1. Allow users to pick tag text color with Style Settings
 */
@@ -86,8 +88,8 @@ body {
 }
 
 .empty-state-action {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
   border-radius: var(--radius-s);
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 @media (hover: hover) {
@@ -95,4 +97,24 @@ body {
     background-color: rgb(var(--ctp-accent));
     color: var(--text-on-accent);
   }
+}
+
+/**
+* 1. Fix #97 highlighted link contrast issues
+*/
+
+
+.cm-s-obsidian .cm-highlight.cm-link .cm-underline {
+  color: var(--text-on-accent);
+  text-decoration: var(--text-on-accent) solid underline;
+
+  &:hover {
+    color: var(--text-on-accent);
+    text-decoration-color: var(--text-on-accent);
+  }
+}
+
+.cm-s-obsidian .cm-highlight.cm-link:hover,
+.cm-s-obsidian .cm-highlight.cm-url:hover {
+  color: var(--text-on-accent);
 }
