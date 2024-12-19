@@ -24,14 +24,19 @@
   visibility: hidden;
 }
 
-.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > input[type='color']::before {
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > input[type=color]::before {
   position: relative;
-  top: 1px;
+  top: 14px;
   color: var(--text-error);
   content: 'The accent color is set by the current theme. Please use the Style Settings community plugin to change this and other settings in Catppuccin.';
   font-family: var(--font-interface);
   font-size: var(--font-ui-smaller);
   visibility: visible;
+}
+
+.mod-settings .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control > input[type=color] {
+  width: 300px;
+  visibility: hidden;
 }
 
 /*
@@ -73,6 +78,7 @@
 .community-item.is-selected:hover {
   --background-modifier-border-hover: var(--color-purple);
   --interactive-accent: var(--background-primary);
+
   border-color: var(--color-purple);
   color: var(--text-on-accent-inverted);
 
