@@ -267,3 +267,18 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
+
+/**
+* 1. Highlight active date in Calendar Plugin
+*/
+
+.active.svelte-q3wqg9, .day.svelte-q3wqg9:active,
+.active.today.svelte-q3wqg9{
+  background-color: rgb(var(--ctp-green)) !important;
+  color: var(--text-on-accent) !important;
+}
+
+.today.svelte-q3wqg9{
+  background-color: rgb(var(--ctp-accent)) !important;
+  color: var(--text-on-accent) !important;
+}

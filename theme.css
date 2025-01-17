@@ -3682,6 +3682,20 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 }
 
 /**
+* 1. Highlight active date in Calendar Plugin
+*/
+.active.svelte-q3wqg9, .day.svelte-q3wqg9:active,
+.active.today.svelte-q3wqg9 {
+  background-color: rgb(var(--ctp-green)) !important;
+  color: var(--text-on-accent) !important;
+}
+
+.today.svelte-q3wqg9 {
+  background-color: rgb(var(--ctp-accent)) !important;
+  color: var(--text-on-accent) !important;
+}
+
+/**
 * 1. Checklist icons implemented for #91. This scss is from Kepano's Minimal Theme under its MIT License. Thanks Kepano!
 */
 .cm-formatting.cm-formatting-task.cm-property {
