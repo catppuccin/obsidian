@@ -7,7 +7,14 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
-## [0.4.40] -2024-12-4
+## [0.4.41] - 2025-1-16
+### Adds
++ Implements request in #108 for clearer indication of active date in Calendar plugin
+### Fixes
++ Removes extraneous semicolon from _checklists.scss
+
+
+## [0.4.40] - 2024-12-4
 ### Fixes
 + Fixes #97, where highlights applied to links had poor contrast
 + Fixed a text selection issue where ctp-rosewater was being incorrectly applied to highlighted text. It should now be ctp-overlay2/30%
