@@ -9,7 +9,7 @@
   &.ctp-seamless-pdf {
     --pdf-shadow: none;
 
-    .pdf-viewer .page {
+    .pdfViewer .page {
       border: 0;
     }
   }
@@ -17,7 +17,7 @@
 
 .theme-dark {
   &.ctp-pdf-darken {
-    .pdf-viewer .canvasWrapper,
+    .pdfViewer .canvasWrapper,
     .pdf-thumbnail-view .thumbnailImage {
       filter: invert(1) hue-rotate(180deg);
       mix-blend-mode: screen;
@@ -27,7 +27,7 @@
 
 .theme-light {
   &.ctp-pdf-blend {
-    .pdf-viewer .canvasWrapper,
+    .pdfViewer .canvasWrapper,
     .pdf-thumbnail-view .thumbnailImage {
       mix-blend-mode: multiply;
     }
