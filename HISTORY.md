@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.42] - 2025-1-31
+### Fixes
++ Issue 110 identified a problem with the pdf viewer css after an Obsidian update, then provided the solution. Thanks Andrea!
+
 ## [0.4.41] - 2025-1-16
 ### Adds
 + Implements request in #108 for clearer indication of active date in Calendar plugin
