@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.43] - 2025-3-25
+### Fixes
++ Issue 117 noted a visual problem with background and text colors when using features of the Dataview pllugin
+
 ## [0.4.42] - 2025-1-31
 ### Fixes
 + Issue 110 identified a problem with the pdf viewer css after an Obsidian update, then provided the solution. Thanks Andrea!

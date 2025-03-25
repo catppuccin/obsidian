@@ -282,3 +282,15 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
   background-color: rgb(var(--ctp-accent)) !important;
   color: var(--text-on-accent) !important;
 }
+
+/**
+* 1. Dataview
+* 2. Fix for #117
+*/
+
+.dataview.inline-field-standalone-value {
+  --nav-item-color-selected: var(--text-normal);
+
+  background-color: var(--background-primary);
+  font-size: var(--font-smaller);
+}

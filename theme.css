@@ -3696,6 +3696,16 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 }
 
 /**
+* 1. Dataview
+* 2. Fix for #117
+*/
+.dataview.inline-field-standalone-value {
+  --nav-item-color-selected: var(--text-normal);
+  background-color: var(--background-primary);
+  font-size: var(--font-smaller);
+}
+
+/**
 * 1. Checklist icons implemented for #91. This scss is from Kepano's Minimal Theme under its MIT License. Thanks Kepano!
 */
 .cm-formatting.cm-formatting-task.cm-property {
