@@ -7,6 +7,10 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.44] - 2025-4-9
+### Fixes
++ Issue 120 found that key:value pairs in the Dataview plugin were not readable
+
 ## [0.4.43] - 2025-3-25
 ### Fixes
 + Issue 117 noted a visual problem with background and text colors when using features of the Dataview pllugin

@@ -3705,6 +3705,21 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
   font-size: var(--font-smaller);
 }
 
+/*
+* 1. Fix for #120
+* 2. Colors left side of dataview info
+* 3. Colors right side of dataview info
+*/
+.dataview.inline-field-key {
+  --nav-item-color-selected: var(--text-normal);
+  font-size: var(--font-smaller);
+}
+
+.dataview.inline-field-value {
+  --nav-item-color-selected: var(--text-normal);
+  font-size: var(--font-smaller);
+}
+
 /**
 * 1. Checklist icons implemented for #91. This scss is from Kepano's Minimal Theme under its MIT License. Thanks Kepano!
 */
