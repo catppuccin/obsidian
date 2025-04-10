@@ -294,3 +294,21 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
   background-color: var(--background-primary);
   font-size: var(--font-smaller);
 }
+
+/*
+* 1. Fix for #120
+* 2. Colors left side of dataview info
+* 3. Colors right side of dataview info
+*/
+
+.dataview.inline-field-key {
+  --nav-item-color-selected: var(--text-normal);
+
+  font-size: var(--font-smaller);
+}
+
+.dataview.inline-field-value {
+  --nav-item-color-selected: var(--text-normal);
+
+  font-size: var(--font-smaller);
+}
