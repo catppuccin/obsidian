@@ -4,3 +4,4 @@ theme.css.map
 scss-rebuild/
 node_modules/
 .sass-cache/
+dist/
