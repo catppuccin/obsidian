@@ -67,8 +67,8 @@ When transitioning from a default state to one of the above states, the relevant
 Here's one way to work the theme:
 + Fork or clone the repository
 + From your terminal, `cd` to the repository
-+ Run `npm install`
-+ Run `npm run build`
++ Run `pnpm install`
++ Run `pnpm run build`
   + You will now be able to see the compiled SASS under `dist/`
 + Symlink the `dist/catppuccin.css` file to your Obsidian vault's `.obsidian/snippets` directory using `ln dist/catppuccin.css /path/to/your/vault/.obsidian/snippets/catppuccin.css`
 + Enable the snippet in Obsidian's settings
