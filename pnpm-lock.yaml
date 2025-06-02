@@ -19,8 +19,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0(stylelint@16.11.0)
       stylelint-config-standard:
-        specifier: ^36.0.1
-        version: 36.0.1(stylelint@16.11.0)
+        specifier: ^38.0.0
+        version: 38.0.0(stylelint@16.11.0)
       stylelint-config-standard-scss:
         specifier: ^14.0.0
         version: 14.0.0(postcss@8.4.49)(stylelint@16.11.0)
@@ -567,6 +567,12 @@ packages:
     peerDependencies:
       stylelint: ^16.1.0
 
+  stylelint-config-recommended@16.0.0:
+    resolution: {integrity: sha512-4RSmPjQegF34wNcK1e1O3Uz91HN8P1aFdFzio90wNK9mjgAI19u5vsU868cVZboKzCaa5XbpvtTzAAGQAxpcXA==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.16.0
+
   stylelint-config-standard-scss@14.0.0:
     resolution: {integrity: sha512-6Pa26D9mHyi4LauJ83ls3ELqCglU6VfCXchovbEqQUiEkezvKdv6VgsIoMy58i00c854wVmOw0k8W5FTpuaVqg==}
     engines: {node: '>=18.12.0'}
@@ -582,6 +588,12 @@ packages:
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.1.0
+
+  stylelint-config-standard@38.0.0:
+    resolution: {integrity: sha512-uj3JIX+dpFseqd/DJx8Gy3PcRAJhlEZ2IrlFOc4LUxBX/PNMEQ198x7LCOE2Q5oT9Vw8nyc4CIL78xSqPr6iag==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.18.0
 
   stylelint-declaration-block-no-ignored-properties@2.8.0:
     resolution: {integrity: sha512-Ws8Cav7Y+SPN0JsV407LrnNXWOrqGjxShf+37GBtnU/C58Syve9c0+I/xpLcFOosST3ternykn3Lp77f3ITnFw==}
@@ -1065,6 +1077,10 @@ snapshots:
     dependencies:
       stylelint: 16.11.0
 
+  stylelint-config-recommended@16.0.0(stylelint@16.11.0):
+    dependencies:
+      stylelint: 16.11.0
+
   stylelint-config-standard-scss@14.0.0(postcss@8.4.49)(stylelint@16.11.0):
     dependencies:
       stylelint: 16.11.0
@@ -1077,6 +1093,11 @@ snapshots:
     dependencies:
       stylelint: 16.11.0
       stylelint-config-recommended: 14.0.1(stylelint@16.11.0)
+
+  stylelint-config-standard@38.0.0(stylelint@16.11.0):
+    dependencies:
+      stylelint: 16.11.0
+      stylelint-config-recommended: 16.0.0(stylelint@16.11.0)
 
   stylelint-declaration-block-no-ignored-properties@2.8.0(stylelint@16.11.0):
     dependencies:
