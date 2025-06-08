@@ -32,6 +32,6 @@
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^7.0.0"
   }
 }
