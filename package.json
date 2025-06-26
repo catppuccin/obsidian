@@ -18,7 +18,7 @@
     "url": "https://github.com/catppuccin/obsidian/issues"
   },
   "homepage": "https://github.com/catppuccin/obsidian#readme",
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.12.4",
   "engines": {
     "node": ">=23.0.0",
     "pnpm": ">=10.11.0"
