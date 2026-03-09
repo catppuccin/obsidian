@@ -28,8 +28,8 @@ importers:
         specifier: ^2.8.0
         version: 2.8.0(stylelint@17.4.0)
       stylelint-order:
-        specifier: ^6.0.4
-        version: 6.0.4(stylelint@17.4.0)
+        specifier: ^7.0.0
+        version: 7.0.1(stylelint@17.4.0)
 
 packages:
 
@@ -530,6 +530,11 @@ packages:
     peerDependencies:
       postcss: ^8.4.20
 
+  postcss-sorting@9.1.0:
+    resolution: {integrity: sha512-Mn8KJ45HNNG6JBpBizXcyf6LqY/qyqetGcou/nprDnFwBFBLGj0j/sNKV2lj2KMOVOwdXu14aEzqJv8CIV6e8g==}
+    peerDependencies:
+      postcss: ^8.4.20
+
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
@@ -652,6 +657,12 @@ packages:
     resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
+
+  stylelint-order@7.0.1:
+    resolution: {integrity: sha512-GWPei1zBVDDjxM+/BmcSCiOcHNd8rSqW6FUZtqQGlTRpD0Z5nSzspzWD8rtKif5KPdzUG68DApKEV/y/I9VbTw==}
+    engines: {node: '>=20.19.0'}
+    peerDependencies:
+      stylelint: ^16.18.0 || ^17.0.0
 
   stylelint-scss@6.9.0:
     resolution: {integrity: sha512-oWOR+g6ccagfrENecImGmorWWjVyWpt2R8bmkhOW8FkNNPGStZPQMqb8QWMW4Lwu9TyPqmyjHkkAsy3weqsnNw==}
@@ -1101,6 +1112,10 @@ snapshots:
     dependencies:
       postcss: 8.4.49
 
+  postcss-sorting@9.1.0(postcss@8.5.8):
+    dependencies:
+      postcss: 8.5.8
+
   postcss-value-parser@4.2.0: {}
 
   postcss@8.4.49:
@@ -1211,6 +1226,12 @@ snapshots:
     dependencies:
       postcss: 8.4.49
       postcss-sorting: 8.0.2(postcss@8.4.49)
+      stylelint: 17.4.0
+
+  stylelint-order@7.0.1(stylelint@17.4.0):
+    dependencies:
+      postcss: 8.5.8
+      postcss-sorting: 9.1.0(postcss@8.5.8)
       stylelint: 17.4.0
 
   stylelint-scss@6.9.0(stylelint@17.4.0):
