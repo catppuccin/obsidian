@@ -7,7 +7,6 @@
   text-decoration-color: transparent;
   text-decoration-line: underline;
   text-decoration-style: solid;
-  transition: var(--transition-text-decoration-color);
 
   &:hover {
     text-decoration-color: inherit;
@@ -28,7 +27,6 @@ body:not(.ctp-tag-pill) {
     text-decoration-color: transparent;
     text-decoration-line: underline;
     text-decoration-style: solid;
-    transition: var(--transition-text-decoration-color);
   }
 
   .cm-hashtag.cm-hashtag-end:hover {
@@ -64,10 +62,6 @@ body:not(.ctp-tag-pill) {
 * 1. Allow users to pick tag text color with Style Settings
 */
 
-body {
-
-}
-
 .markdown-source-view.mod-cm6 .is-unresolved {
   & .cm-underline {
     text-decoration-line: none;
@@ -89,7 +83,6 @@ body {
 
 .empty-state-action {
   border-radius: var(--radius-s);
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 @media (hover: hover) {

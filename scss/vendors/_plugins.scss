@@ -103,7 +103,6 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
 }
 
 .ctp-full-palette .mk-sidebar-item {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
 
   &:hover {
     background-color: rgb(var(--ctp-pink));
@@ -120,11 +119,9 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
     inset 0 0 4px rgb(var(--ctp-crust)),
     inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
-  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
 
   svg {
     color: rgb(var(--ctp-pink)) !important;
-    transition: var(--transition-hover-bg), var(--transition-hover-color);
   }
 
   &:hover svg,
@@ -136,7 +133,6 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
 }
 
 .mk-sidebar-item {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
 
   &:hover {
     background-color: rgb(var(--ctp-accent));
@@ -153,11 +149,9 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
     inset 0 0 4px rgb(var(--ctp-crust)),
     inset 0 0 6px rgb(var(--ctp-base));
   outline: 1px solid rgb(var(--ctp-surface1));
-  transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
 
   svg {
     color: rgb(var(--ctp-accent)) !important;
-    transition: var(--transition-hover-bg), var(--transition-hover-color);
   }
 
   &:hover svg,
@@ -168,14 +162,6 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
   }
 }
 
-.mk-tree-item {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
-}
-
-.mk-tree-item svg {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
-}
-
 body:not(.is-mobile) .mk-tree-item:hover {
   background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
@@ -183,10 +169,6 @@ body:not(.is-mobile) .mk-tree-item:hover {
 
 .mk-tree-item:hover svg {
   color: var(--text-on-accent) !important;
-}
-
-.mk-options-menu__suggestions li {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
 }
 
 .mk-options-menu__suggestions li.is-active,
@@ -203,10 +185,6 @@ body:not(.is-mobile) .mk-tree-item:hover {
 
 .mk-file-context-field-new button:hover {
   color: rgb(var(--ctp-accent)) !important;
-}
-
-body:not(.is-mobile) .mk-tree-wrapper button {
-  transition: var(--transition-hover-bg), var(--transition-hover-color), var(--transition-hover-box-shadow);
 }
 
 body:not(.is-mobile) .mk-folder-buttons button {

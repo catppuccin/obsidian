@@ -1,7 +1,3 @@
-.status-bar-item {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
-}
-
 .status-bar-item.mod-clickable:hover {
   --background-modifier-hover: rgb(var(--ctp-accent));
 
