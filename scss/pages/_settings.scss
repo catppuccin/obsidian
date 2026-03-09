@@ -86,3 +86,15 @@ button.mod-cta {
 
   text-transform: lowercase;
 }
+
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+color: var(--text-on-accent);
+}
+
+.horizontal-tab-nav-item:hover .vertical-tab-nav-item-icon,
+.vertical-tab-nav-item:hover .vertical-tab-nav-item-icon,
+.horizontal-tab-nav-item.is-active .vertical-tab-nav-item-icon,
+.vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon {
+color: var(--text-on--accent);
+}
