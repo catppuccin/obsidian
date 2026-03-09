@@ -49,11 +49,9 @@
       inset 0 0 4px rgb(var(--ctp-crust)),
       inset 0 0 6px rgb(var(--ctp-base));
     outline: 1px solid rgb(var(--ctp-surface1));
-    transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
 
     svg {
       color: rgb(var(--ctp-pink));
-      transition: var(--transition-hover-bg), var(--transition-hover-color);
     }
 
     &:hover,
@@ -67,7 +65,6 @@
   .clickable-icon,
   .mod-left-split .workspace-tab-header,
   .mod-right-split .workspace-tab-header {
-    transition: var(--transition-hover-bg), var(--transition-hover-color);
 
     &:hover {
       background-color: rgb(var(--ctp-pink));

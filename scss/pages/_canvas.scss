@@ -18,10 +18,6 @@
   opacity: 40%;
 }
 
-.canvas-control-item {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
-}
-
 @media (hover: hover) {
   .canvas-control-item:hover {
     background-color: rgb(var(--ctp-pink));

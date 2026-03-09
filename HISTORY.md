@@ -7,6 +7,14 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## [0.4.45] - 2026-3-9
+### Changes
++ Removed transitions from theme. They were looking choppy and inconsistent in places and have been hard to maintain.
++ Manifest.json should now reflect the theme developer as 'Catppuccin' in the Obsidian theme browser
+### Fixes
++ Issue 141 found that boxes at the end of toolbars were being clipped
++ Issue 134 found that the Emoji Autocomplete plugin was not receiving the correct text color on selected suggested items
+
 ## [0.4.44] - 2025-4-9
 ### Fixes
 + Issue 120 found that key:value pairs in the Dataview plugin were not readable

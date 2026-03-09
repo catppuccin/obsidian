@@ -11,10 +11,6 @@
   }
 }
 
-.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
-}
-
 /* Stacked tabs */
 
 /* TODO disentangle all the tabs css */

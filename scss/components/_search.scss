@@ -68,10 +68,6 @@
   background-color: rgb(var(--ctp-accent));
 }
 
-.search-result-file-match {
-  transition: var(--transition-hover-bg), var(--transition-hover-color);
-}
-
 .search-result-file-match:hover .search-result-file-matched-text {
   background-color: rgb(var(--ctp-rosewater), 60%);
   color: var(--text-on-accent);

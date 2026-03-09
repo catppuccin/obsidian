@@ -14,4 +14,4 @@ rules:
   - true
   - ignoreProperties:
     - "/^mask-/"
-
+  scss/double-slash-comment-whitespace-inside: null
