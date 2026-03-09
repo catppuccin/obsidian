@@ -290,3 +290,10 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 
   font-size: var(--font-smaller);
 }
+
+
+/* Fix for #134 */
+
+.suggestion-item.is-selected .EA-shortcode span.EA-hl {
+  color: var(--text-on-accent);
+}
