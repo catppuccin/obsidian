@@ -220,6 +220,7 @@
   .horizontal-tab-nav-item.is-active,
   .vertical-tab-nav-item.is-active {
     background-color: rgb(var(--ctp-mauve));
+    color: var(--text-normal);
 
     &:hover {
       background-color: rgb(var(--ctp-accent));
