@@ -85,7 +85,10 @@ button.mod-cta {
 
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
-color: var(--text-on-accent);
+  --ctp-accent: var(--ctp-mauve);
+
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
 }
 
 .horizontal-tab-nav-item:hover .vertical-tab-nav-item-icon,

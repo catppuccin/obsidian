@@ -2890,6 +2890,8 @@ button.mod-cta:hover {
 
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
+  --ctp-accent: var(--ctp-mauve);
+  background-color: rgb(var(--ctp-accent));
   color: var(--text-on-accent);
 }
 
@@ -3340,8 +3342,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) .vertical-tab-nav-item.is-active,
 .ctp-full-palette .horizontal-tab-nav-item.is-active,
 .ctp-full-palette .vertical-tab-nav-item.is-active {
-  background-color: rgb(var(--ctp-mauve));
-  color: var(--text-normal);
+  background-color: rgb(var(--ctp-accent));
+  color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .horizontal-tab-nav-item.is-active:hover,
 .theme-dark:not(.css-settings-manager) .vertical-tab-nav-item.is-active:hover,
@@ -3680,6 +3682,12 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 /* Fix for #134 */
 .suggestion-item.is-selected .EA-shortcode span.EA-hl {
   color: var(--text-on-accent);
+}
+
+/* Make Style Settings accent selection use choice for active items  */
+body.css-settings-manager:not(.is-phone, .ctp-full-palette) .horizontal-tab-nav-item.is-active,
+body.css-settings-manager:not(.is-phone, .ctp-full-palette) .vertical-tab-nav-item.is-active {
+  --ctp-accent: unset ;
 }
 
 /**
@@ -4515,4 +4523,4 @@ li[data-task=b] > p > input:checked {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/*# sourceMappingURL=catppuccin.css.map */
+/*# sourceMappingURL=theme.css.map */
