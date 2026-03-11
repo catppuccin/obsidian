@@ -7,6 +7,11 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## 0.4.47 - 2026-3-11
+### Fixes
+
++ Fixed inconsistent use of text and background color on active items on the Settings page depending on whether Style Settings is on or off
+
 ## [0.4.45] - 2026-3-9
 ### Changes
 + Removed transitions from theme. They were looking choppy and inconsistent in places and have been hard to maintain.

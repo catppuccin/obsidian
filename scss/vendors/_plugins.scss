@@ -297,3 +297,10 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 .suggestion-item.is-selected .EA-shortcode span.EA-hl {
   color: var(--text-on-accent);
 }
+
+/* Make Style Settings accent selection use choice for active items  */
+
+  body.css-settings-manager:not(.is-phone, .ctp-full-palette) .horizontal-tab-nav-item.is-active,
+  body.css-settings-manager:not(.is-phone, .ctp-full-palette) .vertical-tab-nav-item.is-active {
+    --ctp-accent: unset
+  }
