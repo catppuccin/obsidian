@@ -6,7 +6,7 @@
 
 .canvas-node.is-selected .canvas-node-label,
 .canvas-node.is-focused .canvas-node-label {
-  color: rgb(var(--canvas-color));
+  color: var(--canvas-color);
 }
 
 .canvas-controls button:hover {
@@ -33,7 +33,7 @@
 
 .canvas-node.is-themed .canvas-node-container {
   border-width: 1px;
-  border-color: rgb(var(--canvas-color), 60%);
+  border-color: color-mix(in srgb, var(--canvas-color) 60%, transparent);
   box-shadow: none;
 }
 
@@ -44,5 +44,5 @@
 }
 
 .canvas-node.is-themed .canvas-node-content {
-  background-color: rgb(var(--canvas-color), 10%);
+  background-color: color-mix(in srgb, var(--canvas-color) 10%, transparent);
 }
