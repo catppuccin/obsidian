@@ -101,3 +101,632 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     }
   }
 }
+
+.theme-dark,
+.theme-light {
+  --sidebar-rosewater: rgb(var(--ctp-rosewater));
+  --sidebar-flamingo: rgb(var(--ctp-flamingo));
+  --sidebar-pink: rgb(var(--ctp-pink));
+  --sidebar-mauve: rgb(var(--ctp-mauve));
+  --sidebar-red: rgb(var(--ctp-red));
+  --sidebar-maroon: rgb(var(--ctp-maroon));
+  --sidebar-peach: rgb(var(--ctp-peach));
+  --sidebar-yellow: rgb(var(--ctp-yellow));
+  --sidebar-green: rgb(var(--ctp-green));
+  --sidebar-teal: rgb(var(--ctp-teal));
+  --sidebar-sky: rgb(var(--ctp-sky));
+  --sidebar-sapphire: rgb(var(--ctp-sapphire));
+  --sidebar-blue: rgb(var(--ctp-blue));
+  --sidebar-lavender: rgb(var(--ctp-lavender));
+
+  --sidebar-text: rgb(var(--ctp-text));
+  --sidebar-overlay0: rgb(var(--ctp-overlay0));
+  --sidebar-crust: rgb(var(--ctp-crust));
+
+  --sidebar-default-text-color: var(--sidebar-text);
+}
+
+.theme-dark {
+  --sidebar-contrast-color: var(--sidebar-rosewater);
+  --sidebar-background-contrast: 15%;
+  --sidebar-foreground-contrast: 40%;
+  --sidebar-medium-contrast: 20%;
+  --sidebar-active-contrast: 10%;
+
+  --nav-item-weight-hover: bold;
+}
+
+.theme-light {
+  --sidebar-contrast-color: var(--sidebar-text);
+  --sidebar-background-contrast: 18%;
+  --sidebar-foreground-contrast: 72%;
+  --sidebar-medium-contrast: 72%;
+  --sidebar-active-contrast: 16%;
+}
+
+.nav-folder-title:is(
+  [data-path^="00"],
+  [data-path^="14"],
+  [data-path^="28"],
+  [data-path^="42"],
+  [data-path^="56"],
+  [data-path^="70"],
+  [data-path^="84"],
+  [data-path^="98"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="00"],
+      [data-path^="14"],
+      [data-path^="28"],
+      [data-path^="42"],
+      [data-path^="56"],
+      [data-path^="70"],
+      [data-path^="84"],
+      [data-path^="98"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-green);
+}
+
+.nav-folder-title:is(
+  [data-path^="01"],
+  [data-path^="15"],
+  [data-path^="29"],
+  [data-path^="43"],
+  [data-path^="57"],
+  [data-path^="71"],
+  [data-path^="85"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="01"],
+      [data-path^="15"],
+      [data-path^="29"],
+      [data-path^="43"],
+      [data-path^="57"],
+      [data-path^="71"],
+      [data-path^="85"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-teal);
+}
+
+.nav-folder-title:is(
+  [data-path^="02"],
+  [data-path^="16"],
+  [data-path^="30"],
+  [data-path^="44"],
+  [data-path^="58"],
+  [data-path^="72"],
+  [data-path^="86"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="02"],
+      [data-path^="16"],
+      [data-path^="30"],
+      [data-path^="44"],
+      [data-path^="58"],
+      [data-path^="72"],
+      [data-path^="86"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-sapphire);
+}
+
+.nav-folder-title:is(
+  [data-path^="03"],
+  [data-path^="17"],
+  [data-path^="31"],
+  [data-path^="45"],
+  [data-path^="59"],
+  [data-path^="73"],
+  [data-path^="87"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="03"],
+      [data-path^="17"],
+      [data-path^="31"],
+      [data-path^="45"],
+      [data-path^="59"],
+      [data-path^="73"],
+      [data-path^="87"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-blue);
+}
+
+.nav-folder-title:is(
+  [data-path^="04"],
+  [data-path^="18"],
+  [data-path^="32"],
+  [data-path^="46"],
+  [data-path^="60"],
+  [data-path^="74"],
+  [data-path^="88"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="04"],
+      [data-path^="18"],
+      [data-path^="32"],
+      [data-path^="46"],
+      [data-path^="60"],
+      [data-path^="74"],
+      [data-path^="88"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-lavender);
+}
+
+.nav-folder-title:is(
+  [data-path^="05"],
+  [data-path^="19"],
+  [data-path^="33"],
+  [data-path^="47"],
+  [data-path^="61"],
+  [data-path^="75"],
+  [data-path^="89"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="05"],
+      [data-path^="19"],
+      [data-path^="33"],
+      [data-path^="47"],
+      [data-path^="61"],
+      [data-path^="75"],
+      [data-path^="89"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-mauve);
+}
+
+.nav-folder-title:is(
+  [data-path^="06"],
+  [data-path^="20"],
+  [data-path^="34"],
+  [data-path^="48"],
+  [data-path^="62"],
+  [data-path^="76"],
+  [data-path^="90"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="06"],
+      [data-path^="20"],
+      [data-path^="34"],
+      [data-path^="48"],
+      [data-path^="62"],
+      [data-path^="76"],
+      [data-path^="90"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-pink);
+}
+
+.nav-folder-title:is(
+  [data-path^="07"],
+  [data-path^="21"],
+  [data-path^="35"],
+  [data-path^="49"],
+  [data-path^="63"],
+  [data-path^="77"],
+  [data-path^="91"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="07"],
+      [data-path^="21"],
+      [data-path^="35"],
+      [data-path^="49"],
+      [data-path^="63"],
+      [data-path^="77"],
+      [data-path^="91"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-red);
+}
+
+.nav-folder-title:is(
+  [data-path^="08"],
+  [data-path^="22"],
+  [data-path^="36"],
+  [data-path^="50"],
+  [data-path^="64"],
+  [data-path^="78"],
+  [data-path^="92"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="08"],
+      [data-path^="22"],
+      [data-path^="36"],
+      [data-path^="50"],
+      [data-path^="64"],
+      [data-path^="78"],
+      [data-path^="92"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-peach);
+}
+
+.nav-folder-title:is(
+  [data-path^="09"],
+  [data-path^="23"],
+  [data-path^="37"],
+  [data-path^="51"],
+  [data-path^="65"],
+  [data-path^="79"],
+  [data-path^="93"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="09"],
+      [data-path^="23"],
+      [data-path^="37"],
+      [data-path^="51"],
+      [data-path^="65"],
+      [data-path^="79"],
+      [data-path^="93"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-maroon);
+}
+
+.nav-folder-title:is(
+  [data-path^="10"],
+  [data-path^="24"],
+  [data-path^="38"],
+  [data-path^="52"],
+  [data-path^="66"],
+  [data-path^="80"],
+  [data-path^="94"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="10"],
+      [data-path^="24"],
+      [data-path^="38"],
+      [data-path^="52"],
+      [data-path^="66"],
+      [data-path^="80"],
+      [data-path^="94"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-yellow);
+}
+
+.nav-folder-title:is(
+  [data-path^="11"],
+  [data-path^="25"],
+  [data-path^="39"],
+  [data-path^="53"],
+  [data-path^="67"],
+  [data-path^="81"],
+  [data-path^="95"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="11"],
+      [data-path^="25"],
+      [data-path^="39"],
+      [data-path^="53"],
+      [data-path^="67"],
+      [data-path^="81"],
+      [data-path^="95"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-sky);
+}
+
+.nav-folder-title:is(
+  [data-path^="12"],
+  [data-path^="26"],
+  [data-path^="40"],
+  [data-path^="54"],
+  [data-path^="68"],
+  [data-path^="82"],
+  [data-path^="96"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="12"],
+      [data-path^="26"],
+      [data-path^="40"],
+      [data-path^="54"],
+      [data-path^="68"],
+      [data-path^="82"],
+      [data-path^="96"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-rosewater);
+}
+
+.nav-folder-title:is(
+  [data-path^="13"],
+  [data-path^="27"],
+  [data-path^="41"],
+  [data-path^="55"],
+  [data-path^="69"],
+  [data-path^="83"],
+  [data-path^="97"]
+),
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="13"],
+      [data-path^="27"],
+      [data-path^="41"],
+      [data-path^="55"],
+      [data-path^="69"],
+      [data-path^="83"],
+      [data-path^="97"]
+    )
+) {
+  --sidebar-folder-color: var(--sidebar-flamingo);
+}
+
+.nav-folder-title[data-path^="99"],
+.nav-folder:has(> .nav-folder-title[data-path^="99"]) {
+  --sidebar-folder-color: var(--sidebar-overlay0);
+}
+
+.nav-folder-title:is(
+  [data-path^="0"],
+  [data-path^="1"],
+  [data-path^="2"],
+  [data-path^="3"],
+  [data-path^="4"],
+  [data-path^="5"],
+  [data-path^="6"],
+  [data-path^="7"],
+  [data-path^="8"],
+  [data-path^="9"]
+) {
+  color: var(--sidebar-folder-color) !important;
+  font-weight: bold;
+  border-radius: 5px;
+
+  --nav-item-color: var(--sidebar-folder-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) var(--sidebar-foreground-contrast),
+    var(--sidebar-contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) var(--sidebar-background-contrast),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) 60%,
+    transparent
+  );
+}
+
+.nav-folder-title:is(
+    [data-path^="0"],
+    [data-path^="1"],
+    [data-path^="2"],
+    [data-path^="3"],
+    [data-path^="4"],
+    [data-path^="5"],
+    [data-path^="6"],
+    [data-path^="7"],
+    [data-path^="8"],
+    [data-path^="9"]
+  )
+  .nav-folder-title-content,
+.nav-folder-title:is(
+    [data-path^="0"],
+    [data-path^="1"],
+    [data-path^="2"],
+    [data-path^="3"],
+    [data-path^="4"],
+    [data-path^="5"],
+    [data-path^="6"],
+    [data-path^="7"],
+    [data-path^="8"],
+    [data-path^="9"]
+  )
+  .nav-folder-title-content::before {
+  color: var(--sidebar-folder-color) !important;
+}
+
+.nav-folder-title:is(
+    [data-path^="0"],
+    [data-path^="1"],
+    [data-path^="2"],
+    [data-path^="3"],
+    [data-path^="4"],
+    [data-path^="5"],
+    [data-path^="6"],
+    [data-path^="7"],
+    [data-path^="8"],
+    [data-path^="9"]
+  )
+  .nav-folder-title-content::before {
+  background-color: currentcolor !important;
+}
+
+.nav-folder:has(
+  > .nav-folder-title:is(
+      [data-path^="0"],
+      [data-path^="1"],
+      [data-path^="2"],
+      [data-path^="3"],
+      [data-path^="4"],
+      [data-path^="5"],
+      [data-path^="6"],
+      [data-path^="7"],
+      [data-path^="8"],
+      [data-path^="9"]
+    )
+) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) var(--sidebar-medium-contrast),
+    transparent
+  );
+}
+
+.nav-folder:has(
+    > .nav-folder-title:is(
+        [data-path^="0"],
+        [data-path^="1"],
+        [data-path^="2"],
+        [data-path^="3"],
+        [data-path^="4"],
+        [data-path^="5"],
+        [data-path^="6"],
+        [data-path^="7"],
+        [data-path^="8"],
+        [data-path^="9"]
+      )
+  )
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) var(--sidebar-medium-contrast),
+    var(--sidebar-default-text-color)
+  ) !important;
+
+  --nav-item-color: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) var(--sidebar-medium-contrast),
+    var(--sidebar-default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) var(--sidebar-background-contrast),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--sidebar-folder-color) var(--sidebar-active-contrast),
+    transparent
+  );
+}
+
+.nav-folder:has(
+    > .nav-folder-title:is(
+        [data-path^="0"],
+        [data-path^="1"],
+        [data-path^="2"],
+        [data-path^="3"],
+        [data-path^="4"],
+        [data-path^="5"],
+        [data-path^="6"],
+        [data-path^="7"],
+        [data-path^="8"],
+        [data-path^="9"]
+      )
+  )
+  .nav-file-title-content {
+  color: inherit !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-file-title,
+  .nav-folder-title {
+    padding-top: 3px !important;
+    padding-right: 5px !important;
+    padding-bottom: 2px !important;
+    padding-left: 15px;
+  }
+}
+
+.nav-folder-title:is(
+    [data-path^="0"],
+    [data-path^="1"],
+    [data-path^="2"],
+    [data-path^="3"],
+    [data-path^="4"],
+    [data-path^="5"],
+    [data-path^="6"],
+    [data-path^="7"],
+    [data-path^="8"],
+    [data-path^="9"]
+  ):is(:hover, .is-active) {
+  background-color: var(--sidebar-folder-color) !important;
+  --nav-collapse-icon-color: var(--sidebar-crust);
+}
+
+.nav-folder-title:is(
+    [data-path^="0"],
+    [data-path^="1"],
+    [data-path^="2"],
+    [data-path^="3"],
+    [data-path^="4"],
+    [data-path^="5"],
+    [data-path^="6"],
+    [data-path^="7"],
+    [data-path^="8"],
+    [data-path^="9"]
+  ):is(:hover, .is-active)
+  .nav-folder-title-content,
+.nav-folder-title:is(
+    [data-path^="0"],
+    [data-path^="1"],
+    [data-path^="2"],
+    [data-path^="3"],
+    [data-path^="4"],
+    [data-path^="5"],
+    [data-path^="6"],
+    [data-path^="7"],
+    [data-path^="8"],
+    [data-path^="9"]
+  ):is(:hover, .is-active)
+  .nav-folder-title-content::before {
+  color: var(--sidebar-crust) !important;
+}
+
+.nav-folder:has(
+    > .nav-folder-title:is(
+        [data-path^="0"],
+        [data-path^="1"],
+        [data-path^="2"],
+        [data-path^="3"],
+        [data-path^="4"],
+        [data-path^="5"],
+        [data-path^="6"],
+        [data-path^="7"],
+        [data-path^="8"],
+        [data-path^="9"]
+      )
+  )
+  .nav-file-title:is(:hover, .is-active) {
+  background-color: var(--sidebar-folder-color) !important;
+}
+
+.nav-folder:has(
+    > .nav-folder-title:is(
+        [data-path^="0"],
+        [data-path^="1"],
+        [data-path^="2"],
+        [data-path^="3"],
+        [data-path^="4"],
+        [data-path^="5"],
+        [data-path^="6"],
+        [data-path^="7"],
+        [data-path^="8"],
+        [data-path^="9"]
+      )
+  )
+  .nav-file-title:is(:hover, .is-active)
+  .nav-file-title-content {
+  color: var(--sidebar-crust) !important;
+}
