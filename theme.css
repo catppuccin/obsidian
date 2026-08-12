@@ -63,12 +63,12 @@ body {
   /* Canvas */
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
-  --canvas-color-1: var(--color-red-rgb);
-  --canvas-color-2: var(--color-orange-rgb);
-  --canvas-color-3: var(--color-yellow-rgb);
-  --canvas-color-4: var(--color-green-rgb);
-  --canvas-color-5: var(--color-cyan-rgb);
-  --canvas-color-6: var(--color-purple-rgb);
+  --canvas-color-1: var(--color-red);
+  --canvas-color-2: var(--color-orange);
+  --canvas-color-3: var(--color-yellow);
+  --canvas-color-4: var(--color-green);
+  --canvas-color-5: var(--color-cyan);
+  --canvas-color-6: var(--color-purple);
   --canvas-dot-pattern: var(--color-base-30);
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
@@ -1711,9 +1711,7 @@ settings:
   --scrollbar-thumb-bg: rgb(var(--ctp-text), 10%);
   --mono-rgb-0: var(--ctp-crust);
   --mono-rgb-100: var(--ctp-text);
-  --color-red-rgb: var(--ctp-red);
   --color-red: rgb(var(--ctp-red));
-  --color-green-rgb: var(--ctp-green);
   --color-green: rgb(var(--ctp-green));
   --color-orange: rgb(var(--ctp-peach));
   --color-yellow: rgb(var(--ctp-yellow));
@@ -2006,8 +2004,8 @@ body {
 
 .callout {
   --callout-icon: lucide-pencil;
-  border-color: rgb(var(--callout-color), 60%);
-  background-color: rgb(var(--callout-color), 10%);
+  border-color: color-mix(in srgb, var(--callout-color) 60%, transparent);
+  background-color: color-mix(in srgb, var(--callout-color) 10%, transparent);
 }
 
 .cm-s-obsidian span.cm-formatting-quote {
@@ -2784,7 +2782,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 /* Indicates item is selected/focused */
 .canvas-node.is-selected .canvas-node-label,
 .canvas-node.is-focused .canvas-node-label {
-  color: rgb(var(--canvas-color));
+  color: var(--canvas-color);
 }
 
 .canvas-controls button:hover {
@@ -2809,7 +2807,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 /* Makes boxes a little less intense */
 .canvas-node.is-themed .canvas-node-container {
   border-width: 1px;
-  border-color: rgb(var(--canvas-color), 60%);
+  border-color: color-mix(in srgb, var(--canvas-color) 60%, transparent);
   box-shadow: none;
 }
 
@@ -2820,7 +2818,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 }
 
 .canvas-node.is-themed .canvas-node-content {
-  background-color: rgb(var(--canvas-color), 10%);
+  background-color: color-mix(in srgb, var(--canvas-color) 10%, transparent);
 }
 
 .mod-settings input.slider {
