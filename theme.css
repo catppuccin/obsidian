@@ -37,29 +37,28 @@ body {
   /* Callouts */
   --callout-border-width: 0.25px;
   --callout-border-opacity: 0.2;
-  --callout-padding:
-    var(--size-4-3) var(--size-4-3)
-    var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-padding: 0;
   --callout-title-size: inherit;
   --callout-content-padding: 0;
   --callout-content-background: transparent;
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-question: var(--color-yellow-rgb);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
-  --callout-quote: 158, 158, 158;
+  --callout-bug: var(--color-red);
+  --callout-default: var(--color-blue);
+  --callout-error: var(--color-red);
+  --callout-example: var(--color-purple);
+  --callout-fail: var(--color-red);
+  --callout-important: var(--color-cyan);
+  --callout-info: var(--color-blue);
+  --callout-question: var(--color-yellow);
+  --callout-success: var(--color-green);
+  --callout-summary: var(--color-cyan);
+  --callout-tip: var(--color-cyan);
+  --callout-todo: var(--color-blue);
+  --callout-warning: var(--color-orange);
+  --callout-quote: rgb(158, 158, 158);
   /* Canvas */
   --canvas-background: var(--background-primary);
   --canvas-card-label-color: var(--text-faint);
@@ -125,8 +124,7 @@ body {
   --embed-font-style: inherit;
   /* Blocks */
   --embed-block-shadow-hover:
-    0 0 0 1px
-    var(--background-modifier-border),
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 700px;
@@ -160,11 +158,7 @@ body {
   /* Graphs */
   --graph-controls-width: 240px;
   --graph-text: var(--text-normal);
-  --graph-line:
-    var(
-      --color-base-35,
-      var(--background-modifier-border-focus)
-    );
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
   --graph-node: var(--text-muted);
   --graph-node-unresolved: var(--text-faint);
   --graph-node-focused: var(--text-accent);
@@ -312,7 +306,8 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
   --nav-item-background-selected: hsl(var(--color-accent-hsl), 20%);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-children-padding-left: var(--size-2-2);
   --nav-item-children-margin-left: var(--size-4-3);
@@ -332,11 +327,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color:
-    var(
-      --color-base-40,
-      var(--background-modifier-border-focus)
-    );
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   /* PDF view */
@@ -344,7 +338,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 5%), 0 2px 8px rgba(0, 0, 0, 10%);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 5%);
   --pdf-sidebar-background: var(--background-primary);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 15%), 0 2px 8px rgba(0, 0, 0, 20%);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 15%), 0 2px 8px rgba(0, 0, 0, 20%);
   /* Popovers - file previews */
   --popover-width: 450px;
   --popover-height: 400px;
@@ -357,11 +352,10 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color:
-    var(
-      --color-base-40,
-      var(--background-modifier-border-focus)
-    );
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
@@ -371,9 +365,7 @@ body {
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-width: 44px;
-  --ribbon-padding:
-    var(--size-4-2) var(--size-4-1)
-    var(--size-4-3);
+  --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   /* Scrollbars */
   --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100), 20%);
   --scrollbar-bg: rgb(var(--mono-rgb-100), 5%);
@@ -400,17 +392,11 @@ body {
   --size-4-16: 64px;
   --size-4-18: 72px;
   /* Sidebar */
-  --sidebar-markdown-font-size:
-    calc(
-      var(--font-text-size) * 0.9
-    );
+  --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   /* Sliders */
   --slider-thumb-border-width: 1px;
-  --slider-thumb-border-color:
-    var(
-      --background-modifier-border-hover
-    );
+  --slider-thumb-border-color: var(--background-modifier-border-hover);
   --slider-thumb-height: 18px;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
@@ -432,9 +418,7 @@ body {
   --swatch-radius: 14px;
   --swatch-height: 24px;
   --swatch-width: 24px;
-  --swatch-shadow:
-    inset 0 0 0 1px
-    rgb(var(--mono-rgb-100), 15%);
+  --swatch-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 15%);
   /* Tabs */
   --tab-background-active: var(--background-primary);
   --tab-text-color: var(--text-faint);
@@ -494,11 +478,7 @@ body {
   --tag-background: transparent;
   --tag-background-hover: 0;
   --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
-  --tag-border-color-hover:
-    hsl(
-      var(--interactive-accent-hsl),
-      15%
-    );
+  --tag-border-color-hover: hsl(var(--interactive-accent-hsl), 15%);
   --tag-border-width: 0;
   --tag-padding-x: 0;
   --tag-padding-y: 0;
