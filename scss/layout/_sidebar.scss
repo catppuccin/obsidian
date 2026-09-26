@@ -144,7 +144,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
   --sidebar-active-contrast: 16%;
 }
 
-body:is(.ctp-numbered-folder-colors, :not(.css-settings-manager)) {
+body.ctp-numbered-folder-colors {
   .nav-folder-title:is(
     [data-path^="00"],
     [data-path^="14"],
@@ -651,7 +651,7 @@ body:is(.ctp-numbered-folder-colors, :not(.css-settings-manager)) {
   }
 }
 
-body:is(.ctp-numbered-folder-colors, :not(.css-settings-manager)) {
+body.ctp-numbered-folder-colors {
   .nav-folder-title:is(
       [data-path^="0"],
       [data-path^="1"],
