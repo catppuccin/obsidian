@@ -777,76 +777,6 @@ settings:
 */
 
 /* @settings
-name: "Catppuccin: Tag Styles"
-id: catppuccin-tag-styles
-settings:
-  -
-    id: ctp-tag-pill
-    title: Pill-shaped tags
-    description: Make tags stand out with a pill-shaped appearance, reverts to Obsidian's default style
-    type: class-toggle
-  -
-    id: ctp-tag-pill-color
-    title: Tag text color
-    description: Select your tag text color
-    type: variable-select
-    allowEmpty: false
-    default: var(--ctp-accent)
-    options:
-      -
-        label: Accent
-        value: var(--ctp-accent)
-      -
-        label: Rosewater
-        value: var(--ctp-rosewater)
-      -
-        label: Flamingo
-        value: var(--ctp-flamingo)
-      -
-        label: Pink
-        value: var(--ctp-pink)
-      -
-        label: Mauve
-        value: var(--ctp-mauve)
-      -
-        label: Red
-        value: var(--ctp-red)
-      -
-        label: Maroon
-        value: var(--ctp-maroon)
-      -
-        label: Peach
-        value: var(--ctp-peach)
-      -
-        label: Yellow
-        value: var(--ctp-yellow)
-      -
-        label: Green
-        value: var(--ctp-green)
-      -
-        label: Teal
-        value: var(--ctp-teal)
-      -
-        label: Sky
-        value: var(--ctp-sky)
-      -
-        label: Sapphire
-        value: var(--ctp-sapphire)
-      -
-        label: Blue
-        value: var(--ctp-blue)
-      -
-        label: Lavender
-        value: var(--ctp-lavender)
-      -
-        label: White
-        value: var(--ctp-text)
-      -
-        label: Gray
-        value: var(--ctp-subtext0)
-*/
-
-/* @settings
 name: "Catppuccin: Sidebar Colors"
 id: catppuccin-sidebar-colors
 settings:
@@ -855,7 +785,7 @@ settings:
     title: Numbered folder colors
     description: Color folders in the file explorer based on their numeric prefix
     type: class-toggle
-    default: true
+    default: false
   -
     id: ctp-sidebar-slot-0
     title: Number series 0
@@ -1786,6 +1716,76 @@ settings:
       -
         label: Overlay 0
         value: var(--ctp-overlay0)
+*/
+
+/* @settings
+name: "Catppuccin: Tag Styles"
+id: catppuccin-tag-styles
+settings:
+  -
+    id: ctp-tag-pill
+    title: Pill-shaped tags
+    description: Make tags stand out with a pill-shaped appearance, reverts to Obsidian's default style
+    type: class-toggle
+  -
+    id: ctp-tag-pill-color
+    title: Tag text color
+    description: Select your tag text color
+    type: variable-select
+    allowEmpty: false
+    default: var(--ctp-accent)
+    options:
+      -
+        label: Accent
+        value: var(--ctp-accent)
+      -
+        label: Rosewater
+        value: var(--ctp-rosewater)
+      -
+        label: Flamingo
+        value: var(--ctp-flamingo)
+      -
+        label: Pink
+        value: var(--ctp-pink)
+      -
+        label: Mauve
+        value: var(--ctp-mauve)
+      -
+        label: Red
+        value: var(--ctp-red)
+      -
+        label: Maroon
+        value: var(--ctp-maroon)
+      -
+        label: Peach
+        value: var(--ctp-peach)
+      -
+        label: Yellow
+        value: var(--ctp-yellow)
+      -
+        label: Green
+        value: var(--ctp-green)
+      -
+        label: Teal
+        value: var(--ctp-teal)
+      -
+        label: Sky
+        value: var(--ctp-sky)
+      -
+        label: Sapphire
+        value: var(--ctp-sapphire)
+      -
+        label: Blue
+        value: var(--ctp-blue)
+      -
+        label: Lavender
+        value: var(--ctp-lavender)
+      -
+        label: White
+        value: var(--ctp-text)
+      -
+        label: Gray
+        value: var(--ctp-subtext0)
 */
 
 /* @settings
