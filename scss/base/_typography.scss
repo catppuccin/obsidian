@@ -134,16 +134,16 @@ h6,
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
-  background-color: rgb(var(--ctp-rosewater));
+  background-color: var(--highlight-background);
   color: var(--text-on-accent);
 
   &.cm-em,
   em {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-green), 40%),
-        rgb(var(--ctp-green), 60%),
-        rgb(var(--ctp-green), 60%),
+        rgb(var(--ctp-green), 80%),
+        rgb(var(--ctp-green), 80%),
+        rgb(var(--ctp-green), 80%),
       );
     color: var(--text-on-accent);
     text-align: left;
@@ -153,9 +153,9 @@ h6,
   strong {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-sapphire), 40%),
-        rgb(var(--ctp-sapphire), 60%),
-        rgb(var(--ctp-sapphire), 40%)
+        rgb(var(--ctp-sapphire), 80%),
+        rgb(var(--ctp-sapphire), 80%),
+        rgb(var(--ctp-sapphire), 80%)
       );
     color: var(--text-on-accent);
   }
@@ -164,12 +164,31 @@ h6,
   del {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-red), 40%),
-        rgb(var(--ctp-red), 60%),
-        rgb(var(--ctp-red), 40%)
+        rgb(var(--ctp-red), 80%),
+        rgb(var(--ctp-red), 80%),
+        rgb(var(--ctp-red), 80%)
       );
     color: var(--text-on-accent);
   }
+}
+
+.cm-s-obsidian span.cm-highlight-red {
+  --highlight-background: var(--highlight-background-red);
+}
+.cm-s-obsidian span.cm-highlight-orange {
+  --highlight-background: var(--highlight-background-orange);
+}
+.cm-s-obsidian span.cm-highlight-yellow {
+  --highlight-background: var(--highlight-background-yellow);
+}
+.cm-s-obsidian span.cm-highlight-green {
+  --highlight-background: var(--highlight-background-green);
+}
+.cm-s-obsidian span.cm-highlight-blue {
+  --highlight-background: var(--highlight-background-blue);
+}
+.cm-s-obsidian span.cm-highlight-purple {
+  --highlight-background: var(--highlight-background-purple);
 }
 
 .cm-s-obsidian span.cm-error {
