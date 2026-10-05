@@ -69,6 +69,8 @@ body {
   --canvas-color-5: var(--color-cyan);
   --canvas-color-6: var(--color-purple);
   --canvas-dot-pattern: var(--color-base-30);
+  /* Caret (text entry cursor) */
+  --caret-color: var(--text-normal);
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
@@ -210,6 +212,42 @@ body {
   --h6-weight: 600;
   /* View header */
   --header-height: 40px;
+  /* Highlights */
+  --highlight-opacity: 80%;
+  --highlight-background: var(
+    --text-highlight-bg,
+    var(--highlight-background-yellow)
+  );
+  --highlight-background-red: color-mix(
+    in oklch,
+    var(--color-red) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-orange: color-mix(
+    in oklch,
+    var(--color-orange) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-yellow: color-mix(
+    in oklch,
+    var(--color-yellow) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-green: color-mix(
+    in oklch,
+    var(--color-green) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-blue: color-mix(
+    in oklch,
+    var(--color-blue) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-purple: color-mix(
+    in oklch,
+    var(--color-purple) var(--highlight-opacity),
+    transparent
+  );
   /* Horizontal rules */
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
@@ -1857,7 +1895,7 @@ h6,
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
-  background-color: rgb(var(--ctp-rosewater));
+  background-color: var(--highlight-background);
   color: var(--text-on-accent);
 }
 .markdown-rendered mark.cm-em,
@@ -1866,7 +1904,7 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight em,
 .cm-s-obsidian span.cm-highlight.cm-em,
 .cm-s-obsidian span.cm-highlight em {
-  background-image: linear-gradient(rgb(var(--ctp-green), 40%), rgb(var(--ctp-green), 60%), rgb(var(--ctp-green), 60%));
+  background-image: linear-gradient(rgb(var(--ctp-green), 80%), rgb(var(--ctp-green), 80%), rgb(var(--ctp-green), 80%));
   color: var(--text-on-accent);
   text-align: left;
 }
@@ -1876,7 +1914,7 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight strong,
 .cm-s-obsidian span.cm-highlight.cm-strong,
 .cm-s-obsidian span.cm-highlight strong {
-  background-image: linear-gradient(rgb(var(--ctp-sapphire), 40%), rgb(var(--ctp-sapphire), 60%), rgb(var(--ctp-sapphire), 40%));
+  background-image: linear-gradient(rgb(var(--ctp-sapphire), 80%), rgb(var(--ctp-sapphire), 80%), rgb(var(--ctp-sapphire), 80%));
   color: var(--text-on-accent);
 }
 .markdown-rendered mark.cm-strikethrough,
@@ -1885,8 +1923,41 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight del,
 .cm-s-obsidian span.cm-highlight.cm-strikethrough,
 .cm-s-obsidian span.cm-highlight del {
-  background-image: linear-gradient(rgb(var(--ctp-red), 40%), rgb(var(--ctp-red), 60%), rgb(var(--ctp-red), 40%));
+  background-image: linear-gradient(rgb(var(--ctp-red), 80%), rgb(var(--ctp-red), 80%), rgb(var(--ctp-red), 80%));
   color: var(--text-on-accent);
+}
+
+.cm-s-obsidian span.cm-highlight-red {
+  --highlight-background: var(--highlight-background-red);
+}
+
+.cm-s-obsidian span.cm-highlight-orange {
+  --highlight-background: var(--highlight-background-orange);
+}
+
+.cm-s-obsidian span.cm-highlight-yellow {
+  --highlight-background: var(--highlight-background-yellow);
+}
+
+.cm-s-obsidian span.cm-highlight-green {
+  --highlight-background: var(--highlight-background-green);
+}
+
+.cm-s-obsidian span.cm-highlight-blue {
+  --highlight-background: var(--highlight-background-blue);
+}
+
+.cm-s-obsidian span.cm-highlight-purple {
+  --highlight-background: var(--highlight-background-purple);
+}
+
+/**
+* 1. Adjust cursor color in highlighted text, so that it is more visible
+*/
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  --caret-color: var(--text-on-accent);
+  caret-color: var(--caret-color);
 }
 
 .cm-s-obsidian span.cm-error {
@@ -2723,10 +2794,10 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
   --background-modifier-active-hover: rgb(var(--ctp-accent));
 }
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
-  color: var(--text-on-accent);
+  color: var(--text-normal);
 }
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
-  color: var(--text-on-accent);
+  color: var(--text-normal);
 }
 
 /* Stacked tabs */
@@ -3045,7 +3116,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
 .theme-light:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
 .ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
-  color: var(--text-on-accent);
+  color: var(--text-normal);
 }
 .theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
 .theme-light:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
