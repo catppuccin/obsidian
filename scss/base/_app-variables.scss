@@ -76,6 +76,9 @@ body {
   --canvas-color-6: var(--color-purple);
   --canvas-dot-pattern: var(--color-base-30);
 
+  /* Caret (text entry cursor) */
+  --caret-color: var(--text-normal);
+
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);

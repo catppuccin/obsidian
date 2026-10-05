@@ -191,6 +191,17 @@ h6,
   --highlight-background: var(--highlight-background-purple);
 }
 
+/**
+* 1. Adjust cursor color in highlighted text, so that it is more visible
+*/
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+    --caret-color: var(--text-on-accent);
+
+    caret-color: var(--caret-color);
+}
+
 .cm-s-obsidian span.cm-error {
   color: rgb(var(--ctp-red));
 }
