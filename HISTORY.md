@@ -7,6 +7,15 @@
 + update ./scss/base/_app-variables.scss with any changes to app.css
 + rewrite theme
 
+## 0.4.50 - 2026-10-5
+### Changes
++ Updated pnpm-workspace with its new allowBuild variable for the parcel/watcher tool added when repo was switched to pnpm
++ Cursor color in areas with a highlighted background should now be --text-on-accent vs. --text-normal. This should improve cursor visibility
+
+### Fixes
++ Issue 168 raised that the new colored highlights implemented in Obsidian were not respected by the Catppuccin theme
++ Fixed text and icons on hovered tabs remaining too dark
+
 ## 0.4.47 - 2026-3-11
 ### Fixes
 
