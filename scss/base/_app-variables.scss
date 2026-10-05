@@ -76,6 +76,9 @@ body {
   --canvas-color-6: var(--color-purple);
   --canvas-dot-pattern: var(--color-base-30);
 
+  /* Caret (text entry cursor) */
+  --caret-color: var(--text-normal);
+
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
@@ -233,6 +236,43 @@ body {
 
   /* View header */
   --header-height: 40px;
+
+  /* Highlights */
+  --highlight-opacity: 80%;
+  --highlight-background: var(
+    --text-highlight-bg,
+    var(--highlight-background-yellow)
+  );
+  --highlight-background-red: color-mix(
+    in oklch,
+    var(--color-red) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-orange: color-mix(
+    in oklch,
+    var(--color-orange) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-yellow: color-mix(
+    in oklch,
+    var(--color-yellow) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-green: color-mix(
+    in oklch,
+    var(--color-green) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-blue: color-mix(
+    in oklch,
+    var(--color-blue) var(--highlight-opacity),
+    transparent
+  );
+  --highlight-background-purple: color-mix(
+    in oklch,
+    var(--color-purple) var(--highlight-opacity),
+    transparent
+  );
 
   /* Horizontal rules */
   --hr-color: var(--background-modifier-border);
