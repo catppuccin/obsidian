@@ -443,7 +443,9 @@ body.ctp-numbered-folder-colors {
         [data-path^="96"]
       )
   ) {
-    --sidebar-folder-color: rgb(var(--ctp-sidebar-slot-12, var(--ctp-rosewater)));
+    --sidebar-folder-color: rgb(
+      var(--ctp-sidebar-slot-12, var(--ctp-rosewater))
+    );
   }
 
   .nav-folder-title:is(
@@ -466,12 +468,16 @@ body.ctp-numbered-folder-colors {
         [data-path^="97"]
       )
   ) {
-    --sidebar-folder-color: rgb(var(--ctp-sidebar-slot-13, var(--ctp-flamingo)));
+    --sidebar-folder-color: rgb(
+      var(--ctp-sidebar-slot-13, var(--ctp-flamingo))
+    );
   }
 
   .nav-folder-title[data-path^="99"],
   .nav-folder:has(> .nav-folder-title[data-path^="99"]) {
-    --sidebar-folder-color: rgb(var(--ctp-sidebar-slot-99, var(--ctp-overlay0)));
+    --sidebar-folder-color: rgb(
+      var(--ctp-sidebar-slot-99, var(--ctp-overlay0))
+    );
   }
 
   .nav-folder-title:is(
@@ -487,7 +493,6 @@ body.ctp-numbered-folder-colors {
     [data-path^="9"]
   ) {
     color: var(--sidebar-folder-color) !important;
-    font-weight: bold;
     border-radius: 5px;
 
     --nav-item-color: var(--sidebar-folder-color);
