@@ -144,6 +144,14 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
   --sidebar-active-contrast: 16%;
 }
 
+/**
+* 1. This CSS controls the Sidebar Colors section of Style Settings.
+* The community directory flags its :has() selectors as potentially causing poor theme performance.
+* !important declarations were removed on 11/4/26, but more time will be needed to figure out what is
+* safe way to handle :has(). Consider sibling selector in some cases.
+*/
+
+
 body.ctp-numbered-folder-colors {
   .nav-folder-title:is(
     [data-path^="00"],
@@ -646,7 +654,7 @@ body.ctp-numbered-folder-colors {
   }
 }
 
-body.ctp-numbered-folder-colors {
+body.ctp-tighten-sidebar-padding {
   @media only screen and (min-width: 768px) {
     .nav-file-title,
     .nav-folder-title {
