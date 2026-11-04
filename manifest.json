@@ -1,7 +1,7 @@
 {
   "name": "Catppuccin",
   "version": "0.4.51",
-  "minAppVersion": "1.13.0",
+  "minAppVersion": "1.14.0",
   "author": "Catppuccin",
-  "authorUrl": "https://github.com/catppuccin/obsidian"
+  "authorUrl": "https://catppuccin.com/"
 }
