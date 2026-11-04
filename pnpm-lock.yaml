@@ -177,8 +177,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0(stylelint@17.16.0(supports-color@10.2.2))
       stylelint-config-standard:
-        specifier: ^40.0.0
-        version: 40.0.0(stylelint@17.16.0(supports-color@10.2.2))
+        specifier: ^41.0.0
+        version: 41.0.0(stylelint@17.16.0(supports-color@10.2.2))
       stylelint-config-standard-scss:
         specifier: ^17.0.0
         version: 17.0.0(postcss@8.5.28)(stylelint@17.16.0(supports-color@10.2.2))
@@ -822,6 +822,12 @@ packages:
     peerDependencies:
       stylelint: ^17.0.0
 
+  stylelint-config-recommended@19.0.0:
+    resolution: {integrity: sha512-Y15XB19RManqBOpbRC42tF8R/Hfe314xYLzedRlnnYxYzZ0777RakDQIGcqYfrz9jWGoVyjaGTdpSl9F+roOOw==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
+    peerDependencies:
+      stylelint: ^18.0.0
+
   stylelint-config-standard-scss@17.0.0:
     resolution: {integrity: sha512-uLJS6xgOCBw5EMsDW7Ukji8l28qRoMnkRch15s0qwZpskXvWt9oPzMmcYM307m9GN4MxuWLsQh4I6hU9yI53cQ==}
     engines: {node: '>=20'}
@@ -837,6 +843,12 @@ packages:
     engines: {node: '>=20.19.0'}
     peerDependencies:
       stylelint: ^17.0.0
+
+  stylelint-config-standard@41.0.0:
+    resolution: {integrity: sha512-EJIvMOMARieBOLhw2yzN7BaVFiIY2Ex8CkbXahxP6tQZK41+N8OVUo57Uvx9iTr862h+thqDoDH7vQbeth1ryg==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
+    peerDependencies:
+      stylelint: ^18.0.0
 
   stylelint-declaration-block-no-ignored-properties@3.0.0:
     resolution: {integrity: sha512-3ml4NgSW6nkHQrk+/ounU7Qljfb7e7FayHzU7Mry6rF9X28RXyPLD2bNn4QVOO7t98d5EGCCVkNbHCZSx+bNUQ==}
@@ -1420,6 +1432,10 @@ snapshots:
     dependencies:
       stylelint: 17.16.0(supports-color@10.2.2)
 
+  stylelint-config-recommended@19.0.0(stylelint@17.16.0(supports-color@10.2.2)):
+    dependencies:
+      stylelint: 17.16.0(supports-color@10.2.2)
+
   stylelint-config-standard-scss@17.0.0(postcss@8.5.28)(stylelint@17.16.0(supports-color@10.2.2)):
     dependencies:
       stylelint: 17.16.0(supports-color@10.2.2)
@@ -1432,6 +1448,11 @@ snapshots:
     dependencies:
       stylelint: 17.16.0(supports-color@10.2.2)
       stylelint-config-recommended: 18.0.0(stylelint@17.16.0(supports-color@10.2.2))
+
+  stylelint-config-standard@41.0.0(stylelint@17.16.0(supports-color@10.2.2)):
+    dependencies:
+      stylelint: 17.16.0(supports-color@10.2.2)
+      stylelint-config-recommended: 19.0.0(stylelint@17.16.0(supports-color@10.2.2))
 
   stylelint-declaration-block-no-ignored-properties@3.0.0(stylelint@17.16.0(supports-color@10.2.2)):
     dependencies:
