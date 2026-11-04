@@ -144,6 +144,14 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
   --sidebar-active-contrast: 16%;
 }
 
+/**
+* 1. This CSS controls the Sidebar Colors section of Style Settings.
+* The community directory flags its :has() selectors as potentially causing poor theme performance.
+* !important declarations were removed on 11/4/26, but more time will be needed to figure out what is
+* safe way to handle :has(). Consider sibling selector in some cases.
+*/
+
+
 body.ctp-numbered-folder-colors {
   .nav-folder-title:is(
     [data-path^="00"],
@@ -492,7 +500,7 @@ body.ctp-numbered-folder-colors {
     [data-path^="8"],
     [data-path^="9"]
   ) {
-    color: var(--sidebar-folder-color) !important;
+    color: var(--sidebar-folder-color);
     border-radius: 5px;
 
     --nav-item-color: var(--sidebar-folder-color);
@@ -544,7 +552,7 @@ body.ctp-numbered-folder-colors {
       [data-path^="9"]
     )
     .nav-folder-title-content::before {
-    color: var(--sidebar-folder-color) !important;
+    color: var(--sidebar-folder-color);
   }
 
   .nav-folder-title:is(
@@ -560,7 +568,7 @@ body.ctp-numbered-folder-colors {
       [data-path^="9"]
     )
     .nav-folder-title-content::before {
-    background-color: currentcolor !important;
+    background-color: currentcolor;
   }
 
   .nav-folder:has(
@@ -603,7 +611,7 @@ body.ctp-numbered-folder-colors {
       in srgb,
       var(--sidebar-folder-color) var(--sidebar-medium-contrast),
       var(--sidebar-default-text-color)
-    ) !important;
+    );
 
     --nav-item-color: color-mix(
       in srgb,
@@ -642,17 +650,19 @@ body.ctp-numbered-folder-colors {
         )
     )
     .nav-file-title-content {
-    color: inherit !important;
+    color: inherit;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .nav-file-title,
-  .nav-folder-title {
-    padding-top: 3px !important;
-    padding-right: 5px !important;
-    padding-bottom: 2px !important;
-    padding-left: 15px;
+body.ctp-tighten-sidebar-padding {
+  @media only screen and (min-width: 768px) {
+    .nav-file-title,
+    .nav-folder-title {
+      padding-top: 3px;
+      padding-right: 5px;
+      padding-bottom: 2px;
+      padding-left: 24px;
+    }
   }
 }
 
@@ -669,7 +679,7 @@ body.ctp-numbered-folder-colors {
       [data-path^="8"],
       [data-path^="9"]
     ):is(:hover, .is-active) {
-    background-color: var(--sidebar-folder-color) !important;
+    background-color: var(--sidebar-folder-color);
     --nav-collapse-icon-color: var(--sidebar-crust);
   }
 
@@ -699,7 +709,7 @@ body.ctp-numbered-folder-colors {
       [data-path^="9"]
     ):is(:hover, .is-active)
     .nav-folder-title-content::before {
-    color: var(--sidebar-crust) !important;
+    color: var(--sidebar-crust);
   }
 
   .nav-folder:has(
@@ -717,7 +727,7 @@ body.ctp-numbered-folder-colors {
         )
     )
     .nav-file-title:is(:hover, .is-active) {
-    background-color: var(--sidebar-folder-color) !important;
+    background-color: var(--sidebar-folder-color);
   }
 
   .nav-folder:has(
@@ -736,6 +746,6 @@ body.ctp-numbered-folder-colors {
     )
     .nav-file-title:is(:hover, .is-active)
     .nav-file-title-content {
-    color: var(--sidebar-crust) !important;
+    color: var(--sidebar-crust);
   }
 }

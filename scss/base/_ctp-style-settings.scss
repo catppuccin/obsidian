@@ -787,6 +787,12 @@ settings:
     type: class-toggle
     default: false
   -
+    id: ctp-tighten-sidebar-padding
+    title: Tighten sidebar padding
+    description: Tighten the default Obsidian sidebar padding, bringing folder and file names closer together
+    type: class-toggle
+    default: false
+  -
     id: ctp-sidebar-slot-0
     title: Number series 0
     description: Applies to folder name prefixes 00, 14, 28, 42, 56, 70, 84, 98
