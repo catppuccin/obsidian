@@ -184,7 +184,7 @@ importers:
         version: 17.0.0(postcss@8.5.28)(stylelint@17.16.0(supports-color@10.2.2))
       stylelint-declaration-block-no-ignored-properties:
         specifier: ^3.0.0
-        version: 3.0.0(stylelint@17.16.0(supports-color@10.2.2))
+        version: 3.1.0(stylelint@17.16.0(supports-color@10.2.2))
       stylelint-order:
         specifier: ^7.0.0
         version: 7.0.1(stylelint@17.16.0(supports-color@10.2.2))
@@ -838,11 +838,11 @@ packages:
     peerDependencies:
       stylelint: ^17.0.0
 
-  stylelint-declaration-block-no-ignored-properties@3.0.0:
-    resolution: {integrity: sha512-3ml4NgSW6nkHQrk+/ounU7Qljfb7e7FayHzU7Mry6rF9X28RXyPLD2bNn4QVOO7t98d5EGCCVkNbHCZSx+bNUQ==}
+  stylelint-declaration-block-no-ignored-properties@3.1.0:
+    resolution: {integrity: sha512-zz87S/umlmsLvD12JeQ8i8YzqZfNdGzC631ArELO0pOC5LCV5DdxnLYd9r12BsHBArXFisYWUKagGOOaDfed+w==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
-      stylelint: ^17.0.0
+      stylelint: ^17.0.0 || ^18.0.0
 
   stylelint-order@6.0.4:
     resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
@@ -1433,7 +1433,7 @@ snapshots:
       stylelint: 17.16.0(supports-color@10.2.2)
       stylelint-config-recommended: 18.0.0(stylelint@17.16.0(supports-color@10.2.2))
 
-  stylelint-declaration-block-no-ignored-properties@3.0.0(stylelint@17.16.0(supports-color@10.2.2)):
+  stylelint-declaration-block-no-ignored-properties@3.1.0(stylelint@17.16.0(supports-color@10.2.2)):
     dependencies:
       stylelint: 17.16.0(supports-color@10.2.2)
 
